@@ -135,4 +135,5 @@
 - 2026-06-20: 実行系を 3 種に拡張(Claude / Codex / agy=Gemini)。使い分けポリシーを §3 に記録。検証・ワンショット実装は agy 優先で Claude/Codex 予算を節約。
 - 2026-06-21: B(西暦マッピング)完了。`pipeline/western_years.py` で巻レベル西暦を干支から決定論的算出(起403BCE/終959CE一致・盡干支ミスマッチ0)。staging KB に注入。残: 巻内の年単位西暦、エンティティ辞書(C)。
 - 2026-06-21: C(エンティティ辞書 seed)完了。`pipeline/build_dict.py` で CBDB(人物75,407/官職34,062, 繁体字)+ TGAZ(地名13,636, 簡体字)→ `name_index` 120,928 表記。人物・官職は本文照合可。地名 s2t は環境制約(pip 不可)で TODO。残るは D(翻訳/レビュー実走, Codex レート回復後)。
+- 2026-06-21: 翻訳パイプライン雛形 T01〜T03 完了。`pipeline/context.py`(chunk_id→コンテキストパケット: 位置/本文/胡注/エンティティ候補集合[name_index 最長一致+西暦窓フィルタ+confidence]/直前確定訳)、`pipeline/review.py`(codex exec ラッパ: 独立セッション・品質契約プロンプト・軽量スキーマ検証・timeout/retry/parse 失敗処理、--dummy 配線済)、`pipeline/translate_loop.py`(年/チャンク確定 KB スキーマ + 最大3反復ループ + 矛盾検出、pass/未収束/矛盾→halt、--selftest 合格)。手順書 `data/kb/_LOOP.md` + 空レコード `data/kb/_sample_record.json`。残: T04(縦スライス j001_y01 実走, Codex レート必要)。
 - 2026-06-21: 「1タスク=1セッション」再開システム構築。`CLAUDE.md`(自動ロード=再開プロトコル)+ `TASKS.md`(順序付きキュー)+ `pipeline/task.py`(次タスク表示)。新規セッションで「再開して」→ 次の未完了タスクを1つ完遂 → `[x]` 化 → commit → 停止。残タスクは TASKS.md(T01〜 + TODO)に列挙。

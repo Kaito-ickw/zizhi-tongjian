@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["verdict", "findings"],
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "enum": ["pass", "fail"],
+      "description": "誤りがある前提でチェックしてなお問題が見つからなければ pass。禁止脚色が1つでもあれば fail。"
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["severity", "category", "source_span", "translated_span", "issue", "suggestion"],
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": ["forbidden", "allowed", "style"],
+            "description": "forbidden=差し戻し対象(事実/因果/心理の追加・数字改変・発言創作), allowed=許容脚色, style=文体ブレ"
+          },
+          "category": {"type": "string"},
+          "source_span": {"type": "string", "description": "問題に対応する原文の該当箇所"},
+          "translated_span": {"type": "string", "description": "訳文側の該当箇所"},
+          "issue": {"type": "string"},
+          "suggestion": {"type": "string"}
+        }
+      }
+    }
+  }
+}

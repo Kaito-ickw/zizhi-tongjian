@@ -1,0 +1,21 @@
+# Codex / research scratch
+research/*.log
+research/*.summary.txt
+
+# Raw third-party corpora (pin via manifest; not committed wholesale)
+data/raw/
+data/staging/
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db

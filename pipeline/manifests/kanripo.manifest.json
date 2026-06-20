@@ -1,0 +1,28 @@
+{
+  "source_id": "kanripo-KR2b0007",
+  "role": "source_of_record (原文 + 胡三省注)",
+  "repo": "https://github.com/kanripo/KR2b0007",
+  "commit": "80174f61e491db29f9921d0d3e54a59649419aa9",
+  "license": "CC-BY-SA-4.0",
+  "base_edition_note": "ヘッダ PROPERTY は BASEEDITION=SBCK(四部叢刊)だが、ページ ID・見出しは WYG(四庫全書 文淵閣)系。版の合成来歴は要追加確認(DESIGN §9)。",
+  "retrieved_at": "2026-06-20",
+  "format": "mandoku org-mode テキスト。<pb:...> ページ境界、¶ 段落マーク、() 内は小字注(胡三省注ほか)。",
+  "files": {
+    "translation_corpus": "KR2b0007_001.txt 〜 KR2b0007_294.txt(294 ファイル)",
+    "front_matter": "KR2b0007_000.txt(四庫全書 提要 = 清代編者の解題。翻訳対象外。別途扱い)",
+    "excluded": "KR2b0007_295.txt(175 バイトの空スタブ)"
+  },
+  "verification": {
+    "verified_at": "2026-06-20",
+    "total_chars_001_294": 5899381,
+    "note_paren_balance": { "open": 133658, "close": 133658 },
+    "checksums_file": "pipeline/manifests/kanripo.sha256",
+    "checksums_count": 295,
+    "checksums_file_sha256": "a58ea7f14ee08f3a8f163f98ad311113148f617feffdc306e0d08c6c4aa44073",
+    "matches_research_01": true,
+    "known_issues": [
+      "巻156 の標題に OCR 誤り「吳三省」(正: 胡三省)",
+      "() 小字注は本文の胡三省注のほか後世校勘も含む → 取り込み正規化でレイヤ分離が必要(DESIGN §7)"
+    ]
+  }
+}

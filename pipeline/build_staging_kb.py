@@ -22,6 +22,7 @@ WS_DIR = ROOT / "data" / "raw" / "wikisource"
 OUT_DIR = ROOT / "data" / "staging" / "kb"
 WS_MANIFEST = ROOT / "pipeline" / "manifests" / "wikisource.manifest.json"
 KANRIPO_MANIFEST = ROOT / "pipeline" / "manifests" / "kanripo.manifest.json"
+WESTERN_MANIFEST = ROOT / "pipeline" / "manifests" / "volume_years.json"
 
 TARGET = 2000  # 作業チャンク目標字数
 HARD = 2500    # 上限字数(DESIGN §5)
@@ -79,10 +80,12 @@ def chunk_entry(text: str, target: int = TARGET, hard: int = HARD) -> list[str]:
     return chunks
 
 
-def build_volume(path: Path, ws_meta: dict, kanripo_commit: str) -> dict:
+def build_volume(path: Path, ws_meta: dict, kanripo_commit: str, western: dict) -> dict:
     v = parse_volume(path)
     juan = int(re.search(r"(\d+)", path.stem).group(1))
     notes_all = v["_notes"]
+    wj = western.get(juan, {})
+    w_range = f"{wj.get('start_western','?')} 〜 {wj.get('end_western','?')}" if wj else None
 
     records = []
     for i, e in enumerate(v["entries"], start=1):
@@ -106,7 +109,8 @@ def build_volume(path: Path, ws_meta: dict, kanripo_commit: str) -> dict:
             "ruler": e["ruler"],
             "year_label": e["year_label"],
             "era": e.get("era"),
-            "western_year": None,          # TODO(B): 元号→西暦
+            "western_year": None,          # TODO: 巻内の年単位西暦(要・元号別在位表)
+            "western_volume_range": w_range,  # B: 巻レベル西暦(干支決定論)
             "main_text": main,
             "notes": [{"idx": k, "text": notes_all[k]} for k in note_ids],
             "chunks": chunk_recs,
@@ -122,6 +126,9 @@ def build_volume(path: Path, ws_meta: dict, kanripo_commit: str) -> dict:
         "juan": juan,
         "section": v["section"],
         "range_note": v["range_note"],
+        "western_start": wj.get("start_western"),
+        "western_end": wj.get("end_western"),
+        "western_interpolated": wj.get("interpolated"),
         "source": {
             "segment_layer": {
                 "source_id": ws_meta["source_id"],
@@ -141,6 +148,7 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     ws_meta = json.loads(WS_MANIFEST.read_text(encoding="utf-8"))
     kanripo_commit = json.loads(KANRIPO_MANIFEST.read_text(encoding="utf-8"))["commit"]
+    western = {r["juan"]: r for r in json.loads(WESTERN_MANIFEST.read_text(encoding="utf-8"))["rows"]}
 
     files = sorted(glob.glob(str(WS_DIR / "卷*.wikitext")))
     tot_years = tot_chunks = 0
@@ -148,7 +156,7 @@ def main() -> int:
     over_hard = 0
     index = []
     for f in files:
-        vol = build_volume(Path(f), ws_meta, kanripo_commit)
+        vol = build_volume(Path(f), ws_meta, kanripo_commit, western)
         out = OUT_DIR / f"卷{vol['juan']:03d}.json"
         out.write_text(json.dumps(vol, ensure_ascii=False, indent=1), encoding="utf-8")
         ny = len(vol["year_records"])

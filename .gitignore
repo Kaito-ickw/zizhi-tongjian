@@ -6,6 +6,9 @@ research/*.summary.txt
 data/raw/
 data/staging/
 
+# Generated entity dictionary (large; rebuild via pipeline/build_dict.py)
+dict/*.jsonl
+
 # Secrets / env
 .env
 .env.*

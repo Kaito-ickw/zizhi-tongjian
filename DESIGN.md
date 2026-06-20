@@ -67,6 +67,10 @@
   - 補完: Wikidata(CC0)、DILA(仏教人物・地名)。Hucker 作業版は権利未確認 → 内部照合専用。
 - **同定は候補集合として扱う**: 同じ字/諡/官職名/地名が複数を指すため、表記→単一正規名にしない。王朝・生没/存続年・チャンク内共起で絞る。
 - **辞書スキーマ**: entity / names / authority_ids / source_assertions(典拠・version・**license をレコード単位で保持**)/ place_detail / office_detail + 検索用 `name_index`。詳細 `research/03-entity-dictionary-sources.md`。
+- **実装状況(2026-06-21, `pipeline/build_dict.py`)**: seed 構築済み。**人物 75,407(異名17,012)・官職 34,062・地名 13,636(対象時代)**、`name_index` **120,928 表記(曖昧17,730=候補集合の妥当性)**。出力 `dict/*.jsonl`(gitignore)+ `dict/_manifest.json`。
+  - 人物・官職は **CBDB 繁体字=本文と一致**し照合可(諸葛亮/曹操/太守 で確認)。era フィルタ動作(王安石=宋代を正しく除外)。
+  - 地名(TGAZ)は**簡体字**。型接尾辞除去で簡=繁の地名は照合可(魏/蜀/邺)。繁体字差分(洛陽/長安 等)の照合は **opencc s2t が必要 → 当環境は pip 不可で TODO**(コードは s2t-ready)。
+  - 残 TODO: 地名 s2t、年情報の無い人物の本文 NER provisional 化、辞書↔チャンクの依存インデックス連携。
 
 ## 7. 胡三省注ポリシー
 - **基本 B**(内部参照のみ、出力には出さない)。
@@ -130,3 +134,4 @@
 - 2026-06-20: `pipeline/build_staging_kb.py` で staging KB 書き出し完了(年レコード1,397 / 作業チャンク2,096 / 平均1,501字)。出力 `data/staging/kb/`。
 - 2026-06-20: 実行系を 3 種に拡張(Claude / Codex / agy=Gemini)。使い分けポリシーを §3 に記録。検証・ワンショット実装は agy 優先で Claude/Codex 予算を節約。
 - 2026-06-21: B(西暦マッピング)完了。`pipeline/western_years.py` で巻レベル西暦を干支から決定論的算出(起403BCE/終959CE一致・盡干支ミスマッチ0)。staging KB に注入。残: 巻内の年単位西暦、エンティティ辞書(C)。
+- 2026-06-21: C(エンティティ辞書 seed)完了。`pipeline/build_dict.py` で CBDB(人物75,407/官職34,062, 繁体字)+ TGAZ(地名13,636, 簡体字)→ `name_index` 120,928 表記。人物・官職は本文照合可。地名 s2t は環境制約(pip 不可)で TODO。残るは D(翻訳/レビュー実走, Codex レート回復後)。

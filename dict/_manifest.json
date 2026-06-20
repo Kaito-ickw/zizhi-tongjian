@@ -1,0 +1,31 @@
+{
+ "built_at": "2026-06-21",
+ "era_window": [
+  -450,
+  980
+ ],
+ "persons": 75407,
+ "person_aliases": 17012,
+ "offices": 34062,
+ "places_in_era": 13636,
+ "name_index_surfaces": 120928,
+ "ambiguous_surfaces": 17730,
+ "place_s2t_applied": false,
+ "sources": {
+  "cbdb": {
+   "version": "2026-06-13",
+   "license": "CC-BY-NC-SA-4.0",
+   "file": "cbdb_20260613.sqlite3"
+  },
+  "tgaz": {
+   "version": "2016-07-06",
+   "license": "CHGIS-EULA/CC-BY-NC(要確認・内部利用)",
+   "note": "簡体字。本文(繁体字)照合は opencc s2t 要(未導入なら型接尾辞除去のみ)"
+  }
+ },
+ "notes": [
+  "同定は候補集合(name_index は複数候補を返す)。単一正規名に潰さない。",
+  "人物は対象時代窓の年情報で抽出。年情報の無い人物は本文 NER で provisional 化(TODO)。",
+  "官職は王朝コード再利用のため全件を統制語彙として採用。"
+ ]
+}

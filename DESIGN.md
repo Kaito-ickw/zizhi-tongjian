@@ -72,8 +72,8 @@
 - **辞書スキーマ**: entity / names / authority_ids / source_assertions(典拠・version・**license をレコード単位で保持**)/ place_detail / office_detail + 検索用 `name_index`。詳細 `research/03-entity-dictionary-sources.md`。
 - **実装状況(2026-06-21, `pipeline/build_dict.py`)**: seed 構築済み。**人物 75,407(異名17,012)・官職 34,062・地名 13,636(対象時代)**、`name_index` **120,928 表記(曖昧17,730=候補集合の妥当性)**。出力 `dict/*.jsonl`(gitignore)+ `dict/_manifest.json`。
   - 人物・官職は **CBDB 繁体字=本文と一致**し照合可(諸葛亮/曹操/太守 で確認)。era フィルタ動作(王安石=宋代を正しく除外)。
-  - 地名(TGAZ)は**簡体字**。型接尾辞除去で簡=繁の地名は照合可(魏/蜀/邺)。繁体字差分(洛陽/長安 等)の照合は **opencc s2t が必要 → 当環境は pip 不可で TODO**(コードは s2t-ready)。
-  - 残 TODO: 地名 s2t、年情報の無い人物の本文 NER provisional 化、辞書↔チャンクの依存インデックス連携。
+  - 地名(TGAZ)は**簡体字**。型接尾辞除去で簡=繁の地名は照合可(魏/蜀/邺)。繁体字差分(洛陽/長安 等)の照合は **opencc s2t を `.venv` 経由で適用済**(`place_s2t_applied:true`、`name_index` 128,783 表記)。
+  - 残 TODO: 年情報の無い人物の本文 NER provisional 化、辞書↔チャンクの依存インデックス連携。
 
 ## 7. 胡三省注ポリシー
 - **基本 B**(内部参照のみ、出力には出さない)。
@@ -141,5 +141,6 @@
 - 2026-06-21: 翻訳パイプライン雛形 T01〜T03 完了。`pipeline/context.py`(chunk_id→コンテキストパケット: 位置/本文/胡注/エンティティ候補集合[name_index 最長一致+西暦窓フィルタ+confidence]/直前確定訳)、`pipeline/review.py`(codex exec ラッパ: 独立セッション・品質契約プロンプト・軽量スキーマ検証・timeout/retry/parse 失敗処理、--dummy 配線済)、`pipeline/translate_loop.py`(年/チャンク確定 KB スキーマ + 最大3反復ループ + 矛盾検出、pass/未収束/矛盾→halt、--selftest 合格)。手順書 `data/kb/_LOOP.md` + 空レコード `data/kb/_sample_record.json`。残: T04(縦スライス j001_y01 実走, Codex レート必要)。
 - 2026-06-21: 「1タスク=1セッション」再開システム構築。`CLAUDE.md`(自動ロード=再開プロトコル)+ `TASKS.md`(順序付きキュー)+ `pipeline/task.py`(次タスク表示)。新規セッションで「再開して」→ 次の未完了タスクを1つ完遂 → `[x]` 化 → commit → 停止。残タスクは TASKS.md(T01〜 + TODO)に列挙。
 - 2026-06-21: **T04 縦スライス実走完了**(初の実 Codex レビュー)。`data/kb/卷001/j001_y01.json` 生成。威烈王二十三年3チャンクを翻訳(Claude)→Codex独立レビュー(codex/medium・毎回新規セッション)→修正→再レビュー、各最大3反復(計9呼び出し、1回≒10〜56s)。結果: **c01=pass(3反復で収束)/ c02・c03=halt(max_iter_unconverged)**。レビュアーは反復ごとに実質的誤りを的確に検出(微子・季札の反実仮想を因果逆転していた誤訳、鬢→髭の語義誤り、鎔範への「鍛え」工程追加、卜相=占いの誤解、三失→何度も の数値希薄化 等、計18件)。クロスベンダー独立レビューの有効性を実証。
+- 2026-06-21: **T-s2t 完了**(地名 s2t)。`.venv` に opencc(PyPI `OpenCC` 1.3.1)を導入(システム python は pip 不可のため venv 採用、npm opencc-js は不採用)、`.venv/bin/python pipeline/build_dict.py` 再実行で `place_s2t_applied:true`。地名(TGAZ 簡体字)を s2t 変換した繁体字 surface を `name_index` に追加 → 表記 120,928→128,783(曖昧 17,730→21,064)。繁体字本文(長安/廣陵 等)の地名照合が可能に(§6 の TODO「地名 s2t」を解消、コードは元々 s2t-ready)。`.venv/` は gitignore。
 - 2026-06-21: **T04 で2つの方針課題が顕在化**(→ TODO `T-review-policy`、T05 着手前に要判断)。①**チャンク単独レビューが正しい巻内連続性を弾く**: 輔果=智果(c01 で別族と既出)・晋陽・兄伯魯 等、直前チャンクで確立済みの同定を「この根拠集合に無い」として forbidden 判定 → レビュアーへ直前確定訳/巻内既出エンティティも根拠提供すべき。②**敵対的フレッシュセッションが収束しにくい**: 「誤りがある前提」の独立レビュアーが毎ラウンド別の微細指摘を出す(矛盾ではなく逐次発見)ため、長文・密度の高いチャンクは3反復で clean pass に到達しにくい。c02/c03 の残存はいずれも軽微(膿/疽の特定、因果の「すると」)。pass 判定を「実質的 forbidden ゼロ」に運用するか、前ラウンド findings をレビュアーに渡して再litigationを抑止するか、max_iter を上げるか、を T05 前に決める。現状の判定ロジック(verdict=pass のみ合格)は仕様どおり維持。
 - 2026-06-21: **T-review-policy 確定・実装**(ユーザー承認)。§4 を改訂。(1) 根拠集合に **巻内連続コンテキスト(直前チャンク確定訳)** を追加=誤検出①を解消。(2) **forbidden の範囲を明確化**(翻訳上の自然な具体化は allowed)=過剰検出②を解消。(3) 再レビューに **前ラウンド findings 同梱**で再litigation抑止。(4) 合格ゲートは **verdict=pass のみ維持**(緩めない)。`review.py`(CONTRACT 追記 / `build_review_prompt` に continuity_text・prev_findings 節)+ `translate_loop.py`(run_loop が continuity_text を ctx から自動供給・prev_findings をラウンド間で伝播)に反映、selftest/dummy 合格。**効果検証**: 旧方針で halt だった j001_y01 c02(輔果=智果)・c03(膿/疽・すると)を新方針で1回再レビュー → 両方 **verdict=pass(findings 0)**。`data/kb/卷001/j001_y01.json` を **全チャンク pass・年 pass** に更新(review_history は R1-3 旧方針 + R4 新方針を監査保持、translation_full 12,757字)。T04 の縦スライスは品質基準合格で確定。

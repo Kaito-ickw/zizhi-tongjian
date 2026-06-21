@@ -59,7 +59,8 @@
 - 課題②: 「誤りがある前提」の独立セッションが毎回新しい微細指摘を出し3反復で収束しにくい → 案: (a) 前ラウンドの findings をレビュアーに提示し再litigationを抑止 / (b) severity を厳格に運用し forbidden の実質性で pass 判定 / (c) max_iter を長文チャンクで引上げ / (d) 軽微指摘は style 扱い。
 - Done: 方針を DESIGN §4 に確定追記 + review.py/translate_loop.py 反映。
 
-## [ ] T-s2t — 地名 s2t 適用(opencc 導入後 `build_dict.py` 再実行) [Claude]
+## [x] T-s2t — 地名 s2t 適用(opencc 導入後 `build_dict.py` 再実行) [Claude]
+結果: `python3 -m venv .venv` + opencc(PyPI `OpenCC` 1.3.1)を `.venv` に導入(システム python は pip 不可のため venv 採用、npm opencc-js は不採用)。`.venv/bin/python pipeline/build_dict.py` 再実行で `place_s2t_applied:true`。地名の繁体字索引が生成され `name_index_surfaces` 120,928→128,783、`ambiguous_surfaces` 17,730→21,064。繁体字本文との照合を確認(長安/廣陵 等の繁体字 surface が place 候補にヒット、簡体字 surface も保持)。`.gitignore` に `.venv/` 追加。再現手順は `.venv/bin/python pipeline/build_dict.py`。
 - pip 不可のため venv か npm `opencc-js` か。導入後 `place_s2t_applied:true` を確認。
 
 ## [ ] T-year — 巻内の年単位西暦(在位表ベース) [agy/Claude]

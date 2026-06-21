@@ -8,9 +8,9 @@
  "person_aliases": 17012,
  "offices": 34062,
  "places_in_era": 13636,
- "name_index_surfaces": 120928,
- "ambiguous_surfaces": 17730,
- "place_s2t_applied": false,
+ "name_index_surfaces": 128783,
+ "ambiguous_surfaces": 21064,
+ "place_s2t_applied": true,
  "sources": {
   "cbdb": {
    "version": "2026-06-13",

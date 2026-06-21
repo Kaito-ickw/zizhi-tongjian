@@ -53,7 +53,8 @@
 ---
 
 ## TODO(順不同・随時着手可)
-## [ ] T-view — 閲覧ビュー生成 `pipeline/build_view.py`(最小構成・巻1) [Codex] ★通読開始の前提・次の優先
+## [x] T-view — 閲覧ビュー生成 `pipeline/build_view.py`(最小構成・巻1) [Codex]
+結果: 実装を Codex 委譲(`codex exec -s workspace-write`、ユーザー指示 §3)。`pipeline/build_view.py`(stdlib のみ・冪等・決定論的)が `data/kb/卷NNN/*.json`(status=pass)→ `docs/卷NNN/jNNN_yNN.md` を生成。各年=オリエン(巻/紀/年号/巻範囲西暦+年単位西暦は T-year 待ちで未確定明記)+ 訳文本文(`translation_full` 無改変)+ `<details>` 原文(`⟦nK⟧`/`'''`/行頭`:`/丸数字を清掃)+ 出典フッタ + 前後年/巻indexナビ。マスター+巻別 README も生成。巻1の確定8年(y01–y08)= 10ファイル出力。Claude 独立検証: 本文全件無改変・端ナビ正・**2回実行でハッシュ一致(冪等)**。`docs/` は tracked(§11 甲)。entity リンクは延期(§11、無名人物密集巻で要否判定)。
 - Goal: `data/kb/卷NNN/*.json`(status=pass)→ `docs/卷NNN/jNNN_yNN.md` を生成(DESIGN §11)。各ファイル=① 冒頭オリエンテーション(巻/年号/西暦/全体内位置)② 訳文本文(`〔注:…〕` インライン・臣光曰ブロック)③ ナビ(前年/次年 + 巻インデックスへ戻る)。原文は `<details>` で畳む。マスター+巻別インデックス生成。レンダラは冪等。`docs/` は **tracked**(§11 甲=生成データ gitignore の例外)。
 - Done: `python3 pipeline/build_view.py` で巻1の確定年(現状 y01–y08)が `docs/卷001/` に出力され、GitHub 上で前後リンク・インデックスを辿って通読できる。entity リンクは無し(§11 で延期)。
 - Notes: 実装は **Codex 委譲**(ユーザー指示 §3)。確定済み(pass)年のみ出力。entity リンクは「無名人物密集巻を1つ読んでから」判定(§11 サンプリング地雷)。

@@ -1,0 +1,64 @@
+{
+ "id": "j001_y06",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "四年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y06_c01",
+   "source_text": "四年⟦n176⟧\n①楚圍鄭。鄭人殺其相駟子陽。⟦n177⟧",
+   "hu_notes": [
+    {
+     "idx": 176,
+     "text": "（癸未、前三九八）"
+    },
+    {
+     "idx": 177,
+     "text": "鄭穆公之子騑，字子駟；古者以王父之字爲氏，子陽其後也。相，息亮翻。騑，芳菲翻。"
+    }
+   ],
+   "translation": "安王四年〔注:癸未(きび)の年、紀元前三九八年〕。\n\n楚が鄭を包囲した。鄭の人々は、自国の宰相である駟子陽(し・しよう)を殺した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-21T10:39:19"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王四年〔注:癸未(きび)の年、紀元前三九八年〕。\n\n楚が鄭を包囲した。鄭の人々は、自国の宰相である駟子陽(し・しよう)を殺した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-21T10:39:19",
+ "review_policy": "R1=Codex/low 独立レビュー。y07 のみ R1 で 2件 forbidden(『亡骸にすがって』『みずから死んだ』=本文・胡注に無い行為/死因の付加)→修正し R2(別独立セッション)で pass。他6年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言のみ)準拠。"
+}

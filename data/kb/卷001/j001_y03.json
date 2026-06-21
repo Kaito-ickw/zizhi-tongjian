@@ -1,0 +1,68 @@
+{
+ "id": "j001_y03",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "元年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y03_c01",
+   "source_text": "'''安王'''⟦n167⟧\n元年⟦n168⟧\n①秦伐魏，至陽孤。⟦n169⟧",
+   "hu_notes": [
+    {
+     "idx": 167,
+     "text": "《諡法》：好和不爭曰安。"
+    },
+    {
+     "idx": 168,
+     "text": "（庚辰、前四○一）"
+    },
+    {
+     "idx": 169,
+     "text": "周孝王邑非子於秦。徐廣曰︰今隴西縣秦亭是也。《括地志》曰︰秦州清水縣本名秦。《十三州志》曰︰秦亭，秦谷是也。至襄公取周地，穆公霸西戎，日以強大。是年，秦簡公之十四年也。自非子至簡公二十八世。「陽孤」，《史記》作「陽狐」。【章︰乙十一行本正作「狐」。】《正義》引《括地志》曰︰陽狐郭在魏州元城縣東北三十里。余按此時西河之外皆爲魏境，若秦兵至元城，則是越魏都安邑而東矣。《水經註》︰河東垣縣有陽壺城。《九域志》︰絳州有陽壺城。識之以廣異聞，且俟知者。"
+    }
+   ],
+   "translation": "安王元年〔注:庚辰(こうしん)の年、紀元前四〇一年〕。\n\n秦が魏を攻め、陽孤(ようこ)〔注:『史記』では「陽狐」に作る〕まで攻め込んだ。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-21T10:39:19"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王元年〔注:庚辰(こうしん)の年、紀元前四〇一年〕。\n\n秦が魏を攻め、陽孤(ようこ)〔注:『史記』では「陽狐」に作る〕まで攻め込んだ。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-21T10:39:19",
+ "review_policy": "R1=Codex/low 独立レビュー。y07 のみ R1 で 2件 forbidden(『亡骸にすがって』『みずから死んだ』=本文・胡注に無い行為/死因の付加)→修正し R2(別独立セッション)で pass。他6年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言のみ)準拠。"
+}

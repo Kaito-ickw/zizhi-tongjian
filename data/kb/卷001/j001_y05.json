@@ -1,0 +1,64 @@
+{
+ "id": "j001_y05",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "三年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y05_c01",
+   "source_text": "三年⟦n174⟧\n①王子定奔晉。\n②虢山崩，壅河。⟦n175⟧",
+   "hu_notes": [
+    {
+     "idx": 174,
+     "text": "（壬午、前三九九）"
+    },
+    {
+     "idx": 175,
+     "text": "徐廣曰︰虢山在陝。裴駰曰︰弘農陝縣，故虢國。北虢在大陽，東虢在滎陽。《括地志》曰︰虢山在陜州陝縣，西臨黃河；今臨河有岡阜，似是頹山之餘。《水經註》曰︰陜城西北帶河，水湧起方數十丈。父老云︰石虎載銅翁仲至此沈沒，水所以湧。洪河巨瀆，宜不爲金狄梗流，蓋魏文侯時虢山崩壅河所致耳。陝，失冉翻。"
+    }
+   ],
+   "translation": "安王三年〔注:壬午(じんご)の年、紀元前三九九年〕。\n\n王子の定(てい)が晋へ亡命した。\n\n虢山(かくざん)が崩れ、その土砂が黄河を堰き止めた。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-21T10:39:19"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王三年〔注:壬午(じんご)の年、紀元前三九九年〕。\n\n王子の定(てい)が晋へ亡命した。\n\n虢山(かくざん)が崩れ、その土砂が黄河を堰き止めた。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-21T10:39:19",
+ "review_policy": "R1=Codex/low 独立レビュー。y07 のみ R1 で 2件 forbidden(『亡骸にすがって』『みずから死んだ』=本文・胡注に無い行為/死因の付加)→修正し R2(別独立セッション)で pass。他6年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言のみ)準拠。"
+}

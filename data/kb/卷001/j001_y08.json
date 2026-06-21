@@ -1,0 +1,72 @@
+{
+ "id": "j001_y08",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "六年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y08_c01",
+   "source_text": "六年⟦n187⟧\n①鄭駟子陽之黨弑繻公，⟦n188⟧而立其弟乙，⟦n189⟧是爲康公。\n②宋悼公薨，子休公田立。⟦n190⟧",
+   "hu_notes": [
+    {
+     "idx": 187,
+     "text": "（乙酉、前三九六）"
+    },
+    {
+     "idx": 188,
+     "text": "繻者，《諡法》所不載。《史記註》︰「繻」，或作「繚」。繻，詢趨翻。"
+    },
+    {
+     "idx": 189,
+     "text": "《白虎通》曰︰弟，悌也，心順、行篤也。行，下孟翻。"
+    },
+    {
+     "idx": 190,
+     "text": "武王封微子啓於宋，唐宋州之睢陽縣是也。自微子二十七世至悼公，名購由。休，亦《諡法》所不載。"
+    }
+   ],
+   "translation": "安王六年〔注:乙酉(いつゆう)の年、紀元前三九六年〕。\n\n鄭では、駟子陽(し・しよう)の一派が繻公(じゅこう)を弑し、その弟の乙(おつ)を立てた。これが康公(こうこう)である。\n\n宋の悼公が薨じ、その子の休公田(きゅうこう・でん)が立った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-21T10:39:19"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王六年〔注:乙酉(いつゆう)の年、紀元前三九六年〕。\n\n鄭では、駟子陽(し・しよう)の一派が繻公(じゅこう)を弑し、その弟の乙(おつ)を立てた。これが康公(こうこう)である。\n\n宋の悼公が薨じ、その子の休公田(きゅうこう・でん)が立った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-21T10:39:19",
+ "review_policy": "R1=Codex/low 独立レビュー。y07 のみ R1 で 2件 forbidden(『亡骸にすがって』『みずから死んだ』=本文・胡注に無い行為/死因の付加)→修正し R2(別独立セッション)で pass。他6年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言のみ)準拠。"
+}

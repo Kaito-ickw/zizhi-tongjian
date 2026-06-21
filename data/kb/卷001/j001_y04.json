@@ -1,0 +1,72 @@
+{
+ "id": "j001_y04",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "二年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y04_c01",
+   "source_text": "二年⟦n170⟧\n①魏、韓、趙伐楚，至桑丘。⟦n171⟧\n②鄭圍韓陽翟。⟦n172⟧\n③韓景侯薨，子烈侯取立。\n④趙烈侯薨，國人立其弟武侯。\n⑤秦簡公薨，子惠公立。⟦n173⟧",
+   "hu_notes": [
+    {
+     "idx": 170,
+     "text": "（辛巳、前四○○）"
+    },
+    {
+     "idx": 171,
+     "text": "《水經註》︰澺水自葛陂東南逕新蔡縣故城東，而東南流注于汝水；又東南逕下桑里，左迆爲橫塘陂。《史記》作「乘丘」。《正義》︰《地理志》，乘丘故城在兗州瑕丘縣西北三十五里。當從之。"
+    },
+    {
+     "idx": 172,
+     "text": "周宣王封其弟友於鄭。杜預《世族譜》曰︰封於咸林，今京兆鄭邑是也。幽王無道，友徙其人於虢、鄶之間，遂有其地，今河南新鄭是也。友，諡桓公。是年，鄭繻公駘之二十三年。自桓公至繻公二十二世。班《志》，陽翟縣屬潁川郡。《索隱》曰︰翟，音狄，溫公《類篇》音萇伯切。繻，詢趨翻。駘，堂來翻。"
+    },
+    {
+     "idx": 173,
+     "text": "《諡法》︰愛民好與曰惠。"
+    }
+   ],
+   "translation": "安王二年〔注:辛巳(しんし)の年、紀元前四〇〇年〕。\n\nこの年、魏・韓・趙が連合して楚を攻め、桑丘(そうきゅう)に至った。\n\n鄭が韓の陽翟(ようてき)を包囲した。\n\n韓の景侯が薨じ、その子の烈侯取(れつこう・しゅ)が立った。\n\n趙の烈侯が薨じ、趙の国人はその弟の武侯を立てた。\n\n秦の簡公が薨じ、その子の惠公が立った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-21T10:39:19"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王二年〔注:辛巳(しんし)の年、紀元前四〇〇年〕。\n\nこの年、魏・韓・趙が連合して楚を攻め、桑丘(そうきゅう)に至った。\n\n鄭が韓の陽翟(ようてき)を包囲した。\n\n韓の景侯が薨じ、その子の烈侯取(れつこう・しゅ)が立った。\n\n趙の烈侯が薨じ、趙の国人はその弟の武侯を立てた。\n\n秦の簡公が薨じ、その子の惠公が立った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-21T10:39:19",
+ "review_policy": "R1=Codex/low 独立レビュー。y07 のみ R1 で 2件 forbidden(『亡骸にすがって』『みずから死んだ』=本文・胡注に無い行為/死因の付加)→修正し R2(別独立セッション)で pass。他6年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言のみ)準拠。"
+}

@@ -72,7 +72,8 @@
 ## [x] T-year — 巻内の年単位西暦(在位表ベース) [Codex実装/Claude検証]
 結果: 実装を **Codex 委譲**(メモリ方針)。`pipeline/year_western.py`(stdlib・決定論的・冪等・LLM不使用)が `data/kb/卷NNN/jNNN_yMM.json` の `western_year` を埋める。一次根拠は husanxing **年頭注の `（干支、前NNN）`**(例 `（戊寅、前四○三）`)。位取り漢数字パーサ `cn_positional2int` を追加、干支算出/西暦変換は `western_years.py` を再利用。**多重検証**: 干支×astro / 巻範囲(`volume_years.json`) / 同巻連番+1 / ルーラー別在位整合 → 全件 0 違反。在位表(マニフェスト `manifests/year_western.json`)= 威烈王元年 425 BCE・安王元年 401 BCE。巻1の8年= 403→396 BCE。Claude 独立検証: 差分は western_year のみ(null→値8件)・**2回実行でバイト一致(冪等)**・**独立アンカー(1984=甲子)再計算+胡注literal**と全8件一致。`build_view.py` 再生成で docs に年単位西暦反映(「未確定」注除去)。
 
-## [ ] T-xcheck — Wikisource × Kanripo クロスチェック [agy/Claude]
+## [x] T-xcheck — Wikisource × Kanripo クロスチェック [agy/Claude]
+結果: 実装を **Codex 委譲**(メモリ方針、検証済みロジックを精密仕様化)。`pipeline/xcheck.py`(stdlib+opencc・決定論・冪等・LLM不使用)が全294巻で Kanripo(原文層)× 維基文庫(セグメント層)の**本文・胡注を別系列で照合**。正規化=CJK統合漢字のみ抽出+OpenCC `t2s` fold(整合判定のみ、レポートは原字)。Kanripo 双行夾注は de-interleave 案B(グループ毎 右半+左半、案A の R全→L全は ratio 0.48 で誤りと実測棄却)。op 分類=front_matter(巻頭ボイラープレート/巻タイトル、欠落集計除外)/ omission(≥6字 delete/insert)/ variant。出力3種: `pipeline/manifests/xcheck.json`(tracked サマリ)/ `research/T-xcheck-report.md`(tracked 人間向け)/ `data/staging/xcheck/卷NNN.json`(gitignore 詳細)。**集計**: 平均 body ratio 0.971 / notes 0.951、本文欠落=維基39・Kanripo21、注欠落=維基42・Kanripo2536、異読 本文67,615/注62,686、要レビュー1巻(巻158 LOW_NOTES 0.815)。**実質的発見**: ①維基側に脱落した実本文(例 巻13「吕禄吕產欲作亂…」、巻2「因民而教者不勞而成功」)。②維基の注層に**後世校勘記**(「章十二行本…乙十一行本同孔本同」=T-jiankan 対象)と**現代編集注**(巻158「山西省右玉县」等の現代地名・簡体字)が混入=Kanripo にない(notes_omission_kanripo の主因)。③OCR/異読(巻1 注 `窟`→`窋`(不窋)、`安`→`其`(音其冀翻))。Claude 独立検証: 巻1がプロトタイプ値(body 0.9849/notes 0.9618)と一致、front_matter 改善で本文欠落 324→39(真の欠落のみ)、**同 --date で2回実行しバイト一致(冪等)**。再現: `.venv/bin/python pipeline/xcheck.py --all --date YYYY-MM-DD`。
 - 同一巻の本文/注を両ソースで突き合わせ、欠落・異読を検出してレポート。
 
 ## [ ] T-jiankan — 後世校勘レイヤ判別 [Claude]

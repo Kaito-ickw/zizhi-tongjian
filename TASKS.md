@@ -38,7 +38,8 @@
 - 対象: j001_y02〜y08(7年・各1チャンク、全て短文)。context→翻訳(Claude)→Codexレビュー→修正→再レビュー(最大3反復)。
 - Done: `data/kb/卷001/j001_y02.json`〜`j001_y08.json`(各 pass、halt なら年アラート)。
 
-### [ ] T05b — 卷001 y09–y14 翻訳→レビュー [Codex]
+### [x] T05b — 卷001 y09–y14 翻訳→レビュー [Codex]
+結果: j001_y09〜y14(6年・各1チャンク)を context→翻訳(Claude)→Codex/low 独立レビュー(連続性根拠=直前年の確定訳)で実走。**全6年 pass**。5年は R1 で pass、y13 のみ R1 で 1件 forbidden(「会盟」=原文『會』/胡注『期日・場所を定めた会見』に無い盟約の含意)を検出→「会合」に修正し R2(別独立セッション・前ラウンド findings 同梱)で pass。Codex 呼び出し計7回。最長 y14(695字、武侯と吳起の「在德不在險」問答+田文との功績比べ+公叔の離間策→吳起の楚亡命)も R1 pass。`year_western.py` 再実行で western_year を年頭注から決定論的充填(394/393/391/390/389/387 BCE、全件 ganzhi・range・**在位整合=0違反**)。`build_view.py` 再生成で docs 反映(冪等確認)。**飛び年検出**: 七年/十年/十四年(無記載年)が year_western の sequence-check(astro+1 前提)で誤検出3件 → T-year-seqcheck に分離。
 - 対象: j001_y09〜y14(6年・各1チャンク、y14=695字が大)。
 - Done: `data/kb/卷001/j001_y09.json`〜`j001_y14.json`。
 
@@ -78,3 +79,8 @@
 
 ## [ ] T-jiankan — 後世校勘レイヤ判別 [Claude]
 - 胡注内/本文中の後世校勘(「章：十二行本…」「孔本同」等)を分類し翻訳対象外メタへ。
+
+## [ ] T-year-seqcheck — year_western の連番検証を飛び年対応に修正 [Codex]
+- 問題: `pipeline/year_western.py` の sequence-check(L149 `current.astro != previous.astro + 1`)が、資治通鑑が無記載年を飛ばす場合(例 卷001 七年/十年/十四年=395/392/388 BCE)を誤検出し exit 1。western_year 自体は ganzhi×astro / 巻範囲 / **在位整合** で別途正しさが保証済み(T05b で実証)。
+- 修正方針: 連番違反は「同一 ruler 内で `astro差 ≠ 年号差`」または「astro が非単調(後退/重複)」のときのみとする。正当な飛び年(年号差=astro差>0)は違反としない。warnings に飛び年を `year_gap`(情報)として残すのは可。
+- Done: 卷001(14年)で sequence_violation_count=0・exit 0、かつ既存 ganzhi/range/accession 検証は不変。冪等(2回実行でバイト一致)。

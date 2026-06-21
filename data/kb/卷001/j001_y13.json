@@ -1,0 +1,84 @@
+{
+ "id": "j001_y13",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "十三年",
+ "era": null,
+ "western_year": "389 BCE",
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y13_c01",
+   "source_text": "十三年⟦n203⟧\n①秦侵晉。\n②齊田和會魏文侯、楚人、衞人于濁澤，⟦n204⟧求爲諸侯。魏文侯爲之請於王及諸侯，王許之。⟦n205⟧",
+   "hu_notes": [
+    {
+     "idx": 203,
+     "text": "（壬辰、前三八九）"
+    },
+    {
+     "idx": 204,
+     "text": "康曰︰濁，水名；《漢志》︰濁水出齊郡廣縣嬀山。余謂康說誤矣。徐廣《史記註》曰︰長社有濁澤。《水經註》曰︰皇陂水出胡城西北。胡城，潁陰之狐人亭也。皇陂，古長社之濁澤也。《記》︰諸侯相見於郤地曰會。孔穎達曰︰諸侯未及期而相見曰遇。會者，謂及期之禮，旣及期，又至所期之地。"
+    },
+    {
+     "idx": 205,
+     "text": "爲之之爲，于僞翻。"
+    }
+   ],
+   "translation": "安王十三年〔注:壬辰(じんしん)の年、紀元前三八九年〕。\n\n秦が晋に侵攻した。\n\n斉の田和は、魏の文侯、それに楚・衛の使者と濁沢(だくたく)で会合し、自分を正式な諸侯に取り立ててほしいと求めた。魏の文侯は田和のために、周王および諸侯にそのことを願い出て、周王はこれを許した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "原文にない行為の追加",
+       "source_span": "會魏文侯、楚人、衞人于濁澤",
+       "translated_span": "魏の文侯、それに楚・衛の使者と濁沢(だくたく)で会盟し",
+       "issue": "原文の「會」は会合を意味し、胡注も期日・場所を定めた会見の礼として説明している。「会盟」は盟約を結ぶ行為まで含意し、根拠集合にない事実を追加している。",
+       "suggestion": "「魏の文侯、それに楚・衛の使者と濁沢で会合し」などとする。"
+      }
+     ],
+     "ts": "2026-06-22T00:01:45"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T00:01:45"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王十三年〔注:壬辰(じんしん)の年、紀元前三八九年〕。\n\n秦が晋に侵攻した。\n\n斉の田和は、魏の文侯、それに楚・衛の使者と濁沢(だくたく)で会合し、自分を正式な諸侯に取り立ててほしいと求めた。魏の文侯は田和のために、周王および諸侯にそのことを願い出て、周王はこれを許した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T00:01:45",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳)。y13 のみ R1 で 1件 forbidden(「会盟」=原文『會』/胡注『期日・場所を定めた会見』に無い盟約の含意)→「会合」に修正しR2(別独立セッション・前ラウンド findings 同梱)で pass。他5年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言)準拠。"
+}

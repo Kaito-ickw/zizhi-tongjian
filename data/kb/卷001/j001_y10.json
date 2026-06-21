@@ -1,0 +1,64 @@
+{
+ "id": "j001_y10",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "九年",
+ "era": null,
+ "western_year": "393 BCE",
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y10_c01",
+   "source_text": "九年⟦n194⟧\n①魏伐鄭。\n②晉烈公薨，子孝公傾立。⟦n195⟧",
+   "hu_notes": [
+    {
+     "idx": 194,
+     "text": "（戊子、前三九三）"
+    },
+    {
+     "idx": 195,
+     "text": "周成王封弟叔虞於唐。《括地志》曰︰故唐城在幷州晉陽縣北二里，堯所築也。《都城記》曰︰唐叔虞之子燮父徙居晉水旁，今幷州理故唐城，卽燮父初徙之處；其城南半入州城中。《毛詩譜》曰︰燮父以堯墟南有晉水，改曰晉侯。自唐叔至烈公三十七世。烈公，名止。《諡法》︰慈惠愛親曰孝。"
+    }
+   ],
+   "translation": "安王九年〔注:戊子(ぼし)の年、紀元前三九三年〕。\n\n魏が鄭を攻めた。\n\n晋の烈公が薨じ、その子の孝公傾(こうこう・けい)が立った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T00:01:45"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王九年〔注:戊子(ぼし)の年、紀元前三九三年〕。\n\n魏が鄭を攻めた。\n\n晋の烈公が薨じ、その子の孝公傾(こうこう・けい)が立った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T00:01:45",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳)。y13 のみ R1 で 1件 forbidden(「会盟」=原文『會』/胡注『期日・場所を定めた会見』に無い盟約の含意)→「会合」に修正しR2(別独立セッション・前ラウンド findings 同梱)で pass。他5年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言)準拠。"
+}

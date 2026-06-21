@@ -1,0 +1,72 @@
+{
+ "id": "j001_y12",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "十二年",
+ "era": null,
+ "western_year": "390 BCE",
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y12_c01",
+   "source_text": "十二年⟦n199⟧\n①秦、晉戰于武城。⟦n200⟧\n②齊伐魏，取襄陽。⟦n201⟧\n③魯敗齊師于平陸。⟦n202⟧",
+   "hu_notes": [
+    {
+     "idx": 199,
+     "text": "（辛卯、前三九○）"
+    },
+    {
+     "idx": 200,
+     "text": "此非魯之武城。《左傳》︰晉陰飴甥會秦伯，盟于王城。杜預曰︰馮翊臨晉縣東有王城，今名武鄕。《括地志》︰故武城，一名武平城，在華州鄭縣東北十三里。"
+    },
+    {
+     "idx": 201,
+     "text": "「陽」，當作「陵」。徐廣曰︰今之南平陽也。余據《晉志》，南平陽縣屬山陽郡。班《志》，陳留郡有襄邑縣。師古曰︰圈稱云︰襄邑，宋地，本承匡襄陵鄕也，宋襄公所葬，故曰襄陵。秦始皇以承匡卑濕，徙縣襄陵，因曰襄邑。"
+    },
+    {
+     "idx": 202,
+     "text": "班《志》，東平國有東平陸縣，戰國時之平陸也。《史記正義》曰︰平陸，兗州縣，卽古厥國。宋白曰︰鄆州中都縣，漢爲平陸縣，《史記》「魯敗齊師于平陸」是也。敗，補邁翻。"
+    }
+   ],
+   "translation": "安王十二年〔注:辛卯(しんぼう)の年、紀元前三九〇年〕。\n\n秦と晋が武城(ぶじょう)で戦った。\n\n斉が魏を攻め、襄陽(じょうよう)を奪い取った〔注:「襄陽」は「襄陵」の誤りとされる〕。\n\n魯が斉の軍を平陸(へいりく)で破った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T00:01:45"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王十二年〔注:辛卯(しんぼう)の年、紀元前三九〇年〕。\n\n秦と晋が武城(ぶじょう)で戦った。\n\n斉が魏を攻め、襄陽(じょうよう)を奪い取った〔注:「襄陽」は「襄陵」の誤りとされる〕。\n\n魯が斉の軍を平陸(へいりく)で破った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T00:01:45",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳)。y13 のみ R1 で 1件 forbidden(「会盟」=原文『會』/胡注『期日・場所を定めた会見』に無い盟約の含意)→「会合」に修正しR2(別独立セッション・前ラウンド findings 同梱)で pass。他5年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言)準拠。"
+}

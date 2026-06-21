@@ -53,6 +53,11 @@
 ---
 
 ## TODO(順不同・随時着手可)
+## [ ] T-view — 閲覧ビュー生成 `pipeline/build_view.py`(最小構成・巻1) [Codex] ★通読開始の前提・次の優先
+- Goal: `data/kb/卷NNN/*.json`(status=pass)→ `docs/卷NNN/jNNN_yNN.md` を生成(DESIGN §11)。各ファイル=① 冒頭オリエンテーション(巻/年号/西暦/全体内位置)② 訳文本文(`〔注:…〕` インライン・臣光曰ブロック)③ ナビ(前年/次年 + 巻インデックスへ戻る)。原文は `<details>` で畳む。マスター+巻別インデックス生成。レンダラは冪等。`docs/` は **tracked**(§11 甲=生成データ gitignore の例外)。
+- Done: `python3 pipeline/build_view.py` で巻1の確定年(現状 y01–y08)が `docs/卷001/` に出力され、GitHub 上で前後リンク・インデックスを辿って通読できる。entity リンクは無し(§11 で延期)。
+- Notes: 実装は **Codex 委譲**(ユーザー指示 §3)。確定済み(pass)年のみ出力。entity リンクは「無名人物密集巻を1つ読んでから」判定(§11 サンプリング地雷)。
+
 ## [x] T-review-policy — レビュー合格判定の方針見直し(T04 知見、T05 の前提) [Claude/ユーザー承認済]
 結果: §4 改訂 + 実装。(1) 根拠集合に巻内連続コンテキスト(直前チャンク確定訳=`continuity_text`)を追加し誤検出①を解消。(2) forbidden を「根拠集合に無い事実・因果・心理・数値・発言の新規追加」に限定し、翻訳上の自然な具体化は allowed と明記して過剰検出②を解消。(3) 再レビューに前ラウンド findings(`prev_findings`)を同梱し再litigation抑止。(4) 合格ゲートは verdict=pass のみ維持。`review.py`/`translate_loop.py` 反映、selftest/dummy 合格。効果検証: 旧方針 halt の j001_y01 c02/c03 を新方針で再レビュー→両方 pass。`data/kb/卷001/j001_y01.json` を全チャンク pass・年 pass に更新(R1-3旧+R4新を監査保持)。
 - 課題①: チャンク単独レビューが正しい巻内連続性(輔果=智果・晋陽・兄伯魯)を「根拠集合外」と弾く → レビュアーへ**直前チャンク確定訳/巻内既出エンティティ**も根拠として渡すか検討。

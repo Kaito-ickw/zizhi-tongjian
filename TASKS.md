@@ -69,8 +69,8 @@
 結果: `python3 -m venv .venv` + opencc(PyPI `OpenCC` 1.3.1)を `.venv` に導入(システム python は pip 不可のため venv 採用、npm opencc-js は不採用)。`.venv/bin/python pipeline/build_dict.py` 再実行で `place_s2t_applied:true`。地名の繁体字索引が生成され `name_index_surfaces` 120,928→128,783、`ambiguous_surfaces` 17,730→21,064。繁体字本文との照合を確認(長安/廣陵 等の繁体字 surface が place 候補にヒット、簡体字 surface も保持)。`.gitignore` に `.venv/` 追加。再現手順は `.venv/bin/python pipeline/build_dict.py`。
 - pip 不可のため venv か npm `opencc-js` か。導入後 `place_s2t_applied:true` を確認。
 
-## [ ] T-year — 巻内の年単位西暦(在位表ベース) [agy/Claude]
-- 元号・ルーラー別在位開始年表を整備し year_record.western_year を埋める。数値=要検証。
+## [x] T-year — 巻内の年単位西暦(在位表ベース) [Codex実装/Claude検証]
+結果: 実装を **Codex 委譲**(メモリ方針)。`pipeline/year_western.py`(stdlib・決定論的・冪等・LLM不使用)が `data/kb/卷NNN/jNNN_yMM.json` の `western_year` を埋める。一次根拠は husanxing **年頭注の `（干支、前NNN）`**(例 `（戊寅、前四○三）`)。位取り漢数字パーサ `cn_positional2int` を追加、干支算出/西暦変換は `western_years.py` を再利用。**多重検証**: 干支×astro / 巻範囲(`volume_years.json`) / 同巻連番+1 / ルーラー別在位整合 → 全件 0 違反。在位表(マニフェスト `manifests/year_western.json`)= 威烈王元年 425 BCE・安王元年 401 BCE。巻1の8年= 403→396 BCE。Claude 独立検証: 差分は western_year のみ(null→値8件)・**2回実行でバイト一致(冪等)**・**独立アンカー(1984=甲子)再計算+胡注literal**と全8件一致。`build_view.py` 再生成で docs に年単位西暦反映(「未確定」注除去)。
 
 ## [ ] T-xcheck — Wikisource × Kanripo クロスチェック [agy/Claude]
 - 同一巻の本文/注を両ソースで突き合わせ、欠落・異読を検出してレポート。

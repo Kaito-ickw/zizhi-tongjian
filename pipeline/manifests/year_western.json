@@ -1,0 +1,111 @@
+{
+ "method": "husanxing 年頭注（干支・西暦）を一次根拠に western_year を決定。干支×astro / 巻範囲 / 連番 / 在位整合 で多重検証(LLM不使用)",
+ "anchor": {
+  "juan": 1,
+  "first_year": "403 BCE",
+  "ganzhi": "戊寅"
+ },
+ "records": 8,
+ "ganzhi_mismatch_count": 0,
+ "range_violation_count": 0,
+ "sequence_violation_count": 0,
+ "accession_inconsistency_count": 0,
+ "interpolated_count": 0,
+ "ruler_accession": [
+  {
+   "ruler": "威烈王",
+   "accession_western": "425 BCE",
+   "accession_astro": -424,
+   "years": [
+    {
+     "id": "j001_y01",
+     "juan": 1,
+     "year_label": "二十三年",
+     "ganzhi": "戊寅",
+     "western_year": "403 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y02",
+     "juan": 1,
+     "year_label": "二十四年",
+     "ganzhi": "己卯",
+     "western_year": "402 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    }
+   ]
+  },
+  {
+   "ruler": "安王",
+   "accession_western": "401 BCE",
+   "accession_astro": -400,
+   "years": [
+    {
+     "id": "j001_y03",
+     "juan": 1,
+     "year_label": "元年",
+     "ganzhi": "庚辰",
+     "western_year": "401 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y04",
+     "juan": 1,
+     "year_label": "二年",
+     "ganzhi": "辛巳",
+     "western_year": "400 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y05",
+     "juan": 1,
+     "year_label": "三年",
+     "ganzhi": "壬午",
+     "western_year": "399 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y06",
+     "juan": 1,
+     "year_label": "四年",
+     "ganzhi": "癸未",
+     "western_year": "398 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y07",
+     "juan": 1,
+     "year_label": "五年",
+     "ganzhi": "甲申",
+     "western_year": "397 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y08",
+     "juan": 1,
+     "year_label": "六年",
+     "ganzhi": "乙酉",
+     "western_year": "396 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

@@ -127,22 +127,31 @@ def detect_contradiction(prev_findings: list[dict], cur_findings: list[dict]) ->
 
 # ---- レビューループ本体(雛形)---------------------------------------------
 def run_loop(chunk_id: str, translate_fn, review_fn=None, *, max_iter: int = 3,
-             **review_kwargs) -> dict:
+             continuity_text: str | None = None, **review_kwargs) -> dict:
     """1 作業チャンクを 翻訳→レビュー→修正→再レビュー で確定/停止させる。
 
     - translate_fn(ctx, prev_findings, prev_translation) -> str: 翻訳本体(Claude が注入)。
-    - review_fn(source_text, hu_notes, translation) -> {verdict, findings, _meta}:
+    - review_fn(source_text, hu_notes, translation, prev_findings) -> {verdict, findings, _meta}:
       省略時は review.run_review(**review_kwargs) を独立セッションで呼ぶ。
+    - continuity_text: 巻内連続性の根拠(直前チャンクの確定訳)。省略時は ctx の previous_translation
+      を用いる。レビュアーの誤検出(既出の人物同定・地名を「根拠外」と弾く)を防ぐ(T-review-policy)。
     返り値 = 確定チャンクレコード(empty_chunk_record と同形 + 確定 translation/status)。
     """
     if translate_fn is None:
         raise NotImplementedError(
             "translate_fn 未注入。翻訳本体は Claude がセッション内で供給する(本モジュールは雛形)。")
-    if review_fn is None:
-        def review_fn(src, notes, tr):
-            return review.run_review(src, notes, tr, **review_kwargs)
 
     ctx = context.build_context(chunk_id)
+    if continuity_text is None:
+        pt = ctx.get("previous_translation")
+        if isinstance(pt, dict):
+            continuity_text = pt.get("translation")
+
+    if review_fn is None:
+        def review_fn(src, notes, tr, prev_findings):
+            return review.run_review(src, notes, tr, continuity_text=continuity_text,
+                                     prev_findings=prev_findings, **review_kwargs)
+
     chunk = {"chunk_id": chunk_id, "text": ctx["text"], "note_ids": [n["idx"] for n in ctx["notes"]]}
     notes_by_idx = {n["idx"]: n["text"] for n in ctx["notes"]}
     rec = empty_chunk_record(chunk, notes_by_idx)
@@ -155,7 +164,7 @@ def run_loop(chunk_id: str, translate_fn, review_fn=None, *, max_iter: int = 3,
     translation = None
     for rnd in range(1, max_iter + 1):
         translation = translate_fn(ctx, prev_findings, translation)
-        rv = review_fn(source_text, hu_notes, translation)
+        rv = review_fn(source_text, hu_notes, translation, prev_findings)
         rec["iterations"] = rnd
         rec["review_history"].append({
             "round": rnd,
@@ -247,7 +256,7 @@ def _selftest() -> int:
 
     def make_review(seq):
         it = iter(seq)
-        return lambda src, notes, tr: next(it)
+        return lambda src, notes, tr, prev_findings: next(it)
 
     def rv(verdict, findings):
         return {"verdict": verdict, "findings": findings, "_meta": {"reviewer": "fake"}}

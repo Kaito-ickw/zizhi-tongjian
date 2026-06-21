@@ -33,7 +33,7 @@ SEVERITY = {"forbidden", "allowed", "style"}
 VERDICT = {"pass", "fail"}
 FINDING_KEYS = {"severity", "category", "source_span", "translated_span", "issue", "suggestion"}
 
-# 品質契約(DESIGN §2)— レビュアー・プロンプトの固定ヘッダ
+# 品質契約(DESIGN §2/§4)— レビュアー・プロンプトの固定ヘッダ
 CONTRACT = """\
 あなたは資治通鑑・現代日本語訳プロジェクトの「独立検証レビュアー」です。
 渡された訳文には誤りが含まれている前提で、原典に照らして厳格にチェックしてください。
@@ -43,7 +43,16 @@ CONTRACT = """\
 - 許されない脚色(severity=forbidden / 差し戻し対象): 原文にない事実・因果・心理描写の追加 / 年月日・数字の改変 / 発言の創作。
 - 文体のブレ(severity=style)は許容するが指摘はする。
 - 判定: 禁止脚色(forbidden)が1つでもあれば verdict=fail。なければ verdict=pass。
-- 〔注:…〕でマーキングされた挿入は胡三省注由来。出典(胡注)に根拠があれば捏造としない。"""
+- 〔注:…〕でマーキングされた挿入は胡三省注由来。出典(胡注)に根拠があれば捏造としない。
+
+# forbidden の範囲(重要・誤検出防止)
+- forbidden は「根拠集合に存在しない **事実・因果・心理・数値・発言** の新規追加」に限定する。
+- **翻訳上の自然な具体化・語の訳し分けは forbidden ではなく allowed**。例:
+  - 「吮其疽(疽を吸う)」→「疽の膿を吸う」のような、語義の範囲内の自然な明確化。
+  - 官職名・器物名を読者向けに意訳する(根拠集合の語義と矛盾しない範囲)。
+  - 因果を**新規に創作していない**接続語(「そして」「すると」等の順接で、原文の事実順序を変えないもの)。
+  ※ 原文に無い因果を**創作・強調**する場合のみ forbidden。
+- 迷う場合は、それが「原文に無い新情報を読者に与えるか」を基準にする。与えないなら allowed/style。"""
 
 INSTRUCTION = """\
 # 指示
@@ -76,16 +85,64 @@ class ReviewError(Exception):
     """レビュー実行・パース・検証の失敗。"""
 
 
-def build_review_prompt(source_text: str, hu_notes: list[str], translation: str) -> str:
+def _findings_digest(prev_findings: list[dict]) -> str:
+    """前ラウンド findings を再レビュー用に1件1行へ要約。"""
+    lines = []
+    for f in prev_findings:
+        if not isinstance(f, dict):
+            continue
+        sev = f.get("severity", "?")
+        span = (f.get("translated_span") or f.get("source_span") or "").strip()
+        issue = (f.get("issue") or "").strip()
+        lines.append(f"- [{sev}] {span} … {issue}")
+    return "\n".join(lines) if lines else "(なし)"
+
+
+def build_review_prompt(source_text: str, hu_notes: list[str], translation: str, *,
+                        continuity_text: str | None = None,
+                        prev_findings: list[dict] | None = None) -> str:
+    """レビュー・プロンプト組立。
+
+    continuity_text: 同年の直前チャンクの確定訳(巻内連続性の根拠)。ここで確立済みの
+        人物同定・地名・続柄は根拠集合の一部として扱い、捏造判定から除外させる。
+    prev_findings: 前ラウンドの指摘(再レビュー時)。再litigation(同一箇所の蒸し返し)を抑止し、
+        ①既出指摘の解消 ②新たな実質的誤り の2点に集中させる。独立判断は維持する。
+    """
     notes_block = "(なし)" if not hu_notes else "\n".join(f"- {n}" for n in hu_notes)
-    return (
-        f"{CONTRACT}\n\n"
-        f"# 出典(根拠集合) = 本文原文 + 胡三省注\n"
-        f"## 本文原文\n{source_text}\n\n"
-        f"## 胡三省注\n{notes_block}\n\n"
-        f"# 被レビュー訳文(現代日本語・口語超訳)\n{translation}\n\n"
-        f"{INSTRUCTION}\n"
-    )
+    parts = [
+        CONTRACT,
+        "",
+        "# 出典(根拠集合) = 本文原文 + 胡三省注",
+        "## 本文原文",
+        source_text,
+        "",
+        "## 胡三省注",
+        notes_block,
+        "",
+    ]
+    if continuity_text:
+        parts += [
+            "## 巻内連続コンテキスト(根拠集合の一部・直前チャンクの確定訳)",
+            "※ ここで既に確立した人物同定・地名・続柄(例: 別名・分家後の姓・前出地名)は"
+            "根拠集合に含まれるものとして扱い、当該チャンク本文に明示が無くても捏造としないこと。",
+            continuity_text,
+            "",
+        ]
+    parts += [
+        "# 被レビュー訳文(現代日本語・口語超訳)",
+        translation,
+        "",
+    ]
+    if prev_findings:
+        parts += [
+            "# 前ラウンドの指摘(修正済みのはず・再レビュー)",
+            _findings_digest(prev_findings),
+            "※ 上記は前回の独立レビュアーの指摘。①これらが解消されたか ②新たな**実質的**誤りがないか"
+            "に集中せよ。既に妥当に修正済みの箇所や、表現を変えただけの同義箇所を蒸し返さないこと。",
+            "",
+        ]
+    parts.append(INSTRUCTION)
+    return "\n".join(parts) + "\n"
 
 
 def validate_review(obj) -> list[str]:
@@ -157,14 +214,17 @@ def parse_output(out_path: Path) -> dict:
 
 
 def run_review(source_text: str, hu_notes: list[str], translation: str, *,
+               continuity_text: str | None = None, prev_findings: list[dict] | None = None,
                schema_path: Path = SCHEMA_PATH, timeout: int = 300, retries: int = 2,
                effort: str = "medium", dummy: bool = False, out_path: Path | None = None) -> dict:
     """レビューを実行し {verdict, findings, _meta} を返す。
 
     _meta はハーネス側メタ情報(スキーマ外)。実 Codex 呼び出しは dummy=False のとき。
+    continuity_text / prev_findings は誤検出・再litigation抑止用(build_review_prompt 参照)。
     timeout / 非ゼロ終了 / 出力欠落 / JSON パース / スキーマ不適合 を retries 回まで再試行する。
     """
-    prompt = build_review_prompt(source_text, hu_notes, translation)
+    prompt = build_review_prompt(source_text, hu_notes, translation,
+                                 continuity_text=continuity_text, prev_findings=prev_findings)
     tmp = None
     if out_path is None:
         tmp = tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8")
@@ -224,14 +284,18 @@ def main() -> int:
     src = data["source_text"]
     notes = data.get("hu_notes", [])
     tr = data["translation"]
+    continuity = data.get("continuity_text")
+    prev_findings = data.get("prev_findings")
 
     if args.print_prompt:
-        print(build_review_prompt(src, notes, tr))
+        print(build_review_prompt(src, notes, tr,
+                                  continuity_text=continuity, prev_findings=prev_findings))
         return 0
 
     try:
         review = run_review(
             src, notes, tr,
+            continuity_text=continuity, prev_findings=prev_findings,
             schema_path=Path(args.schema), timeout=args.timeout, retries=args.retries,
             effort=args.effort, dummy=args.dummy,
             out_path=Path(args.out) if args.out else None,

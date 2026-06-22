@@ -1,0 +1,72 @@
+{
+ "id": "j002_y01",
+ "juan": 2,
+ "section": "周紀二",
+ "ruler": "顯王",
+ "year_label": "元年",
+ "era": null,
+ "western_year": "368 BCE",
+ "western_volume_range": "368 BCE 〜 321 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷002",
+   "revid": 1318958,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j002_y01_c01",
+   "source_text": "'''顯王'''⟦n0⟧\n元年⟦n1⟧\n①齊伐魏，取觀津。⟦n2⟧\n②趙侵齊，取長城。⟦n3⟧",
+   "hu_notes": [
+    {
+     "idx": 0,
+     "text": "《十一家諡法》：行見中外曰顯；受祿于天曰顯；百辟惟刑曰顯。周公蓋未有此諡，而周之末世諡顯王曰顯，意謂後世傳寫周公《諡法》者遺之。"
+    },
+    {
+     "idx": 1,
+     "text": "（癸丑、前三六八）"
+    },
+    {
+     "idx": 2,
+     "text": "康曰：齊伐魏，魏惠王請獻觀以和，卽觀津。余按班《志》信都國有觀津縣，與齊相去甚遠，且趙地也。又東郡有畔觀縣。《水經》：大河故瀆東逕五鹿之野，又東逕衞國故城南，古斟觀也。此其魏之觀津歟！徐廣曰：觀，今衞縣。《史記正義》曰：魏州觀城縣，古觀國。《國語》云：觀國，夏太康第五弟之所封也。觀，工喚翻。"
+    },
+    {
+     "idx": 3,
+     "text": "劉昭《志》：濟北盧縣有長城。《史記》蘇代說燕王曰：「齊有長城鉅防，」卽此。"
+    }
+   ],
+   "translation": "顯王元年〔注:癸丑(きちゅう)の年、紀元前三六八年〕。\n\n齊が魏を攻め、觀津(かんしん)を奪い取った。\n\n趙が齊に侵攻し、長城(ちょうじょう)を奪い取った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T22:16:32"
+    }
+   ]
+  }
+ ],
+ "translation_full": "顯王元年〔注:癸丑(きちゅう)の年、紀元前三六八年〕。\n\n齊が魏を攻め、觀津(かんしん)を奪い取った。\n\n趙が齊に侵攻し、長城(ちょうじょう)を奪い取った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T22:16:32",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

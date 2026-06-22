@@ -5,10 +5,10 @@
   "first_year": "403 BCE",
   "ganzhi": "戊寅"
  },
- "records": 30,
+ "records": 36,
  "ganzhi_mismatch_count": 0,
  "range_violation_count": 0,
- "sequence_violation_count": 5,
+ "sequence_violation_count": 7,
  "accession_inconsistency_count": 0,
  "interpolated_count": 0,
  "ruler_accession": [
@@ -332,6 +332,73 @@
      "interpolated": false
     }
    ]
+  },
+  {
+   "ruler": "顯王",
+   "accession_western": "368 BCE",
+   "accession_astro": -367,
+   "years": [
+    {
+     "id": "j002_y01",
+     "juan": 2,
+     "year_label": "元年",
+     "ganzhi": "癸丑",
+     "western_year": "368 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y02",
+     "juan": 2,
+     "year_label": "三年",
+     "ganzhi": "乙卯",
+     "western_year": "366 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y03",
+     "juan": 2,
+     "year_label": "四年",
+     "ganzhi": "丙辰",
+     "western_year": "365 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y04",
+     "juan": 2,
+     "year_label": "五年",
+     "ganzhi": "丁巳",
+     "western_year": "364 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y05",
+     "juan": 2,
+     "year_label": "七年",
+     "ganzhi": "己未",
+     "western_year": "362 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y06",
+     "juan": 2,
+     "year_label": "八年",
+     "ganzhi": "庚申",
+     "western_year": "361 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    }
+   ]
   }
  ],
  "warnings": [
@@ -374,6 +441,22 @@
    "previous_astro": -374,
    "current_id": "j001_y26",
    "current_astro": -372
+  },
+  {
+   "type": "sequence_violation",
+   "juan": 2,
+   "previous_id": "j002_y01",
+   "previous_astro": -367,
+   "current_id": "j002_y02",
+   "current_astro": -365
+  },
+  {
+   "type": "sequence_violation",
+   "juan": 2,
+   "previous_id": "j002_y04",
+   "previous_astro": -363,
+   "current_id": "j002_y05",
+   "current_astro": -361
   }
  ]
 }

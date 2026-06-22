@@ -1,0 +1,84 @@
+{
+ "id": "j002_y04",
+ "juan": 2,
+ "section": "周紀二",
+ "ruler": "顯王",
+ "year_label": "五年",
+ "era": null,
+ "western_year": "364 BCE",
+ "western_volume_range": "368 BCE 〜 321 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷002",
+   "revid": 1318958,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j002_y04_c01",
+   "source_text": "五年⟦n8⟧\n①秦獻公敗三晉之師于石門，⟦n9⟧斬首六萬。王賜以黼黻之服。⟦n10⟧",
+   "hu_notes": [
+    {
+     "idx": 8,
+     "text": "（丁巳、前三六四）"
+    },
+    {
+     "idx": 9,
+     "text": "《水經註》：馮翊雲陽縣有石門山。《括地志》：在雍州三原縣西北三十二里。又曰：堯門山，俗名石門，上有路，其狀若門。故老云：堯鑿山爲門，因名之。武德中於此山南置石門縣，貞觀中改雲陽縣。"
+    },
+    {
+     "idx": 10,
+     "text": "黼者，刺繡爲斧形；黻者，刺繡爲兩「己」相背。孔穎達曰：白與黑謂之黼，黑與青謂之黻。黼，音甫。黻，音弗。"
+    }
+   ],
+   "translation": "顯王五年〔注:丁巳(ていし)の年、紀元前三六四年〕。\n\n秦の獻公(けんこう)が三晉(さんしん)の軍を石門(せきもん)で打ち破り、六万の首を斬った。周の王は獻公に黼黻(ほふつ)の服〔注:斧の形や、二つの「己」の字を背中合わせにした文様を刺繍した礼装の衣〕を下賜した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "原文にない事実の追加",
+       "source_span": "三晉之師",
+       "translated_span": "三晉(さんしん)〔注:晉から分かれた韓・魏・趙の三国〕の軍",
+       "issue": "三晉を韓・魏・趙と同定し、晉から分かれた三国だとする説明は、提示された本文・胡三省注・連続コンテキストのいずれにも存在しない。",
+       "suggestion": "「三晉(さんしん)の軍」とし、注記を削除する。"
+      }
+     ],
+     "ts": "2026-06-22T22:12:00"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T22:18:17"
+    }
+   ]
+  }
+ ],
+ "translation_full": "顯王五年〔注:丁巳(ていし)の年、紀元前三六四年〕。\n\n秦の獻公(けんこう)が三晉(さんしん)の軍を石門(せきもん)で打ち破り、六万の首を斬った。周の王は獻公に黼黻(ほふつ)の服〔注:斧の形や、二つの「己」の字を背中合わせにした文様を刺繍した礼装の衣〕を下賜した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T22:18:17",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

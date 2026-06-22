@@ -56,6 +56,95 @@
 
 ---
 
+## [ ] T06 — 翻訳バッチ: 卷002 周紀二(40年) [Codex]
+- 卷001 に続き卷002 を年単位バッチで確定。**1セッション=1サブバッチ**(下記 `###` の最初の未完 `[ ]` を1つだけ・並列セッションは別々の未完バッチを分担)。手順は T05 と同一: context→翻訳(Claude)→Codex独立レビュー→修正→再レビュー(最大3反復・前ラウンド findings 同梱)、直前年の確定訳を continuity_text に連鎖。バッチ境界は本文+注 ~3,200字/セッションで決定論的分割(T05 較正・本巻9バッチ)。
+- Done: `data/kb/卷002/` 全40年が pass(各サブバッチ完了で該当 `###` を `[x]`・全完了で本 `##` を `[x]`)+ `year_western.py`/`build_view.py` 反映。
+
+### [ ] T06a — 卷002 y01–y06(元年〜八年, 6年/2,838字) [Codex]
+- Done: `data/kb/卷002/j002_y01.json`〜`j002_y06.json`(各 pass、halt なら年アラート)。
+
+### [ ] T06b — 卷002 y07–y10(十年〜十三年, 4年/2,815字) [Codex]
+- Done: `data/kb/卷002/j002_y07.json`〜`j002_y10.json`(各 pass)。
+
+### [ ] T06c — 卷002 y11–y14(十四年〜十七年, 4年/2,909字) [Codex]
+- Done: `data/kb/卷002/j002_y11.json`〜`j002_y14.json`(各 pass)。
+
+### [ ] T06d — 卷002 y15–y21(十八年〜二十六年, 7年/2,296字) [Codex]
+- Done: `data/kb/卷002/j002_y15.json`〜`j002_y21.json`(各 pass)。
+
+### [ ] T06e — 卷002 y22–y23(二十八年〜二十九年, 2年/1,750字) [Codex]
+- Done: `data/kb/卷002/j002_y22.json`〜`j002_y23.json`(各 pass)。
+
+### [ ] T06f — 卷002 y24–y28(三十一年〜三十五年, 5年/2,848字) [Codex]
+- Done: `data/kb/卷002/j002_y24.json`〜`j002_y28.json`(各 pass)。
+
+### [ ] T06g — 卷002 y29(三十六年, 1年/4,457字・長文単独) [Codex]
+- Done: `data/kb/卷002/j002_y29.json`(pass)。
+
+### [ ] T06h — 卷002 y30–y39(三十七年〜四十七年, 10年/2,118字) [Codex]
+- Done: `data/kb/卷002/j002_y30.json`〜`j002_y39.json`(各 pass)。
+
+### [ ] T06i — 卷002 y40(四十八年, 1年/2,060字) [Codex]
+- Done: `data/kb/卷002/j002_y40.json`(pass)。
+
+## [ ] T07 — 翻訳バッチ: 卷003 周紀三(23年) [Codex]
+- 卷002 に続き卷003 を年単位バッチで確定。運用は T06 と同一(1セッション=1サブバッチ・手順/continuity 連鎖・~3,200字分割、本巻9バッチ)。
+- Done: `data/kb/卷003/` 全23年が pass + `year_western.py`/`build_view.py` 反映。
+
+### [ ] T07a — 卷003 y01–y04(元年〜四年, 4年/1,843字) [Codex]
+- Done: `data/kb/卷003/j003_y01.json`〜`j003_y04.json`(各 pass)。
+
+### [ ] T07b — 卷003 y05–y06(五年〜六年, 2年/2,171字) [Codex]
+- Done: `data/kb/卷003/j003_y05.json`〜`j003_y06.json`(各 pass)。
+
+### [ ] T07c — 卷003 y07–y08(改元・元年〜二年, 2年/2,866字) [Codex]
+- Done: `data/kb/卷003/j003_y07.json`〜`j003_y08.json`(各 pass)。
+
+### [ ] T07d — 卷003 y09(三年, 1年/1,211字) [Codex]
+- Done: `data/kb/卷003/j003_y09.json`(pass)。
+
+### [ ] T07e — 卷003 y10(四年, 1年/3,484字・長文単独) [Codex]
+- Done: `data/kb/卷003/j003_y10.json`(pass)。
+
+### [ ] T07f — 卷003 y11–y13(五年〜七年, 3年/2,834字) [Codex]
+- Done: `data/kb/卷003/j003_y11.json`〜`j003_y13.json`(各 pass)。
+
+### [ ] T07g — 卷003 y14–y15(八年〜九年, 2年/2,457字) [Codex]
+- Done: `data/kb/卷003/j003_y14.json`〜`j003_y15.json`(各 pass)。
+
+### [ ] T07h — 卷003 y16–y21(十年〜十五年, 6年/2,472字) [Codex]
+- Done: `data/kb/卷003/j003_y16.json`〜`j003_y21.json`(各 pass)。
+
+### [ ] T07i — 卷003 y22–y23(十六年〜十七年, 2年/3,190字) [Codex]
+- Done: `data/kb/卷003/j003_y22.json`〜`j003_y23.json`(各 pass)。
+
+## [ ] T08 — 翻訳バッチ: 卷004 周紀四(25年) [Codex]
+- 卷003 に続き卷004 を年単位バッチで確定。運用は T06 と同一(1セッション=1サブバッチ・手順/continuity 連鎖・~3,200字分割、本巻7バッチ)。
+- Done: `data/kb/卷004/` 全25年が pass + `year_western.py`/`build_view.py` 反映。
+
+### [ ] T08a — 卷004 y01–y09(十八年〜二十六年, 9年/3,042字) [Codex]
+- Done: `data/kb/卷004/j004_y01.json`〜`j004_y09.json`(各 pass)。
+
+### [ ] T08b — 卷004 y10–y13(二十七年〜三十年, 4年/1,948字) [Codex]
+- Done: `data/kb/卷004/j004_y10.json`〜`j004_y13.json`(各 pass)。
+
+### [ ] T08c — 卷004 y14(三十一年, 1年/3,616字・長文単独) [Codex]
+- Done: `data/kb/卷004/j004_y14.json`(pass)。
+
+### [ ] T08d — 卷004 y15–y18(三十二年〜三十五年, 4年/2,645字) [Codex]
+- Done: `data/kb/卷004/j004_y15.json`〜`j004_y18.json`(各 pass)。
+
+### [ ] T08e — 卷004 y19(三十六年, 1年/7,307字・特大単独・要慎重) [Codex]
+- Done: `data/kb/卷004/j004_y19.json`(pass)。長文のため必要なら年内をさらに分割可。
+
+### [ ] T08f — 卷004 y20–y24(三十七年〜四十一年, 5年/1,046字) [Codex]
+- Done: `data/kb/卷004/j004_y20.json`〜`j004_y24.json`(各 pass)。
+
+### [ ] T08g — 卷004 y25(四十二年, 1年/3,726字・長文単独) [Codex]
+- Done: `data/kb/卷004/j004_y25.json`(pass)。
+
+---
+
 ## TODO(順不同・随時着手可)
 ## [x] T-view — 閲覧ビュー生成 `pipeline/build_view.py`(最小構成・巻1) [Codex]
 結果: 実装を Codex 委譲(`codex exec -s workspace-write`、ユーザー指示 §3)。`pipeline/build_view.py`(stdlib のみ・冪等・決定論的)が `data/kb/卷NNN/*.json`(status=pass)→ `docs/卷NNN/jNNN_yNN.md` を生成。各年=オリエン(巻/紀/年号/巻範囲西暦+年単位西暦は T-year 待ちで未確定明記)+ 訳文本文(`translation_full` 無改変)+ `<details>` 原文(`⟦nK⟧`/`'''`/行頭`:`/丸数字を清掃)+ 出典フッタ + 前後年/巻indexナビ。マスター+巻別 README も生成。巻1の確定8年(y01–y08)= 10ファイル出力。Claude 独立検証: 本文全件無改変・端ナビ正・**2回実行でハッシュ一致(冪等)**。`docs/` は tracked(§11 甲)。entity リンクは延期(§11、無名人物密集巻で要否判定)。

@@ -1,0 +1,72 @@
+{
+ "id": "j001_y25",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "烈王",
+ "year_label": "元年",
+ "era": null,
+ "western_year": "375 BCE",
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y25_c01",
+   "source_text": "'''烈王'''⟦n271⟧\n元年⟦n272⟧\n①日有食之。\n②韓滅鄭，因徙都之。⟦n273⟧\n③趙敬侯薨，子成侯種立。⟦n274⟧",
+   "hu_notes": [
+    {
+     "idx": 271,
+     "text": "名喜，安王之子。"
+    },
+    {
+     "idx": 272,
+     "text": "（丙午、前三七五）"
+    },
+    {
+     "idx": 273,
+     "text": "韓本都平陽，其地屬漢之河東郡；中間徙都陽翟。鄭都新鄭，其地屬漢之河南郡。鄭桓公始封於鄭，其地屬漢之京兆；後滅虢、鄶而國於溱、洧之間，故曰新鄭，《左傳》鄭莊公所謂「吾先君新邑於此」是也。今韓旣滅鄭，自陽翟徙都之。韓旣都鄭，故時人亦謂韓王爲鄭王，考之《戰國策》、《韓非子》可見。"
+    },
+    {
+     "idx": 274,
+     "text": "種，章勇翻。"
+    }
+   ],
+   "translation": "烈王元年〔注:丙午(へいご)の年、紀元前三七五年〕。\n\n日食があった。\n\n韓が鄭(てい)を滅ぼし、そのまま都を鄭に移した〔注:韓はもともと平陽(へいよう)に都し、のちに陽翟(ようたく)へ遷していた。鄭を滅ぼすと、陽翟から新鄭(しんてい)へ都を移したのである〕。\n\n趙の敬侯が薨じ、子の成侯・種(しょう)が立った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T09:18:17"
+    }
+   ]
+  }
+ ],
+ "translation_full": "烈王元年〔注:丙午(へいご)の年、紀元前三七五年〕。\n\n日食があった。\n\n韓が鄭(てい)を滅ぼし、そのまま都を鄭に移した〔注:韓はもともと平陽(へいよう)に都し、のちに陽翟(ようたく)へ遷していた。鄭を滅ぼすと、陽翟から新鄭(しんてい)へ都を移したのである〕。\n\n趙の敬侯が薨じ、子の成侯・種(しょう)が立った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T09:18:17",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。y28 のみ R1 で1件 forbidden(「韓廆を宰相としながら嚴遂を寵愛していた『ので』二人は憎み合った」=原文『以韓廆爲相而愛嚴遂，二人甚相害也』に無い因果「ので」を追加)を検出→因果を外し並列に修正し、別独立セッション(前ラウンド findings 同梱)の R2 で pass。他6年(y24-27,29,30)は R1 で pass。烈王改元(y25=烈王元年)・太史公曰(y30=司馬遷論賛, 本文系として訳出)を含む。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言)準拠。"
+}

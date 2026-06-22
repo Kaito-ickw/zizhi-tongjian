@@ -1,0 +1,64 @@
+{
+ "id": "j001_y24",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "二十六年",
+ "era": null,
+ "western_year": "376 BCE",
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y24_c01",
+   "source_text": "二十六年⟦n269⟧\n①王崩，子烈王喜立。\n②魏、韓、趙共廢晉靖公爲家人而分其地。⟦n270⟧",
+   "hu_notes": [
+    {
+     "idx": 269,
+     "text": "（乙巳、前三七六）"
+    },
+    {
+     "idx": 270,
+     "text": "唐叔不祀矣。"
+    }
+   ],
+   "translation": "安王二十六年〔注:乙巳(いっし)の年、紀元前三七六年〕。\n\n(安)王が崩じ、子の烈王(れつおう)・喜(き)が立った。\n\n魏・韓・趙が、ともに晋の靖公(せいこう)を廃して一介の庶人とし、その領地を分け取った〔注:(これで)唐叔(とうしゅく)への祭祀は絶えた〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T09:18:17"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王二十六年〔注:乙巳(いっし)の年、紀元前三七六年〕。\n\n(安)王が崩じ、子の烈王(れつおう)・喜(き)が立った。\n\n魏・韓・趙が、ともに晋の靖公(せいこう)を廃して一介の庶人とし、その領地を分け取った〔注:(これで)唐叔(とうしゅく)への祭祀は絶えた〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T09:18:17",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。y28 のみ R1 で1件 forbidden(「韓廆を宰相としながら嚴遂を寵愛していた『ので』二人は憎み合った」=原文『以韓廆爲相而愛嚴遂，二人甚相害也』に無い因果「ので」を追加)を検出→因果を外し並列に修正し、別独立セッション(前ラウンド findings 同梱)の R2 で pass。他6年(y24-27,29,30)は R1 で pass。烈王改元(y25=烈王元年)・太史公曰(y30=司馬遷論賛, 本文系として訳出)を含む。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言)準拠。"
+}

@@ -1,0 +1,68 @@
+{
+ "id": "j001_y27",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "烈王",
+ "year_label": "四年",
+ "era": null,
+ "western_year": "372 BCE",
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y27_c01",
+   "source_text": "四年⟦n281⟧\n①趙伐衞，取都鄙七十三。⟦n282⟧\n②魏敗趙師于北藺。⟦n283⟧",
+   "hu_notes": [
+    {
+     "idx": 281,
+     "text": "（己酉、前三七二）"
+    },
+    {
+     "idx": 282,
+     "text": "《周禮》︰太宰以八則治都鄙。《註》云︰都之所居曰鄙。都鄙，卿大夫之采邑。蓋周之制，四縣爲都，方四十里，一千六百井，積一萬四千四百夫；五酇爲鄙，鄙五百家也。此時衞國褊小，若都鄙七十三，以成周之制率之，其地廣矣，盡衞之提封，未必能及此數也。更俟博考。"
+    },
+    {
+     "idx": 283,
+     "text": "班《志》，西河郡有藺縣。《史記正義》曰︰在石州。其地於趙爲西北，故曰北藺。藺，離進翻。"
+    }
+   ],
+   "translation": "烈王四年〔注:己酉(きゆう)の年、紀元前三七二年〕。\n\n趙が衛を攻め、都鄙(とひ)七十三を奪い取った〔注:「都鄙」は卿(けい)・大夫(たいふ)の領邑(采邑)をいう〕。\n\n魏が趙の軍を北藺(ほくりん)で破った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T09:18:17"
+    }
+   ]
+  }
+ ],
+ "translation_full": "烈王四年〔注:己酉(きゆう)の年、紀元前三七二年〕。\n\n趙が衛を攻め、都鄙(とひ)七十三を奪い取った〔注:「都鄙」は卿(けい)・大夫(たいふ)の領邑(采邑)をいう〕。\n\n魏が趙の軍を北藺(ほくりん)で破った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T09:18:17",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。y28 のみ R1 で1件 forbidden(「韓廆を宰相としながら嚴遂を寵愛していた『ので』二人は憎み合った」=原文『以韓廆爲相而愛嚴遂，二人甚相害也』に無い因果「ので」を追加)を検出→因果を外し並列に修正し、別独立セッション(前ラウンド findings 同梱)の R2 で pass。他6年(y24-27,29,30)は R1 で pass。烈王改元(y25=烈王元年)・太史公曰(y30=司馬遷論賛, 本文系として訳出)を含む。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言)準拠。"
+}

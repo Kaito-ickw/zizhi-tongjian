@@ -1,0 +1,64 @@
+{
+ "id": "j001_y17",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "十九年",
+ "era": null,
+ "western_year": "383 BCE",
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y17_c01",
+   "source_text": "十九年⟦n234⟧\n①魏敗趙師于兔臺。⟦n235⟧",
+   "hu_notes": [
+    {
+     "idx": 234,
+     "text": "（戊戌、前三八三）"
+    },
+    {
+     "idx": 235,
+     "text": "《史記‧趙世家》曰︰魏敗我兔臺，築剛平。《正義》曰︰兔臺、剛平，並在河北。敗，補邁翻。"
+    }
+   ],
+   "translation": "安王十九年〔注:戊戌(ぼじゅつ)の年、紀元前三八三年〕。\n\n魏が趙の軍を兔臺(とだい)で破った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T09:06:16"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王十九年〔注:戊戌(ぼじゅつ)の年、紀元前三八三年〕。\n\n魏が趙の軍を兔臺(とだい)で破った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T09:06:16",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳)。y19(forbidden 2件: 胡注『伏其側』と矛盾する『その上に伏した』/『刺』の脱落)、y20(forbidden 1件: 原文に無い因果『これに対し』)、y23(forbidden 1件: 原文に無い場所『家の』)を R1 で検出→修正し、R2(別独立セッション・前ラウンド findings 同梱)で全て pass。他6年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言)準拠。"
+}

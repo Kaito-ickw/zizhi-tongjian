@@ -5,10 +5,10 @@
   "first_year": "403 BCE",
   "ganzhi": "戊寅"
  },
- "records": 14,
+ "records": 23,
  "ganzhi_mismatch_count": 0,
  "range_violation_count": 0,
- "sequence_violation_count": 3,
+ "sequence_violation_count": 4,
  "accession_inconsistency_count": 0,
  "interpolated_count": 0,
  "ruler_accession": [
@@ -163,6 +163,96 @@
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false
+    },
+    {
+     "id": "j001_y15",
+     "juan": 1,
+     "year_label": "十六年",
+     "ganzhi": "乙未",
+     "western_year": "386 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y16",
+     "juan": 1,
+     "year_label": "十七年",
+     "ganzhi": "丙申",
+     "western_year": "385 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y17",
+     "juan": 1,
+     "year_label": "十九年",
+     "ganzhi": "戊戌",
+     "western_year": "383 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y18",
+     "juan": 1,
+     "year_label": "二十年",
+     "ganzhi": "己亥",
+     "western_year": "382 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y19",
+     "juan": 1,
+     "year_label": "二十一年",
+     "ganzhi": "庚子",
+     "western_year": "381 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y20",
+     "juan": 1,
+     "year_label": "二十二年",
+     "ganzhi": "辛丑",
+     "western_year": "380 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y21",
+     "juan": 1,
+     "year_label": "二十三年",
+     "ganzhi": "壬寅",
+     "western_year": "379 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y22",
+     "juan": 1,
+     "year_label": "二十四年",
+     "ganzhi": "癸卯",
+     "western_year": "378 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j001_y23",
+     "juan": 1,
+     "year_label": "二十五年",
+     "ganzhi": "甲辰",
+     "western_year": "377 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
     }
    ]
   }
@@ -191,6 +281,14 @@
    "previous_astro": -388,
    "current_id": "j001_y14",
    "current_astro": -386
+  },
+  {
+   "type": "sequence_violation",
+   "juan": 1,
+   "previous_id": "j001_y16",
+   "previous_astro": -384,
+   "current_id": "j001_y17",
+   "current_astro": -382
   }
  ]
 }

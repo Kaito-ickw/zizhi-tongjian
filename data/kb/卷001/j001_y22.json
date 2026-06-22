@@ -1,0 +1,72 @@
+{
+ "id": "j001_y22",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "二十四年",
+ "era": null,
+ "western_year": "378 BCE",
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y22_c01",
+   "source_text": "二十四年⟦n250⟧\n①狄敗魏師于澮。⟦n251⟧\n②魏、韓、趙伐齊，至靈丘。⟦n252⟧\n③晉孝公薨，子靖公俱酒立。⟦n253⟧",
+   "hu_notes": [
+    {
+     "idx": 250,
+     "text": "（癸卯、前三七八）"
+    },
+    {
+     "idx": 251,
+     "text": "漢之中山、上黨、西河、上郡，自春秋以來，狄皆居之，此亦其種也。《水經》︰澮水出河東絳縣東澮山，西過絳縣南，又西南過虒祁宮南，又西南至王橋，入汾水。《括地志》︰澮山在絳州翼城縣東北。敗，補邁翻。澮，古外翻。"
+    },
+    {
+     "idx": 252,
+     "text": "《史記正義》曰︰靈丘，河東蔚州縣。余按蔚州之靈丘，卽漢代郡之靈丘，此時齊境安能至代北邪！此卽《孟子》謂蚳鼃辭靈丘請士師之地。班《志》曰︰齊地北有千乘、清河以南。漢清河郡有靈縣，清河北接趙、魏之境，此爲近之。蚳，音遲。鼃，烏花翻。"
+    },
+    {
+     "idx": 253,
+     "text": "《諡法》︰柔衆安民曰靖；又，恭己鮮言曰靖。"
+    }
+   ],
+   "translation": "安王二十四年〔注:癸卯(きぼう)の年、紀元前三七八年〕。\n\n狄(てき)が魏の軍を澮(かい)で破った。\n\n魏・韓・趙が斉を攻め、靈丘(れいきゅう)まで進軍した。\n\n晋の孝公が薨じ、子の靖公俱酒(せいこうぐしゅ)が立った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T09:06:16"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王二十四年〔注:癸卯(きぼう)の年、紀元前三七八年〕。\n\n狄(てき)が魏の軍を澮(かい)で破った。\n\n魏・韓・趙が斉を攻め、靈丘(れいきゅう)まで進軍した。\n\n晋の孝公が薨じ、子の靖公俱酒(せいこうぐしゅ)が立った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T09:06:16",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳)。y19(forbidden 2件: 胡注『伏其側』と矛盾する『その上に伏した』/『刺』の脱落)、y20(forbidden 1件: 原文に無い因果『これに対し』)、y23(forbidden 1件: 原文に無い場所『家の』)を R1 で検出→修正し、R2(別独立セッション・前ラウンド findings 同梱)で全て pass。他6年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言)準拠。"
+}

@@ -1,0 +1,72 @@
+{
+ "id": "j001_y21",
+ "juan": 1,
+ "section": "周紀一",
+ "ruler": "安王",
+ "year_label": "二十三年",
+ "era": null,
+ "western_year": "379 BCE",
+ "western_volume_range": "403 BCE 〜 369 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷001",
+   "revid": 2665347,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j001_y21_c01",
+   "source_text": "二十三年⟦n246⟧\n①趙襲衞，不克。⟦n247⟧\n②齊康公薨，無子，田氏遂幷齊而有之。⟦n248⟧\n是歲，齊桓公亦薨，子威王因齊立。⟦n249⟧",
+   "hu_notes": [
+    {
+     "idx": 246,
+     "text": "（壬寅、前三七九）"
+    },
+    {
+     "idx": 247,
+     "text": "成王封康叔於衞，居河、淇之間，故殷墟也。至懿公爲狄所滅，東徙度河。文公徙居楚丘，遂國於濮陽。是年，愼公頹之三十五年。自康叔至愼公凡三十二世。"
+    },
+    {
+     "idx": 248,
+     "text": "姜氏至此滅矣。"
+    },
+    {
+     "idx": 249,
+     "text": "《諡法》︰強毅訅正曰威。訅，渠留翻。齊桓公，田午。訅，謀也。"
+    }
+   ],
+   "translation": "安王二十三年〔注:壬寅(じんいん)の年、紀元前三七九年〕。\n\n趙が衞(えい)を襲ったが、攻め落とせなかった。\n\n斉の康公(こうこう)が薨じたが、跡継ぎの子がなく、田氏がついに斉を併呑して我がものとした〔注:これによって、もとの斉の君主であった姜氏(きょうし)の家系は絶えた〕。\n\nこの年、斉の桓公(かんこう)もまた薨じ、子の威王(いおう)因斉(いんせい)が立った〔注:この桓公は田午(でんご)、威王はその子の田因斉(でんいんせい)。いずれも田氏の斉の君主〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T09:06:16"
+    }
+   ]
+  }
+ ],
+ "translation_full": "安王二十三年〔注:壬寅(じんいん)の年、紀元前三七九年〕。\n\n趙が衞(えい)を襲ったが、攻め落とせなかった。\n\n斉の康公(こうこう)が薨じたが、跡継ぎの子がなく、田氏がついに斉を併呑して我がものとした〔注:これによって、もとの斉の君主であった姜氏(きょうし)の家系は絶えた〕。\n\nこの年、斉の桓公(かんこう)もまた薨じ、子の威王(いおう)因斉(いんせい)が立った〔注:この桓公は田午(でんご)、威王はその子の田因斉(でんいんせい)。いずれも田氏の斉の君主〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T09:06:16",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳)。y19(forbidden 2件: 胡注『伏其側』と矛盾する『その上に伏した』/『刺』の脱落)、y20(forbidden 1件: 原文に無い因果『これに対し』)、y23(forbidden 1件: 原文に無い場所『家の』)を R1 で検出→修正し、R2(別独立セッション・前ラウンド findings 同梱)で全て pass。他6年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言)準拠。"
+}

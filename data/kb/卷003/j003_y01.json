@@ -1,0 +1,68 @@
+{
+ "id": "j003_y01",
+ "juan": 3,
+ "section": "周紀三",
+ "ruler": "愼靚王",
+ "year_label": "元年",
+ "era": null,
+ "western_year": "320 BCE",
+ "western_volume_range": "320 BCE 〜 298 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷003",
+   "revid": 1326478,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j003_y01_c01",
+   "source_text": "'''愼靚王'''⟦n0⟧\n元年⟦n1⟧\n①衞更貶號曰君。⟦n2⟧",
+   "hu_notes": [
+    {
+     "idx": 0,
+     "text": "諱定，顯王之子也。此複諡也。以《諡法》言之，《諡法》：敏以敬曰愼；柔德安衆曰靖。靚，疾正翻。"
+    },
+    {
+     "idx": 1,
+     "text": "（辛丑、前三二○）"
+    },
+    {
+     "idx": 2,
+     "text": "顯王二十三年，衞已貶號曰侯；介於秦、魏之間，國日以削弱，因更貶其號曰君。更，居孟翻。貶，悲檢翻。"
+    }
+   ],
+   "translation": "愼靚王(しんせいおう)元年〔注:辛丑(しんちゅう)の年、紀元前三二〇年。愼靚王は名を定(てい)といい、顯王の子である〕。\n\n衞(えい)が、その称号をさらに格下げして「君(くん)」と称することになった〔注:衞はすでに顯王二十三年に称号を「侯」に下げていた。秦と魏のあいだに挟まれて国は日に日に削られ弱まっていったため、今またその号を引き下げて「君」としたのである〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T23:11:25"
+    }
+   ]
+  }
+ ],
+ "translation_full": "愼靚王(しんせいおう)元年〔注:辛丑(しんちゅう)の年、紀元前三二〇年。愼靚王は名を定(てい)といい、顯王の子である〕。\n\n衞(えい)が、その称号をさらに格下げして「君(くん)」と称することになった〔注:衞はすでに顯王二十三年に称号を「侯」に下げていた。秦と魏のあいだに挟まれて国は日に日に削られ弱まっていったため、今またその号を引き下げて「君」としたのである〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T23:11:25",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。y01 は卷003 冒頭(直前巻=卷002 の continuity は載らず巻境界でリセット)、R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)準拠。各年の Rn 結果は chunks[].review_history を参照。"
+}

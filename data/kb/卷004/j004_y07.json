@@ -1,0 +1,72 @@
+{
+ "id": "j004_y07",
+ "juan": 4,
+ "section": "周紀四",
+ "ruler": "赧王中",
+ "year_label": "二十四年",
+ "era": null,
+ "western_year": "291 BCE",
+ "western_volume_range": "297 BCE 〜 273 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷004",
+   "revid": 1327722,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j004_y07_c01",
+   "source_text": "二十四年⟦n67⟧\n①秦伐韓，拔宛。⟦n68⟧\n②秦燭壽免。魏冉復爲丞相，⟦n69⟧封於穰與陶，謂之穰侯。又封公子巿於宛，公子悝於鄧。⟦n70⟧",
+   "hu_notes": [
+    {
+     "idx": 67,
+     "text": "（庚午、前二九一）"
+    },
+    {
+     "idx": 68,
+     "text": "宛，故申伯國。班《志》，宛縣屬南陽郡；唐爲鄧州南陽縣。宛，於元翻。"
+    },
+    {
+     "idx": 69,
+     "text": "相，息亮翻。"
+    },
+    {
+     "idx": 70,
+     "text": "悝，苦回翻。"
+    }
+   ],
+   "translation": "赧王二十四年〔注:庚午(こうご)の年、紀元前二九一年〕。\n\n秦が韓を攻め、宛(えん)を抜いた〔注:宛はもと申伯(しんぱく)の国で、南陽郡に属する〕。\n\n秦の燭壽(しょくじゅ)が罷免された。魏冉(ぎぜん)が再び丞相となり、穰(じょう)と陶(とう)に封じられて、穰侯(じょうこう)と呼ばれた。また公子巿(こうしふつ)を宛に、公子悝(こうしかい)を鄧(とう)に封じた。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T23:19:51"
+    }
+   ]
+  }
+ ],
+ "translation_full": "赧王二十四年〔注:庚午(こうご)の年、紀元前二九一年〕。\n\n秦が韓を攻め、宛(えん)を抜いた〔注:宛はもと申伯(しんぱく)の国で、南陽郡に属する〕。\n\n秦の燭壽(しょくじゅ)が罷免された。魏冉(ぎぜん)が再び丞相となり、穰(じょう)と陶(とう)に封じられて、穰侯(じょうこう)と呼ばれた。また公子巿(こうしふつ)を宛に、公子悝(こうしかい)を鄧(とう)に封じた。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T23:19:51",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

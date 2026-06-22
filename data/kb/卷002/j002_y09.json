@@ -1,0 +1,84 @@
+{
+ "id": "j002_y09",
+ "juan": 2,
+ "section": "周紀二",
+ "ruler": "顯王",
+ "year_label": "十二年",
+ "era": null,
+ "western_year": "357 BCE",
+ "western_volume_range": "368 BCE 〜 321 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷002",
+   "revid": 1318958,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j002_y09_c01",
+   "source_text": "十二年⟦n74⟧\n①魏、韓⟦n75⟧會于鄗。⟦n76⟧",
+   "hu_notes": [
+    {
+     "idx": 74,
+     "text": "（甲子、前三五七）"
+    },
+    {
+     "idx": 75,
+     "text": "【章：十二行本「韓」作「趙」；乙十一行本同；孔本同；張校同。】"
+    },
+    {
+     "idx": 76,
+     "text": "班《志》，鄗縣屬中山郡。此時爲趙地，後漢改曰高邑，唐爲趙州柏鄕縣、贊皇縣地。鄗，呼各翻。"
+    }
+   ],
+   "translation": "顯王十二年〔注:甲子(こうし)の年、紀元前三五七年〕。\n\n魏と韓が鄗(こう)〔注:この当時は趙の地。後漢の世に高邑(こうゆう)と改められ、唐代には趙州の柏鄕(はくきょう)県・贊皇(さんこう)県のあたりにあたる〕で会合した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "原文にない行為の追加",
+       "source_span": "魏、韓會于鄗。",
+       "translated_span": "魏と韓が鄗で会盟した",
+       "issue": "原文の「會」は鄗で会合したことのみを示す。「会盟」は盟約を結んだという追加の事実を読者に与えるが、本文・胡三省注のいずれにも根拠がない。",
+       "suggestion": "「魏と韓が鄗で会合した」または「魏と韓が鄗で会った」とする。"
+      }
+     ],
+     "ts": "2026-06-22T23:05:00"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T23:08:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "顯王十二年〔注:甲子(こうし)の年、紀元前三五七年〕。\n\n魏と韓が鄗(こう)〔注:この当時は趙の地。後漢の世に高邑(こうゆう)と改められ、唐代には趙州の柏鄕(はくきょう)県・贊皇(さんこう)県のあたりにあたる〕で会合した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T23:08:00",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

@@ -1,0 +1,64 @@
+{
+ "id": "j003_y03",
+ "juan": 3,
+ "section": "周紀三",
+ "ruler": "愼靚王",
+ "year_label": "三年",
+ "era": null,
+ "western_year": "318 BCE",
+ "western_volume_range": "320 BCE 〜 298 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷003",
+   "revid": 1326478,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j003_y03_c01",
+   "source_text": "三年⟦n13⟧\n①楚、趙、魏、韓、燕同伐秦，攻函谷關。⟦n14⟧秦人出兵逆之，五國之師皆敗走。\n②宋初稱王。",
+   "hu_notes": [
+    {
+     "idx": 13,
+     "text": "（癸卯、前三一八）"
+    },
+    {
+     "idx": 14,
+     "text": "燕，因肩翻，註已見上。宋白曰：函谷關在弘農。《地理志註》云：謂道形如函，孫卿子所謂「秦有松柏之塞」是也。"
+    }
+   ],
+   "translation": "三年〔注:癸卯(きぼう)の年、紀元前三一八年〕。\n\n楚・趙・魏・韓・燕の五国がそろって秦を攻め、函谷関(かんこくかん)に攻めかかった。秦の側は兵を出して迎え撃ち、五国の軍はことごとく敗れて逃げ去った。\n\n宋が初めて王を称した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T23:11:25"
+    }
+   ]
+  }
+ ],
+ "translation_full": "三年〔注:癸卯(きぼう)の年、紀元前三一八年〕。\n\n楚・趙・魏・韓・燕の五国がそろって秦を攻め、函谷関(かんこくかん)に攻めかかった。秦の側は兵を出して迎え撃ち、五国の軍はことごとく敗れて逃げ去った。\n\n宋が初めて王を称した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T23:11:25",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 y02 確定訳を連鎖)。R1 で pass。五国合従の函谷関攻め・宋称王を含む。T-review-policy 方針準拠。"
+}

@@ -1,0 +1,88 @@
+{
+ "id": "j004_y01",
+ "juan": 4,
+ "section": "周紀四",
+ "ruler": "赧王中",
+ "year_label": "十八年",
+ "era": null,
+ "western_year": "297 BCE",
+ "western_volume_range": "297 BCE 〜 273 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷004",
+   "revid": 1327722,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j004_y01_c01",
+   "source_text": "'''赧王中'''\n十八年⟦n0⟧\n①楚懷王亡歸。秦人覺之，遮楚道。⟦n1⟧懷王從間道走趙。⟦n2⟧趙主父在代，趙人不敢受。懷王將走魏，秦人追及之，以歸。\n②魯平公薨，子緡公賈立。⟦n3⟧",
+   "hu_notes": [
+    {
+     "idx": 0,
+     "text": "（甲子、前二九七）"
+    },
+    {
+     "idx": 1,
+     "text": "遮其歸楚之路也。"
+    },
+    {
+     "idx": 2,
+     "text": "間，隙也，從空隙之路而行也。間，古莧翻。走，音奏，又音如字。"
+    },
+    {
+     "idx": 3,
+     "text": "《世本》「緡」作「湣」。"
+    }
+   ],
+   "translation": "赧王(たんおう)十八年〔注:甲子(こうし)の年、紀元前二九七年〕。\n\n楚の懷王(かいおう)が(秦から)逃げ帰ろうとした。秦人はこれに気づき、楚へ通じる道を塞いだ〔注:楚へ帰る道を遮ったのである〕。懷王は抜け道をたどって趙へ逃げ込もうとした。だが趙の主父(しゅほ)は代(だい)におり、趙の者たちは懷王を受け入れようとしなかった。懷王は今度は魏へ逃れようとしたが、秦人に追いつかれ、(秦へ)連れ戻された。\n\n魯の平公(へいこう)が薨じ、その子の緡公(びんこう)賈(か)が立った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "因果・心理の追加",
+       "source_span": "趙主父在代，趙人不敢受。",
+       "translated_span": "趙の主父は代にいて、趙の者たちは(主君不在のまま懷王を)受け入れるわけにはいかなかった。",
+       "issue": "原文は「主父が代にいた」「趙人が受け入れようとしなかった」と述べるだけで、主君不在を理由とする因果・心理は明示していない。",
+       "suggestion": "「趙の主父は代におり、趙の者たちは懷王を受け入れようとしなかった。」"
+      }
+     ],
+     "ts": "2026-06-22T23:19:51"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T23:19:51"
+    }
+   ]
+  }
+ ],
+ "translation_full": "赧王(たんおう)十八年〔注:甲子(こうし)の年、紀元前二九七年〕。\n\n楚の懷王(かいおう)が(秦から)逃げ帰ろうとした。秦人はこれに気づき、楚へ通じる道を塞いだ〔注:楚へ帰る道を遮ったのである〕。懷王は抜け道をたどって趙へ逃げ込もうとした。だが趙の主父(しゅほ)は代(だい)におり、趙の者たちは懷王を受け入れようとしなかった。懷王は今度は魏へ逃れようとしたが、秦人に追いつかれ、(秦へ)連れ戻された。\n\n魯の平公(へいこう)が薨じ、その子の緡公(びんこう)賈(か)が立った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T23:19:51",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

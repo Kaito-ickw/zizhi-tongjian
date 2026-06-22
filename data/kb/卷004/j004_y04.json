@@ -1,0 +1,64 @@
+{
+ "id": "j004_y04",
+ "juan": 4,
+ "section": "周紀四",
+ "ruler": "赧王中",
+ "year_label": "二十一年",
+ "era": null,
+ "western_year": "294 BCE",
+ "western_volume_range": "297 BCE 〜 273 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷004",
+   "revid": 1327722,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j004_y04_c01",
+   "source_text": "二十一年⟦n52⟧\n①秦敗魏師于解。⟦n53⟧",
+   "hu_notes": [
+    {
+     "idx": 52,
+     "text": "（丁卯、前二九四）"
+    },
+    {
+     "idx": 53,
+     "text": "敗，補邁翻。班《志》，解縣屬河東郡。宋白曰：解縣地卽夏鳴條之野，有鹽池之利。後漢乾祐元年，蒲帥李茂貞奏置解州。師古曰：解，下買翻。"
+    }
+   ],
+   "translation": "赧王二十一年〔注:丁卯(ていぼう)の年、紀元前二九四年〕。\n\n秦が魏の軍を解(かい)で破った〔注:解は河東郡に属する地で、塩池の利があった〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T23:19:51"
+    }
+   ]
+  }
+ ],
+ "translation_full": "赧王二十一年〔注:丁卯(ていぼう)の年、紀元前二九四年〕。\n\n秦が魏の軍を解(かい)で破った〔注:解は河東郡に属する地で、塩池の利があった〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T23:19:51",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

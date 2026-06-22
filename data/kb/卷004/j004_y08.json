@@ -1,0 +1,72 @@
+{
+ "id": "j004_y08",
+ "juan": 4,
+ "section": "周紀四",
+ "ruler": "赧王中",
+ "year_label": "二十五年",
+ "era": null,
+ "western_year": "290 BCE",
+ "western_volume_range": "297 BCE 〜 273 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷004",
+   "revid": 1327722,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j004_y08_c01",
+   "source_text": "二十五年⟦n71⟧\n①魏入河東地四百里，⟦n72⟧韓入武遂地二百里于秦。⟦n73⟧\n②魏芒卯始以詐見重。⟦n74⟧",
+   "hu_notes": [
+    {
+     "idx": 71,
+     "text": "（辛未、前二九○）"
+    },
+    {
+     "idx": 72,
+     "text": "河東地，蓋安邑、大陽、蒲阪、解縣瀕河之地。阪，音反。解，下買翻。"
+    },
+    {
+     "idx": 73,
+     "text": "武遂地，十八年秦以予韓。予，讀曰與。"
+    },
+    {
+     "idx": 74,
+     "text": "芒，謨郎翻，姓也。卯，其名。"
+    }
+   ],
+   "translation": "赧王二十五年〔注:辛未(しんび)の年、紀元前二九〇年〕。\n\n魏が河東(かとう)の地四百里を、韓が武遂(ぶすい)の地二百里を、秦に差し出した〔注:武遂の地は、(赧王)十八年に秦が韓に与えていた地である〕。\n\n魏の芒卯(ぼうぼう)が、はじめて権謀術数によって重んじられるようになった〔注:芒は姓、卯は名である〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T23:19:51"
+    }
+   ]
+  }
+ ],
+ "translation_full": "赧王二十五年〔注:辛未(しんび)の年、紀元前二九〇年〕。\n\n魏が河東(かとう)の地四百里を、韓が武遂(ぶすい)の地二百里を、秦に差し出した〔注:武遂の地は、(赧王)十八年に秦が韓に与えていた地である〕。\n\n魏の芒卯(ぼうぼう)が、はじめて権謀術数によって重んじられるようになった〔注:芒は姓、卯は名である〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T23:19:51",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

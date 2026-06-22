@@ -1,0 +1,80 @@
+{
+ "id": "j004_y09",
+ "juan": 4,
+ "section": "周紀四",
+ "ruler": "赧王中",
+ "year_label": "二十六年",
+ "era": null,
+ "western_year": "289 BCE",
+ "western_volume_range": "297 BCE 〜 273 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷004",
+   "revid": 1327722,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j004_y09_c01",
+   "source_text": "二十六年⟦n75⟧\n①秦大良造白起、客卿錯伐魏，至軹，取城大小六十一。⟦n76⟧",
+   "hu_notes": [
+    {
+     "idx": 75,
+     "text": "（壬申、前二八九）"
+    },
+    {
+     "idx": 76,
+     "text": "大良造，卽大上造之良者。大上造，秦十六爵。軹，音只。軹縣，班《志》屬河內郡；唐爲孟州濟源縣。"
+    }
+   ],
+   "translation": "赧王二十六年〔注:壬申(じんしん)の年、紀元前二八九年〕。\n\n秦の大良造(だいりょうぞう)である白起(はくき)と、客卿(かくけい)の錯(さく)が魏を攻め、軹(し)まで進んで、大小あわせて六十一の城を奪い取った〔注:大良造は、秦の爵位である大上造(だいじょうぞう)のうち優れた者のこと。大上造は秦の第十六の爵である〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "数値・制度情報の追加",
+       "source_span": "大上造，秦十六爵。",
+       "translated_span": "大上造は秦の(二十爵のうち)第十六の爵である",
+       "issue": "「二十爵のうち」という総爵数は根拠集合に存在しない情報の追加である。",
+       "suggestion": "「大上造は秦の第十六の爵である」とする。"
+      }
+     ],
+     "ts": "2026-06-22T23:19:51"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T23:19:51"
+    }
+   ]
+  }
+ ],
+ "translation_full": "赧王二十六年〔注:壬申(じんしん)の年、紀元前二八九年〕。\n\n秦の大良造(だいりょうぞう)である白起(はくき)と、客卿(かくけい)の錯(さく)が魏を攻め、軹(し)まで進んで、大小あわせて六十一の城を奪い取った〔注:大良造は、秦の爵位である大上造(だいじょうぞう)のうち優れた者のこと。大上造は秦の第十六の爵である〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T23:19:51",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

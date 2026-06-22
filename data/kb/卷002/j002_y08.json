@@ -1,0 +1,64 @@
+{
+ "id": "j002_y08",
+ "juan": 2,
+ "section": "周紀二",
+ "ruler": "顯王",
+ "year_label": "十一年",
+ "era": null,
+ "western_year": "358 BCE",
+ "western_volume_range": "368 BCE 〜 321 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷002",
+   "revid": 1318958,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j002_y08_c01",
+   "source_text": "十一年⟦n72⟧\n①秦敗韓師于西山。⟦n73⟧",
+   "hu_notes": [
+    {
+     "idx": 72,
+     "text": "（癸亥、前三五八）"
+    },
+    {
+     "idx": 73,
+     "text": "自宜陽熊耳東連嵩高，南至魯陽，皆韓之西山。敗，補邁翻。"
+    }
+   ],
+   "translation": "顯王十一年〔注:癸亥(きがい)の年、紀元前三五八年〕。\n\n秦が韓の軍を西山(せいざん)〔注:宜陽(ぎよう)の熊耳(ゆうじ)山から東は嵩高(すうこう)山に連なり、南は魯陽(ろよう)に至るまでの一帯で、いずれも韓の西方の山地をいう〕で打ち破った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-22T23:02:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "顯王十一年〔注:癸亥(きがい)の年、紀元前三五八年〕。\n\n秦が韓の軍を西山(せいざん)〔注:宜陽(ぎよう)の熊耳(ゆうじ)山から東は嵩高(すうこう)山に連なり、南は魯陽(ろよう)に至るまでの一帯で、いずれも韓の西方の山地をいう〕で打ち破った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-22T23:02:00",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

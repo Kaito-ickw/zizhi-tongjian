@@ -1,0 +1,60 @@
+{
+ "id": "j004_y16",
+ "juan": 4,
+ "section": "周紀四",
+ "ruler": "赧王中",
+ "year_label": "三十三年",
+ "era": null,
+ "western_year": "282 BCE",
+ "western_volume_range": "297 BCE 〜 273 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷004",
+   "revid": 1327722,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j004_y16_c01",
+   "source_text": "三十三年⟦n195⟧\n①秦伐趙，拔兩城。",
+   "hu_notes": [
+    {
+     "idx": 195,
+     "text": "（己卯、前二八二）"
+    }
+   ],
+   "translation": "赧王三十三年〔注:己卯(きぼう)の年、紀元前二八二年〕。\n\n秦が趙を攻め、二つの城を攻め落とした。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-23T09:08:06"
+    }
+   ]
+  }
+ ],
+ "translation_full": "赧王三十三年〔注:己卯(きぼう)の年、紀元前二八二年〕。\n\n秦が趙を攻め、二つの城を攻め落とした。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-23T09:08:06",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

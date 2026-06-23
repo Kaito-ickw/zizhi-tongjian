@@ -5,10 +5,10 @@
   "first_year": "403 BCE",
   "ganzhi": "戊寅"
  },
- "records": 53,
+ "records": 73,
  "ganzhi_mismatch_count": 0,
  "range_violation_count": 0,
- "sequence_violation_count": 8,
+ "sequence_violation_count": 10,
  "accession_inconsistency_count": 0,
  "interpolated_count": 0,
  "ruler_accession": [
@@ -437,6 +437,116 @@
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false
+    },
+    {
+     "id": "j002_y11",
+     "juan": 2,
+     "year_label": "十四年",
+     "ganzhi": "丙寅",
+     "western_year": "355 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y12",
+     "juan": 2,
+     "year_label": "十五年",
+     "ganzhi": "丁卯",
+     "western_year": "354 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y13",
+     "juan": 2,
+     "year_label": "十六年",
+     "ganzhi": "戊辰",
+     "western_year": "353 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y14",
+     "juan": 2,
+     "year_label": "十七年",
+     "ganzhi": "己巳",
+     "western_year": "352 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y15",
+     "juan": 2,
+     "year_label": "十八年",
+     "ganzhi": "庚午",
+     "western_year": "351 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y16",
+     "juan": 2,
+     "year_label": "十九年",
+     "ganzhi": "辛未",
+     "western_year": "350 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y17",
+     "juan": 2,
+     "year_label": "二十一年",
+     "ganzhi": "癸酉",
+     "western_year": "348 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y18",
+     "juan": 2,
+     "year_label": "二十二年",
+     "ganzhi": "甲戌",
+     "western_year": "347 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y19",
+     "juan": 2,
+     "year_label": "二十三年",
+     "ganzhi": "乙亥",
+     "western_year": "346 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y20",
+     "juan": 2,
+     "year_label": "二十五年",
+     "ganzhi": "丁丑",
+     "western_year": "344 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y21",
+     "juan": 2,
+     "year_label": "二十六年",
+     "ganzhi": "戊寅",
+     "western_year": "343 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
     }
    ]
   },
@@ -481,6 +591,53 @@
      "year_label": "四年",
      "ganzhi": "甲辰",
      "western_year": "317 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j003_y05",
+     "juan": 3,
+     "year_label": "五年",
+     "ganzhi": "乙巳",
+     "western_year": "316 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j003_y06",
+     "juan": 3,
+     "year_label": "六年",
+     "ganzhi": "丙午",
+     "western_year": "315 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    }
+   ]
+  },
+  {
+   "ruler": "赧王上",
+   "accession_western": "314 BCE",
+   "accession_astro": -313,
+   "years": [
+    {
+     "id": "j003_y07",
+     "juan": 3,
+     "year_label": "元年",
+     "ganzhi": "丁未",
+     "western_year": "314 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j003_y08",
+     "juan": 3,
+     "year_label": "二年",
+     "ganzhi": "戊申",
+     "western_year": "313 BCE",
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false
@@ -581,6 +738,56 @@
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false
+    },
+    {
+     "id": "j004_y10",
+     "juan": 4,
+     "year_label": "二十七年",
+     "ganzhi": "癸酉",
+     "western_year": "288 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j004_y11",
+     "juan": 4,
+     "year_label": "二十八年",
+     "ganzhi": "甲戌",
+     "western_year": "287 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j004_y12",
+     "juan": 4,
+     "year_label": "二十九年",
+     "ganzhi": "乙亥",
+     "western_year": "286 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j004_y13",
+     "juan": 4,
+     "year_label": "三十年",
+     "ganzhi": "丙子",
+     "western_year": "285 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j004_y14",
+     "juan": 4,
+     "year_label": "三十一年",
+     "ganzhi": "丁丑",
+     "western_year": "284 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
     }
    ]
   }
@@ -649,6 +856,22 @@
    "previous_astro": -360,
    "current_id": "j002_y07",
    "current_astro": -358
+  },
+  {
+   "type": "sequence_violation",
+   "juan": 2,
+   "previous_id": "j002_y16",
+   "previous_astro": -349,
+   "current_id": "j002_y17",
+   "current_astro": -347
+  },
+  {
+   "type": "sequence_violation",
+   "juan": 2,
+   "previous_id": "j002_y19",
+   "previous_astro": -345,
+   "current_id": "j002_y20",
+   "current_astro": -343
   }
  ]
 }

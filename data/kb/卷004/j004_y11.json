@@ -1,0 +1,68 @@
+{
+ "id": "j004_y11",
+ "juan": 4,
+ "section": "周紀四",
+ "ruler": "赧王中",
+ "year_label": "二十八年",
+ "era": null,
+ "western_year": "287 BCE",
+ "western_volume_range": "297 BCE 〜 273 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷004",
+   "revid": 1327722,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j004_y11_c01",
+   "source_text": "二十八年⟦n88⟧\n①秦攻趙，⟦n89⟧拔新垣、曲陽。⟦n90⟧",
+   "hu_notes": [
+    {
+     "idx": 88,
+     "text": "（甲戌、前二八七）"
+    },
+    {
+     "idx": 89,
+     "text": "【章：十二行本「趙」作「魏」；乙十一行本同；孔本同；張校同。】"
+    },
+    {
+     "idx": 90,
+     "text": "《史記正義》曰：《年表》及《括地志》，曲陽故城在懷州濟源縣西四十里，新垣近曲陽，未詳端的之處。余按班《志》，王屋山在河東垣縣，沇水所出，東流爲濟。《水經》：濟水出河東垣縣王屋山爲沇水。《註》云：濟水重源出溫西北平地。水有二源，東源出原城東北，晉文公以信降原，卽此城也。俗以濟水重源所發，因復謂之濟源城。如此則濟源去垣不遠矣。蓋新垣卽河東之垣縣也；以縣有遷徙，謂其新邑爲新垣也。垣，于元翻。濟，子禮翻。沇，以轉翻。降，戶江翻。重，直龍翻。復，扶又翻。"
+    }
+   ],
+   "translation": "赧王二十八年〔注:甲戌(こうじゅつ)の年、紀元前二八七年〕。\n\n秦が趙を攻め、新垣(しんえん)と曲陽(きょくよう)を攻め落とした〔注:新垣はもとの河東の垣(えん)県で、県が移転したため、その新しい町を新垣と呼んだ〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-23T08:48:37"
+    }
+   ]
+  }
+ ],
+ "translation_full": "赧王二十八年〔注:甲戌(こうじゅつ)の年、紀元前二八七年〕。\n\n秦が趙を攻め、新垣(しんえん)と曲陽(きょくよう)を攻め落とした〔注:新垣はもとの河東の垣(えん)県で、県が移転したため、その新しい町を新垣と呼んだ〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-23T08:48:37",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

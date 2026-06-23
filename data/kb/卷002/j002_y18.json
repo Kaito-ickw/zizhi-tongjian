@@ -1,0 +1,80 @@
+{
+ "id": "j002_y18",
+ "juan": 2,
+ "section": "周紀二",
+ "ruler": "顯王",
+ "year_label": "二十二年",
+ "era": null,
+ "western_year": "347 BCE",
+ "western_volume_range": "368 BCE 〜 321 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷002",
+   "revid": 1318958,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。",
+ "chunks": [
+  {
+   "chunk_id": "j002_y18_c01",
+   "source_text": "二十二年⟦n138⟧\n①趙公子范襲邯鄲，不勝而死。⟦n139⟧",
+   "hu_notes": [
+    {
+     "idx": 138,
+     "text": "（甲戌、前三四七）"
+    },
+    {
+     "idx": 139,
+     "text": "邯，音寒。鄲，音丹。"
+    }
+   ],
+   "translation": "顯王二十二年〔注:甲戌(こうじゅつ)の年、紀元前三四七年〕。\n\n趙の公子范(はん)が邯鄲(かんたん)を襲ったが、勝てずに死んだ。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "死因・状況の追加",
+       "source_span": "不勝而死",
+       "translated_span": "勝てずに戦死した",
+       "issue": "「戦死」は死亡状況を新たに限定。原文は「勝てずに死んだ」のみ。",
+       "suggestion": "「勝てずに死んだ」とする。"
+      }
+     ],
+     "ts": "2026-06-23T09:12:00"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-23T09:12:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "顯王二十二年〔注:甲戌(こうじゅつ)の年、紀元前三四七年〕。\n\n趙の公子范(はん)が邯鄲(かんたん)を襲ったが、勝てずに死んだ。",
+ "updated_at": "2026-06-23T09:12:00"
+}

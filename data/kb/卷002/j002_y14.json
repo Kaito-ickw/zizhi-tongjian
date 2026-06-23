@@ -1,0 +1,68 @@
+{
+ "id": "j002_y14",
+ "juan": 2,
+ "section": "周紀二",
+ "ruler": "顯王",
+ "year_label": "十七年",
+ "era": null,
+ "western_year": "352 BCE",
+ "western_volume_range": "368 BCE 〜 321 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷002",
+   "revid": 1318958,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j002_y14_c01",
+   "source_text": "十七年⟦n114⟧\n①秦大良造伐魏。⟦n115⟧\n②諸侯圍魏襄陵。⟦n116⟧",
+   "hu_notes": [
+    {
+     "idx": 114,
+     "text": "（己巳、前三五二）"
+    },
+    {
+     "idx": 115,
+     "text": "《索隱》曰：大良造，卽大上造。余謂大良造，大上造之良者也。按《史記‧秦紀》：孝公十年，衞鞅爲大良造，將兵圍魏安邑，降之。又按《六國年表》，秦孝公之十年，顯王之十七年，所謂大良造伐魏，卽衞鞅將兵也。是時魏都安邑，其兵猶強，龐涓、太子申、公子卬未敗，安邑不應遽降於秦。至顯王二十九年，卬軍旣敗，魏獻河西之地於秦，始去安邑徙都大梁。《史記‧六國表》不書徙大梁而《世家》書之，《魏世家》於是年不書安邑降秦而《秦紀》孝公十年書之。《通鑑》從《魏世家》，於顯王二十九年書魏去安邑，徙大梁，而是年不書魏安邑降秦，蓋亦疑而除去之。但大良造之下當有「衞鞅」二字，意謂傳寫《通鑑》者逸之。【章：十二行本正有「衞鞅」二字；乙十一行本同；孔本同；退齋校同。】"
+    },
+    {
+     "idx": 116,
+     "text": "《史記正義》曰：襄陵故城，在兗州鄒縣。余按魏境時不至於鄒。班《志》，河東有襄陵縣。師古曰：晉襄公之陵，因以名縣。《括地志》：襄陵在晉州臨汾縣東南三十五里。宋白曰：後魏爲禽昌縣；隋大業二年改爲襄陵縣，以趙襄子、晉襄公俱陵於是邑也。"
+    }
+   ],
+   "translation": "顯王十七年〔注:己巳(きし)の年、紀元前三五二年〕。\n\n秦の大良造(だいりょうぞう)〔注:この大良造とは衞鞅(えいおう)のこと〕が魏を攻めた。\n\n諸侯が魏の襄陵(じょうりょう)を包囲した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-23T09:01:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "顯王十七年〔注:己巳(きし)の年、紀元前三五二年〕。\n\n秦の大良造(だいりょうぞう)〔注:この大良造とは衞鞅(えいおう)のこと〕が魏を攻めた。\n\n諸侯が魏の襄陵(じょうりょう)を包囲した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-23T09:01:00",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

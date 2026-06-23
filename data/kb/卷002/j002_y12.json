@@ -1,0 +1,76 @@
+{
+ "id": "j002_y12",
+ "juan": 2,
+ "section": "周紀二",
+ "ruler": "顯王",
+ "year_label": "十五年",
+ "era": null,
+ "western_year": "354 BCE",
+ "western_volume_range": "368 BCE 〜 321 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷002",
+   "revid": 1318958,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j002_y12_c01",
+   "source_text": "十五年⟦n90⟧\n①秦敗魏師于元里，⟦n91⟧斬首七千級，⟦n92⟧取少梁。⟦n93⟧\n②魏惠王伐趙，圍邯鄲。楚王使景舍救趙。⟦n94⟧",
+   "hu_notes": [
+    {
+     "idx": 90,
+     "text": "（丁卯、前三五四）"
+    },
+    {
+     "idx": 91,
+     "text": "《史記正義》曰：元里亦在同州澄城縣界。敗，補邁翻。"
+    },
+    {
+     "idx": 92,
+     "text": "秦法，戰而斬敵人一首者，賜爵一級，因謂之級。"
+    },
+    {
+     "idx": 93,
+     "text": "少，詩照翻。"
+    },
+    {
+     "idx": 94,
+     "text": "邯，音寒。鄲，音丹。昭、屈、景，皆楚之同姓，楚強族也。屈，九勿翻。"
+    }
+   ],
+   "translation": "顯王十五年〔注:丁卯(ていぼう)の年、紀元前三五四年〕。\n\n秦が元里(げんり)で魏の軍を打ち破り、首級を七千挙げ〔注:秦の法では、戦って敵の首を一つ斬った者には爵位を一級与えた。それでこれを「級」と呼ぶ〕、少梁(しょうりょう)を奪い取った。\n\n魏の惠王(けいおう)が趙を攻め、邯鄲(かんたん)を包囲した。楚王は景舍(けいしゃ)を遣わして趙を救援させた。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-23T08:53:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "顯王十五年〔注:丁卯(ていぼう)の年、紀元前三五四年〕。\n\n秦が元里(げんり)で魏の軍を打ち破り、首級を七千挙げ〔注:秦の法では、戦って敵の首を一つ斬った者には爵位を一級与えた。それでこれを「級」と呼ぶ〕、少梁(しょうりょう)を奪い取った。\n\n魏の惠王(けいおう)が趙を攻め、邯鄲(かんたん)を包囲した。楚王は景舍(けいしゃ)を遣わして趙を救援させた。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-23T08:53:00",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

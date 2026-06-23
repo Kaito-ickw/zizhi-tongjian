@@ -1,0 +1,68 @@
+{
+ "id": "j002_y21",
+ "juan": 2,
+ "section": "周紀二",
+ "ruler": "顯王",
+ "year_label": "二十六年",
+ "era": null,
+ "western_year": "343 BCE",
+ "western_volume_range": "368 BCE 〜 321 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷002",
+   "revid": 1318958,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。",
+ "chunks": [
+  {
+   "chunk_id": "j002_y21_c01",
+   "source_text": "二十六年⟦n144⟧\n①王致伯于秦，⟦n145⟧諸侯皆賀秦。秦孝公使公子少官帥師會諸侯于逢澤以朝王。⟦n146⟧",
+   "hu_notes": [
+    {
+     "idx": 144,
+     "text": "（戊寅、前三四三）"
+    },
+    {
+     "idx": 145,
+     "text": "伯，如字。伯者，周二伯、九伯之任。"
+    },
+    {
+     "idx": 146,
+     "text": "《左傳》：逢澤有介麋焉，宋地也。杜預《註》曰：《地理志》言逢澤在滎陽開封縣東北；遠，疑非。《括地志》曰：逢澤在汴州浚儀縣東南二十四里。帥，音率。"
+    }
+   ],
+   "translation": "顯王二十六年〔注:戊寅(ぼいん)の年、紀元前三四三年〕。\n\n周王が秦に伯(はく)の地位を授けた〔注:伯とは、周の二伯・九伯のように諸侯を統率する任である〕。諸侯はみな秦に祝賀した。秦の孝公(こうこう)は公子の少官(しょうかん)に軍を率いさせ、逢澤(ほうたく)で諸侯と会合させたうえで、ともに周王に朝見させた。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-23T09:13:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "顯王二十六年〔注:戊寅(ぼいん)の年、紀元前三四三年〕。\n\n周王が秦に伯(はく)の地位を授けた〔注:伯とは、周の二伯・九伯のように諸侯を統率する任である〕。諸侯はみな秦に祝賀した。秦の孝公(こうこう)は公子の少官(しょうかん)に軍を率いさせ、逢澤(ほうたく)で諸侯と会合させたうえで、ともに周王に朝見させた。",
+ "updated_at": "2026-06-23T09:13:00"
+}

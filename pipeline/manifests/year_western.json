@@ -5,7 +5,7 @@
   "first_year": "403 BCE",
   "ganzhi": "戊寅"
  },
- "records": 95,
+ "records": 96,
  "ganzhi_mismatch_count": 0,
  "range_violation_count": 0,
  "sequence_violation_count": 12,
@@ -614,6 +614,16 @@
      "year_label": "三十五年",
      "ganzhi": "丁亥",
      "western_year": "334 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j002_y29",
+     "juan": 2,
+     "year_label": "三十六年",
+     "ganzhi": "戊子",
+     "western_year": "333 BCE",
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false

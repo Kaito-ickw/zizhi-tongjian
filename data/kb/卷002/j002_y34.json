@@ -1,0 +1,68 @@
+{
+ "id": "j002_y34",
+ "juan": 2,
+ "section": "周紀二",
+ "ruler": "顯王",
+ "year_label": "四十二年",
+ "era": null,
+ "western_year": "327 BCE",
+ "western_volume_range": "368 BCE 〜 321 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷002",
+   "revid": 1318958,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j002_y34_c01",
+   "source_text": "四十二年⟦n321⟧\n①秦縣義渠，以其君爲臣。⟦n322⟧\n②秦歸焦、曲沃於魏。⟦n323⟧",
+   "hu_notes": [
+    {
+     "idx": 321,
+     "text": "（甲午、前三二七）"
+    },
+    {
+     "idx": 322,
+     "text": "義渠，西戎國名，秦取之以爲縣。班《志》，義渠道屬北地郡。《括地志》：寧、慶、原三州，秦之北地郡也。"
+    },
+    {
+     "idx": 323,
+     "text": "旣取而復歸之。秦之於魏，若玩弄嬰兒於掌股之上耳。"
+    }
+   ],
+   "translation": "顯王四十二年〔注:甲午(きのえうま)の年、紀元前三二七年〕。\n\n秦が義渠(ぎきょ)を県とし、その君主を臣下とした〔注:義渠は西戎(せいじゅう)の国名。秦がこれを取って県とした〕。\n\n秦が焦・曲沃を魏に返した〔注:さきに奪っておきながら、また返したのである。秦の魏に対するさまは、まるで嬰児(みどりご)を掌(てのひら)の上でもてあそぶようなものだ〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-24T10:20:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "顯王四十二年〔注:甲午(きのえうま)の年、紀元前三二七年〕。\n\n秦が義渠(ぎきょ)を県とし、その君主を臣下とした〔注:義渠は西戎(せいじゅう)の国名。秦がこれを取って県とした〕。\n\n秦が焦・曲沃を魏に返した〔注:さきに奪っておきながら、また返したのである。秦の魏に対するさまは、まるで嬰児(みどりご)を掌(てのひら)の上でもてあそぶようなものだ〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-24T10:20:00",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

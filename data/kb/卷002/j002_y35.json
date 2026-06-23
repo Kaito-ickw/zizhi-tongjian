@@ -1,0 +1,84 @@
+{
+ "id": "j002_y35",
+ "juan": 2,
+ "section": "周紀二",
+ "ruler": "顯王",
+ "year_label": "四十三年",
+ "era": null,
+ "western_year": "326 BCE",
+ "western_volume_range": "368 BCE 〜 321 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷002",
+   "revid": 1318958,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j002_y35_c01",
+   "source_text": "四十三年⟦n324⟧\n①趙肅侯薨，⟦n325⟧子武靈王立；置博聞師三人，左、右司過三人，先問先君貴臣肥義，加其秩。⟦n326⟧",
+   "hu_notes": [
+    {
+     "idx": 324,
+     "text": "（乙未、前三二六）"
+    },
+    {
+     "idx": 325,
+     "text": "《索隱》曰：肅侯，名語。"
+    },
+    {
+     "idx": 326,
+     "text": "《索隱》曰：武靈王，名雍。《姓譜》：肥姓，肥子之後，以國爲姓。"
+    }
+   ],
+   "translation": "顯王四十三年〔注:乙未(きのとひつじ)の年、紀元前三二六年〕。\n\n趙の肅侯が薨じ、子の武靈王(ぶれいおう)が立った〔注:武靈王、名は雍(よう)〕。武靈王は博聞師(はくぶんし=見聞の広い顧問)三人と、左右の司過(しか=君主の過ちを正す役)三人を置き、まず先君に仕えた重臣・肥義(ひぎ)に意見を求め、その俸禄を加増した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "数字改変",
+       "source_span": "置博聞師三人，左、右司過三人",
+       "translated_span": "博聞師三人と、左右の司過各三人を置き",
+       "issue": "原文は左・右の司過を合わせて三人置いたと読めるが、訳文の「各三人」は左右それぞれ三人、計六人という新たな人数情報を加えている。",
+       "suggestion": "「博聞師三人と、左・右の司過三人を置き」とする。"
+      }
+     ],
+     "ts": "2026-06-24T10:20:00"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-24T10:35:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "顯王四十三年〔注:乙未(きのとひつじ)の年、紀元前三二六年〕。\n\n趙の肅侯が薨じ、子の武靈王(ぶれいおう)が立った〔注:武靈王、名は雍(よう)〕。武靈王は博聞師(はくぶんし=見聞の広い顧問)三人と、左右の司過(しか=君主の過ちを正す役)三人を置き、まず先君に仕えた重臣・肥義(ひぎ)に意見を求め、その俸禄を加増した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-24T10:35:00",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

@@ -1,0 +1,68 @@
+{
+ "id": "j002_y31",
+ "juan": 2,
+ "section": "周紀二",
+ "ruler": "顯王",
+ "year_label": "三十九年",
+ "era": null,
+ "western_year": "330 BCE",
+ "western_volume_range": "368 BCE 〜 321 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷002",
+   "revid": 1318958,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j002_y31_c01",
+   "source_text": "三十九年⟦n309⟧\n①秦伐魏，圍焦、曲沃。⟦n310⟧魏入少梁、河西地於秦。⟦n311⟧",
+   "hu_notes": [
+    {
+     "idx": 309,
+     "text": "（辛卯、前三三○）"
+    },
+    {
+     "idx": 310,
+     "text": "班《志》，弘農郡陜縣有焦城，《左傳》所謂「晉與秦焦、瑕」者也。《括地志》：焦在陜城東百步。曲沃在陜西南三十二里，因曲沃水爲名。酈道元曰：案《春秋》文公十三年，晉侯使詹嘉處瑕，守桃林之塞以備秦，時以曲沃之官守之，故曲沃之名遂爲積古之傳。宋白曰：焦，古焦國。《括地志》：焦城在陜城東北百步，因焦水爲名；周同姓所封。"
+    },
+    {
+     "idx": 311,
+     "text": "少，詩照翻。二十九年，魏已使使獻河西於秦以和，今乃入其地。"
+    }
+   ],
+   "translation": "顯王三十九年〔注:辛卯(かのとう)の年、紀元前三三〇年〕。\n\n秦が魏を攻め、焦(しょう)と曲沃(きょくよく)を包囲した〔注:いずれも弘農郡(こうのうぐん)陜県(せんけん)あたりの地〕。魏は少梁(しょうりょう)と河西(かせい)の地を秦に引き渡した〔注:顯王二十九年に魏はすでに河西を秦に献じて和睦していたが、ここでようやく実際にその地を割き渡した〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-24T10:20:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "顯王三十九年〔注:辛卯(かのとう)の年、紀元前三三〇年〕。\n\n秦が魏を攻め、焦(しょう)と曲沃(きょくよく)を包囲した〔注:いずれも弘農郡(こうのうぐん)陜県(せんけん)あたりの地〕。魏は少梁(しょうりょう)と河西(かせい)の地を秦に引き渡した〔注:顯王二十九年に魏はすでに河西を秦に献じて和睦していたが、ここでようやく実際にその地を割き渡した〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-24T10:20:00",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

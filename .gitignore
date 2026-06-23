@@ -2,6 +2,9 @@
 research/*.log
 research/*.summary.txt
 
+# Claude Code local state (worktrees from drain mode, local settings)
+.claude/
+
 # Raw third-party corpora (pin via manifest; not committed wholesale)
 data/raw/
 data/staging/

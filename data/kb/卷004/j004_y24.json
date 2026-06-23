@@ -1,0 +1,72 @@
+{
+ "id": "j004_y24",
+ "juan": 4,
+ "section": "周紀四",
+ "ruler": "赧王中",
+ "year_label": "四十一年",
+ "era": null,
+ "western_year": "274 BCE",
+ "western_volume_range": "297 BCE 〜 273 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷004",
+   "revid": 1327722,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j004_y24_c01",
+   "source_text": "四十一年⟦n353⟧\n①魏復與齊合從。秦穰侯伐魏，拔四城，斬首四萬。⟦n354⟧\n②魯湣⟦n355⟧公薨，子頃公讎立。⟦n356⟧",
+   "hu_notes": [
+    {
+     "idx": 353,
+     "text": "（丁亥、前二七四）"
+    },
+    {
+     "idx": 354,
+     "text": "從，子容翻。穰，人羊翻。"
+    },
+    {
+     "idx": 355,
+     "text": "【章：十二行本「湣」作「緡」；乙十一行本同；孔本同。】"
+    },
+    {
+     "idx": 356,
+     "text": "湣，讀曰閔。頃，音傾。《諡法》：甄心動懼曰頃；敏以敬愼曰頃。"
+    }
+   ],
+   "translation": "赧王四十一年〔注:丁亥(ていがい)の年、紀元前二七四年〕。\n\n魏がふたたび斉と合従(がっしょう)の同盟を結んだ。秦の穰侯(じょうこう)が魏を攻め、四つの城を攻め落とし、四万の首を斬った。\n\n魯の湣公(びんこう)が亡くなり、その子の頃公(けいこう)讎(しゅう)が立った〔注:「頃」という諡(おくりな)は、心を奮い起こし、おそれつつしむさまをいう、ともいわれる〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-23T20:06:30"
+    }
+   ]
+  }
+ ],
+ "translation_full": "赧王四十一年〔注:丁亥(ていがい)の年、紀元前二七四年〕。\n\n魏がふたたび斉と合従(がっしょう)の同盟を結んだ。秦の穰侯(じょうこう)が魏を攻め、四つの城を攻め落とし、四万の首を斬った。\n\n魯の湣公(びんこう)が亡くなり、その子の頃公(けいこう)讎(しゅう)が立った〔注:「頃」という諡(おくりな)は、心を奮い起こし、おそれつつしむさまをいう、ともいわれる〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-23T20:06:30",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。年首の王号(赧王)は資治通鑑の編年構造(周紀四・赧王中)に由来する根拠ありの補完。各年の R1 結果は chunks[].review_history を参照。"
+}

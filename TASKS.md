@@ -154,7 +154,8 @@
 結果: ドレイン(2巡目)wave1 並列。赧王中 三十六年(前279・2チャンク・translation_full 9,701字)pass。Codex 9回(c01=4反復・c02=5反復、findings は毎ラウンド別スパンの実在誤りで矛盾なし・単調減少のため収束判定=3反復 cap 超過だが halt せず)。即墨の田單・楚の貂勃等。Codex の「赧王」付与 forbidden は同巻 house style に反する over-strict FP と判断し不採用。**司令塔修正: agent が `juan` を文字列 "4" で出力していたため int 4 へ修正(build_view/year_western 双方の前提)**。continuity y18→y19 連鎖。
 - Done: `data/kb/卷004/j004_y19.json`(pass)。長文のため必要なら年内をさらに分割可。
 
-### [ ] T08f — 卷004 y20–y24(三十七年〜四十一年, 5年/1,046字) [Codex]
+### [x] T08f — 卷004 y20–y24(三十七年〜四十一年, 5年/1,046字) [Codex]
+結果: ドレイン(2巡目)wave2 並列(K=1 縮小波)。赧王中 三十七〜四十一年 全5年 pass(278→274 BCE)。y20「不復戦」心理追加・y22「取り返した」奪回事実を R2 是正、y21 は白起比定の根拠外削除+赧王 FP を編年位置同梱で R3 回避。Codex 9回。**注: agent worktree が ce0afc1 起点(私の wave1 統合 2afa475 を欠く)で y19 を持たず、y19→y20 continuity は欠落(y20 を年境界リセット点として独立開始)— 訳は全 pass で実害なし。wave3 以降はエージェントに最新 main 同期を指示する。**
 - Done: `data/kb/卷004/j004_y20.json`〜`j004_y24.json`(各 pass)。
 
 ### [ ] T08g — 卷004 y25(四十二年, 1年/3,726字・長文単独) [Codex]

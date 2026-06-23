@@ -1,0 +1,88 @@
+{
+ "id": "j004_y22",
+ "juan": 4,
+ "section": "周紀四",
+ "ruler": "赧王中",
+ "year_label": "三十九年",
+ "era": null,
+ "western_year": "276 BCE",
+ "western_volume_range": "297 BCE 〜 273 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷004",
+   "revid": 1327722,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j004_y22_c01",
+   "source_text": "三十九年⟦n342⟧\n①秦武安君伐魏，拔兩城。\n②楚王收東地兵，⟦n343⟧得十餘萬，復西取江南十五邑。⟦n344⟧\n③魏安釐王封其弟無忌爲信陵君。⟦n345⟧",
+   "hu_notes": [
+    {
+     "idx": 342,
+     "text": "（乙酉、前二七六）"
+    },
+    {
+     "idx": 343,
+     "text": "東地，蓋楚之東境淮、汝之地也。"
+    },
+    {
+     "idx": 344,
+     "text": "復，扶又翻，又音如字。"
+    },
+    {
+     "idx": 345,
+     "text": "宋白曰：信陵君邑於甯，今宋州甯陵縣，古甯城也。"
+    }
+   ],
+   "translation": "赧王三十九年〔注:乙酉(きのととり)の年、紀元前二七六年〕。\n\n秦の武安君(ぶあんくん)が魏を攻め、二つの城を攻め落とした。\n\n楚王が東方の地の兵を集めると十万あまりを得て、ふたたび西へ向かい、江南(こうなん)の十五の邑(むら)を取った〔注:東方の地とは、楚の東の境にあたる淮水(わいすい)・汝水(じょすい)のあたりの地である〕。\n\n魏の安釐王(あんきおう)が、その弟の無忌(むき)を信陵君(しんりょうくん)に封じた。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "原文にない事実の追加",
+       "source_span": "復西取江南十五邑",
+       "translated_span": "江南(こうなん)の十五の邑(むら)を取り返した",
+       "issue": "「取」はここでは獲得・占領を意味するが、「取り返した」は以前失った領地を奪回したという原文・胡注にない事実を加えている。直前の「復」は行動の再度性を示すにとどまる。",
+       "suggestion": "「ふたたび西へ向かい、江南の十五の邑を取った」などとする。"
+      }
+     ],
+     "ts": "2026-06-23T20:04:00"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-23T20:04:30"
+    }
+   ]
+  }
+ ],
+ "translation_full": "赧王三十九年〔注:乙酉(きのととり)の年、紀元前二七六年〕。\n\n秦の武安君(ぶあんくん)が魏を攻め、二つの城を攻め落とした。\n\n楚王が東方の地の兵を集めると十万あまりを得て、ふたたび西へ向かい、江南(こうなん)の十五の邑(むら)を取った〔注:東方の地とは、楚の東の境にあたる淮水(わいすい)・汝水(じょすい)のあたりの地である〕。\n\n魏の安釐王(あんきおう)が、その弟の無忌(むき)を信陵君(しんりょうくん)に封じた。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-23T20:04:30",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。年首の王号(赧王)は資治通鑑の編年構造(周紀四・赧王中)に由来する根拠ありの補完。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

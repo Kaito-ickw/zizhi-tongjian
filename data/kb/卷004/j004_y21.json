@@ -1,0 +1,108 @@
+{
+ "id": "j004_y21",
+ "juan": 4,
+ "section": "周紀四",
+ "ruler": "赧王中",
+ "year_label": "三十八年",
+ "era": null,
+ "western_year": "277 BCE",
+ "western_volume_range": "297 BCE 〜 273 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷004",
+   "revid": 1327722,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j004_y21_c01",
+   "source_text": "三十八年⟦n339⟧\n①秦武安君定巫、黔中，初置黔中郡。⟦n340⟧\n②魏昭王薨，子安釐王立。⟦n341⟧",
+   "hu_notes": [
+    {
+     "idx": 339,
+     "text": "（甲申、前二七七）"
+    },
+    {
+     "idx": 340,
+     "text": "《括地志》：黔中故城在辰州沅陵縣西二十二里江南，今黔府亦其地。按秦黔中郡地，非唐黔州地也。宋白曰：秦黔中郡所理在今辰州西二十里黔中故郡城是。漢改黔中爲武陵郡，移理義陵，卽今辰州潊浦縣是。後漢移理臨沅，卽今朗州所理是。今辰州潊、獎、溪、灃、朗、施八州，是秦、漢黔中郡之地。自永嘉之後，沒於夷、䝤；元魏之後，圖記不傳。至後周保定四年，涪陵首領田思鶴歸化，初於其地立奉州，續改爲黔州。大業中，又改爲黔安郡。因周、隋州郡之名，遂與秦、漢黔中郡交㸦難辨。今黔州及夷、費、思、播，與秦黔中郡隔越峻嶺，以山川言之，炳然自分。黔，其今翻，又其炎翻。沅，音元。潊，音敍。灃，里弟翻。䝤，魯皓翻。涪，音浮。㸦，與互同。費，兵媚翻，以水名。"
+    },
+    {
+     "idx": 341,
+     "text": "《世本》曰：安釐王，名圉。釐，讀曰僖。"
+    }
+   ],
+   "translation": "赧王三十八年〔注:甲申(きのえさる)の年、紀元前二七七年〕。\n\n秦の武安君(ぶあんくん)が巫(ふ)と黔中(けんちゅう)を平定し、はじめて黔中郡(けんちゅうぐん)を置いた。\n\n魏の昭王(しょうおう)が亡くなり、その子の安釐王(あんきおう)が立った〔注:安釐王は、名を圉(ぎょ)という〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 3,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "原文にない人物情報の追加",
+       "source_span": "三十八年",
+       "translated_span": "赧王三十八年",
+       "issue": "根拠集合には「赧王」という王号がなく、誰の三十八年かを特定する情報が追加されている(編年位置メタを未提示のため誤検出)。",
+       "suggestion": "編年位置(周紀四・赧王中)を根拠として提示する。"
+      },
+      {
+       "severity": "forbidden",
+       "category": "原文にない人物比定の追加",
+       "source_span": "秦武安君",
+       "translated_span": "秦の武安君(白起)",
+       "issue": "武安君を白起とする人物比定は、本チャンク本文にも提示注にも存在しない。",
+       "suggestion": "「秦の武安君」とする。"
+      }
+     ],
+     "ts": "2026-06-23T20:02:00"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "原文にない人物名の追加",
+       "source_span": "三十八年",
+       "translated_span": "赧王三十八年",
+       "issue": "(白起)比定は除去済。継続性根拠のみでは「赧王」帰属を新事実とみなした(編年位置メタを未提示のため誤検出継続)。",
+       "suggestion": "編年構造上の位置(周紀四・赧王中)をソース根拠として明示する。"
+      }
+     ],
+     "ts": "2026-06-23T20:02:30"
+    },
+    {
+     "round": 3,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-23T20:03:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "赧王三十八年〔注:甲申(きのえさる)の年、紀元前二七七年〕。\n\n秦の武安君(ぶあんくん)が巫(ふ)と黔中(けんちゅう)を平定し、はじめて黔中郡(けんちゅうぐん)を置いた。\n\n魏の昭王(しょうおう)が亡くなり、その子の安釐王(あんきおう)が立った〔注:安釐王は、名を圉(ぎょ)という〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-23T20:03:00",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。年首の王号(赧王)は資治通鑑の編年構造(周紀四・赧王中)に由来する根拠ありの補完。各年の R1/R2/R3 結果は chunks[].review_history を参照。"
+}

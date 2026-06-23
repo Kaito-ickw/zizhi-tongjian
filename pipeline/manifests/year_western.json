@@ -5,7 +5,7 @@
   "first_year": "403 BCE",
   "ganzhi": "戊寅"
  },
- "records": 90,
+ "records": 95,
  "ganzhi_mismatch_count": 0,
  "range_violation_count": 0,
  "sequence_violation_count": 12,
@@ -955,6 +955,56 @@
      "year_label": "三十六年",
      "ganzhi": "壬午",
      "western_year": "279 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j004_y20",
+     "juan": 4,
+     "year_label": "三十七年",
+     "ganzhi": "癸未",
+     "western_year": "278 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j004_y21",
+     "juan": 4,
+     "year_label": "三十八年",
+     "ganzhi": "甲申",
+     "western_year": "277 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j004_y22",
+     "juan": 4,
+     "year_label": "三十九年",
+     "ganzhi": "乙酉",
+     "western_year": "276 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j004_y23",
+     "juan": 4,
+     "year_label": "四十年",
+     "ganzhi": "丙戌",
+     "western_year": "275 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j004_y24",
+     "juan": 4,
+     "year_label": "四十一年",
+     "ganzhi": "丁亥",
+     "western_year": "274 BCE",
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false

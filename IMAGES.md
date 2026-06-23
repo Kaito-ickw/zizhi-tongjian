@@ -7,10 +7,15 @@
 ## [x] I00 — 画像生成スタイル検証・モックアップ作成 [Claude]
 結果: 地図/挿絵/肖像/文物のスタイルを検証し、`embedded_visuals_mock.md` を作成。スタイルガイド `instruction-gen-image.md` を整備。
 
-## [x] I01 — 卷001 威烈王二十三年 (j001_y01) に確定画像を追加 [Claude]
+## [ ] I01 — 卷001 威烈王二十三年 (j001_y01) の画像追加（本番生成） [Claude/agy]
 *   **対象**: `data/kb/卷001/j001_y01.json`
-*   **タスク**: サンプル生成した 1. 晋陽の水攻め（中程度水墨挿絵）、2. 豫讓の肖像（あっさり写意）、3. 三晋版図マップ（日本語地図）、4. 繁纓（日本語文物）を `docs/images/` に配置し、`translation_full` に相対パスで埋め込み、`build_view.py` でMarkdown出力を更新する。
-結果: Antigravity CLI 確定4枚（map=three_jin_map_jp / fanying / jinyang_flooding_e / yurang_portrait_c）を `docs/images/卷001/j001_y01_{map,fanying,jinyang,yurang}.jpg` に配置。mock 準拠の4箇所へ `../images/卷001/...` で埋め込み、`build_view.py` 再生成→4リンク全解決を確認。brain→repo の組み込み往復を検証済み。
+*   ⚠ **経緯**: 旧I01は I00 のスタイル**検証用サンプル4枚**を、§3.5 バリアント選定・§3.6 来歴記録を経ないまま本番レコードへ確定投入していた（ワークフロー検証の試作画像を本番利用してしまった）。2026-06-24 に本番から撤去（kb の `illustrations[]` 削除・jpg4枚削除・`build_view.py` 再生成で pre-I01 へバイト一致復帰）し、正規生成タスクとして再オープン。
+*   **タスク**: 下記4スロットを `.agents/instruction-gen-image.md` §1-3 準拠で **agy により本番生成**し直す → `image_sync.py` で圧縮 → kb `illustrations[]` 登録 → `build_view.py` 再生成。anchor/caption/category は検証時のキュレーションを**再利用してよい**。
+*   **再利用スロット（curation 保全）**:
+    1. `map`（A=地図）: cap=「戦国時代初期、三晋（韓・魏・趙）と智氏の版図マップ」 / anchor=「この年、周王は初めて、晋の大夫である魏斯(ぎし)・趙籍(ちょうせき)・韓虔(かんけん)の三人を、正式な諸侯として認めた。」
+    2. `fanying`（D=文物）: cap=「繁纓（はんえい）— 身分の高い者にのみ許された格式ある馬装具の図解」 / anchor=「だから「分の中で名より大きいものはない」と言うのである。」
+    3. `jinyang`（B=挿絵）: cap=「晋陽の水攻め（手描き水墨画）」 / anchor=「ただ、かつて分家していた輔果(ほか)〔=智果〕だけが生き残った。」
+    4. `yurang`（C=肖像）: cap=「豫讓（よじょう）の肖像（写意人物画）」 / anchor=「襄子が橋にさしかかると、馬が驚いた。人に探させると豫讓が見つかり、今度はついに殺された。」
 
 ## [x] I02 — 卷001 威烈王二十四年 (j001_y02) の画像追加 [Claude]
 *   **対象**: `data/kb/卷001/j001_y02.json` (威烈王崩御→安王即位 / 楚で賊が聲王を弑し悼王擁立)

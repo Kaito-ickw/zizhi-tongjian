@@ -19,14 +19,15 @@
 - 着手前に不明点があり判断が要る場合のみユーザーに確認。それ以外は default を選んで進める。
 
 ## 画像作成再開プロトコル(ユーザーが「画像作成タスクを再開して」と言ったら)
-**画像追加も1セッション=1タスク。** 以下を厳守する。
-1. `python3 pipeline/image_task.py next`(または IMAGES.md)で最初の未完了 `[ ]` タスクを **1つ** 特定する。
-2. 対象年（例: `j001_y01`）の翻訳テキスト・胡注を読み、`.agents/instruction-gen-image.md` のスタイルガイドに従って、画像を生成する。
-3. 生成した画像ファイル（例: `j001_y01_map.jpg`）は `docs/images/` または `docs/images/卷NNN/` に適切なファイル名で移動/保存し、git add する。
-4. `data/kb/` の対象JSONの `translation_full` に、画像用の Markdown 埋め込みリンク（例: `![キャプション](../images/卷NNN/ファイル名)`。md出力は `docs/卷NNN/` 直下なので画像への相対は `../images/...`）を挿入・追記する。
-5. `python3 pipeline/build_view.py` を実行してMarkdownを再生成し、正しく埋め込まれているか目視/ハッシュ等で確認する。
-6. 完了したら IMAGES.md の該当行を `[x]` にし、結果を1行追記する。
-7. 変更を git コミットし、完了報告を行ってセッションを終了する。
+**画像追加も1セッション=1タスク。** Antigravity（agy）が画像を生成し、Claudeがワークフロー全体をオーケストレートする。以下の手順を厳守すること。
+
+① `python3 pipeline/image_task.py next` で対象年を特定する。
+② 対象年の翻訳・胡注を読み、`agy` を repo workspace で起動して `.agents/instruction-gen-image.md` 準拠の画像を生成する。
+③ `pipeline/image_sync.py` で `docs/images/卷NNN/` に圧縮配置する。
+④ kb record の `illustrations` 配列に登録する（`translation_full` 本文は触らない）。
+⑤ `build_view.py` 再生成し、リンク解決を確認する。
+⑥ `IMAGES.md` を `[x]` 化し結果を1行追記する。
+⑦ git コミットする。
 
 ## ドレインモード(ユーザーが「並列で回して」「使い切って」等と言ったら)
 **律速は Codex でも Claude レートでもなく「指示を出せる回数(≒2回/日)」。** 1指示で余っている Claude 予算を安全に使い切るモード。上記「1タスク=1セッション」とは別運用。

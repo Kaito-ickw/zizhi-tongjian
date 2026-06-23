@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 KB_DIR = ROOT / "data" / "kb"
 DOCS_DIR = ROOT / "docs"
 TOTAL_VOLUMES = 294
+ILLUSTRATION_CATEGORIES = {"A", "B", "C", "D"}
 
 RECORD_ID_RE = re.compile(r"j(?P<juan>\d{3})_y\d{2}")
 NOTE_ANCHOR_RE = re.compile(r"⟦[^⟧]*⟧")
@@ -116,6 +117,68 @@ def cleaned_source(record: dict[str, Any]) -> str:
     return "\n\n".join(part for part in parts if part)
 
 
+def illustrated_translation(record: dict[str, Any]) -> str:
+    """Insert declared illustrations without changing the loaded record."""
+    translation = record["translation_full"]
+    if "illustrations" not in record:
+        return translation
+
+    path = record["_path"]
+    illustrations = record["illustrations"]
+    if not isinstance(illustrations, list):
+        raise BuildError(f"{path}: 'illustrations' must be an array")
+
+    insertions: dict[int, list[str]] = defaultdict(list)
+    for index, illustration in enumerate(illustrations):
+        label = f"illustrations[{index}]"
+        if not isinstance(illustration, dict):
+            raise BuildError(f"{path}: {label} must be an object")
+
+        values: dict[str, str] = {}
+        for key in ("slug", "category", "file", "caption", "anchor"):
+            value = illustration.get(key)
+            if not isinstance(value, str):
+                raise BuildError(f"{path}: {label}.{key} must be str")
+            values[key] = value
+
+        if values["category"] not in ILLUSTRATION_CATEGORIES:
+            raise BuildError(
+                f"{path}: {label}.category must be one of A, B, C, D"
+            )
+        if Path(values["file"]).name != values["file"]:
+            raise BuildError(f"{path}: {label}.file must be a basename")
+
+        anchor_count = translation.count(values["anchor"])
+        if anchor_count != 1:
+            raise BuildError(
+                f"{path}: {label}.anchor must occur exactly once in "
+                f"translation_full (found {anchor_count})"
+            )
+
+        image_dir = DOCS_DIR / "images" / f"卷{record['juan']:03d}"
+        image_path = image_dir / values["file"]
+        if not image_path.is_file():
+            raise BuildError(
+                f"{path}: illustration file does not exist: {image_path}"
+            )
+
+        position = translation.index(values["anchor"]) + len(values["anchor"])
+        markdown = (
+            f"\n\n![{values['caption']}]"
+            f"(../images/卷{record['juan']:03d}/{values['file']})"
+        )
+        insertions[position].append(markdown)
+
+    parts: list[str] = []
+    start = 0
+    for position in sorted(insertions):
+        parts.append(translation[start:position])
+        parts.extend(insertions[position])
+        start = position
+    parts.append(translation[start:])
+    return "".join(parts)
+
+
 def display_license(value: Any, path: Path) -> str:
     if not isinstance(value, str):
         raise BuildError(f"{path}: source.segment_layer.license must be str")
@@ -177,10 +240,10 @@ def render_year(record: dict[str, Any], records: list[dict[str, Any]], index: in
         prefix += "> ※年単位の西暦は未確定(別タスク T-year)。原文の年号・干支を正とする。\n"
     prefix += "\n[← 巻インデックス](README.md)\n\n---\n\n"
 
-    # translation_full is intentionally inserted without parsing or normalization.
+    # Records without illustrations retain verbatim translation_full rendering.
     return (
         prefix
-        + record["translation_full"]
+        + illustrated_translation(record)
         + "\n\n---\n\n<details>\n<summary>原文を表示</summary>\n\n"
         + cleaned_source(record)
         + "\n\n</details>\n\n---\n\n"

@@ -1,0 +1,68 @@
+{
+ "id": "j003_y19",
+ "juan": 3,
+ "section": "周紀三",
+ "ruler": "赧王上",
+ "year_label": "十三年",
+ "era": null,
+ "western_year": "302 BCE",
+ "western_volume_range": "320 BCE 〜 298 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷003",
+   "revid": 1326478,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j003_y19_c01",
+   "source_text": "十三年⟦n320⟧\n①秦王、魏王、韓太子嬰會于臨晉，韓太子至咸陽而歸；秦復與魏蒲阪。⟦n321⟧\n②秦大夫有私與楚太子鬬者，太子殺之，亡歸。⟦n322⟧",
+   "hu_notes": [
+    {
+     "idx": 320,
+     "text": "（己未、前三○二）"
+    },
+    {
+     "idx": 321,
+     "text": "阪，音反。去年秦取魏蒲阪。"
+    },
+    {
+     "idx": 322,
+     "text": "楚太子質秦而亡歸，復質於齊；秦以爲言而誘陷其父，齊乘其父出而要之以利。"
+    }
+   ],
+   "translation": "十三年〔注:己未(つちのとひつじ)の年、紀元前三〇二年〕。\n\n①秦王・魏王と韓の太子嬰(えい)が臨晉(りんしん)で会した。韓の太子は咸陽(かんよう)まで赴いてから帰った。秦は魏に蒲阪(ほはん)を返した〔注:去年、秦は魏の蒲阪を取っていた〕。\n\n②秦の大夫(たいふ)に、ひそかに楚の太子と争った者がいた。太子はこれを殺し、逃げ帰った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-25T00:03:04"
+    }
+   ]
+  }
+ ],
+ "translation_full": "十三年〔注:己未(つちのとひつじ)の年、紀元前三〇二年〕。\n\n①秦王・魏王と韓の太子嬰(えい)が臨晉(りんしん)で会した。韓の太子は咸陽(かんよう)まで赴いてから帰った。秦は魏に蒲阪(ほはん)を返した〔注:去年、秦は魏の蒲阪を取っていた〕。\n\n②秦の大夫(たいふ)に、ひそかに楚の太子と争った者がいた。太子はこれを殺し、逃げ帰った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-25T00:03:04",
+ "review_policy": "R1=Codex/low 独立レビューで一発 pass(連続性根拠=直前年 y18 確定訳)。秦王・魏王と韓太子嬰の臨晉会盟(太子は咸陽まで赴き帰還)・秦が蒲阪を魏へ返還・秦大夫と私闘した楚太子が相手を殺し逃げ帰る件を含む。"
+}

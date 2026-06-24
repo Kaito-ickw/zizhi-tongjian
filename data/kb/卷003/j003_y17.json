@@ -1,0 +1,68 @@
+{
+ "id": "j003_y17",
+ "juan": 3,
+ "section": "周紀三",
+ "ruler": "赧王上",
+ "year_label": "十一年",
+ "era": null,
+ "western_year": "304 BCE",
+ "western_volume_range": "320 BCE 〜 298 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷003",
+   "revid": 1326478,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j003_y17_c01",
+   "source_text": "十一年⟦n310⟧\n①秦王、楚王盟于黃棘；⟦n311⟧秦復與楚上庸。⟦n312⟧",
+   "hu_notes": [
+    {
+     "idx": 310,
+     "text": "（丁巳、前三○四）"
+    },
+    {
+     "idx": 311,
+     "text": "《史記正義》曰：黃棘蓋在房、襄二州。余按班《志》，南陽郡有棘陽縣，應劭曰：縣在棘水之陽。"
+    },
+    {
+     "idx": 312,
+     "text": "三年，秦敗楚師，虜屈匄，取楚上庸。"
+    }
+   ],
+   "translation": "十一年〔注:丁巳(ひのとみ)の年、紀元前三〇四年〕。\n\n①秦王と楚王が黃棘(こうきょく)で盟(ちか)いを結んだ。秦は楚に上庸(じょうよう)を返した〔注:三年前、秦は楚軍を破って屈匄(くつかい)を捕らえ、楚の上庸を奪っていた〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-25T00:03:04"
+    }
+   ]
+  }
+ ],
+ "translation_full": "十一年〔注:丁巳(ひのとみ)の年、紀元前三〇四年〕。\n\n①秦王と楚王が黃棘(こうきょく)で盟(ちか)いを結んだ。秦は楚に上庸(じょうよう)を返した〔注:三年前、秦は楚軍を破って屈匄(くつかい)を捕らえ、楚の上庸を奪っていた〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-25T00:03:04",
+ "review_policy": "R1=Codex/low 独立レビューで一発 pass(連続性根拠=直前年 y16 確定訳)。秦王・楚王の黃棘の盟と秦が上庸を楚へ返還(三年に屈匄を虜にして上庸を奪った経緯を胡注で補足)を含む。"
+}

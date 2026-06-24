@@ -7,7 +7,8 @@
 ## [x] I00 — 画像生成スタイル検証・モックアップ作成 [Claude]
 結果: 地図/挿絵/肖像/文物のスタイルを検証し、`embedded_visuals_mock.md` を作成。スタイルガイド `instruction-gen-image.md` を整備。
 
-## [ ] I01 — 卷001 威烈王二十三年 (j001_y01) の画像追加（本番生成） [Claude/agy]
+## [x] I01 — 卷001 威烈王二十三年 (j001_y01) の画像追加（本番生成） [Claude/agy]
+結果: 画像ドレインで実施。agy(Antigravity, **Imagen 3**)が4スロットを `.agents/instruction-gen-image.md` §1-3 準拠で本番生成し、Claude が §3.5 選定(全4枚を視認検証: map/fanying の日本語ラベルは簡体字なし・崩れなしを §3.3 確認、jinyang/fanying のスタイル合致を確認)→ `image_sync.py` 圧縮(全 ≤300KB・長辺1200px)→ `illustrations[]` 4件登録(`translation_full` 無改変)→ `build_view.py` 反映(anchor 直後挿入・`../images/卷001/` リンク解決確認)。§3.6 来歴: AI生成画像・モデル=Gemini Imagen 3(agy)・成果物ライセンス CC BY-NC-SA 4.0。
 *   **対象**: `data/kb/卷001/j001_y01.json`
 *   ⚠ **経緯**: 旧I01は I00 のスタイル**検証用サンプル4枚**を、§3.5 バリアント選定・§3.6 来歴記録を経ないまま本番レコードへ確定投入していた（ワークフロー検証の試作画像を本番利用してしまった）。2026-06-24 に本番から撤去（kb の `illustrations[]` 削除・jpg4枚削除・`build_view.py` 再生成で pre-I01 へバイト一致復帰）し、正規生成タスクとして再オープン。
 *   **タスク**: 下記4スロットを `.agents/instruction-gen-image.md` §1-3 準拠で **agy により本番生成**し直す → `image_sync.py` で圧縮 → kb `illustrations[]` 登録 → `build_view.py` 再生成。anchor/caption/category は検証時のキュレーションを**再利用してよい**。

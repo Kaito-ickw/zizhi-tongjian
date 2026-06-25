@@ -55,6 +55,15 @@
   }
  ],
  "translation_full": "安王三年〔注:壬午(じんご)の年、紀元前三九九年〕。\n\n王子の定(てい)が晋へ亡命した。\n\n虢山(かくざん)が崩れ、その土砂が黄河を堰き止めた。",
+ "illustrations": [
+  {
+   "slug": "guoshan_landslide",
+   "category": "B",
+   "file": "j001_y05_guoshan_landslide.jpg",
+   "caption": "虢山（かくざん）の崩壊と黄河の堰塞（手描き水墨画）",
+   "anchor": "虢山(かくざん)が崩れ、その土砂が黄河を堰き止めた。"
+  }
+ ],
  "built_with": {
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"

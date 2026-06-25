@@ -1,0 +1,64 @@
+{
+ "id": "j005_y09",
+ "juan": 5,
+ "section": "周紀五",
+ "ruler": "赧王下",
+ "year_label": "五十一年",
+ "era": null,
+ "western_year": "264 BCE",
+ "western_volume_range": "272 BCE 〜 256 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷005",
+   "revid": 1751430,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j005_y09_c01",
+   "source_text": "==五十一年⟦n114⟧==\n①秦武安君伐韓，拔九城，斬首五萬。\n②田單爲趙相。⟦n115⟧",
+   "hu_notes": [
+    {
+     "idx": 114,
+     "text": "丁酉、前二六四"
+    },
+    {
+     "idx": 115,
+     "text": "「秦武安君」至下文「五十二年」二十二字，胡刻本缺，據章校補；章氏-{係}--{據}-十二行本、乙十一行本及孔本。"
+    }
+   ],
+   "translation": "五十一年〔注:丁酉(ていゆう)の年、紀元前二六四年〕。\n\n秦の武安君(ぶあんくん)が韓を伐ち、九つの城を抜き、五万の首を斬った。\n\n田單(でんたん)が趙の相(しょう)となった。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-25T19:54:31"
+    }
+   ]
+  }
+ ],
+ "translation_full": "五十一年〔注:丁酉(ていゆう)の年、紀元前二六四年〕。\n\n秦の武安君(ぶあんくん)が韓を伐ち、九つの城を抜き、五万の首を斬った。\n\n田單(でんたん)が趙の相(しょう)となった。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-25T19:54:31",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 y08 確定訳を連鎖)。R1 で verdict=pass(forbidden 0)。秦武安君の伐韓(九城・斬首五万)・田單の趙相就任を含む。T-review-policy 準拠。"
+}

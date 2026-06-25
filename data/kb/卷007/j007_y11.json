@@ -1,0 +1,64 @@
+{
+ "id": "j007_y11",
+ "juan": 7,
+ "section": "秦紀二",
+ "ruler": "始皇帝下",
+ "year_label": "三十一年",
+ "era": null,
+ "western_year": "216 BCE",
+ "western_volume_range": "227 BCE 〜 209 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷007",
+   "revid": 2033689,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j007_y11_c01",
+   "source_text": "三十一年⟦n125⟧\n①使黔首自實田。⟦n126⟧",
+   "hu_notes": [
+    {
+     "idx": 125,
+     "text": "（乙酉、前二一六）"
+    },
+    {
+     "idx": 126,
+     "text": "二十六年，更名民曰黔首。孔穎達曰：黔，黑也。凡民以黑巾覆頭，故謂之黔首。"
+    }
+   ],
+   "translation": "三十一年〔注:乙酉(きのととり)の年、紀元前二一六年〕。\n\n人民に、自分の田地を自己申告させた〔注:始皇は二十六年に民の呼び名を「黔首(けんしゅ)」=黒い布で頭を覆う者、と改めていた〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-25T01:30:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "三十一年〔注:乙酉(きのととり)の年、紀元前二一六年〕。\n\n人民に、自分の田地を自己申告させた〔注:始皇は二十六年に民の呼び名を「黔首(けんしゅ)」=黒い布で頭を覆う者、と改めていた〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-25T01:30:00",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 j007_y10 の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1 結果は chunks[].review_history を参照。"
+}

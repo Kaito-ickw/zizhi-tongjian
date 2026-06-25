@@ -63,6 +63,15 @@
   }
  ],
  "translation_full": "安王二年〔注:辛巳(しんし)の年、紀元前四〇〇年〕。\n\nこの年、魏・韓・趙が連合して楚を攻め、桑丘(そうきゅう)に至った。\n\n鄭が韓の陽翟(ようてき)を包囲した。\n\n韓の景侯が薨じ、その子の烈侯取(れつこう・しゅ)が立った。\n\n趙の烈侯が薨じ、趙の国人はその弟の武侯を立てた。\n\n秦の簡公が薨じ、その子の惠公が立った。",
+ "illustrations": [
+  {
+   "slug": "yangdi_siege",
+   "category": "B",
+   "file": "j001_y04_yangdi_siege.jpg",
+   "caption": "鄭軍による韓の陽翟（ようてき）包囲戦（手描き水墨画）",
+   "anchor": "鄭が韓の陽翟(ようてき)を包囲した。"
+  }
+ ],
  "built_with": {
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"

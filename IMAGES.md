@@ -40,5 +40,6 @@
 ## [ ] I05 — 卷001 安王三年 (j001_y05) の画像追加 [Claude]
 *   **対象**: `data/kb/卷001/j001_y05.json`
 
-## [ ] I06 — 卷001 安王四年 (j001_y06) の画像追加 [Claude]
+## [x] I06 — 卷001 安王四年 (j001_y06) の画像追加 [Claude]
+結果: カテゴリB水墨画「楚軍による鄭包囲戦」1枚を生成・追加。docs/images/卷001/j001_y06_zheng_siege.jpg に圧縮配置、illustrations[] に登録、build_view.py 再生成確認。(agy/Imagen 3)
 *   **対象**: `data/kb/卷001/j001_y06.json`

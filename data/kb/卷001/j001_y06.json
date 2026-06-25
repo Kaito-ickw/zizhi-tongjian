@@ -55,6 +55,15 @@
   }
  ],
  "translation_full": "安王四年〔注:癸未(きび)の年、紀元前三九八年〕。\n\n楚が鄭を包囲した。鄭の人々は、自国の宰相である駟子陽(し・しよう)を殺した。",
+ "illustrations": [
+  {
+   "slug": "zheng_siege",
+   "category": "B",
+   "file": "j001_y06_zheng_siege.jpg",
+   "caption": "楚軍による鄭包囲戦（手描き水墨画）",
+   "anchor": "楚が鄭を包囲した。"
+  }
+ ],
  "built_with": {
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"

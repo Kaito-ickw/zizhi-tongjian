@@ -33,7 +33,7 @@ POSITIONAL_VALUES = {
     "九": 9,
 }
 YEAR_NOTE_RE = re.compile(
-    rf"^（([{GAN}][{ZHI}])、(前)?([{POSITIONAL_DIGITS}]+)）"
+    rf"^[（(]?([{GAN}][{ZHI}])、(前)?([{POSITIONAL_DIGITS}]+)[）)]?"
 )
 RECORD_PATH_RE = re.compile(r"卷(\d{3})/j(\d{3})_y(\d{2})\.json$")
 

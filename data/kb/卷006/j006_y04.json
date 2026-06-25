@@ -1,0 +1,93 @@
+{
+ "id": "j006_y04",
+ "juan": 6,
+ "section": "秦紀一",
+ "ruler": "昭襄王",
+ "year_label": "五十五年",
+ "era": null,
+ "western_year": "252 BCE",
+ "western_volume_range": "255 BCE 〜 228 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷006",
+   "revid": 387087,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j006_y04_c01",
+   "source_text": "五十五年⟦n102⟧\n①衞懷君朝於魏，魏人執而殺之；更立其弟，是爲元君。⟦n103⟧元君，魏壻也。⟦n104⟧",
+   "hu_notes": [
+    {
+     "idx": 102,
+     "text": "（己酉、前二五二）"
+    },
+    {
+     "idx": 103,
+     "text": "更，工衡翻。"
+    },
+    {
+     "idx": 104,
+     "text": "壻，女夫也。妻謂夫亦曰壻。旁從「女」，或從「士」，音思繼翻。"
+    }
+   ],
+   "translation": "五十五年〔注:己酉(きゆう)の年、紀元前二五二年〕。\n\n衞(えい)の懷君(かいくん)が魏に入朝したところ、魏人は懷君を捕らえて殺してしまった。そして懷君の弟をあらためて立てた。これが元君(げんくん)である。元君は魏の婿(むこ)であった〔注:婿とは娘の夫のこと〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "語義の自然な具体化",
+       "source_span": "衞懷君朝於魏",
+       "translated_span": "衞(えい)の懷君(かいくん)が魏に入朝したところ",
+       "issue": "「朝於魏」を「魏に入朝したところ」としており、朝見先を自然に補っている。原文の事実範囲内である。",
+       "suggestion": "修正不要。"
+      },
+      {
+       "severity": "allowed",
+       "category": "注の反映",
+       "source_span": "（己酉、前二五二）",
+       "translated_span": "〔注:己酉(きゆう)の年、紀元前二五二年〕",
+       "issue": "胡三省注の干支・年代を注として反映している。根拠がある。",
+       "suggestion": "修正不要。"
+      },
+      {
+       "severity": "allowed",
+       "category": "注の反映",
+       "source_span": "壻=女(娘)の夫。妻が夫を指して壻ということもある。",
+       "translated_span": "〔注:婿とは娘の夫のこと〕",
+       "issue": "胡注のうち主要な語義を簡潔に反映している。妻が夫を指す場合があるという補足は省略されているが、禁止脚色ではない。",
+       "suggestion": "必要なら「妻が夫を指すこともある」を加える余地はあるが、現訳でも問題ない。"
+      }
+     ],
+     "ts": "2026-06-25T09:51:47"
+    }
+   ]
+  }
+ ],
+ "translation_full": "五十五年〔注:己酉(きゆう)の年、紀元前二五二年〕。\n\n衞(えい)の懷君(かいくん)が魏に入朝したところ、魏人は懷君を捕らえて殺してしまった。そして懷君の弟をあらためて立てた。これが元君(げんくん)である。元君は魏の婿(むこ)であった〔注:婿とは娘の夫のこと〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-25T09:51:47",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

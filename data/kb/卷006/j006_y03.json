@@ -1,0 +1,68 @@
+{
+ "id": "j006_y03",
+ "juan": 6,
+ "section": "秦紀一",
+ "ruler": "昭襄王",
+ "year_label": "五十四年",
+ "era": null,
+ "western_year": "253 BCE",
+ "western_volume_range": "255 BCE 〜 228 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷006",
+   "revid": 387087,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j006_y03_c01",
+   "source_text": "五十四年⟦n99⟧\n①王郊見上帝於雍。⟦n100⟧\n②楚遷于鉅陽。⟦n101⟧",
+   "hu_notes": [
+    {
+     "idx": 99,
+     "text": "（戊申、前二五三）"
+    },
+    {
+     "idx": 100,
+     "text": "班《志》，雍縣屬扶風。秦惠公都之，有五畤，故於此郊見上帝，欲行天子之禮也。應劭曰︰四方積高曰雍。凡下見上之見，音賢遍翻。雍，於用翻。畤，音止。"
+    },
+    {
+     "idx": 101,
+     "text": "赧王三十七年，楚自郢東北徙於陳；今自陳徙鉅陽；至始皇六年，春申君以朱英之言，自陳徙壽春︰則此時雖徙鉅陽，未離陳地也。赧，奴版翻。郢，以井翻。離，力智翻。"
+    }
+   ],
+   "translation": "五十四年〔注:戊申(ぼしん)の年、紀元前二五三年〕。\n\n秦王(昭襄王)が雍(よう)で天帝を郊祭(こうさい)した〔注:雍は扶風に属する地で、秦の惠公がここに都し、天地や五帝を祭る五畤(ごし)があった。そこでここで上帝を郊祭し、天子の礼を行おうとしたのである〕。\n\n楚が鉅陽(きょよう)へ都を遷した〔注:楚はかつて赧王三十七年に郢(えい)から東北の陳(ちん)へ遷っており、いま陳から鉅陽へ遷ったもの。ただしこの時もまだ陳の地を離れたわけではない〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-25T09:51:47"
+    }
+   ]
+  }
+ ],
+ "translation_full": "五十四年〔注:戊申(ぼしん)の年、紀元前二五三年〕。\n\n秦王(昭襄王)が雍(よう)で天帝を郊祭(こうさい)した〔注:雍は扶風に属する地で、秦の惠公がここに都し、天地や五帝を祭る五畤(ごし)があった。そこでここで上帝を郊祭し、天子の礼を行おうとしたのである〕。\n\n楚が鉅陽(きょよう)へ都を遷した〔注:楚はかつて赧王三十七年に郢(えい)から東北の陳(ちん)へ遷っており、いま陳から鉅陽へ遷ったもの。ただしこの時もまだ陳の地を離れたわけではない〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-25T09:51:47",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

@@ -1,0 +1,101 @@
+{
+ "id": "j006_y02",
+ "juan": 6,
+ "section": "秦紀一",
+ "ruler": "昭襄王",
+ "year_label": "五十三年",
+ "era": null,
+ "western_year": "254 BCE",
+ "western_volume_range": "255 BCE 〜 228 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷006",
+   "revid": 387087,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j006_y02_c01",
+   "source_text": "五十三年⟦n96⟧\n①摎伐魏，取吳城。⟦n97⟧韓王入朝。魏舉國聽令。⟦n98⟧",
+   "hu_notes": [
+    {
+     "idx": 96,
+     "text": "（丁未、前二五四）"
+    },
+    {
+     "idx": 97,
+     "text": "《後漢志》，河東郡大陽縣有吳山，山上有虞城。杜預曰︰虞，國也。《帝王世紀》曰︰舜妃嬪于虞，虞城是也；亦謂吳城，秦昭王伐魏取吳城是也。摎，紀虬翻。"
+    },
+    {
+     "idx": 98,
+     "text": "朝，直遙翻。令，力政翻。"
+    }
+   ],
+   "translation": "五十三年〔注:丁未(ていび)の年、紀元前二五四年〕。\n\n秦の摎(きゅう)が魏を攻め、吳城(ごじょう)を奪い取った〔注:吳城は河東郡大陽県にある城で、虞城ともいう〕。韓王は秦に入朝し、魏も国を挙げて秦の命令に従った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "官職・身分の追加",
+       "source_span": "摎伐魏，取吳城。／胡注: 摎は人名。秦の昭王が魏を伐ってこの吳城を取った。",
+       "translated_span": "秦の将軍の摎(きゅう)が魏を攻め",
+       "issue": "根拠集合では摎が人名であること、秦側が魏を伐ったことは確認できるが、摎が「将軍」であるとは示されていない。官職・身分の新規追加にあたる。",
+       "suggestion": "「秦の摎(きゅう)が魏を攻め」または「摎(きゅう)が魏を攻め」とする。"
+      }
+     ],
+     "ts": "2026-06-25T09:51:47"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "注由来の補足",
+       "source_span": "（丁未、前二五四）",
+       "translated_span": "〔注:丁未(ていび)の年、紀元前二五四年〕",
+       "issue": "胡三省注に基づく年次補足であり、本文外情報だが根拠集合内にある。",
+       "suggestion": "修正不要。"
+      },
+      {
+       "severity": "allowed",
+       "category": "注由来の補足",
+       "source_span": "吳城=河東郡大陽県に虞城(別名吳城)があり、秦の昭王が魏を伐ってこの吳城を取った。摎(きゅう)は人名。",
+       "translated_span": "秦の摎(きゅう)が魏を攻め、吳城(ごじょう)を奪い取った〔注:吳城は河東郡大陽県にある城で、虞城ともいう〕",
+       "issue": "前回問題となった「将軍」は削除されている。吳城の所在地・別名補足も胡注に根拠がある。",
+       "suggestion": "修正不要。"
+      }
+     ],
+     "ts": "2026-06-25T09:51:47"
+    }
+   ]
+  }
+ ],
+ "translation_full": "五十三年〔注:丁未(ていび)の年、紀元前二五四年〕。\n\n秦の摎(きゅう)が魏を攻め、吳城(ごじょう)を奪い取った〔注:吳城は河東郡大陽県にある城で、虞城ともいう〕。韓王は秦に入朝し、魏も国を挙げて秦の命令に従った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-25T09:51:47",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+}

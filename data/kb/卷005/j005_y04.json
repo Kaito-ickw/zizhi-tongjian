@@ -1,0 +1,64 @@
+{
+ "id": "j005_y04",
+ "juan": 5,
+ "section": "周紀五",
+ "ruler": "赧王下",
+ "year_label": "四十六年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "272 BCE 〜 256 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷005",
+   "revid": 1751430,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j005_y04_c01",
+   "source_text": "==四十六年⟦n63⟧==\n①秦中更胡傷攻趙閼與，不拔。⟦n64⟧",
+   "hu_notes": [
+    {
+     "idx": 63,
+     "text": "壬辰、前二六九"
+    },
+    {
+     "idx": 64,
+     "text": "更，工衡翻。「胡傷」，意謂卽上卷客卿之「胡陽」。閼，於葛翻，又於連翻。與，音預。"
+    }
+   ],
+   "translation": "四十六年〔注:壬辰(じんしん)の年、紀元前二六九年〕。\n\n秦の中更(ちゅうこう)である胡傷(こしょう)が趙の閼與(あつよ)を攻めたが、抜くことができなかった〔注:「胡傷」は、前の巻に出てくる客卿の「胡陽(こよう)」と同一人物であろう〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-25T09:44:33"
+    }
+   ]
+  }
+ ],
+ "translation_full": "四十六年〔注:壬辰(じんしん)の年、紀元前二六九年〕。\n\n秦の中更(ちゅうこう)である胡傷(こしょう)が趙の閼與(あつよ)を攻めたが、抜くことができなかった〔注:「胡傷」は、前の巻に出てくる客卿の「胡陽(こよう)」と同一人物であろう〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-25T09:44:33",
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 y03 確定訳を連鎖)。R1 で verdict=pass(forbidden 0)。秦の中更胡傷が趙閼與を攻めて抜けなかったこと(注:胡傷=前巻の客卿胡陽と同一人物か)を含む。T-review-policy 準拠。"
+}

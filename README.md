@@ -5,6 +5,7 @@
 - 翻訳エンジン = Claude(オーケストレーター兼翻訳)/ 独立検証レビュー = Codex(GPT)
 - 設計の正本は [`DESIGN.md`](./DESIGN.md)。仕様変更はそこへの差分で管理する。
 - 着手前検証の調査レポートは [`research/`](./research/)。
+- 生成済みの閲覧用ドキュメントは [`docs/`](./docs/)。
 
 ## 状態
 - 設計確定(grilling 2026-06-20)。着手前検証バックログ ①②③ 完了。実装フェーズ。
@@ -28,6 +29,7 @@ research/            着手前検証レポート(①ctext ②orchestration ③en
 data/raw/            外部コーパスの取得物(gitignore、manifest で pin)
 data/staging/        正規化途中(gitignore)
 data/kb/             成果物ナレッジベース(年=ファイル)
+docs/                閲覧用 Markdown ビュー
 pipeline/            取り込み・正規化・翻訳/レビュー パイプライン
 dict/                エンティティ辞書
 ```

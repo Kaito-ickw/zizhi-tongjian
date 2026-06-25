@@ -59,6 +59,15 @@
   }
  ],
  "translation_full": "安王元年〔注:庚辰(こうしん)の年、紀元前四〇一年〕。\n\n秦が魏を攻め、陽孤(ようこ)〔注:『史記』では「陽狐」に作る〕まで攻め込んだ。",
+ "illustrations": [
+  {
+   "slug": "qin_attack",
+   "category": "B",
+   "file": "j001_y03_qin_attack.jpg",
+   "caption": "秦軍の陽孤侵攻（手描き水墨画）",
+   "anchor": "秦が魏を攻め、陽孤(ようこ)〔注:『史記』では「陽狐」に作る〕まで攻め込んだ。"
+  }
+ ],
  "built_with": {
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"

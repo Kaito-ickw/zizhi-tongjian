@@ -24,7 +24,8 @@
 *   **タスク**: カテゴリB水墨画「楚の聲王が賊に弑される場面」1枚を生成・追加。
 結果: agy(`agy -p` 非対話)で生成→`image_sync.py` で 956KB→200KB 圧縮し `docs/images/卷001/j001_y02_chu.jpg` 配置→kb に `illustrations[]`(slug=chu/cat=B)登録→`build_view.py` でリンク解決確認。委譲フロー(agy生成→Claude同期/登録/build/commit)を end-to-end 検証。
 
-## [ ] I03 — 卷001 安王元年 (j001_y03) の画像追加 [Claude]
+## [x] I03 — 卷001 安王元年 (j001_y03) の画像追加 [Claude]
+結果: 安王元年の実内容「秦の魏侵攻（陽孤）」を確認し、カテゴリーB水墨画「秦軍の陽孤侵攻」1枚を生成・追加。docs/images/卷001/j001_y03_qin_attack.jpg に圧縮配置、illustrations[] に登録、build_view.py 再生成確認。
 *   **対象**: `data/kb/卷001/j001_y03.json`
 *   ⚠ 旧説明「雨中の虞人との約束」も**年次取り違えの疑い**(その逸話も y01 後半→ I07)。着手時に y03 の実内容を確認してから再定義すること。
 

@@ -1,6 +1,7 @@
 # Codex / research scratch
 research/*.log
 research/*.summary.txt
+scratch/
 
 # Claude Code local state (worktrees from drain mode, local settings)
 .claude/

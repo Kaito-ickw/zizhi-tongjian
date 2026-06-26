@@ -192,5 +192,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-23T19:30:00",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "zhaoliang",
+   "category": "B",
+   "file": "j002_y24_zhaoliang.jpg",
+   "caption": "商鞅（左）の過酷な法治に対し、千人の諾諾（へつらい）よりも一人の士の諤諤（忠言）が勝ると直言する趙良（右）",
+   "anchor": "千人がはいはいと従うよりも、一人の士がずけずけと諫言するほうがまさっています。"
+  }
+ ]
 }

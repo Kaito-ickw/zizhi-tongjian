@@ -789,5 +789,14 @@
   "reviewer": "codex(gpt)/low+high"
  },
  "updated_at": "2026-06-23T19:38:25",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "firebull",
+   "category": "B",
+   "file": "j004_y19_firebull.jpg",
+   "caption": "田単の「火牛の計」：角に刃物を縛りつけ、尾の葦に火を放った牛群が燕軍の陣営へ突進する様子を描いた水墨画。",
+   "anchor": "牛は尾が熱くなると、怒って燕軍へ突進した。"
+  }
+ ]
 }

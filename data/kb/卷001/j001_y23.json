@@ -128,5 +128,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-22T09:06:16",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳)。y19(forbidden 2件: 胡注『伏其側』と矛盾する『その上に伏した』/『刺』の脱落)、y20(forbidden 1件: 原文に無い因果『これに対し』)、y23(forbidden 1件: 原文に無い場所『家の』)を R1 で検出→修正し、R2(別独立セッション・前ラウンド findings 同梱)で全て pass。他6年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言)準拠。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳)。y19(forbidden 2件: 胡注『伏其側』と矛盾する『その上に伏した』/『刺』の脱落)、y20(forbidden 1件: 原文に無い因果『これに対し』)、y23(forbidden 1件: 原文に無い場所『家の』)を R1 で検出→修正し、R2(別独立セッション・前ラウンド findings 同梱)で全て pass。他6年は R1 で pass。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=新規事実/因果/心理/数値/発言)準拠。",
+ "illustrations": [
+  {
+   "slug": "zisi",
+   "category": "B",
+   "file": "j001_y23_zisi.jpg",
+   "caption": "子思が衞の君に二卵で将を捨てるべきではないと説く場面(水墨画)",
+   "anchor": "あの者の才なら、戦車五百乗"
+  }
+ ]
 }

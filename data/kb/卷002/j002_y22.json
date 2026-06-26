@@ -160,5 +160,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-23T09:07:15",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "maling",
+   "category": "B",
+   "file": "j002_y22_maling.jpg",
+   "caption": "馬陵の戦いの山場。夜、道が狭い山道で削られた大木を見つけ、松明をかざしてそこに書かれた文字を読もうとする魏将・龐涓と、周囲の崖や茂みから弓を引いて狙う斉の伏兵たち。",
+   "anchor": "火を近づけて照らし、読み終えないうちに"
+  }
+ ]
 }

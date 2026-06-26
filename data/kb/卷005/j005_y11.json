@@ -112,5 +112,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-25T19:54:31",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 y10 確定訳を連鎖)。R1 で verdict=pass(forbidden 0)。楚の州地献秦による和睦・武安君の野王攻略と上黨道遮断・上黨守馮亭の趙帰属策・平陽君豹の『無故之利』諫言と平原君の受地・馮亭の落涙を含む。T-review-policy 準拠。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 y10 確定訳を連鎖)。R1 で verdict=pass(forbidden 0)。楚の州地献秦による和睦・武安君の野王攻略と上黨道遮断・上黨守馮亭の趙帰属策・平陽君豹の『無故之利』諫言と平原君の受地・馮亭の落涙を含む。T-review-policy 準拠。",
+ "illustrations": [
+  {
+   "slug": "fengting",
+   "category": "B",
+   "file": "j005_y11_fengting.jpg",
+   "caption": "使者との面会を拒み、袖で顔を覆って涙を流す馮亭",
+   "anchor": "馮亭は涙を流して使者に会おうとせず、こう言った。「私は、主君の地を売ってそれで食らうことには忍びないのだ。」"
+  }
+ ]
 }

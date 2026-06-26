@@ -1,5 +1,14 @@
 {
  "id": "j001_y14",
+ "illustrations": [
+  {
+   "slug": "wuqi",
+   "category": "B",
+   "file": "j001_y14_wuqi.jpg",
+   "caption": "魏の武侯と呉起の西河での問答（在徳不在険）(水墨画)",
+   "anchor": "武侯が西河(せいが)に舟を浮かべて川を下った"
+  }
+ ],
  "juan": 1,
  "section": "周紀一",
  "ruler": "安王",

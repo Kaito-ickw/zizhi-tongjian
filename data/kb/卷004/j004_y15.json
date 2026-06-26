@@ -160,5 +160,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-23T09:07:24",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "xiangru",
+   "category": "B",
+   "file": "j004_y15_xiangru.jpg",
+   "caption": "完璧帰趙：秦の王宮で和氏の璧を手に柱の傍らに立ち、秦王を脅す藺相如",
+   "anchor": "わたしは璧を完(まっと)うして持ち帰ってまいります。"
+  }
+ ]
 }

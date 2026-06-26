@@ -148,5 +148,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-24T11:10:00",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "mengchang",
+   "category": "B",
+   "file": "j002_y40_mengchang.jpg",
+   "caption": "門の板札に諫言を求める布告を書きつける孟嘗君と、それを見守る食客たち",
+   "anchor": "そこで孟嘗君は門の板札にこう書きつけた。"
+  }
+ ]
 }

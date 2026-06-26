@@ -396,5 +396,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-24T12:00:00",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2/R3 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2/R3 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "suqin",
+   "category": "B",
+   "file": "j002_y29_suqin.jpg",
+   "caption": "六国の宰相を兼ね、王者のような盛大な車馬の行列を率いて趙に帰還する蘇秦。",
+   "anchor": "その車馬や輜重(しちょう=荷物の車)の行列は"
+  }
+ ]
 }

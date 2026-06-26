@@ -136,5 +136,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-25T00:40:43",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 j007_y02 の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2/R3 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 j007_y02 の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2/R3 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "daliang",
+   "category": "B",
+   "file": "j007_y03_daliang.jpg",
+   "caption": "大梁の水攻め：王賁率いる秦軍が黄河の水路を引き、魏の都・大梁の城壁を水浸しにする場面",
+   "anchor": "王賁(おうほん)が魏を攻め、黄河の水路を引いて大梁(たいりょう)に注ぎ込んだ"
+  }
+ ]
 }

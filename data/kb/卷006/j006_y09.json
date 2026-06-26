@@ -216,5 +216,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-25T19:58:01",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "xinling",
+   "category": "B",
+   "file": "j006_y09_xinling.jpg",
+   "caption": "信陵君が五カ国の軍を率いて蒙驁を破り、函谷関まで秦軍を追撃する場面",
+   "anchor": "信陵君は五か国の軍を率いて河外(かがい)で蒙驁を破り、蒙驁は逃げ去った。"
+  }
+ ]
 }

@@ -144,5 +144,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-25T01:30:00",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 j007_y08 の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 j007_y08 の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "fengchan",
+   "category": "B",
+   "file": "j007_y09_fengchan.jpg",
+   "caption": "泰山封禅：泰山の頂上で始皇帝が封禅の儀礼を行い、その功績を称える石碑を建てる場面",
+   "anchor": "泰山の南側からその頂上まで登って石碑を立てて徳をたたえ"
+  }
+ ]
 }

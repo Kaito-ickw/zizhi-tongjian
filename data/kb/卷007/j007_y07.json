@@ -164,5 +164,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-25T01:30:00",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 j007_y06 の確定訳を連鎖。臣光曰は本文系として翻訳)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 j007_y06 の確定訳を連鎖。臣光曰は本文系として翻訳)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "jinren",
+   "category": "B",
+   "file": "j007_y07_jinren.jpg",
+   "caption": "咸陽宮の金人：天下の武器を集めて溶かし、鋳造された十二体の巨大な金属の人像が宮廷に立ち並ぶ様子",
+   "anchor": "天下の武器を集めて咸陽へ運び、これを溶かして鐘の懸け台や、十二体の金属の人像を鋳造した。"
+  }
+ ]
 }

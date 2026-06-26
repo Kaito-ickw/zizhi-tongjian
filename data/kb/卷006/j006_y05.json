@@ -177,5 +177,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-25T09:51:47",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "jiangqu",
+   "category": "B",
+   "file": "j006_y05_jiangqu.jpg",
+   "caption": "将渠の諫死：趙への侵攻を阻止すべく、涙を流して燕王の印綬にすがりつく将渠と、怒って蹴りつけようとする燕王",
+   "anchor": "将渠が王の印綬の紐を引いて(引き止めようと)すると、王は足でこれを蹴りつけた。"
+  }
+ ]
 }

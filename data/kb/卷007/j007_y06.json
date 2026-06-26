@@ -152,5 +152,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-25T00:40:43",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 j007_y05 の確定訳を連鎖。臣光曰は本文系として翻訳)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年 j007_y05 の確定訳を連鎖。臣光曰は本文系として翻訳)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。各年の R1 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "yongmen",
+   "category": "B",
+   "file": "j007_y06_yongmen.jpg",
+   "caption": "雍門の司馬の諫言：秦に入朝しようとする斉王建の車の前に立ち塞がり、社稷のために引き返すよう説く場面",
+   "anchor": "雍門(ようもん)の司馬(しば)が進み出て言った。「王を立てるのは、社稷(しゃしょく)のためですか、それとも王ご自身のためですか。」"
+  }
+ ]
 }

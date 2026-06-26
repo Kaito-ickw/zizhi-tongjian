@@ -5,10 +5,29 @@
 - **レート方針(2026-06-26)**: Claude レートが律速なので**翻訳本体だけ Claude**に残し、周辺(pipeline/検証/画像同期/マージ/調査)は Codex/agy へ寄せる(詳細 DESIGN §3)。
 
 - 設計の正本: **DESIGN.md**(§1-10 + 決定ログ)。作業前に関連箇所を必ず参照。
-- 進捗と次タスク: **TASKS.md**(1タスク=1セッションで完結する粒度)。
+- 翻訳キュー: **`python3 pipeline/translation_queue.py next`**。staging と `data/kb/` の実状態から次の翻訳バッチを決める。
+- 保守タスク: **TASKS.md**(翻訳以外。明示されたときだけ使う)。
 - 調査根拠: `research/`、データ来歴: `pipeline/manifests/`、辞書: `dict/`。
 
-## 再開プロトコル(ユーザーが「再開して」と言ったら)
+## 翻訳再開プロトコル(ユーザーが「再開して」「翻訳再開して」と言ったら)
+**Claude は翻訳本体と Codex review 指摘の反映に集中する。** 次対象の判断に TASKS.md は使わない。
+1. `python3 pipeline/translation_queue.py check` を実行する。
+   - `previous_year` が FAIL: stale worktree / continuity 欠落の疑い。翻訳せず停止。
+   - `target_outputs_absent` が FAIL: 既存 KB との衝突。翻訳せず停止。
+   - `worktree_clean_for_translation` が FAIL: 未コミット差分を確認し、翻訳を混ぜない。
+2. check が OK なら `python3 pipeline/translation_queue.py next` で表示された **1バッチだけ**翻訳する。
+   - 対象年・チャンク・continuity source は queue 出力を正とする。
+   - `pipeline/context.py <chunk_id>` で翻訳パケットを取り、Claude が口語超訳を生成する。
+   - `pipeline/review.py --input ... --effort low` で Codex 独立レビュー。fail の場合は findings を反映し、前ラウンド findings 同梱で別セッション再レビュー。
+3. バッチ内の全チャンクが pass したら、年レコードを `data/kb/卷NNN/jNNN_yMM.json` に保存する。
+4. 決定論的な後処理だけ実行する: `python3 pipeline/year_western.py`、`python3 pipeline/build_view.py`。
+5. 変更を git コミット(メッセージ末尾に `Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>`)。
+6. 停止し、「完了した翻訳バッチ / 次の翻訳バッチ」を1行ずつ報告して終わる。
+
+- 翻訳中に設計判断・校勘分類・画像・保守 TODO が見えても、翻訳品質に直結しない限り着手しない。必要なら保守タスクとしてメモし、翻訳バッチを完了して停止する。
+- `python3 pipeline/translation_queue.py next` が「All staging years...」を返したときだけ、保守タスクへ移るかをユーザーに確認する。
+
+## 保守タスク再開プロトコル(ユーザーが「保守タスクを再開して」と言ったら)
 **1セッション=1タスク。** 以下を厳守する。
 1. `python3 pipeline/task.py next`(または TASKS.md)で最初の未完了 `[ ]` タスクを **1つ** 選ぶ。
 2. そのタスクの **done-criteria を満たすまで完遂**する。**次のタスクには進まない**(勝手に複数こなさない)。
@@ -43,6 +62,7 @@
     2. **波をローンチする前に毎回** `python3 pipeline/usage.py estimate --cap 90`。残ポイントが「較正した最悪波コスト」以上のときだけ波を投入。exit=3(STOP)なら新規波を投げない。
     3. **天井に近づくほど単位を縮める**(K=3巻 → K=1巻 → 1サブバッチ)でオーバーシュート最小化。
     4. 他プロジェクト/claude.ai を挟んだら過小評価しうる → ユーザーに `/status` を聞いて**再アンカー**。
+- **波の対象選定**: `python3 pipeline/translation_queue.py list` で未完巻を確認し、各 background Agent は開始直後に `python3 pipeline/translation_queue.py check` 相当の continuity/衝突/clean 確認を行う。stale worktree で直前年 KB が無い場合は翻訳せず停止。
 - **停止条件**: estimate が STOP / 対象巻が尽きた / 429(ハード床)/ ユーザー停止。停止時は「確定した巻・年・推定使用% / 次に残っている巻」を報告。
 - サブバッチ毎コミット+冪等再開(`task.py`/TASKS チェック欄)なので、途中停止で失うのは実行中の1サブバッチのみ。
 

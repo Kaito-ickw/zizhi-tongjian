@@ -5,10 +5,10 @@
   "first_year": "403 BCE",
   "ganzhi": "戊寅"
  },
- "records": 154,
+ "records": 155,
  "ganzhi_mismatch_count": 0,
  "range_violation_count": 0,
- "sequence_violation_count": 14,
+ "sequence_violation_count": 15,
  "accession_inconsistency_count": 0,
  "interpolated_count": 0,
  "ruler_accession": [
@@ -1355,6 +1355,16 @@
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false
+    },
+    {
+     "id": "j005_y12",
+     "juan": 5,
+     "year_label": "五十五年",
+     "ganzhi": "辛丑",
+     "western_year": "260 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
     }
    ]
   },
@@ -1769,6 +1779,14 @@
    "previous_astro": -331,
    "current_id": "j002_y31",
    "current_astro": -329
+  },
+  {
+   "type": "sequence_violation",
+   "juan": 5,
+   "previous_id": "j005_y11",
+   "previous_astro": -261,
+   "current_id": "j005_y12",
+   "current_astro": -259
   },
   {
    "type": "sequence_violation",

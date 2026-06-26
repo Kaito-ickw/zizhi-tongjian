@@ -5,7 +5,7 @@
   "first_year": "403 BCE",
   "ganzhi": "戊寅"
  },
- "records": 152,
+ "records": 154,
  "ganzhi_mismatch_count": 0,
  "range_violation_count": 0,
  "sequence_violation_count": 14,
@@ -1624,6 +1624,40 @@
      "year_label": "三年",
      "ganzhi": "甲午",
      "western_year": "207 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    }
+   ]
+  },
+  {
+   "ruler": "太祖高皇帝上之上",
+   "accession_western": "206 BCE",
+   "accession_astro": -205,
+   "years": [
+    {
+     "id": "j009_y01",
+     "juan": 9,
+     "year_label": "元年",
+     "ganzhi": "乙未",
+     "western_year": "206 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    }
+   ]
+  },
+  {
+   "ruler": "太祖高皇帝上之下",
+   "accession_western": "206 BCE",
+   "accession_astro": -205,
+   "years": [
+    {
+     "id": "j010_y01",
+     "juan": 10,
+     "year_label": "三年",
+     "ganzhi": "丁酉",
+     "western_year": "204 BCE",
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false

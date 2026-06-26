@@ -813,5 +813,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-26T00:00:00",
- "review_policy": "R1=Codex/low 独立レビュー(巻頭=巻境界リセット点のため前年 continuity 根拠なし; y01 内は確定訳を巻内連続根拠として連鎖)。根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱。c01/c02/c03 はいずれも R1 fail→R2 pass。各チャンクの結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(巻頭=巻境界リセット点のため前年 continuity 根拠なし; y01 内は確定訳を巻内連続根拠として連鎖)。根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱。c01/c02/c03 はいずれも R1 fail→R2 pass。各チャンクの結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "xiaohe_books",
+   "category": "B",
+   "file": "j009_y01_xiaohe_books.jpg",
+   "caption": "咸陽に入城後、ひとり丞相府の図書や戸籍を収取・保管する蕭何",
+   "anchor": "だが蕭何(しょうか)だけはまっ先に入って、秦の丞相府にあった地図・戸籍などの文書を取りおさめて保管した。"
+  }
+ ]
 }

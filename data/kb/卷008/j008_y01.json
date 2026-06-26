@@ -821,5 +821,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-26T00:00:00",
- "review_policy": "R1=Codex/low 独立レビュー(巻頭=巻境界リセット点のため前年 continuity 根拠なし; y01 内は確定訳を巻内連続根拠として連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。c01/c02 は R1 fail→R2 pass, c03 は R1 pass。各チャンクの結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(巻頭=巻境界リセット点のため前年 continuity 根拠なし; y01 内は確定訳を巻内連続根拠として連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。c01/c02 は R1 fail→R2 pass, c03 は R1 pass。各チャンクの結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "chenying_mother",
+   "category": "B",
+   "file": "j008_y01_chenying_mother.jpg",
+   "caption": "東陽の若者たちに王に担ぎ上げられそうになった陳嬰に対し、その母がにわかに大きな名を得ることの危険を諭す場面。",
+   "anchor": "わたしがおまえの家の嫁になってから、おまえの先祖に貴い人がいたとは聞いたことがない。今にわかに大きな名を得るのは縁起が悪い。"
+  }
+ ]
 }

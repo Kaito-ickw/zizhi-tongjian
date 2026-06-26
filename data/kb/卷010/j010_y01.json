@@ -683,5 +683,14 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-26T00:00:00",
- "review_policy": "R1=Codex/low 独立レビュー(c01=巻境界リセット点のため前巻 continuity 根拠なし; y01 内は確定訳を巻内連続根拠として連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。c01/c02/c03 はいずれも R1 fail→R2 pass。各チャンクの結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(c01=巻境界リセット点のため前巻 continuity 根拠なし; y01 内は確定訳を巻内連続根拠として連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ, 再レビューは前ラウンド findings 同梱)。c01/c02/c03 はいずれも R1 fail→R2 pass。各チャンクの結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "hanxin_master",
+   "category": "B",
+   "file": "j010_y01_hanxin_master.jpg",
+   "caption": "広武君（李左車）の縄を解き、東向きの席に座らせて師事する韓信",
+   "anchor": "広武君を縛って麾下に連れて来た者があると、韓信はその縄を解き、広武君を東向きに座らせ、師として礼を尽くして問うた。"
+  }
+ ]
 }

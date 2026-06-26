@@ -1,7 +1,8 @@
 # 資治通鑑 翻訳プロジェクト — セッション指針
 
 資治通鑑(全294巻・約300万字)を現代日本語の平易な口語超訳でナレッジベース化する。
-実行系: **Claude=翻訳/オーケストレーション**, **Codex(`codex exec`)=独立クロスベンダー・レビュー**, **agy(Gemini, `agy -p`)=ワンショット実装/機械的検証**。
+実行系: **Claude=翻訳/オーケストレーション**, **Codex(`codex exec`)=独立クロスベンダー・レビュー + 実装 + 画像生成(built-in `image_gen`)**, **agy(Gemini, `agy -p`)=ワンショット実装/機械的検証/画像生成(nano-banana)**。
+- **レート方針(2026-06-26)**: Claude レートが律速なので**翻訳本体だけ Claude**に残し、周辺(pipeline/検証/画像同期/マージ/調査)は Codex/agy へ寄せる(詳細 DESIGN §3)。
 
 - 設計の正本: **DESIGN.md**(§1-10 + 決定ログ)。作業前に関連箇所を必ず参照。
 - 進捗と次タスク: **TASKS.md**(1タスク=1セッションで完結する粒度)。
@@ -19,10 +20,10 @@
 - 着手前に不明点があり判断が要る場合のみユーザーに確認。それ以外は default を選んで進める。
 
 ## 画像作成再開プロトコル(ユーザーが「画像作成タスクを再開して」と言ったら)
-**画像追加も1セッション=1タスク。** Antigravity（agy）が画像を生成し、Claudeがワークフロー全体をオーケストレートする。以下の手順を厳守すること。
+**画像追加も1セッション=1タスク。** 画像生成エンジン(Codex built-in `image_gen` か agy/nano-banana)が画像を生成し、Claudeがワークフロー全体をオーケストレートする。以下の手順を厳守すること。
 
 ① `python3 pipeline/image_task.py next` で対象年を特定する。
-② 対象年の翻訳・胡注を読み、`agy` を repo workspace で起動して `.agents/instruction-gen-image.md` 準拠の画像を生成する。
+② 対象年の翻訳・胡注を読み、画像生成エンジンで `.agents/instruction-gen-image.md` 準拠の画像を生成する。エンジンは **(a) Codex built-in `image_gen`**(`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true` で起動し、built-in tool 出力の base64 をファイル保存させる)または **(b) agy/nano-banana** のいずれか。Codex が利用制限に当たったら agy へ切替。**どちらもサブスク内・従量API不要**(CLI `gpt-image-2` は `OPENAI_API_KEY`=従量のため使わない)。
 ③ `pipeline/image_sync.py` で `docs/images/卷NNN/` に圧縮配置する。
 ④ kb record の `illustrations` 配列に登録する（`translation_full` 本文は触らない）。
 ⑤ `build_view.py` 再生成し、リンク解決を確認する。
@@ -48,6 +49,7 @@
 ## 実行系と予算(詳細 DESIGN §3)
 - Codex は ChatGPT サブスクの **5h レートが律速**。`[Codex]` 印のタスクはレート残量を確認してから。
 - 検証・コード生成・調査は **agy 優先**(最安)→ Claude/Codex 予算を温存。
+- **Claude レートが律速のときは翻訳本体のみ Claude**に残し、周辺作業(pipeline/検証/画像同期/マージ/調査)を Codex/agy へ寄せて生成トークンを温存する(2026-06-26 方針)。
 - 生成データ(`data/raw/`, `data/staging/`, `dict/*.jsonl`)は **gitignore**。manifest と script のみ tracked。
 
 ## 環境メモ

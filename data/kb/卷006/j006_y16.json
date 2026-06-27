@@ -1,0 +1,93 @@
+{
+ "id": "j006_y16",
+ "juan": 6,
+ "section": "秦紀一",
+ "ruler": "始皇帝上",
+ "year_label": "七年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "255 BCE 〜 228 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷006",
+   "revid": 387087,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j006_y16_c01",
+   "source_text": "七年⟦n262⟧\n①伐魏，取汲。\n②夏太后薨。⟦n263⟧\n③蒙驁卒。⟦n264⟧",
+   "hu_notes": [
+    {"idx": 262, "text": "（辛酉、前二四○）"},
+    {"idx": 263, "text": "卽夏姬也。夏，戶雅翻。薨，呼肱翻。"},
+    {"idx": 264, "text": "驁，五到翻。卒，子恤翻。"}
+   ],
+   "translation": "七年〔注:辛酉(しんゆう)の年、紀元前二四〇年〕。\n\n秦が魏を攻め、汲(きゅう)の地を取った。夏太后(かたいこう)が薨(こう)じた。〔注:夏太后とはすなわち夏姫(かき)のことである。〕蒙驁(もうごう)が死去した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "主語の補完",
+       "source_span": "伐魏，取汲。",
+       "translated_span": "秦が魏を攻め、汲(きゅう)の地を取った。",
+       "issue": "原文は主語を明示しないが、紀年の主体として秦を補っている。根拠文脈に沿う自然な補完であり、原文にない独立した新事実の追加とはいえない。",
+       "suggestion": "現訳のままで可。"
+      },
+      {
+       "severity": "allowed",
+       "category": "語義の具体化",
+       "source_span": "夏太后薨。",
+       "translated_span": "夏太后(かたいこう)が薨(こう)じた。",
+       "issue": "「薨」をそのまま用い、読みを補っている。事実内容の追加ではない。",
+       "suggestion": "現訳のままで可。"
+      },
+      {
+       "severity": "allowed",
+       "category": "胡注の反映",
+       "source_span": "卽夏姬也。夏，戶雅翻。薨，呼肱翻。",
+       "translated_span": "〔注:夏太后とはすなわち夏姫(かき)のことである。〕",
+       "issue": "胡三省注の内容を注として反映しており、根拠集合内にある情報である。",
+       "suggestion": "現訳のままで可。"
+      },
+      {
+       "severity": "allowed",
+       "category": "語義の具体化",
+       "source_span": "蒙驁卒。",
+       "translated_span": "蒙驁(もうごう)が死去した。",
+       "issue": "「卒」を「死去した」と訳している。語義範囲内の自然な現代語化であり、追加情報はない。",
+       "suggestion": "現訳のままで可。"
+      }
+     ],
+     "ts": "2026-06-27T13:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "七年〔注:辛酉(しんゆう)の年、紀元前二四〇年〕。\n\n秦が魏を攻め、汲(きゅう)の地を取った。夏太后(かたいこう)が薨(こう)じた。〔注:夏太后とはすなわち夏姫(かき)のことである。〕蒙驁(もうごう)が死去した。",
+ "built_with": {
+  "translator": "claude-sonnet-4-6",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-27T13:00:00",
+ "review_policy": "R1=Codex/low 独立レビューで verdict=pass(forbidden 0、allowed 4)。連続性根拠=直前年 j006_y15(秦六年)確定訳を連鎖。内容: 秦七年——秦が魏を攻めて汲を取得・夏太后(夏姫)の薨去・蒙驁の死去。",
+ "illustrations": []
+}

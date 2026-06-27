@@ -56,14 +56,13 @@
   - 巻単位にする理由: `continuity_text` は巻内で逐次連鎖。1巻=1エージェントなら連続性が保たれ、巻境界は自然なリセット点。サブバッチを別エージェントに割らない。
   - フレッシュ隔離コンテキスト=手動 `/clear` 相当でトークン効率を保つ。worktree=同一ディレクトリ衝突/コミットレースを構造的に排除。
 - **予算ガード(二段構え)**:
-  - ハード床 = **口座側の超過上限 $0**(超えたら 429 で物理停止)。用途次第で都度引き上げる前提。
-  - ソフト停止 = **5h 枠の 90%**(週間枠は手動管理)。残量ゲージは API ヘッダにありモデルからは見えないため、**アンカー+補間**で運用:
-    1. ドレイン開始時に較正する。`data/staging/usage_anchor.json` の `anchored_at` が新しい(目安15分以内・以後に重い他作業なし)ならそれを**再利用可**。無ければユーザーに `/status` の使用%を聞き `python3 pipeline/usage.py anchor <pct>`。各ドレイン冒頭で取り直すのは**ワークロード混在比の差を吸収**するため。
-    2. **波をローンチする前に毎回** `python3 pipeline/usage.py estimate --cap 90`。残ポイントが「較正した最悪波コスト」以上のときだけ波を投入。exit=3(STOP)なら新規波を投げない。
+  - ハード床 = **口座側の超過上限 $0**(超えたら 429 で物理停止)。用途次第で都度引き上げる前提。月次 spend limit も別ハード床で、`ai-quota status` の Claude `extra_usage`(`used_credits`/`monthly_limit`)に残額が出る(null のときはユーザーに確認)。
+  - ソフト停止 = **5h 枠の 90%**(週間枠も監視)。残量は **`ai-quota status` が Claude/Codex 両方の実値**(5h・週次の `utilization` と `resets_at`)を直接返すので、旧来のアンカー+補間や `/status` 聞き取りは不要:
+    1. **波をローンチする前に毎回** `ai-quota status --json` を実行。Claude `five_hour.utilization`(+ `seven_day`)と Codex `five_hour`/`seven_day`(レビュー消費=しばしば真の律速)を読む。
+    2. 残ヘッドルーム = 90 −(Claude 5h%)。**1エージェント ≒18pt**(実測較正)で割って投入エージェント数を決める。残ヘッドルームが 1エージェント分を切る、または Codex 週次が枯渇間近なら**新規波を投げない**。`resets_at` も判断材料。
     3. **天井に近づくほど単位を縮める**(K=3巻 → K=1巻 → 1サブバッチ)でオーバーシュート最小化。
-    4. 他プロジェクト/claude.ai を挟んだら過小評価しうる → ユーザーに `/status` を聞いて**再アンカー**。
 - **波の対象選定**: `python3 pipeline/translation_queue.py list` で未完巻を確認し、各 background Agent は開始直後に `python3 pipeline/translation_queue.py check` 相当の continuity/衝突/clean 確認を行う。stale worktree で直前年 KB が無い場合は翻訳せず停止。
-- **停止条件**: estimate が STOP / 対象巻が尽きた / 429(ハード床)/ ユーザー停止。停止時は「確定した巻・年・推定使用% / 次に残っている巻」を報告。
+- **停止条件**: `ai-quota status` が Claude 5h≥90%(または Codex 週次が枯渇)/ 対象巻が尽きた / 429(ハード床)/ ユーザー停止。停止時は「確定した巻・年・現在の 5h%(ai-quota 実値)/ 次に残っている巻」を報告。
 - サブバッチ毎コミット+冪等再開(`task.py`/TASKS チェック欄)なので、途中停止で失うのは実行中の1サブバッチのみ。
 
 ## 実行系と予算(詳細 DESIGN §3)

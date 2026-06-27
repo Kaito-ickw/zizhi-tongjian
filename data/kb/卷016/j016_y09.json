@@ -1,0 +1,78 @@
+{
+ "id": "j016_y09",
+ "juan": 16,
+ "section": "漢紀八",
+ "ruler": "孝景皇帝下",
+ "year_label": "四年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "154 BCE 〜 141 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷016",
+   "revid": 2082186,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j016_y09_c01",
+   "source_text": "四年⟦n277⟧\n①夏，蝗。\n②冬，十月，戊午，日有食之。",
+   "hu_notes": [
+    {
+     "idx": 277,
+     "text": "（乙未、前一四六 ）"
+    }
+   ],
+   "translation": "四年〔注:乙未(きのとひつじ)の年、紀元前一四六年〕。\n\n夏、いなごの害があった。\n\n冬、十月、戊午(つちのえうま)の日、日食があった。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "注の展開",
+       "source_span": "（乙未、前一四六 ）",
+       "translated_span": "〔注:乙未(きのとひつじ)の年、紀元前一四六年〕",
+       "issue": "胡三省注の干支と年を読者向けに読み下し・表記展開している。根拠集合内にある情報であり、捏造ではない。",
+       "suggestion": "修正不要。"
+      },
+      {
+       "severity": "allowed",
+       "category": "自然な具体化",
+       "source_span": "夏，蝗。",
+       "translated_span": "夏、いなごの害があった。",
+       "issue": "「蝗」を単に虫名としてでなく被害として訳しているが、災異記事としての文脈に沿う自然な具体化であり、新規事実の追加とはいえない。",
+       "suggestion": "修正不要。"
+      }
+     ],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "四年〔注:乙未(きのとひつじ)の年、紀元前一四六年〕。\n\n夏、いなごの害があった。\n\n冬、十月、戊午(つちのえうま)の日、日食があった。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。 c01: R1 pass。",
+ "illustrations": []
+}

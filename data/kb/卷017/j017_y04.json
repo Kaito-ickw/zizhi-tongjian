@@ -1,0 +1,93 @@
+{
+ "id": "j017_y04",
+ "juan": 17,
+ "section": "漢紀九",
+ "ruler": "世宗孝武皇帝上之上",
+ "year_label": "四年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "140 BCE 〜 134 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷017",
+   "revid": 387254,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j017_y04_c01",
+   "source_text": "四年⟦n205⟧\n①夏，有風赤如血。\n②六月，旱。\n③秋，九月，有星孛于東北。⟦n206⟧\n④是歲，南越王佗死，⟦n207⟧其孫文王胡立。",
+   "hu_notes": [
+    {
+     "idx": 205,
+     "text": "（甲辰、前一三七）"
+    },
+    {
+     "idx": 206,
+     "text": "孛，蒲內翻。"
+    },
+    {
+     "idx": 207,
+     "text": "佗，徒河翻。"
+    }
+   ],
+   "translation": "四年〔注:甲辰(きのえたつ)の年、紀元前一三七年〕。\n\n夏、血のように赤い風が吹いた。\n\n六月、旱(ひでり)があった。\n\n秋、九月、彗星(すいせい)が東北に現れた〔注:孛(はい)は彗星〕。\n\nこの年、南越王(なんえつおう)の佗(だ)が死に、その孫の文王(ぶんおう)胡(こ)が立った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "原文にない氏の追加",
+       "source_span": "南越王佗死",
+       "translated_span": "南越王(なんえつおう)の趙佗(ちょうだ)が死に",
+       "issue": "根拠集合では名は「佗」とのみ示され、胡注も読みを示すだけで、「趙」という氏は示されていない。読者に原文外の固有名情報を追加している。",
+       "suggestion": "「南越王(なんえつおう)の佗(だ)が死に」など、根拠集合にある範囲にとどめる。"
+      },
+      {
+       "severity": "forbidden",
+       "category": "原文にない氏の追加",
+       "source_span": "其孫文王胡立",
+       "translated_span": "その孫の文王(ぶんおう)趙胡(ちょうこ)が立った",
+       "issue": "根拠集合では「文王胡」とのみあり、「趙」という氏は示されていない。読者に原文外の固有名情報を追加している。",
+       "suggestion": "「その孫の文王(ぶんおう)胡(こ)が立った」など、根拠集合にある範囲にとどめる。"
+      }
+     ],
+     "ts": "2026-06-28T00:00:00"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "四年〔注:甲辰(きのえたつ)の年、紀元前一三七年〕。\n\n夏、血のように赤い風が吹いた。\n\n六月、旱(ひでり)があった。\n\n秋、九月、彗星(すいせい)が東北に現れた〔注:孛(はい)は彗星〕。\n\nこの年、南越王(なんえつおう)の佗(だ)が死に、その孫の文王(ぶんおう)胡(こ)が立った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(卷017〈漢紀九〉冒頭・新巻のため巻境界リセット、c01 continuity=None)。forbidden=根拠集合外の事実/因果/心理/数値/発言/固有名の新規追加のみ。y01_c01: R1 pass。y01_c02: R1 fail(公儀休の行為に原文外の追放を付加)→R2 pass(別セッション・前ラウンド findings 同梱)。y02_c01: R1 fail(新垣平注に原文外の事実・心理を付加 / 申公の帰着先「魯」を補完)→R2 pass。y03_c01: R1 pass。y04_c01: R1 fail(佗・胡に原文外の氏「趙」を付加)→R2 pass。詳細は chunks[].review_history を参照。",
+ "illustrations": []
+}

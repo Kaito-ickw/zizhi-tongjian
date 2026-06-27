@@ -1,0 +1,70 @@
+{
+ "id": "j015_y11",
+ "juan": 15,
+ "section": "漢紀七",
+ "ruler": "太宗孝文皇帝下",
+ "year_label": "五年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "169 BCE 〜 155 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷015",
+   "revid": 387141,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j015_y11_c01",
+   "source_text": "五年⟦n257⟧\n①春，正月，上行幸隴西；三月，行幸雍；秋，七月，行幸代。",
+   "hu_notes": [
+    {
+     "idx": 257,
+     "text": "（壬午、前一五九）"
+    }
+   ],
+   "translation": "五年〔注:壬午(みずのえうま)の年、紀元前一五九年〕。\n\n春、正月。帝は隴西(ろうせい)へ行幸(ぎょうこう)した。三月、雍(よう)へ行幸した。秋、七月、代(だい)へ行幸した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "主語の補完・語義の自然な具体化",
+       "source_span": "上行幸隴西；三月，行幸雍；秋，七月，行幸代。",
+       "translated_span": "帝は隴西(ろうせい)へ行幸(ぎょうこう)した。三月、雍(よう)へ行幸した。秋、七月、代(だい)へ行幸した。",
+       "issue": "「上」を「帝」とし、地名・語の読みを補っているが、原文の語義範囲内であり新規事実の追加ではない。",
+       "suggestion": "修正不要。"
+      }
+     ],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "五年〔注:壬午(みずのえうま)の年、紀元前一五九年〕。\n\n春、正月。帝は隴西(ろうせい)へ行幸(ぎょうこう)した。三月、雍(よう)へ行幸した。秋、七月、代(だい)へ行幸した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity: j015_y11←前年)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
+ "illustrations": []
+}

@@ -1,0 +1,65 @@
+{
+ "id": "j012_y11",
+ "juan": 12,
+ "section": "漢紀四",
+ "ruler": "孝惠皇帝",
+ "year_label": "六年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "199 BCE 〜 188 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷012",
+   "revid": 2034228,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j012_y11_c01",
+   "source_text": "六年⟦n317⟧\n①冬，十月，以王陵爲右丞相，陳平爲左丞相。\n②齊悼惠王肥薨。\n③夏，留文成侯張良薨。⟦n318⟧\n④以周勃爲太尉。",
+   "hu_notes": [
+    {
+     "idx": 317,
+     "text": "（壬子、前一八九）"
+    },
+    {
+     "idx": 318,
+     "text": "周公《諡法》︰安民立政曰成。賀琛《臣諡》︰佐相克終曰成。"
+    }
+   ],
+   "translation": "六年〔注:壬子(みずのえね)の年、紀元前一八九年〕。\n\n冬、十月。王陵(おうりょう)を右丞相(うじょうしょう)とし、陳平(ちんぺい)を左丞相(さじょうしょう)とした。\n\n齊(せい)の悼惠王(とうけいおう)肥(ひ)が薨(こう)じた。\n\n夏。留文成侯(りゅうぶんせいこう)の張良(ちょうりょう)が薨じた〔注:諡(おくりな)の「成(せい)」について、周公の諡法には「民を安んじ、政(まつりごと)を立てるを成という」とあり、賀琛(がちん)の臣の諡法には「宰相として君を佐(たす)け、よく最後まで全うするを成という」とある〕。\n\n周勃(しゅうぼつ)を太尉(たいい)とした。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "六年〔注:壬子(みずのえね)の年、紀元前一八九年〕。\n\n冬、十月。王陵(おうりょう)を右丞相(うじょうしょう)とし、陳平(ちんぺい)を左丞相(さじょうしょう)とした。\n\n齊(せい)の悼惠王(とうけいおう)肥(ひ)が薨(こう)じた。\n\n夏。留文成侯(りゅうぶんせいこう)の張良(ちょうりょう)が薨じた〔注:諡(おくりな)の「成(せい)」について、周公の諡法には「民を安んじ、政(まつりごと)を立てるを成という」とあり、賀琛(がちん)の臣の諡法には「宰相として君を佐(たす)け、よく最後まで全うするを成という」とある〕。\n\n周勃(しゅうぼつ)を太尉(たいい)とした。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=巻012 j012_y10_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(findings なし)。詳細は chunks[].review_history を参照。",
+ "illustrations": []
+}

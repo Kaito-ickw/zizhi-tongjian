@@ -1,0 +1,90 @@
+{
+ "id": "j016_y06",
+ "juan": 16,
+ "section": "漢紀八",
+ "ruler": "孝景皇帝下",
+ "year_label": "中元年",
+ "era": "中",
+ "western_year": null,
+ "western_volume_range": "154 BCE 〜 141 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷016",
+   "revid": 2082186,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j016_y06_c01",
+   "source_text": "中元年⟦n223⟧\n①夏，四月，乙巳，赦天下。\n②地震。衡山原都雨雹，大者尺八寸。⟦n224⟧",
+   "hu_notes": [
+    {
+     "idx": 223,
+     "text": "（壬辰、前一四九 ）"
+    },
+    {
+     "idx": 224,
+     "text": "原都，地名，蓋屬衡山國。雨，王遇翻。"
+    }
+   ],
+   "translation": "中元年〔注:壬辰(みずのえたつ)の年、紀元前一四九年〕。\n\n夏、四月、乙巳(きのとみ)の日、天下に大赦を行った。\n\n地震があった。衡山(こうざん)の原都(げんと)で雹(ひょう)が降り、大きいものは一尺八寸もあった〔注:原都は地名。おそらく衡山国に属する〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "胡注の反映",
+       "source_span": "（壬辰、前一四九 ）",
+       "translated_span": "〔注:壬辰(みずのえたつ)の年、紀元前一四九年〕",
+       "issue": "胡三省注の年代情報を注として補ったもの。根拠集合内に存在するため捏造ではない。",
+       "suggestion": "修正不要。"
+      },
+      {
+       "severity": "allowed",
+       "category": "語義の自然な具体化",
+       "source_span": "夏，四月，乙巳，赦天下。",
+       "translated_span": "夏、四月、乙巳(きのとみ)の日、天下に大赦を行った。",
+       "issue": "「赦天下」を「天下に大赦を行った」と訳しており、語義範囲内の自然な具体化。",
+       "suggestion": "修正不要。"
+      },
+      {
+       "severity": "allowed",
+       "category": "胡注の反映",
+       "source_span": "原都，地名，蓋屬衡山國。",
+       "translated_span": "〔注:原都は地名。おそらく衡山国に属する〕",
+       "issue": "胡三省注の内容を注として反映している。",
+       "suggestion": "修正不要。"
+      }
+     ],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "中元年〔注:壬辰(みずのえたつ)の年、紀元前一四九年〕。\n\n夏、四月、乙巳(きのとみ)の日、天下に大赦を行った。\n\n地震があった。衡山(こうざん)の原都(げんと)で雹(ひょう)が降り、大きいものは一尺八寸もあった〔注:原都は地名。おそらく衡山国に属する〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(allowed のみ)。詳細は chunks[].review_history を参照。",
+ "illustrations": []
+}

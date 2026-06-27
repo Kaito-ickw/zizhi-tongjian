@@ -1,0 +1,61 @@
+{
+ "id": "j015_y09",
+ "juan": 15,
+ "section": "漢紀七",
+ "ruler": "太宗孝文皇帝下",
+ "year_label": "三年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "169 BCE 〜 155 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷015",
+   "revid": 387141,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j015_y09_c01",
+   "source_text": "三年⟦n254⟧\n①春，二月，上行幸代。\n②是歲，匈奴老上單于死，子軍臣單于立。",
+   "hu_notes": [
+    {
+     "idx": 254,
+     "text": "（庚辰、前一六一）"
+    }
+   ],
+   "translation": "三年〔注:庚辰(かのえたつ)の年、紀元前一六一年〕。\n\n春、二月。帝は代(だい)へ行幸(ぎょうこう)した。\n\nこの年、匈奴(きょうど)の老上単于(ろうじょうぜんう)が死に、子の軍臣単于(ぐんしんぜんう)が立った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "三年〔注:庚辰(かのえたつ)の年、紀元前一六一年〕。\n\n春、二月。帝は代(だい)へ行幸(ぎょうこう)した。\n\nこの年、匈奴(きょうど)の老上単于(ろうじょうぜんう)が死に、子の軍臣単于(ぐんしんぜんう)が立った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity: j015_y09←前年)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
+ "illustrations": []
+}

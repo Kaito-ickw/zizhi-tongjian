@@ -1,0 +1,65 @@
+{
+ "id": "j015_y10",
+ "juan": 15,
+ "section": "漢紀七",
+ "ruler": "太宗孝文皇帝下",
+ "year_label": "四年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "169 BCE 〜 155 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷015",
+   "revid": 387141,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j015_y10_c01",
+   "source_text": "四年⟦n255⟧\n①夏，四月，丙寅晦，日有食之。⟦n256⟧\n②五月，赦天下。\n③上行幸雍。",
+   "hu_notes": [
+    {
+     "idx": 255,
+     "text": "（辛巳、前一六○）"
+    },
+    {
+     "idx": 256,
+     "text": "月末爲晦。《天文書》，晦則日月相沓，月在日後，則光體伏矣。"
+    }
+   ],
+   "translation": "四年〔注:辛巳(かのとみ)の年、紀元前一六〇年〕。\n\n夏、四月。丙寅(ひのえとら)の晦(つごもり＝月末)の日に、日食があった〔注:月末を晦(かい)という。『天文書』に、晦の日には日と月とが重なり合い、月が日の後ろにまわると、その光る本体が隠れてしまう、とある〕。\n\n五月。天下に大赦(たいしゃ)を行った。\n\n帝は雍(よう)へ行幸(ぎょうこう)した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "四年〔注:辛巳(かのとみ)の年、紀元前一六〇年〕。\n\n夏、四月。丙寅(ひのえとら)の晦(つごもり＝月末)の日に、日食があった〔注:月末を晦(かい)という。『天文書』に、晦の日には日と月とが重なり合い、月が日の後ろにまわると、その光る本体が隠れてしまう、とある〕。\n\n五月。天下に大赦(たいしゃ)を行った。\n\n帝は雍(よう)へ行幸(ぎょうこう)した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity: j015_y10←前年)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
+ "illustrations": []
+}

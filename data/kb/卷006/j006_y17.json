@@ -1,0 +1,75 @@
+{
+ "id": "j006_y17",
+ "juan": 6,
+ "section": "秦紀一",
+ "ruler": "始皇帝上",
+ "year_label": "八年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "255 BCE 〜 228 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷006",
+   "revid": 387087,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j006_y17_c01",
+   "source_text": "八年⟦n265⟧\n①魏與趙鄴。\n②韓桓惠王薨，子安立。",
+   "hu_notes": [
+    {"idx": 265, "text": "（壬戌、前二三九）"}
+   ],
+   "translation": "八年〔注:壬戌(じんじゅつ)の年、紀元前二三九年〕。\n\n魏は鄴(ぎょう)の地を趙に与えた。韓(かん)の桓惠王(かんけいおう)が薨(こう)じ、子の安(あん)が即位した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "注の反映",
+       "source_span": "（壬戌、前二三九）",
+       "translated_span": "〔注:壬戌(じんじゅつ)の年、紀元前二三九年〕",
+       "issue": "胡三省注の干支・紀年を自然に補っている。根拠集合に存在する情報であり問題ない。",
+       "suggestion": "修正不要。"
+      },
+      {
+       "severity": "allowed",
+       "category": "語義の具体化",
+       "source_span": "子安立",
+       "translated_span": "子の安(あん)が即位した",
+       "issue": "「立」を王位に就いた意味として「即位した」と訳している。文脈上の自然な具体化であり、新規事実の追加ではない。",
+       "suggestion": "修正不要。"
+      }
+     ],
+     "ts": "2026-06-27T13:05:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "八年〔注:壬戌(じんじゅつ)の年、紀元前二三九年〕。\n\n魏は鄴(ぎょう)の地を趙に与えた。韓(かん)の桓惠王(かんけいおう)が薨(こう)じ、子の安(あん)が即位した。",
+ "built_with": {
+  "translator": "claude-sonnet-4-6",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-27T13:05:00",
+ "review_policy": "R1=Codex/low 独立レビューで verdict=pass(forbidden 0、allowed 2)。連続性根拠=直前年 j006_y16(秦七年)確定訳を連鎖。内容: 秦八年——魏が趙に鄴を与えた・韓の桓惠王が薨じ子の安が即位した。",
+ "illustrations": []
+}

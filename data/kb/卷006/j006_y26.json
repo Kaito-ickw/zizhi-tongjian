@@ -1,0 +1,73 @@
+{
+ "id": "j006_y26",
+ "juan": 6,
+ "section": "秦紀一",
+ "ruler": "始皇帝上",
+ "year_label": "十七年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "255 BCE 〜 228 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷006",
+   "revid": 387087,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j006_y26_c01",
+   "source_text": "十七年⟦n384⟧\n①內史勝滅韓，⟦n385⟧虜韓王安，以其地置潁川郡。⟦n386⟧\n②華陽太后薨。⟦n387⟧\n③趙大饑。\n④衞元君薨，子角立。",
+   "hu_notes": [
+    {
+     "idx": 384,
+     "text": "（辛未、前二三○）"
+    },
+    {
+     "idx": 385,
+     "text": "《史記‧本紀》作「內史騰」。班《書‧百官表》︰內史，周官，秦因之，掌治京師。余按秦內史兼治漢三輔之地，始皇幷天下，置三十六郡，內史其一也。"
+    },
+    {
+     "idx": 386,
+     "text": "韓至是而亡。潁川郡，韓地也。韓自平陽徙都河南新鄭；韓景侯又自新鄭徙都陽翟。秦滅韓，遂以陽翟縣爲潁川郡治所。"
+    },
+    {
+     "idx": 387,
+     "text": "華，戶化翻。"
+    }
+   ],
+   "translation": "十七年〔注:辛未(しんび)の年、紀元前二三〇年〕。\n\n内史(ないし)の勝(しょう)が韓(かん)を滅ぼし、韓王安(かんおうあん)を捕虜とし、その地に潁川郡(えいせんぐん)を置いた〔注:内史はもともと秦の都を治める官である。韓はこの年に滅亡した。潁川郡はもと韓の地であった〕。\n\n華陽太后(かようたいこう)が薨(こう)じた。\n\n趙(ちょう)で大飢饉(だいききん)があった。\n\n衞(えい)の元君(げんくん)が薨じ、その子の角(かく)が跡を継いで立った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-28T13:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "十七年〔注:辛未(しんび)の年、紀元前二三〇年〕。\n\n内史(ないし)の勝(しょう)が韓(かん)を滅ぼし、韓王安(かんおうあん)を捕虜とし、その地に潁川郡(えいせんぐん)を置いた〔注:内史はもともと秦の都を治める官である。韓はこの年に滅亡した。潁川郡はもと韓の地であった〕。\n\n華陽太后(かようたいこう)が薨(こう)じた。\n\n趙(ちょう)で大飢饉(だいききん)があった。\n\n衞(えい)の元君(げんくん)が薨じ、その子の角(かく)が跡を継いで立った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T13:00:00",
+ "review_policy": "R1=Codex/low pass(findings なし)。連続性根拠=直前年 j006_y25(秦十六年)確定訳を連鎖。内容: 秦十七年——内史勝が韓を滅ぼし韓王安を虜とし潁川郡を置く(韓の滅亡)。華陽太后薨ず。趙で大飢饉。衞の元君薨じ子の角が立つ。",
+ "illustrations": []
+}

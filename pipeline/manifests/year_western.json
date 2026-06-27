@@ -5,7 +5,7 @@
   "first_year": "403 BCE",
   "ganzhi": "戊寅"
  },
- "records": 177,
+ "records": 189,
  "ganzhi_mismatch_count": 0,
  "range_violation_count": 0,
  "sequence_violation_count": 15,
@@ -1653,6 +1653,66 @@
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false
+    },
+    {
+     "id": "j006_y23",
+     "juan": 6,
+     "year_label": "十四年",
+     "ganzhi": "戊辰",
+     "western_year": "233 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j006_y24",
+     "juan": 6,
+     "year_label": "十五年",
+     "ganzhi": "己巳",
+     "western_year": "232 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j006_y25",
+     "juan": 6,
+     "year_label": "十六年",
+     "ganzhi": "庚午",
+     "western_year": "231 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j006_y26",
+     "juan": 6,
+     "year_label": "十七年",
+     "ganzhi": "辛未",
+     "western_year": "230 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j006_y27",
+     "juan": 6,
+     "year_label": "十八年",
+     "ganzhi": "壬申",
+     "western_year": "229 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j006_y28",
+     "juan": 6,
+     "year_label": "十九年",
+     "ganzhi": "癸酉",
+     "western_year": "228 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
     }
    ]
   },
@@ -1820,6 +1880,33 @@
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false
+    },
+    {
+     "id": "j007_y17",
+     "juan": 7,
+     "year_label": "三十七年",
+     "ganzhi": "辛卯",
+     "western_year": "210 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    }
+   ]
+  },
+  {
+   "ruler": "二世皇帝上",
+   "accession_western": "209 BCE",
+   "accession_astro": -208,
+   "years": [
+    {
+     "id": "j007_y18",
+     "juan": 7,
+     "year_label": "元年",
+     "ganzhi": "壬辰",
+     "western_year": "209 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
     }
    ]
   },
@@ -1864,6 +1951,16 @@
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false
+    },
+    {
+     "id": "j009_y02",
+     "juan": 9,
+     "year_label": "二年",
+     "ganzhi": "丙申",
+     "western_year": "205 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
     }
    ]
   },
@@ -1888,6 +1985,43 @@
      "year_label": "四年",
      "ganzhi": "戊戌",
      "western_year": "203 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    }
+   ]
+  },
+  {
+   "ruler": "太祖高皇帝中",
+   "accession_western": "206 BCE",
+   "accession_astro": -205,
+   "years": [
+    {
+     "id": "j011_y01",
+     "juan": 11,
+     "year_label": "五年",
+     "ganzhi": "己亥",
+     "western_year": "202 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j011_y02",
+     "juan": 11,
+     "year_label": "六年",
+     "ganzhi": "庚子",
+     "western_year": "201 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j011_y03",
+     "juan": 11,
+     "year_label": "七年",
+     "ganzhi": "辛丑",
+     "western_year": "200 BCE",
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false

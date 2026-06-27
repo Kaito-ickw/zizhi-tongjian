@@ -5,7 +5,7 @@
  "ruler": "始皇帝上",
  "year_label": "八年",
  "era": null,
- "western_year": null,
+ "western_year": "239 BCE",
  "western_volume_range": "255 BCE 〜 228 BCE",
  "status": "pass",
  "halt_reason": null,
@@ -30,7 +30,10 @@
    "chunk_id": "j006_y17_c01",
    "source_text": "八年⟦n265⟧\n①魏與趙鄴。\n②韓桓惠王薨，子安立。",
    "hu_notes": [
-    {"idx": 265, "text": "（壬戌、前二三九）"}
+    {
+     "idx": 265,
+     "text": "（壬戌、前二三九）"
+    }
    ],
    "translation": "八年〔注:壬戌(じんじゅつ)の年、紀元前二三九年〕。\n\n魏は鄴(ぎょう)の地を趙に与えた。韓(かん)の桓惠王(かんけいおう)が薨(こう)じ、子の安(あん)が即位した。",
    "status": "pass",

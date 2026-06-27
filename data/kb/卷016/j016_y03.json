@@ -1,0 +1,94 @@
+{
+ "id": "j016_y03",
+ "juan": 16,
+ "section": "漢紀八",
+ "ruler": "孝景皇帝下",
+ "year_label": "五年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "154 BCE 〜 141 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷016",
+   "revid": 2082186,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j016_y03_c01",
+   "source_text": "五年⟦n195⟧\n①春，正月，作陽陵邑。⟦n196⟧夏，募民徙陽陵，賜錢二十萬。\n②遣公主嫁匈奴單于。\n③徙廣川王彭祖爲趙王。\n④濟北貞王勃薨。⟦n197⟧",
+   "hu_notes": [
+    {
+     "idx": 195,
+     "text": "（己丑、前一五二 ）"
+    },
+    {
+     "idx": 196,
+     "text": "班《志》，陽陵縣屬馮翊，本弋陽縣。《索隱》曰：帝豫作壽陵於此，因更縣名；在長安東北四十五里。"
+    },
+    {
+     "idx": 197,
+     "text": "《諡法》：清白守節曰貞。"
+    }
+   ],
+   "translation": "五年〔注:己丑(つちのとうし)の年、紀元前一五二年〕。\n\n春、正月、陽陵邑(ようりょうゆう)を造営した〔注:陽陵県は馮翊(ふうよく)に属し、もとは弋陽県(よくようけん)。帝があらかじめここに自分の寿陵(=陵墓)を造ったので、県名を改めた。長安の東北四十五里にある〕。夏、民を募って陽陵に移住させ、(一戸あたり)銭二十万を与えた。\n\n公主(=皇女)を遣わして匈奴の単于(ぜんう)に嫁がせた。\n\n広川王(こうせんおう)の彭祖(ほうそ)を移して趙王とした。\n\n済北の貞王(ていおう)勃(ぼつ)が薨(こう)じた〔注:諡法(しほう)では、清廉潔白で節義を守ることを「貞」という〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "自然な補足",
+       "source_span": "夏，募民徙陽陵，賜錢二十萬。",
+       "translated_span": "夏、民を募って陽陵に移住させ、(一戸あたり)銭二十万を与えた。",
+       "issue": "「一戸あたり」は原文に明示されないが、募民徙邑の文脈で賜銭の単位を読者向けに補ったものと読め、数額自体の改変や新規事実の創作には当たらない。",
+       "suggestion": "より厳密にするなら「銭二十万を与えた」として単位補足を外す。"
+      },
+      {
+       "severity": "allowed",
+       "category": "語義の具体化",
+       "source_span": "遣公主嫁匈奴單于。",
+       "translated_span": "公主(=皇女)を遣わして匈奴の単于(ぜんう)に嫁がせた。",
+       "issue": "「公主」を「皇女」と補足しているが、読者向けの官称・身分語の意訳であり、根拠集合と矛盾しない。",
+       "suggestion": "問題なし。"
+      },
+      {
+       "severity": "allowed",
+       "category": "注の意訳",
+       "source_span": "帝豫作壽陵於此，因更縣名",
+       "translated_span": "帝があらかじめここに自分の寿陵(=陵墓)を造ったので、県名を改めた。",
+       "issue": "「自分の」は原注の「壽陵」から自然に補われる内容で、胡注の範囲内の明確化。",
+       "suggestion": "問題なし。"
+      }
+     ],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "五年〔注:己丑(つちのとうし)の年、紀元前一五二年〕。\n\n春、正月、陽陵邑(ようりょうゆう)を造営した〔注:陽陵県は馮翊(ふうよく)に属し、もとは弋陽県(よくようけん)。帝があらかじめここに自分の寿陵(=陵墓)を造ったので、県名を改めた。長安の東北四十五里にある〕。夏、民を募って陽陵に移住させ、(一戸あたり)銭二十万を与えた。\n\n公主(=皇女)を遣わして匈奴の単于(ぜんう)に嫁がせた。\n\n広川王(こうせんおう)の彭祖(ほうそ)を移して趙王とした。\n\n済北の貞王(ていおう)勃(ぼつ)が薨(こう)じた〔注:諡法(しほう)では、清廉潔白で節義を守ることを「貞」という〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
+ "illustrations": []
+}

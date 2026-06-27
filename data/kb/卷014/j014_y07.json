@@ -1,0 +1,61 @@
+{
+ "id": "j014_y07",
+ "juan": 14,
+ "section": "漢紀六",
+ "ruler": "太宗孝文皇帝中",
+ "year_label": "九年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "177 BCE 〜 170 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷014",
+   "revid": 2035709,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j014_y07_c01",
+   "source_text": "九年⟦n300⟧\n①春，大旱。",
+   "hu_notes": [
+    {
+     "idx": 300,
+     "text": "（庚午、前一七一）"
+    }
+   ],
+   "translation": "九年〔注:庚午(かのえうま)の年、紀元前一七一年〕。\n\n春。大旱(たいかん=ひどい干ばつ)があった。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "九年〔注:庚午(かのえうま)の年、紀元前一七一年〕。\n\n春。大旱(たいかん=ひどい干ばつ)があった。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続コンテキスト(直前チャンクの確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
+ "illustrations": []
+}

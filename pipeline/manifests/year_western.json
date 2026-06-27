@@ -5,7 +5,7 @@
   "first_year": "403 BCE",
   "ganzhi": "戊寅"
  },
- "records": 156,
+ "records": 167,
  "ganzhi_mismatch_count": 0,
  "range_violation_count": 0,
  "sequence_violation_count": 15,
@@ -1375,6 +1375,36 @@
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false
+    },
+    {
+     "id": "j005_y14",
+     "juan": 5,
+     "year_label": "五十七年",
+     "ganzhi": "癸卯",
+     "western_year": "258 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j005_y15",
+     "juan": 5,
+     "year_label": "五十八年",
+     "ganzhi": "甲辰",
+     "western_year": "257 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j005_y16",
+     "juan": 5,
+     "year_label": "五十九年",
+     "ganzhi": "乙巳",
+     "western_year": "256 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
     }
    ]
   },
@@ -1503,6 +1533,56 @@
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false
+    },
+    {
+     "id": "j006_y11",
+     "juan": 6,
+     "year_label": "二年",
+     "ganzhi": "丙辰",
+     "western_year": "245 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j006_y12",
+     "juan": 6,
+     "year_label": "三年",
+     "ganzhi": "丁巳",
+     "western_year": "244 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j006_y13",
+     "juan": 6,
+     "year_label": "四年",
+     "ganzhi": "戊午",
+     "western_year": "243 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j006_y14",
+     "juan": 6,
+     "year_label": "五年",
+     "ganzhi": "己未",
+     "western_year": "242 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j006_y15",
+     "juan": 6,
+     "year_label": "六年",
+     "ganzhi": "庚申",
+     "western_year": "241 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
     }
    ]
   },
@@ -1617,6 +1697,36 @@
      "year_label": "三十一年",
      "ganzhi": "乙酉",
      "western_year": "216 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j007_y12",
+     "juan": 7,
+     "year_label": "三十二年",
+     "ganzhi": "丙戌",
+     "western_year": "215 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j007_y13",
+     "juan": 7,
+     "year_label": "三十三年",
+     "ganzhi": "丁亥",
+     "western_year": "214 BCE",
+     "ganzhi_ok": true,
+     "in_range": true,
+     "interpolated": false
+    },
+    {
+     "id": "j007_y14",
+     "juan": 7,
+     "year_label": "三十四年",
+     "ganzhi": "戊子",
+     "western_year": "213 BCE",
      "ganzhi_ok": true,
      "in_range": true,
      "interpolated": false

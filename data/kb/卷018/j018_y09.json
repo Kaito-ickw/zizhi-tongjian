@@ -1,0 +1,82 @@
+{
+ "id": "j018_y09",
+ "juan": 18,
+ "section": "漢紀十",
+ "ruler": "世宗孝武皇帝上之下",
+ "year_label": "四年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "133 BCE 〜 125 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷018",
+   "revid": 387260,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j018_y09_c01",
+   "source_text": "四年⟦n327⟧\n①冬，上行幸甘泉。\n②夏，匈奴入代郡、定襄、上郡，⟦n328⟧各三萬騎，殺略數千人。",
+   "hu_notes": [
+    {
+     "idx": 327,
+     "text": "（丙辰、前一二五）"
+    },
+    {
+     "idx": 328,
+     "text": "上郡，唐延、綏、銀之地，高祖置定襄郡。《括地志》：定襄故城，在朔州善陽縣北三百八十里。"
+    }
+   ],
+   "translation": "四年〔注:丙辰(ひのえたつ)の年、紀元前一二五年〕。\n\n冬。上(=武帝)は甘泉(かんせん)に行幸した。\n\n夏。匈奴が代郡(だいぐん)・定襄(ていじょう)・上郡(じょうぐん)に侵入し〔注:上郡は唐(代)の延州・綏州・銀州の地。定襄郡は高祖が置いた。『括地志』にいう、定襄の故城は朔州善陽県の北三百八十里にある〕、それぞれ三万騎で、数千人を殺し略奪した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "語義の自然な具体化",
+       "source_span": "上行幸甘泉",
+       "translated_span": "上(=武帝)は甘泉(かんせん)に行幸した",
+       "issue": "「上」を武帝と補っているが、この紀年文脈での主語補完であり、根拠集合と矛盾する新情報ではない。",
+       "suggestion": "修正不要。"
+      },
+      {
+       "severity": "allowed",
+       "category": "語義の訳し分け",
+       "source_span": "殺略數千人",
+       "translated_span": "数千人を殺し略奪した",
+       "issue": "「略」を「略奪した」と処理している。人をさらう含みは弱まるが、語義範囲内の意訳であり、原文にない事実の追加ではない。",
+       "suggestion": "より原文寄りにするなら「数千人を殺し、またさらった」。"
+      }
+     ],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "四年〔注:丙辰(ひのえたつ)の年、紀元前一二五年〕。\n\n冬。上(=武帝)は甘泉(かんせん)に行幸した。\n\n夏。匈奴が代郡(だいぐん)・定襄(ていじょう)・上郡(じょうぐん)に侵入し〔注:上郡は唐(代)の延州・綏州・銀州の地。定襄郡は高祖が置いた。『括地志』にいう、定襄の故城は朔州善陽県の北三百八十里にある〕、それぞれ三万騎で、数千人を殺し略奪した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity source=卷018 j018_y08_c01)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(findings は全て allowed=主語補完「上→武帝」/「略」の訳し分け)。詳細は chunks[].review_history を参照。",
+ "illustrations": []
+}

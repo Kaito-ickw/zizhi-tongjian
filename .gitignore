@@ -10,6 +10,9 @@ scratch/
 data/raw/
 data/staging/
 
+# notebooklm
+data/notebooklm/
+
 # Generated entity dictionary (large; rebuild via pipeline/build_dict.py)
 dict/*.jsonl
 

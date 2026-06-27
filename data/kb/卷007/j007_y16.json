@@ -1,0 +1,76 @@
+{
+ "id": "j007_y16",
+ "juan": 7,
+ "section": "秦紀二",
+ "ruler": "始皇帝下",
+ "year_label": "三十六年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "227 BCE 〜 209 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷007",
+   "revid": 2033689,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j007_y16_c01",
+   "source_text": "三十六年⟦n171⟧\n①有隕石于東郡。⟦n172⟧或刻其石曰：「始皇死而地分。」始皇使御史逐問，莫服；盡取石旁居人誅之，燔其石。⟦n173⟧\n②遷河北榆中三萬家；⟦n174⟧賜爵一級。",
+   "hu_notes": [
+    {"idx": 171, "text": "（庚寅、前二一一）"},
+    {"idx": 172, "text": "東郡，本衞地，秦徙衞於野王，以其地置東郡。"},
+    {"idx": 173, "text": "燔，音煩，爇也。"},
+    {"idx": 174, "text": "河北，北河之北也。"}
+   ],
+   "translation": "三十六年〔注:庚寅(かのえとら)の年、紀元前二一一年〕。\n\n東郡(とうぐん)〔注:東郡はもともと衛(えい)の地であったが、秦が衛を野王(やおう)へ移し、その旧地に東郡を設けた〕に隕石(いんせき)が落ちた。何者かがその石に「始皇死して地は分かれん」と刻んだ。始皇帝は御史(ぎょし)を派遣してかたっぱしから取り調べさせたが、誰も認めなかった。そこで石の周辺に住む者をことごとく捕らえて誅殺し、その石を焼き払った〔注:「燔」は焼く・燃やす意〕。\n\n河北(かほく)の榆中(ゆちゅう)〔注:「河北」とは黄河(北河)の北岸の地のこと〕に三万戸を移住させ、爵位を一級ずつ授けた。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "事実追加・動作追加",
+       "source_span": "燔其石。／胡注: 燔，音煩，爇也。",
+       "translated_span": "その石を焼き砕いた〔注:「燔」は焼く・燃やす意〕",
+       "issue": "原文と胡注が示すのは石を焼いたことだけであり、「砕いた」という破砕行為は根拠集合にない新規追加。",
+       "suggestion": "「その石を焼いた」または「その石を焼き払った」とする。"
+      }
+     ],
+     "ts": "2026-06-27T13:10:00"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-27T13:12:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "三十六年〔注:庚寅(かのえとら)の年、紀元前二一一年〕。\n\n東郡(とうぐん)〔注:東郡はもともと衛(えい)の地であったが、秦が衛を野王(やおう)へ移し、その旧地に東郡を設けた〕に隕石(いんせき)が落ちた。何者かがその石に「始皇死して地は分かれん」と刻んだ。始皇帝は御史(ぎょし)を派遣してかたっぱしから取り調べさせたが、誰も認めなかった。そこで石の周辺に住む者をことごとく捕らえて誅殺し、その石を焼き払った〔注:「燔」は焼く・燃やす意〕。\n\n河北(かほく)の榆中(ゆちゅう)〔注:「河北」とは黄河(北河)の北岸の地のこと〕に三万戸を移住させ、爵位を一級ずつ授けた。",
+ "built_with": {
+  "translator": "claude-sonnet-4-6",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-27T13:12:00",
+ "illustrations": []
+}

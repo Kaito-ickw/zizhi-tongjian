@@ -52,18 +52,21 @@
 ## ドレインモード(ユーザーが「並列で回して」「使い切って」等と言ったら)
 **律速は Codex でも Claude レートでもなく「指示を出せる回数(≒2回/日)」。** 1指示で余っている Claude 予算を安全に使い切るモード。上記「1タスク=1セッション」とは別運用。
 
-- **並列単位 = 巻まるごと**。未完の巻を K 個選び、**巻ごとに background Agent を1体**(`run_in_background` + `isolation:"worktree"`)。各エージェントは自分の巻を `data/kb/_LOOP.md` 手順でサブバッチ a→i 順に翻訳→Codex レビュー→**サブバッチ毎に自分ブランチへコミット**。終わったら司令塔が main へマージ→`year_western.py`/`build_view.py` を1回→コミット→次の波。
-  - 巻単位にする理由: `continuity_text` は巻内で逐次連鎖。1巻=1エージェントなら連続性が保たれ、巻境界は自然なリセット点。サブバッチを別エージェントに割らない。
-  - フレッシュ隔離コンテキスト=手動 `/clear` 相当でトークン効率を保つ。worktree=同一ディレクトリ衝突/コミットレースを構造的に排除。
+- **実証済みモデル(2026-06-28〜29 に卷001-047 で運用。旧 `isolation:"worktree"` 案は使わない)**: 翻訳源 `data/staging/` は **gitignore で fresh worktree に存在しない**ため worktree だと `context.py` が動かない。詳細・事故復旧は memory [[drain-agents-commit-to-main-bug]]。
+  - **並列単位 = 巻**。未完巻を K 個選び、巻ごとに background Agent 1体(`run_in_background`・**`isolation` 指定なし=main checkout で実行**・`model` 指定なし=**Opus**。sonnet は品質劣後で却下 [[drain-sonnet-default-experiment]])。
+  - 各エージェントは **git を一切使わない write-only**: 年 JSON を `data/kb/卷NNN/` に書くだけ。`review.py` の temp は巻別ユニーク名(`/tmp/opNNN_<chunk>_*.json`)。冒頭で `ls data/staging/kb/卷NNN.json` を確認(無ければ停止)。
+  - 各巻は **first ~4年に bound**(巻完走は超線形コスト [[drain-wave-cost-calibration]])。巻内は年順(前年を書いてから次年の context.py)、巻境界は自然なリセット(fresh 巻は `previous_translation=None` でOK)。ruler/year_label/era は staging から年ごとに取る(null や section 前置詞の癖がある巻は司令塔が上書き指示)。
+  - **全エージェント完了後に司令塔(Claude)が一括処理**: `data/kb` を1コミット → `year_western.py`/`build_view.py` を1回 → コミット → 次の波。
+  - **halt**(チャンクが3R 非収束)は溜めて、後で **opus + Codex `--effort high` の halt解決波**(records を in-place 編集して再レビュー→pass化)で一括処理。high でも非収束/真の校勘係争は人手へ残す。
 - **予算ガード(二段構え)**:
   - ハード床 = **口座側の超過上限 $0**(超えたら 429 で物理停止)。用途次第で都度引き上げる前提。月次 spend limit も別ハード床で、`ai-quota status` の Claude `extra_usage`(`used_credits`/`monthly_limit`)に残額が出る(null のときはユーザーに確認)。
   - ソフト停止 = **5h 枠の 90%**(週間枠も監視)。残量は **`ai-quota status` が Claude/Codex 両方の実値**(5h・週次の `utilization` と `resets_at`)を直接返すので、旧来のアンカー+補間や `/status` 聞き取りは不要:
     1. **波をローンチする前に毎回** `ai-quota status --json` を実行。Claude `five_hour.utilization`(+ `seven_day`)と Codex `five_hour`/`seven_day`(レビュー消費=しばしば真の律速)を読む。
     2. 残ヘッドルーム = 90 −(Claude 5h%)。**1エージェント ≒18pt**(実測較正)で割って投入エージェント数を決める。残ヘッドルームが 1エージェント分を切る、または Codex 週次が枯渇間近なら**新規波を投げない**。`resets_at` も判断材料。
     3. **天井に近づくほど単位を縮める**(K=3巻 → K=1巻 → 1サブバッチ)でオーバーシュート最小化。
-- **波の対象選定**: `python3 pipeline/translation_queue.py list` で未完巻を確認し、各 background Agent は開始直後に `python3 pipeline/translation_queue.py check` 相当の continuity/衝突/clean 確認を行う。stale worktree で直前年 KB が無い場合は翻訳せず停止。
+- **波の対象選定**: `python3 pipeline/translation_queue.py list` で未完巻を確認(司令塔が frontier を決める)。各エージェントは自巻の `data/staging/kb/卷NNN.json` 存在を確認してから着手。
 - **停止条件**: `ai-quota status` が Claude 5h≥90%(または Codex 週次が枯渇)/ 対象巻が尽きた / 429(ハード床)/ ユーザー停止。停止時は「確定した巻・年・現在の 5h%(ai-quota 実値)/ 次に残っている巻」を報告。
-- サブバッチ毎コミット+冪等再開(`task.py`/TASKS チェック欄)なので、途中停止で失うのは実行中の1サブバッチのみ。
+- **冪等再開**: write-only なので途中停止で失うのは未コミットの実行中年のみ。再開は `translation_queue.py` が `data/kb/` の実状態から frontier を再判定するので、新セッションで「並列で開始して」と言えば続きから再開できる(self-pace ループ自体は `/loop` 再投入が必要)。
 
 ## 実行系と予算(詳細 DESIGN §3)
 - Codex は ChatGPT サブスクの **5h レートが律速**。`[Codex]` 印のタスクはレート残量を確認してから。

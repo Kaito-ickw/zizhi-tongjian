@@ -1,0 +1,78 @@
+{
+ "id": "j028_y04",
+ "juan": 28,
+ "section": "漢紀二十",
+ "ruler": "孝元皇帝上",
+ "year_label": "四年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "48 BCE 〜 42 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷028",
+   "revid": 387519,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j028_y04_c01",
+   "source_text": "四年⟦n156⟧\n①春，正月，上行幸甘泉，郊泰畤。⟦n157⟧三月，行幸河東，祠后土；赦汾陰徒。⟦n158⟧",
+   "hu_notes": [
+    {
+     "idx": 156,
+     "text": "（丙子、前四五）"
+    },
+    {
+     "idx": 157,
+     "text": "畤，音止；下同。"
+    },
+    {
+     "idx": 158,
+     "text": "徒，有罪居作者。"
+    }
+   ],
+   "translation": "四年〔注:丙子(ひのえね)の年、紀元前四五年〕。\n\n春、正月。帝は甘泉(かんせん)に行幸(ぎょうこう)し、郊外の泰畤(たいじ)で天を祀(まつ)った。三月、河東(かとう)に行幸し、后土(こうど=大地の神)を祀った。そして汾陰(ふんいん)の徒(と=刑として労役に服する罪人)を赦(ゆる)した〔注:徒とは、罪あって労役につく者のこと〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "自然な具体化",
+       "source_span": "郊泰畤",
+       "translated_span": "郊外の泰畤(たいじ)で天を祀(まつ)った",
+       "issue": "原文は「泰畤で郊祭を行った」という簡潔な記述で、「天を」は直截には出ない。ただし「郊」は天を祀る郊祭として読む範囲の自然な具体化であり、新規事実の捏造とはしない。",
+       "suggestion": "より原文寄りにするなら「泰畤で郊祭を行った」。"
+      }
+     ],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "四年〔注:丙子(ひのえね)の年、紀元前四五年〕。\n\n春、正月。帝は甘泉(かんせん)に行幸(ぎょうこう)し、郊外の泰畤(たいじ)で天を祀(まつ)った。三月、河東(かとう)に行幸し、后土(こうど=大地の神)を祀った。そして汾陰(ふんいん)の徒(と=刑として労役に服する罪人)を赦(ゆる)した〔注:徒とは、罪あって労役につく者のこと〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 pass。詳細は chunks[].review_history を参照。",
+ "illustrations": []
+}

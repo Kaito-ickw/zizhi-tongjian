@@ -1,0 +1,61 @@
+{
+ "id": "j044_y07",
+ "juan": 44,
+ "section": "漢紀三十六",
+ "ruler": "世祖光武皇帝下",
+ "year_label": "二十九年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "47 CE 〜 60 CE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷044",
+   "revid": 387826,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j044_y07_c01",
+   "source_text": "二十九年⟦n186⟧\n①春，二月，丁巳朔，日有食之。",
+   "hu_notes": [
+    {
+     "idx": 186,
+     "text": "（癸丑、五三）"
+    }
+   ],
+   "translation": "二十九年〔注:癸丑(みずのとうし)の年、西暦五三年〕。\n\n① 春、二月。丁巳(ていし)の日は朔(さく、ついたち)にあたり、この日、日食があった。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-06-29T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "二十九年〔注:癸丑(みずのとうし)の年、西暦五三年〕。\n\n① 春、二月。丁巳(ていし)の日は朔(さく、ついたち)にあたり、この日、日食があった。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-29T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(巻044 j044_y07・continuity source=j044_y06_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
+ "illustrations": []
+}

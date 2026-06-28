@@ -1,0 +1,86 @@
+{
+ "id": "j023_y11",
+ "juan": 23,
+ "section": "漢紀十五",
+ "ruler": "孝昭皇帝上",
+ "year_label": "五年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "86 BCE 〜 75 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷023",
+   "revid": 387421,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j023_y11_c01",
+   "source_text": "五年⟦n274⟧\n①夏，大旱。\n②秋，罷象郡，分屬鬱林、牂柯。⟦n275⟧\n③冬，十一月，大雷。\n④十二月，庚戌，宜春敬侯王訢薨。⟦n276⟧",
+   "hu_notes": [
+    {
+     "idx": 274,
+     "text": "（乙巳、前七六）"
+    },
+    {
+     "idx": 275,
+     "text": "班《志》：鬱林，故秦桂林郡。"
+    },
+    {
+     "idx": 276,
+     "text": "《恩澤侯表》，宜春侯食邑於汝南。訢，音欣。"
+    }
+   ],
+   "translation": "五年（前七六年）\n\n①夏、ひどい干ばつがあった。\n\n②秋、象郡を廃止し、その地を鬱林郡と牂柯郡に分けて属させた〔注：鬱林郡は、もとの秦の桂林郡である〕。\n\n③冬、十一月、大きな雷が鳴った。\n\n④十二月、庚戌、宜春敬侯の王訢（おうきん）が薨去した〔注：宜春侯の食邑は汝南にある。「訢」は「欣」の音〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "自然な具体化",
+       "source_span": "夏，大旱。",
+       "translated_span": "夏、ひどい干ばつがあった。",
+       "issue": "「大旱」を「ひどい干ばつ」とするのは程度語の自然な訳出であり、原文の範囲内。",
+       "suggestion": "修正不要。"
+      },
+      {
+       "severity": "allowed",
+       "category": "主語・目的語の補完",
+       "source_span": "罷象郡，分屬鬱林、牂柯。",
+       "translated_span": "象郡を廃止し、その地を鬱林郡と牂柯郡に分けて属させた",
+       "issue": "「その地」は象郡を指す補完で、原文の内容を読みやすくしたもの。新規事実の追加ではない。",
+       "suggestion": "修正不要。"
+      }
+     ],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "五年（前七六年）\n\n①夏、ひどい干ばつがあった。\n\n②秋、象郡を廃止し、その地を鬱林郡と牂柯郡に分けて属させた〔注：鬱林郡は、もとの秦の桂林郡である〕。\n\n③冬、十一月、大きな雷が鳴った。\n\n④十二月、庚戌、宜春敬侯の王訢（おうきん）が薨去した〔注：宜春侯の食邑は汝南にある。「訢」は「欣」の音〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 pass(forbidden 指摘なし)。1回で収束。",
+ "illustrations": []
+}

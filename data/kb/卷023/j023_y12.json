@@ -1,0 +1,82 @@
+{
+ "id": "j023_y12",
+ "juan": 23,
+ "section": "漢紀十五",
+ "ruler": "孝昭皇帝上",
+ "year_label": "六年",
+ "era": null,
+ "western_year": null,
+ "western_volume_range": "86 BCE 〜 75 BCE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷023",
+   "revid": 387421,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j023_y12_c01",
+   "source_text": "六年⟦n277⟧\n①春，正月，募郡國徒築遼東、玄菟城。⟦n278⟧\n②夏，赦天下。\n③烏桓復犯塞，⟦n279⟧遣度遼將軍范明友擊之。\n④冬，十一月，乙丑，以楊敞爲丞相，少府河內蔡義爲御史大夫。⟦n280⟧",
+   "hu_notes": [
+    {
+     "idx": 277,
+     "text": "（丙午、前七五）"
+    },
+    {
+     "idx": 278,
+     "text": "菟，音塗。"
+    },
+    {
+     "idx": 279,
+     "text": "復，扶又翻。"
+    },
+    {
+     "idx": 280,
+     "text": "河內郡時屬司隸；唐懷、孟、衞州地。"
+    }
+   ],
+   "translation": "六年（前七五年）\n\n①春、正月、各地の郡国から徒刑囚を募り、遼東城と玄菟城を築かせた〔注：「菟」は「塗」の音〕。\n\n②夏、天下に大赦を行った。\n\n③烏桓がふたたび塞を犯したので、度遼将軍の范明友を遣わしてこれを討たせた。\n\n④冬、十一月、乙丑、楊敞を丞相とし、少府で河内出身の蔡義を御史大夫とした〔注：河内郡は当時、司隸に属していた〕。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "自然な順接補完",
+       "source_span": "烏桓復犯塞，遣度遼將軍范明友擊之。",
+       "translated_span": "烏桓がふたたび塞を犯したので、度遼将軍の范明友を遣わしてこれを討たせた。",
+       "issue": "「ので」は原文の事実順序を自然な日本語にした順接であり、新規の因果創作とまではいえない。",
+       "suggestion": "現状で可。より直訳寄りにするなら「烏桓がふたたび塞を犯した。そこで、度遼将軍の范明友を遣わしてこれを討たせた。」"
+      }
+     ],
+     "ts": "2026-06-28T00:00:00"
+    }
+   ]
+  }
+ ],
+ "translation_full": "六年（前七五年）\n\n①春、正月、各地の郡国から徒刑囚を募り、遼東城と玄菟城を築かせた〔注：「菟」は「塗」の音〕。\n\n②夏、天下に大赦を行った。\n\n③烏桓がふたたび塞を犯したので、度遼将軍の范明友を遣わしてこれを討たせた。\n\n④冬、十一月、乙丑、楊敞を丞相とし、少府で河内出身の蔡義を御史大夫とした〔注：河内郡は当時、司隸に属していた〕。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-06-28T00:00:00",
+ "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 pass(forbidden 指摘なし)。1回で収束。",
+ "illustrations": []
+}

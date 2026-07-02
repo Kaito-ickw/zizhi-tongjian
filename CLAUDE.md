@@ -53,7 +53,7 @@
 **律速は Codex でも Claude レートでもなく「指示を出せる回数(≒2回/日)」。** 1指示で余っている Claude 予算を安全に使い切るモード。上記「1タスク=1セッション」とは別運用。
 
 - **実証済みモデル(2026-06-28〜29 に卷001-047 で運用。旧 `isolation:"worktree"` 案は使わない)**: 翻訳源 `data/staging/` は **gitignore で fresh worktree に存在しない**ため worktree だと `context.py` が動かない。詳細・事故復旧は memory [[drain-agents-commit-to-main-bug]]。
-  - **並列単位 = 巻**。未完巻を K 個選び、巻ごとに background Agent 1体(`run_in_background`・**`isolation` 指定なし=main checkout で実行**・`model` 指定なし=**Opus**。sonnet は品質劣後で却下 [[drain-sonnet-default-experiment]])。
+  - **並列単位 = 巻**。未完巻を K 個選び、巻ごとに background Agent 1体(`run_in_background`・**`isolation` 指定なし=main checkout で実行**・**`model` 指定なし=セッション既定モデルを継承**)。2026-06-28 の実験で旧 Sonnet(4.5系)は forbidden 2.9倍で却下し Opus 確定としていたが、**2026-07-02 ユーザー指示で Sonnet 5 での再検証に切替**。品質劣化の再発有無を監視し、再び forbidden 超過が見られたら Opus へ戻す(詳細 [[drain-sonnet-default-experiment]])。
   - 各エージェントは **git を一切使わない write-only**: 年 JSON を `data/kb/卷NNN/` に書くだけ。`review.py` の temp は巻別ユニーク名(`/tmp/opNNN_<chunk>_*.json`)。冒頭で `ls data/staging/kb/卷NNN.json` を確認(無ければ停止)。
   - 各巻は **first ~4年に bound**(巻完走は超線形コスト [[drain-wave-cost-calibration]])。巻内は年順(前年を書いてから次年の context.py)、巻境界は自然なリセット(fresh 巻は `previous_translation=None` でOK)。ruler/year_label/era は staging から年ごとに取る(null や section 前置詞の癖がある巻は司令塔が上書き指示)。
   - **全エージェント完了後に司令塔(Claude)が一括処理**: `data/kb` を1コミット → `year_western.py`/`build_view.py` を1回 → コミット → 次の波。

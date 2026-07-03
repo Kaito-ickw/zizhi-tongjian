@@ -1,0 +1,94 @@
+{
+ "id": "j082_y04",
+ "juan": 82,
+ "section": "晉紀四",
+ "ruler": "孝惠皇帝上之上",
+ "year_label": "二年",
+ "era": "元康",
+ "western_year": null,
+ "western_volume_range": "289 CE 〜 298 CE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷082",
+   "revid": 388908,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j082_y04_c01",
+   "source_text": "二年⟦n207⟧\n①春，二月，己酉，故楊太后卒于金墉城。是時，太后尚有侍御十餘人，賈后悉奪之，絕膳八日而卒。⟦n208⟧賈后恐太后有靈，或訴冤於先帝，乃覆而殯之，仍施諸厭劾符書、藥物等。⟦n209⟧\n②秋，八月，壬子，赦天下。",
+   "hu_notes": [
+    {
+     "idx": 207,
+     "text": "（壬子、二九二）"
+    },
+    {
+     "idx": 208,
+     "text": "卒，子恤翻。"
+    },
+    {
+     "idx": 209,
+     "text": "厭，益涉翻，伏也。劾，胡得翻。治鬼曰劾。"
+    }
+   ],
+   "translation": "二年(西暦二九二年)\n\n①春、二月、己酉の日、もと皇太后であった楊太后が金墉城で亡くなった。このとき、太后にはまだ侍御(そばに仕える者)が十余人残っていたが、賈后はこれをことごとく取り上げてしまい、太后は食を絶たれて八日目に亡くなった。賈后は、太后が霊となって先帝に無念を訴えるのではないかと恐れ、そこで遺体をうつ伏せにして殯(かりもがり)し、さらに厭劾(まじないで鬼を封じ伏せること)の符書(お札)や薬物などをいろいろと施した〔注:厭は伏せるの意。劾は鬼を治する(封じる)こと〕。\n\n②秋、八月、壬子の日、天下に大赦した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 2,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex(gpt)/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "根拠外の年号補足",
+       "source_span": "二年",
+       "issue": "この根拠集合にない「元康二年」の年号付与を除去。"
+      },
+      {
+       "severity": "forbidden",
+       "category": "根拠外の人物同定",
+       "source_span": "訴冤於先帝",
+       "issue": "「武帝」同定を除去。"
+      }
+     ],
+     "ts": "2026-07-04T00:18:00Z"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex(gpt)/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "語の具体化",
+       "source_span": "訴冤於先帝",
+       "issue": "「冤罪」→「無念」へ調整。"
+      }
+     ],
+     "ts": "2026-07-04T00:19:00Z"
+    }
+   ]
+  }
+ ],
+ "translation_full": "二年(西暦二九二年)\n\n①春、二月、己酉の日、もと皇太后であった楊太后が金墉城で亡くなった。このとき、太后にはまだ侍御(そばに仕える者)が十余人残っていたが、賈后はこれをことごとく取り上げてしまい、太后は食を絶たれて八日目に亡くなった。賈后は、太后が霊となって先帝に無念を訴えるのではないかと恐れ、そこで遺体をうつ伏せにして殯(かりもがり)し、さらに厭劾(まじないで鬼を封じ伏せること)の符書(お札)や薬物などをいろいろと施した〔注:厭は伏せるの意。劾は鬼を治する(封じる)こと〕。\n\n②秋、八月、壬子の日、天下に大赦した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-07-04T00:19:00Z"
+}

@@ -1,0 +1,70 @@
+{
+ "id": "j082_y05",
+ "juan": 82,
+ "section": "晉紀四",
+ "ruler": "孝惠皇帝上之上",
+ "year_label": "三年",
+ "era": "元康",
+ "western_year": null,
+ "western_volume_range": "289 CE 〜 298 CE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷082",
+   "revid": 388908,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j082_y05_c01",
+   "source_text": "三年⟦n210⟧\n①夏，六月，弘農雨雹，深三尺。⟦n211⟧\n②鮮卑宇文莫槐爲其下所殺，弟普撥立。\n③拓拔⟦n212⟧綽卒，子⟦n213⟧弗立。",
+   "hu_notes": [
+    {
+     "idx": 210,
+     "text": "（癸丑、二九三）"
+    },
+    {
+     "idx": 211,
+     "text": "雨，于具翻。度深曰深，音式禁翻。"
+    },
+    {
+     "idx": 212,
+     "text": "【退︰「拔」作「跋」。】"
+    },
+    {
+     "idx": 213,
+     "text": "【章︰甲十一行本「子」上有「弟」字；乙十一行本同；孔本同；退齋校同。】"
+    }
+   ],
+   "translation": "三年(西暦二九三年)\n\n①夏、六月、弘農(こうのう)で雹(ひょう)が降り、深さは三尺にも積もった。\n\n②鮮卑(せんぴ)の宇文莫槐(うぶんばくかい)が配下の者に殺され、弟の普撥(ふはつ)が跡を継いで立った。\n\n③拓拔綽(たくばつしゃく)が亡くなり、子の弗(ふつ)が跡を継いで立った。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex(gpt)/low",
+     "verdict": "pass",
+     "findings": []
+    }
+   ]
+  }
+ ],
+ "translation_full": "三年(西暦二九三年)\n\n①夏、六月、弘農(こうのう)で雹(ひょう)が降り、深さは三尺にも積もった。\n\n②鮮卑(せんぴ)の宇文莫槐(うぶんばくかい)が配下の者に殺され、弟の普撥(ふはつ)が跡を継いで立った。\n\n③拓拔綽(たくばつしゃく)が亡くなり、子の弗(ふつ)が跡を継いで立った。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-07-05T21:09:25+09:00"
+}

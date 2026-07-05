@@ -1,0 +1,96 @@
+{
+ "id": "j081_y08",
+ "juan": 81,
+ "section": "晉紀三",
+ "ruler": "世祖武皇帝中",
+ "year_label": "八年",
+ "era": "太康",
+ "western_year": null,
+ "western_volume_range": "280 CE 〜 288 CE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷081",
+   "revid": 391215,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j081_y08_c01",
+   "source_text": "八年⟦n306⟧\n①春，正月，戊申朔，日有食之。\n②太廟殿陷，九⟦n307⟧月，改營太廟，作者六萬人。\n③是歲，匈奴都督大豆得一育鞠等復帥種落萬一千五百口來降。⟦n308⟧",
+   "hu_notes": [
+    {
+     "idx": 306,
+     "text": "（丁未、二八七）"
+    },
+    {
+     "idx": 307,
+     "text": "【章：甲本十一行本「九」上有「秋」字；乙十一行本同；孔本同。】"
+    },
+    {
+     "idx": 308,
+     "text": "魏旣分塞內匈奴爲五部矣，自去年來，匈奴帥種落來降者十有餘萬口，史不言所以處之之地，此必自塞外來，北匈奴之種落也。復，扶又翻。"
+    }
+   ],
+   "translation": "八年(丁未・二八七年)\n\n① 春、正月、戊申の日(ついたち)、日食があった。\n\n② 太廟(たいびょう、皇室の祖廟)の御殿が崩れ落ちた。九月〔注:異本では「九」の上に「秋」の字があり、「秋、九月」に作る〕、太廟を改めて造営したが、その工事に従事した者は六万人にのぼった。\n\n③ この年、匈奴の都督である大豆得一育鞠(だいとうとくいついくきく)らが、またも種落(部族)一万一千五百口を率いて来降した。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 3,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex(gpt)/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "紀年情報の追加",
+       "source_span": "八年⟦n306⟧",
+       "issue": "見出しの元号「太康」がチャンク根拠集合(注のみ)に無いとの指摘(チャンク単独視の偽陽性。era=太康はy01-y07継続で確定)。"
+      }
+     ],
+     "ts": "2026-07-05T00:00:00Z"
+    },
+    {
+     "round": 2,
+     "reviewer": "codex(gpt)/low",
+     "verdict": "fail",
+     "findings": [
+      {
+       "severity": "forbidden",
+       "category": "紀年情報の追加",
+       "source_span": "八年⟦n306⟧",
+       "issue": "同上(別独立セッションでも同じ偽陽性)。"
+      }
+     ],
+     "ts": "2026-07-05T00:00:00Z"
+    },
+    {
+     "round": 3,
+     "reviewer": "codex(gpt)/low",
+     "verdict": "pass",
+     "findings": [],
+     "ts": "2026-07-05T00:00:00Z",
+     "note": "見出しを「八年(丁未・二八七年)」に変更(元号はeraフィールド=太康で保持、build_viewの見出しが世祖武皇帝中太康八年を生成)。"
+    }
+   ]
+  }
+ ],
+ "translation_full": "八年(丁未・二八七年)\n\n① 春、正月、戊申の日(ついたち)、日食があった。\n\n② 太廟(たいびょう、皇室の祖廟)の御殿が崩れ落ちた。九月〔注:異本では「九」の上に「秋」の字があり、「秋、九月」に作る〕、太廟を改めて造営したが、その工事に従事した者は六万人にのぼった。\n\n③ この年、匈奴の都督である大豆得一育鞠(だいとうとくいついくきく)らが、またも種落(部族)一万一千五百口を率いて来降した。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-07-05T00:00:00Z"
+}

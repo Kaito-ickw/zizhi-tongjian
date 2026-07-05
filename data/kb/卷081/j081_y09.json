@@ -1,0 +1,70 @@
+{
+ "id": "j081_y09",
+ "juan": 81,
+ "section": "晉紀三",
+ "ruler": "世祖武皇帝中",
+ "year_label": "九年",
+ "era": "太康",
+ "western_year": null,
+ "western_volume_range": "280 CE 〜 288 CE",
+ "status": "pass",
+ "halt_reason": null,
+ "persons": [],
+ "places": [],
+ "source": {
+  "segment_layer": {
+   "source_id": "wikisource-zh-zztj-husanxing",
+   "title": "資治通鑒 (胡三省音注)/卷081",
+   "revid": 391215,
+   "retrieved_at": "2026-06-20",
+   "license": "CC-BY-SA-4.0"
+  },
+  "raw_layer": {
+   "source_id": "kanripo-KR2b0007",
+   "commit": "80174f61e491db29f9921d0d3e54a59649419aa9"
+  }
+ },
+ "license_note": "本文/注=CC BY-SA 4.0(原典は public domain); 成果物=CC BY-NC-SA 系",
+ "chunks": [
+  {
+   "chunk_id": "j081_y09_c01",
+   "source_text": "九年⟦n309⟧\n①春，正月，壬申朔，日有食之。⟦n310⟧\n②夏，六月，庚子朔，日有食之。\n③郡國三十三大旱。\n④秋，八月，壬子，星隕如雨。\n⑤地震。",
+   "hu_notes": [
+    {
+     "idx": 309,
+     "text": "（戊申、二八八）"
+    },
+    {
+     "idx": 310,
+     "text": "比三年正旦日食，帝尋晏駕，晉以大亂；天之示戒，蓋昭昭矣。"
+    }
+   ],
+   "translation": "九年(戊申・二八八年)\n\n① 春、正月、壬申の日(ついたち)、日食があった。〔注:この三年続けて元日に日食があり、武帝はほどなく崩御し、晉は大いに乱れた。天が示した戒めは、まことに明らかであったというべきだろう〕\n\n② 夏、六月、庚子の日(ついたち)、日食があった。\n\n③ 三十三の郡・国で大干ばつがあった。\n\n④ 秋、八月、壬子の日、星が雨のように降り落ちた。\n\n⑤ 地震があった。",
+   "status": "pass",
+   "halt_reason": null,
+   "iterations": 1,
+   "review_history": [
+    {
+     "round": 1,
+     "reviewer": "codex(gpt)/low",
+     "verdict": "pass",
+     "findings": [
+      {
+       "severity": "allowed",
+       "category": "胡注の反映",
+       "source_span": "比三年正旦日食…天之示戒，蓋昭昭矣",
+       "issue": "胡注を〔注:…〕で訳出。根拠集合内。修正不要。"
+      }
+     ],
+     "ts": "2026-07-05T00:00:00Z"
+    }
+   ]
+  }
+ ],
+ "translation_full": "九年(戊申・二八八年)\n\n① 春、正月、壬申の日(ついたち)、日食があった。〔注:この三年続けて元日に日食があり、武帝はほどなく崩御し、晉は大いに乱れた。天が示した戒めは、まことに明らかであったというべきだろう〕\n\n② 夏、六月、庚子の日(ついたち)、日食があった。\n\n③ 三十三の郡・国で大干ばつがあった。\n\n④ 秋、八月、壬子の日、星が雨のように降り落ちた。\n\n⑤ 地震があった。",
+ "built_with": {
+  "translator": "claude-opus-4-8",
+  "reviewer": "codex(gpt)/low"
+ },
+ "updated_at": "2026-07-05T00:00:00Z"
+}

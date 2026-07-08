@@ -60,12 +60,13 @@
   - **halt**(チャンクが3R 非収束)は溜めて、後で **opus + Codex `--effort high` の halt解決波**(records を in-place 編集して再レビュー→pass化)で一括処理。high でも非収束/真の校勘係争は人手へ残す。
 - **予算ガード(二段構え)**:
   - ハード床 = **口座側の超過上限 $0**(超えたら 429 で物理停止)。用途次第で都度引き上げる前提。月次 spend limit も別ハード床で、`ai-quota status` の Claude `extra_usage`(`used_credits`/`monthly_limit`)に残額が出る(null のときはユーザーに確認)。
-  - ソフト停止 = **5h 枠の 90%**(週間枠も監視)。残量は **`ai-quota status` が Claude/Codex 両方の実値**(5h・週次の `utilization` と `resets_at`)を直接返すので、旧来のアンカー+補間や `/status` 聞き取りは不要:
-    1. **波をローンチする前に毎回** `ai-quota status --json` を実行。Claude `five_hour.utilization`(+ `seven_day`)と Codex `five_hour`/`seven_day`(レビュー消費=しばしば真の律速)を読む。
-    2. 残ヘッドルーム = 90 −(Claude 5h%)。**1エージェント ≒18pt**(実測較正)で割って投入エージェント数を決める。残ヘッドルームが 1エージェント分を切る、または Codex 週次が枯渇間近なら**新規波を投げない**。`resets_at` も判断材料。
-    3. **天井に近づくほど単位を縮める**(K=3巻 → K=1巻 → 1サブバッチ)でオーバーシュート最小化。
+  - ソフト停止 = **5h 枠の 90%**(絶対上限)**かつ 1回のドレイン実行(起動〜終了)での消費は 50pt まで**(2026-07-08〜、相対キャップ)。週間枠も監視。残量は **`ai-quota status` が Claude/Codex 両方の実値**(5h・週次の `utilization` と `resets_at`)を直接返すので、旧来のアンカー+補間や `/status` 聞き取りは不要:
+    1. **ドレイン実行の起動直後に** `ai-quota status --json` を実行し、Claude 5h% を `START%` として記録する(1回の実行中はこの値を保持し、波ごとに取り直さない)。
+    2. **停止しきい値 = min(90, START% + 50)**。波をローンチする前に毎回 `ai-quota status --json` を実行し、Claude `five_hour.utilization`(+ `seven_day`)と Codex `five_hour`/`seven_day`(レビュー消費=しばしば真の律速)を読み、現在値がこの停止しきい値に達していれば**新規波を投げない**。
+    3. 残ヘッドルーム = 停止しきい値 −(Claude 5h%)。**1エージェント ≒18pt**(実測較正)で割って投入エージェント数を決める。残ヘッドルームが 1エージェント分を切る、または Codex 週次が枯渇間近なら**新規波を投げない**。`resets_at` も判断材料。
+    4. **しきい値に近づくほど単位を縮める**(K=3巻 → K=1巻 → 1サブバッチ)でオーバーシュート最小化。
 - **波の対象選定**: `python3 pipeline/translation_queue.py list` で未完巻を確認(司令塔が frontier を決める)。各エージェントは自巻の `data/staging/kb/卷NNN.json` 存在を確認してから着手。
-- **停止条件**: `ai-quota status` が Claude 5h≥90%(または Codex 週次が枯渇)/ 対象巻が尽きた / 429(ハード床)/ ユーザー停止。停止時は「確定した巻・年・現在の 5h%(ai-quota 実値)/ 次に残っている巻」を報告。
+- **停止条件**: `ai-quota status` が Claude 5h≥90% または Claude 5h≥(START%+50pt)(いずれか先に到達)/ Codex 週次が枯渇 / 対象巻が尽きた / 429(ハード床)/ ユーザー停止。停止時は「確定した巻・年・現在の 5h%(ai-quota 実値)・起動時 START%・次に残っている巻」を報告。
 - **冪等再開**: write-only なので途中停止で失うのは未コミットの実行中年のみ。再開は `translation_queue.py` が `data/kb/` の実状態から frontier を再判定するので、新セッションで「並列で開始して」と言えば続きから再開できる(self-pace ループ自体は `/loop` 再投入が必要)。
 
 ## 実行系と予算(詳細 DESIGN §3)

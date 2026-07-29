@@ -66,3 +66,7 @@
 ## [x] I12 — 卷002 顯王三十三年 (j002_y26) の画像追加 [Claude/agy]
 結果: カテゴリB水墨画2枚を agy(nano-banana)で生成し追加。`mengzi_liang`=「魏の惠王に『何ぞ必ずしも利と曰わん、仁義あるのみ』と説く孟子」/ `zisi_mengzi`=「師の子思に民を治める道を問う若き日の孟子」。§1 no-text 目視検証=2枚とも文字状描き込みなし(竹簡は無地の線のみ)、初回で合格。生成は /tmp/zzt_image_agy_j002_y26/ で実施しリポジトリに中間PNGなし。`image_sync.py` で 1024x1024 / ≤235KB に圧縮配置 → `illustrations[]` 登録(`translation_full` 無改変・anchor 各1回一致を機械確認・`git diff --numstat` で追加行が illustrations 分のみを確認) → `build_view.py` 再生成(151巻/1062ファイル)でリンク解決確認。§3.6 来歴: AI生成画像・engine=agy(Antigravity)・モデル=Gemini nano-banana・ライセンス CC BY-NC-SA 4.0。
 *   **対象**: `data/kb/卷002/j002_y26.json` + `docs/images/卷002/j002_y26_{mengzi_liang,zisi_mengzi}.jpg`
+
+## [x] I13 — 卷003 愼靚王四年 (j003_y04) の画像追加 [Claude/agy]
+結果: カテゴリB水墨画2枚を agy(nano-banana)で生成し追加。`xiuyu`=「脩魚の戦い(秦が韓軍を大破し八万を斬首、䱸・申差を濁沢で捕縛)」/ `zhangyi_wei`=「張儀が魏の襄王に連衡を説き、魏が合従の盟約に背く」。§3.5 選定: zhangyi_wei は2バリアント生成し、右上の掛軸に文字状の描き込みが出た v1 を却下して掛軸なしの v2 を採用(xiuyu は旗が無地で初回 §1 no-text 合格)。生成は /tmp/zzt_image_agy_j003_y04/ で実施しリポジトリに中間PNGなし。`image_sync.py` で 1376x768 / ≤187KB に圧縮配置 → `illustrations[]` 登録(`translation_full` 無改変・anchor 各1回一致を機械確認・`git diff --numstat` で追加行が illustrations 分16行のみを確認) → `build_view.py` 再生成(151巻/1062ファイル)でリンク解決確認。§3.6 来歴: AI生成画像・engine=agy(Antigravity)・モデル=Gemini nano-banana・ライセンス CC BY-NC-SA 4.0。
+*   **対象**: `data/kb/卷003/j003_y04.json` + `docs/images/卷003/j003_y04_{xiuyu,zhangyi_wei}.jpg`

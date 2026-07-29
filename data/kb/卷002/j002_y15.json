@@ -124,5 +124,21 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-23T09:06:00",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "shenbuhai",
+   "category": "B",
+   "file": "j002_y15_shenbuhai.jpg",
+   "caption": "従兄の登用という私的な請託を退けられ、韓の昭侯（奥）の前で罪を請う宰相・申不害（手前）（水墨画）",
+   "anchor": "申不害はそこで自分の屋敷に退き、罪を請うて言った。「君こそ、まことにその御方です。」"
+  },
+  {
+   "slug": "biku",
+   "category": "B",
+   "file": "j002_y15_biku.jpg",
+   "caption": "すり切れた袴を、功績ある者に与える日まで蔵しておくよう命じる韓の昭侯（右）と怪訝な顔の側仕え（左）（水墨画）",
+   "anchor": "私は必ず功績のある者を待って、これを与えるのだ。"
+  }
+ ]
 }

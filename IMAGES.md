@@ -54,3 +54,7 @@
 ## [x] I09 — 卷011 太祖高皇帝中 五〜七年 (j011_y01–y03) の画像追加 [Claude/agy]
 結果: カテゴリB水墨画4枚を agy(nano-banana)で生成し追加。y01=「垓下の四面楚歌」(gaixia)・「烏江で亭長の舟を退ける項羽」(wujiang) / y02=「陳の会同での韓信捕縛」(hanxin_arrest) / y03=「白登山の包囲」(baideng)。§3.5 選定: gaixia は2バリアント生成し、遠景陣営に文字状の走り書きが出た v1 を却下して blank banner の v2 を採用(他3枚は初回で §1 no-text 合格)。`image_sync.py` で全4枚 1376x768 / ≤229KB に圧縮配置 → `illustrations[]` 登録(`translation_full` 無改変・anchor は各記録内で一意を機械確認) → `build_view.py` 再生成でリンク解決確認(151巻/1062ファイル)。§3.6 来歴: AI生成画像・モデル=Gemini nano-banana(agy)・ライセンス CC BY-NC-SA 4.0。
 *   **対象**: `data/kb/卷011/j011_y01–y03.json` + `docs/images/卷011/*.jpg`
+
+## [x] I10 — 卷002 顯王十八年 (j002_y15) の画像追加 [Claude/Codex]
+結果: カテゴリB水墨画2枚を Codex built-in `image_gen`(headless `codex exec -s workspace-write`、モデル=gpt-5.6-sol セッション内蔵 image_gen、base64→PNG保存→/tmp経由)で生成し追加。`shenbuhai`=「私的請託を退けられ韓の昭侯に罪を請う申不害」/ `biku`=「すり切れた袴を功ある者のために蔵するよう命じる昭侯」。§1 no-text 目視検証=2枚とも文字状描き込みなしで初回合格(1枚目は生成有無をセッションID+タイムスタンプで機械確認)。`image_sync.py` で 1536x1024 / ≤250KB に圧縮配置 → `illustrations[]` 登録(`translation_full` 無改変・anchor 各1回一致を機械確認) → `build_view.py` 再生成(151巻/1062ファイル)でリンク解決確認。§3.6 来歴: AI生成画像・engine=Codex built-in image_gen(gpt-image系)・ライセンス CC BY-NC-SA 4.0。
+*   **対象**: `data/kb/卷002/j002_y15.json` + `docs/images/卷002/j002_y15_{shenbuhai,biku}.jpg`

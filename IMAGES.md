@@ -62,3 +62,7 @@
 ## [x] I11 — 卷002 顯王二十九年 (j002_y23) の画像追加 [Claude/agy]
 結果: カテゴリB水墨画2枚を agy(nano-banana)で生成し追加。`ang`=「偽りの和睦の酒宴で伏兵に公子卬を捕らえさせる衞鞅」/ `daliang`=「安邑を捨て大梁へ遷る魏惠王の車列」。§1 no-text 目視検証=2枚とも旗・幕は無地で文字状描き込みなし、初回で合格。`image_sync.py` で 1376x768 / ≤254KB に圧縮配置 → `illustrations[]` 登録(`translation_full` 無改変・anchor 各1回一致を機械確認・`git diff --numstat` で追加行が illustrations 分のみを確認) → `build_view.py` 再生成(151巻/1062ファイル)でリンク解決確認。§3.6 来歴: AI生成画像・engine=agy(Antigravity)・モデル=Gemini nano-banana・ライセンス CC BY-NC-SA 4.0。
 *   **対象**: `data/kb/卷002/j002_y23.json` + `docs/images/卷002/j002_y23_{ang,daliang}.jpg`
+
+## [x] I12 — 卷002 顯王三十三年 (j002_y26) の画像追加 [Claude/agy]
+結果: カテゴリB水墨画2枚を agy(nano-banana)で生成し追加。`mengzi_liang`=「魏の惠王に『何ぞ必ずしも利と曰わん、仁義あるのみ』と説く孟子」/ `zisi_mengzi`=「師の子思に民を治める道を問う若き日の孟子」。§1 no-text 目視検証=2枚とも文字状描き込みなし(竹簡は無地の線のみ)、初回で合格。生成は /tmp/zzt_image_agy_j002_y26/ で実施しリポジトリに中間PNGなし。`image_sync.py` で 1024x1024 / ≤235KB に圧縮配置 → `illustrations[]` 登録(`translation_full` 無改変・anchor 各1回一致を機械確認・`git diff --numstat` で追加行が illustrations 分のみを確認) → `build_view.py` 再生成(151巻/1062ファイル)でリンク解決確認。§3.6 来歴: AI生成画像・engine=agy(Antigravity)・モデル=Gemini nano-banana・ライセンス CC BY-NC-SA 4.0。
+*   **対象**: `data/kb/卷002/j002_y26.json` + `docs/images/卷002/j002_y26_{mengzi_liang,zisi_mengzi}.jpg`

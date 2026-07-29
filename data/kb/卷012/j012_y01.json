@@ -126,5 +126,13 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=巻011 j011_y03_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(style指摘1=「匈奴くんだり」の語感→「匈奴へ」に調整)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "boren",
+   "category": "B",
+   "file": "j012_y01_boren.jpg",
+   "caption": "柏人の館の前で県名を聞き、宿泊を取りやめる高祖（手描き水墨画）",
+   "anchor": "そうしてそこには泊まらず、立ち去った。"
+  }
+ ]
 }

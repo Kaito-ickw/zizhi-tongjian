@@ -116,5 +116,21 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-23T09:08:58",
- "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。"
+ "review_policy": "R1=Codex/low 独立レビュー(連続性根拠=直前年の確定訳を連鎖)。T-review-policy 方針(根拠集合=本文+胡注+巻内連続訳, forbidden=根拠集合外の捏造のみ, 再レビューは前ラウンド findings 同梱)。各年の R1/R2 結果は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "ang",
+   "category": "B",
+   "file": "j002_y23_ang.jpg",
+   "caption": "偽りの和睦の酒宴で、伏せていた武装兵に旧友の公子卬（右）を捕らえさせる秦将・衞鞅（左）（水墨画）",
+   "anchor": "不意に公子卬を襲って捕らえ、そのまま魏軍に攻めかかって、これを大破した。"
+  },
+  {
+   "slug": "daliang",
+   "category": "B",
+   "file": "j002_y23_daliang.jpg",
+   "caption": "秦に河西の地を割いて和睦し、旧都・安邑を捨てて東の大梁へ遷る魏惠王の車列（水墨画）",
+   "anchor": "安邑を去り、大梁(たいりょう)に都を移した。"
+  }
+ ]
 }

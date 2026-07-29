@@ -58,3 +58,7 @@
 ## [x] I10 — 卷002 顯王十八年 (j002_y15) の画像追加 [Claude/Codex]
 結果: カテゴリB水墨画2枚を Codex built-in `image_gen`(headless `codex exec -s workspace-write`、モデル=gpt-5.6-sol セッション内蔵 image_gen、base64→PNG保存→/tmp経由)で生成し追加。`shenbuhai`=「私的請託を退けられ韓の昭侯に罪を請う申不害」/ `biku`=「すり切れた袴を功ある者のために蔵するよう命じる昭侯」。§1 no-text 目視検証=2枚とも文字状描き込みなしで初回合格(1枚目は生成有無をセッションID+タイムスタンプで機械確認)。`image_sync.py` で 1536x1024 / ≤250KB に圧縮配置 → `illustrations[]` 登録(`translation_full` 無改変・anchor 各1回一致を機械確認) → `build_view.py` 再生成(151巻/1062ファイル)でリンク解決確認。§3.6 来歴: AI生成画像・engine=Codex built-in image_gen(gpt-image系)・ライセンス CC BY-NC-SA 4.0。
 *   **対象**: `data/kb/卷002/j002_y15.json` + `docs/images/卷002/j002_y15_{shenbuhai,biku}.jpg`
+
+## [x] I11 — 卷002 顯王二十九年 (j002_y23) の画像追加 [Claude/agy]
+結果: カテゴリB水墨画2枚を agy(nano-banana)で生成し追加。`ang`=「偽りの和睦の酒宴で伏兵に公子卬を捕らえさせる衞鞅」/ `daliang`=「安邑を捨て大梁へ遷る魏惠王の車列」。§1 no-text 目視検証=2枚とも旗・幕は無地で文字状描き込みなし、初回で合格。`image_sync.py` で 1376x768 / ≤254KB に圧縮配置 → `illustrations[]` 登録(`translation_full` 無改変・anchor 各1回一致を機械確認・`git diff --numstat` で追加行が illustrations 分のみを確認) → `build_view.py` 再生成(151巻/1062ファイル)でリンク解決確認。§3.6 来歴: AI生成画像・engine=agy(Antigravity)・モデル=Gemini nano-banana・ライセンス CC BY-NC-SA 4.0。
+*   **対象**: `data/kb/卷002/j002_y23.json` + `docs/images/卷002/j002_y23_{ang,daliang}.jpg`

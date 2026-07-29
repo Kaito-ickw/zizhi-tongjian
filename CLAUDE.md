@@ -49,6 +49,14 @@
 ⑥ `IMAGES.md` を `[x]` 化し結果を1行追記する。
 ⑦ git コミットする。
 
+### 画像 cron(2026-07-30〜・無人)
+IMAGES.md の手動タスクとは別に、**6時間おきに agy / codex がそれぞれ1年ぶん**を無人で追加する。
+- crontab: `agy=02/08/14/20`, `codex=05/11/17/23`(JST)。`.claude/image_cron.sh --engine agy|codex`。
+- 対象年は **`python3 pipeline/image_task.py frontier`**(未挿絵レコードを巻→年順、本文 800字未満はスキップ)。IMAGES.md は追記記録として使う(`--limit` / `--min-chars` で調整可)。
+- 翻訳ドレインと **同じ `/tmp/zzt_drain.lock`** を `flock -n` で取るので同時実行しない(翻訳が優先)。各回 `timeout 2700`(45分)。
+- ゲート: claude 5h≥80% / 7d≥85% で skip。エンジン側枠(agy 5h≥80% / codex 週次≥85%)でも skip。`ai-quota` が 429 等で読めないときは 3 回までリトライし、claude 枠が読めなければ安全側で skip、**エンジン枠だけ読めないときは警告付きで実行**(Antigravity トークン切れは agy 起動で自動更新されるため)。
+- ログ: `.claude/image_cron.log`。1回の実行=1年=1コミット。
+
 ## ドレインモード(ユーザーが「並列で回して」「使い切って」等と言ったら)
 **律速は Codex でも Claude レートでもなく「指示を出せる回数(≒2回/日)」。** 1指示で余っている Claude 予算を安全に使い切るモード。上記「1タスク=1セッション」とは別運用。
 

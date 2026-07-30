@@ -204,3 +204,8 @@
 - 問題: `pipeline/year_western.py` の sequence-check(L149 `current.astro != previous.astro + 1`)が、資治通鑑が無記載年を飛ばす場合(例 卷001 七年/十年/十四年=395/392/388 BCE)を誤検出し exit 1。western_year 自体は ganzhi×astro / 巻範囲 / **在位整合** で別途正しさが保証済み(T05b で実証)。
 - 修正方針: 連番違反は「同一 ruler 内で `astro差 ≠ 年号差`」または「astro が非単調(後退/重複)」のときのみとする。正当な飛び年(年号差=astro差>0)は違反としない。warnings に飛び年を `year_gap`(情報)として残すのは可。
 - Done: 卷001(14年)で sequence_violation_count=0・exit 0、かつ既存 ganzhi/range/accession 検証は不変。冪等(2回実行でバイト一致)。
+
+## [ ] T-halt-review-protocol — halt 再レビュー運用の明文化と review_history 拡張 [Codex]
+- 発見(2026-07-31 drain wave2, 卷154): 前セッションの halt 再レビューが `prev_findings` / `continuity_text` を input に渡しておらず、毎回「記憶なしの独立レビュー」となってレビュアーが同一箇所で正反対の判定を往復する構造的非収束が発生していた。両フィールドを渡した途端に収束(卷149/150/152/154/156 の halt 5件はこの方法で全解消済み)。
+- 対応案: ①halt 再レビュー時は `prev_findings` + `continuity_text` 必須を DESIGN/ドレイン手順に明文化。②`review_history` が `{round, verdict, findings_count}` しか保存せず findings 本文が残らないため、halt 引き継ぎで前ラウンド指摘を再構成できない — findings 本文も保存する改修を検討。③`_findings_digest` が `suggestion` をプロンプトに出さない(`severity`/`span`/`issue` のみ)点も再レビュー時の論拠伝達を阻害。
+- Done: DESIGN に運用追記 + review.py の review_history 拡張(findings 本文保存)。

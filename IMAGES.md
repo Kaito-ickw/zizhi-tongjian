@@ -70,3 +70,7 @@
 ## [x] I13 — 卷003 愼靚王四年 (j003_y04) の画像追加 [Claude/agy]
 結果: カテゴリB水墨画2枚を agy(nano-banana)で生成し追加。`xiuyu`=「脩魚の戦い(秦が韓軍を大破し八万を斬首、䱸・申差を濁沢で捕縛)」/ `zhangyi_wei`=「張儀が魏の襄王に連衡を説き、魏が合従の盟約に背く」。§3.5 選定: zhangyi_wei は2バリアント生成し、右上の掛軸に文字状の描き込みが出た v1 を却下して掛軸なしの v2 を採用(xiuyu は旗が無地で初回 §1 no-text 合格)。生成は /tmp/zzt_image_agy_j003_y04/ で実施しリポジトリに中間PNGなし。`image_sync.py` で 1376x768 / ≤187KB に圧縮配置 → `illustrations[]` 登録(`translation_full` 無改変・anchor 各1回一致を機械確認・`git diff --numstat` で追加行が illustrations 分16行のみを確認) → `build_view.py` 再生成(151巻/1062ファイル)でリンク解決確認。§3.6 来歴: AI生成画像・engine=agy(Antigravity)・モデル=Gemini nano-banana・ライセンス CC BY-NC-SA 4.0。
 *   **対象**: `data/kb/卷003/j003_y04.json` + `docs/images/卷003/j003_y04_{xiuyu,zhangyi_wei}.jpg`
+
+## [x] I14 — 卷004 赧王三十四年 (j004_y17) の画像追加 [Claude/Codex]
+結果: カテゴリB水墨画2枚を Codex built-in `image_gen`(headless `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never`、prompt=stdin、生成物 `~/.codex/generated_images/<session>/*.png` を cp)で生成し追加。`wugong`=「東周の武公が楚の令尹昭子に周攻略を思いとどまらせる説得の場面」/ `mihu`=「寓話『虎の皮を蒙る麋』— 沢中で虎皮をまとった麋を狩人たちが遠巻きに狙う」。§1 no-text 目視検証=2枚とも文字状描き込みなし(垂幕・幟は無地)、初回で合格。生成は /tmp/zzt_image_codex_j004_y17/ で実施しリポジトリに中間PNGなし。`image_sync.py` で 1536x1024 / ≤285KB に圧縮配置 → `illustrations[]` 登録(`translation_full` 無改変・anchor 各1回一致を機械確認・`git diff --numstat` で追加行が illustrations 分16行のみを確認) → `build_view.py` 再生成(151巻/1062ファイル)でリンク解決確認。§3.6 来歴: AI生成画像・engine=Codex built-in image_gen(gpt-image系、セッション tokens≒34k)・ライセンス CC BY-NC-SA 4.0。
+*   **対象**: `data/kb/卷004/j004_y17.json` + `docs/images/卷004/j004_y17_{wugong,mihu}.jpg`

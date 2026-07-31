@@ -285,5 +285,27 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-06-28T12:00:00",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "conspiracy",
+   "category": "B",
+   "file": "j007_y17_conspiracy.jpg",
+   "caption": "沙丘の密謀——始皇帝の柩を載せた轀輬車のかたわら、灯火のもとで趙高が丞相李斯に胡亥擁立を説く。封印された遺書の文書箱を前に、李斯は苦悩する",
+   "anchor": "始皇帝の詔を受けたと偽って、胡亥を太子に立てた。"
+  },
+  {
+   "slug": "fusu",
+   "category": "B",
+   "file": "j007_y17_fusu.jpg",
+   "caption": "扶蘇の最期——偽の詔書を読んで涙し、剣に手をかける扶蘇。将軍蒙恬は「もう一度問い質してから死んでも遅くはない」と必死に押しとどめる。北辺の陣営、遠くに長城",
+   "anchor": "そう言って、ただちに自殺した。"
+  },
+  {
+   "slug": "procession",
+   "category": "B",
+   "file": "j007_y17_procession.jpg",
+   "caption": "死を隠した帰還の行列——始皇帝の柩を載せた轀輬車が夏の炎天下を咸陽へ向かう。死臭をごまかすため塩漬けの魚を積んだ車が後に続き、百官は生前と変わらず車駕を拝する",
+   "anchor": "そこで初めて喪を発表した。"
+  }
+ ]
 }

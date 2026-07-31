@@ -209,3 +209,8 @@
 - 発見(2026-07-31 drain wave2, 卷154): 前セッションの halt 再レビューが `prev_findings` / `continuity_text` を input に渡しておらず、毎回「記憶なしの独立レビュー」となってレビュアーが同一箇所で正反対の判定を往復する構造的非収束が発生していた。両フィールドを渡した途端に収束(卷149/150/152/154/156 の halt 5件はこの方法で全解消済み)。
 - 対応案: ①halt 再レビュー時は `prev_findings` + `continuity_text` 必須を DESIGN/ドレイン手順に明文化。②`review_history` が `{round, verdict, findings_count}` しか保存せず findings 本文が残らないため、halt 引き継ぎで前ラウンド指摘を再構成できない — findings 本文も保存する改修を検討。③`_findings_digest` が `suggestion` をプロンプトに出さない(`severity`/`span`/`issue` のみ)点も再レビュー時の論拠伝達を阻害。
 - Done: DESIGN に運用追記 + review.py の review_history 拡張(findings 本文保存)。
+
+## [ ] T-year-western-strnotes — year_western.py が文字列 hu_notes でクラッシュ [Codex]
+- 発見(2026-07-31 drain wave1): `python3 pipeline/year_western.py` が `data/kb/卷123/j123_y06.json` で `AttributeError: 'str' object has no attribute 'get'`(`first_year_note` L62 が `note.get("text")` を前提)。卷123 以降の多数レコード(卷163-165 含む)は `hu_notes` が文字列配列で、dict 前提の旧スキーマと混在。ドレイン後処理は当面 `build_view.py` のみ実行(build_view は非ブロック)。
+- 修正方針: `first_year_note` を `note if isinstance(note, str) else note.get("text","")` に一般化し、卷123 以降の western_year 充填を回復。既知の T-year-seqcheck / 前元後元クラッシュとは別件。
+- Done: year_western.py が全 kb レコードで exit 0(既存検証は不変)・冪等。

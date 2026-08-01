@@ -402,5 +402,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j012_y04_c02 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(forbidden=「感尉之言」を『慰めの言葉』と誤読→『王衛尉の言葉』に修正/style=口調)、R2 fail(forbidden=「床下」を『寝床の下』と誤読→『病床のかたわら』に修正)、R3 pass(allowed/style のみ)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "geifu-taijin",
+   "category": "B",
+   "file": "j012_y05_geifu-taijin.jpg",
+   "caption": "漢十二年冬、蘄西で対峙する高祖と黥布。項羽ばりの陣を敷いた黥布に、高祖は「何が苦しくて謀反したのか」と呼びかけた(AI生成イメージ)",
+   "anchor": "主上は怒ってこれを罵り、ついに大いに戦った"
+  },
+  {
+   "slug": "taifuka",
+   "category": "B",
+   "file": "j012_y05_taifuka.jpg",
+   "caption": "故郷の沛宮での酒宴。高祖はみずから歌をつくって舞い、涙を流して父老たちと別れを惜しんだ(AI生成イメージ)",
+   "anchor": "みずから歌をつくり、立って舞い"
+  },
+  {
+   "slug": "byosho-tenmei",
+   "category": "B",
+   "file": "j012_y05_byosho-tenmei.jpg",
+   "caption": "長楽宮の病床で治療を拒む高祖。「命は天にある。扁鵲でも何の役に立つか」と医者を退けた(AI生成イメージ)",
+   "anchor": "たとえ扁鵲(へんじゃく)であろうと、何の役に立つか"
+  }
+ ]
 }

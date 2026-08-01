@@ -578,5 +578,27 @@
  },
  "updated_at": "2026-06-30T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j012_y03_c01 確定訳、c02 continuity=c01 訳文を手動供給)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。【HALT】c01: R1 fail(『偽って』追加=削除)→R2 fail(『列侯群臣皆賀』を実事として提示・南海尉注が胡三省の否定説を断定→注修正)→R3 fail(『列侯群臣皆賀』の点が未収束)。3反復未収束のため halt(max_iter_unconverged)。当該指摘は要ユーザー判断: 原文『言豨已得，死，列侯、羣臣皆賀。』は句読点上『皆賀』が別句(実際の参賀)で、Watson 訳等の通説も実事と読む=レビュアーの偽陽性の可能性が高いが、protocol に従い自動確定せずフラグ。c02: R1 pass(allowed 2・style 1)。詳細は chunks[].review_history を参照。 【HALT解決スイープ 2026-06-28】c01 を --effort high で独立再レビュー(R4)→ なお「列侯羣臣皆賀」を偽使者の発言内に畳むべきとして forbidden=fail。当該語句は原文に literal に存在し、句読点上は別句=実際の参賀(Watson 等の通説・誘い出しの筋立てとも整合)であり、レビュアーの偽陽性と判断。Reading「発言内に内包」への改変は出典の標準解と矛盾するため自動確定せず、chunk/year=halt のまま人手判断へ escalate(UNRESOLVED)。 【HALT解消 2026-06-30】c01: 残 forbidden=『列侯羣臣皆賀』を偽使者の発言内に畳むべきとの指摘は、原文『言豨已得，死，列侯、羣臣皆賀。』の句読点上『皆賀』が別句(実際の参賀)であり Watson 訳等の通説と一致するため、レビュアーの偽陽性と最終確定。標準読み(実事)を維持し orchestrator 裁定で status=pass。c02 は R1 pass 済。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kanshin-saigo",
+   "category": "B",
+   "file": "j012_y04_kanshin-saigo.jpg",
+   "caption": "長楽宮の鐘室に立つ韓信。呂后と蕭何の計により召し出され、天下平定の最大の功臣はここで最期を迎えた（AI生成イメージ）。",
+   "anchor": "こうして韓信の三族は皆殺しにされた。"
+  },
+  {
+   "slug": "ranpu-koku",
+   "category": "B",
+   "file": "j012_y04_ranpu-koku.jpg",
+   "caption": "洛陽にさらされた彭越の首の下で祀り哭す欒布。死を覚悟の直言が高祖の心を動かした（AI生成イメージ）。",
+   "anchor": "そこで主上は、欒布の罪を赦し、都尉(とい)に任じた。"
+  },
+  {
+   "slug": "rikuka-nanetsu",
+   "category": "B",
+   "file": "j012_y04_rikuka-nanetsu.jpg",
+   "caption": "南越の宮殿で趙佗を説く陸賈。椎髷・箕坐の趙佗は説得に驚いて座り直し、漢に臣従した（AI生成イメージ）。",
+   "anchor": "陸賈が帰って報告すると、帝は大いに喜び、陸賈を太中大夫(たいちゅうたいふ)に任じた。"
+  }
+ ]
 }

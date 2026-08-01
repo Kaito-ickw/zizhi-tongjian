@@ -194,5 +194,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j012_y02_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(allowed 2・style 1のみ、forbidden なし)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kiki",
+   "category": "B",
+   "file": "j012_y03_kiki.jpg",
+   "caption": "周昌の廷争——太子廃立をめぐり、吃りの御史大夫・周昌が「臣は、ぜ、絶対に、詔をお受けいたしませぬ」と激しく諫争する。東廂では呂后が帳の陰で聞き耳を立てていた",
+   "anchor": "太子は危うく廃されるところでした」。"
+  },
+  {
+   "slug": "mitsudan",
+   "category": "B",
+   "file": "j012_y03_mitsudan.jpg",
+   "caption": "淮陰侯の密語——赴任の挨拶に訪れた陳豨の手を取り、人払いした庭で韓信が天を仰いで嘆息し、「わしがそなたのために都の中で起てば、天下を図ることもできよう」とささやいた",
+   "anchor": "「謹んで仰せに従いまする」。"
+  },
+  {
+   "slug": "hinkaku",
+   "category": "B",
+   "file": "j012_y03_hinkaku.jpg",
+   "caption": "陳豨の賓客千余乘——信陵君の養士を慕う陳豨が帰省で趙を通ると、付き従う賓客の車列は千余台、邯鄲の官舎はすべて満杯になった。この権勢が周昌の警戒を招く",
+   "anchor": "邯鄲(かんたん)の官舎はすべて満杯になった。"
+  }
+ ]
 }

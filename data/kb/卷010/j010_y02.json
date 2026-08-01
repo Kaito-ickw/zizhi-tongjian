@@ -446,5 +446,27 @@
  },
  "updated_at": "2026-06-27T00:00:00",
  "review_policy": "Opus escalation(claude-opus-4-8 翻訳)。Sonnet 初訳が c01/c02 とも grounding/accuracy で2ラウンド fail したため上位モデルへ委譲。根拠集合=本文+胡注+巻内連続訳(c01 の continuity=j010_y01_c03 確定訳)。forbidden=根拠集合外の事実/方向/数量/動作/心理/発言の新規追加のみ。再レビューは前ラウンド findings 同梱・別セッション。c01: R1 fail(自剄→首をはねる/伏弩の主体追加)→R2 fail(伏弩使役の主体追加)→R3 pass(残りは読み style のみ)。c02: R1 pass。各チャンクの詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "guangwu",
+   "category": "B",
+   "file": "j010_y02_guangwu.jpg",
+   "caption": "広武の対峙——谷を挟んで向かい合う楚漢両軍。項羽は俎の上に漢王の父太公を載せて「降らねば煮る」と脅すが、漢王は「わしの親父はお前の親父でもある。煮るならその羹を一杯分けてくれ」と言い放つ",
+   "anchor": "項王はこれに従った。"
+  },
+  {
+   "slug": "weishui",
+   "category": "B",
+   "file": "j010_y02_weishui.jpg",
+   "caption": "濰水の戦い——韓信は夜のうちに一万余の砂袋で上流をせき止め、偽って敗走して龍且を誘い込むと、せきを切って大水を放った。渡河中の楚軍は濁流に呑まれ、龍且は討ち取られた",
+   "anchor": "すかさず急襲して龍且を討ち取ると、川の東に取り残された軍は散り散りに逃げ、斉王の田広(でんこう)は逃げ去った。"
+  },
+  {
+   "slug": "kuaitong",
+   "category": "B",
+   "file": "j010_y02_kuaitong.jpg",
+   "caption": "蒯徹の説得——天下の権は韓信の手にあると見抜いた弁士蒯徹が、灯火のもと「天下を三分し、鼎の足のように並び立て」と説く。韓信は漢王の厚遇を思ってためらい、ついに従わなかった",
+   "anchor": "そこで蒯徹は立ち去り、狂ったふりをして巫(ふ=みこ)となった。"
+  }
+ ]
 }

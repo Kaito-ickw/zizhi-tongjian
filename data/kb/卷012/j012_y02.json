@@ -234,5 +234,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j012_y01_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(forbidden 2件=「自剄」を「首をはねる」と誤訳・「一身無餘」を逆方向に誤訳)→R2 pass(別セッション・前ラウンド findings 同梱で両件解消確認)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "migration",
+   "category": "B",
+   "file": "j012_y02_migration.jpg",
+   "caption": "関中への大移住——劉敬の「本を強くして末を弱める」策により、斉・楚の昭・屈・景・懷・田の五大族と豪傑たち十余万人が、牛車を連ねて関中の地へ移された",
+   "anchor": "あわせて十余万人であった。"
+  },
+  {
+   "slug": "kanko-gimon",
+   "category": "B",
+   "file": "j012_y02_kanko-gimon.jpg",
+   "caption": "貫高の訊問——笞で数千回打たれ、錐で刺され、体じゅう打てる場所がなくなっても、貫高は「やったのは我ら一味だけのこと。王はまことに何もご存じない」と言い張り、それ以上は何も語らなかった",
+   "anchor": "貫高はとうとう、それ以上は何も言わなかった。"
+  },
+  {
+   "slug": "setsuko-visit",
+   "category": "B",
+   "file": "j012_y02_setsuko-visit.jpg",
+   "caption": "泄公の訪問——主上の使いとして節を持った泄公が、責め苦で弱りきり箯輿に横たわる旧知の貫高を訪ね、張王の無実のいきさつをつぶさに聞き取った",
+   "anchor": "王が何も知らなかったいきさつを、つぶさに語った。"
+  }
+ ]
 }

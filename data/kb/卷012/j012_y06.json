@@ -146,5 +146,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j012_y05_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(forbidden=根拠集合外の人名補完4件「如意/呂太后/司馬光/劉(姓)」→いずれも除去)、R2 pass(style のみ)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "dawn_return",
+   "category": "B",
+   "file": "j012_y06_dawn_return.jpg",
+   "caption": "早暁、狩りから宮中へ戻る惠帝。帰り着いたとき、趙王はすでに鴆毒に倒れていた",
+   "anchor": "帝が帰ってくると、趙王はすでに死んでいた。"
+  },
+  {
+   "slug": "changan_wall",
+   "category": "B",
+   "file": "j012_y06_changan_wall.jpg",
+   "caption": "長安城西北部の築城開始。版築で城壁を突き固める人夫たち",
+   "anchor": "はじめて長安城の西北の部分を築き始めた"
+  }
+ ]
 }

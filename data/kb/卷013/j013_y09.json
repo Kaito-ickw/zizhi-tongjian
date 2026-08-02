@@ -469,5 +469,13 @@
  },
  "updated_at": "2026-06-28T13:06:29",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(continuity=j013_y08←巻内逐次)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01 は長文(本文2,384字/訳9,500字超)で --effort low レビューが毎ラウンド別箇所の境界的 forbidden を1件ずつ surface する whack-a-mole となり、3反復の予算内で clean pass に収束せず: R1 fail(昆弟→「従兄弟」誤訳・「親兄弟の墓」化の誤読)→修正、R2 fail(「釋」=辞退を許す方向の反転)→修正、R3 fail(隆慮侯竈に未根拠の姓「周」を補完)→修正。予算超過の確認用 R4 も fail(収帑を「官の奴婢化」と過剰具体化)を新規検出→修正済。矛盾(review_contradiction)や回帰はなく各指摘は独立・局所で順次解消されたが、3反復で pass 不達のため status=halt / halt_reason=max_iter_unconverged。translation には R1-R4 で指摘された全 forbidden の修正を反映済(=最良版)だが、最終修正は未再レビュー。オーケストレーターは --effort high で一括レビュー→残存境界項目を一掃のうえ最終 pass 確認を推奨。詳細は chunks[].review_history を参照。 【HALT解決スイープ 2026-06-28】R1-R4 の全 forbidden 反映済みの最良版を --effort high で一括再レビュー(R5)→ verdict=pass(findings 0)。chunk/year を pass 確定、translation_full 再生成。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "toi",
+   "category": "B",
+   "file": "j013_y09_toi.jpg",
+   "caption": "朝議で決獄・銭穀を問われて恥じ入り平伏する周勃と、宰相の任を静かに説く陳平、玉座の文帝",
+   "anchor": "右丞相の周勃は免ぜられ、左丞相の陳平がただ一人で丞相となった。"
+  }
+ ]
 }

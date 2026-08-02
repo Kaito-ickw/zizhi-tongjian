@@ -142,5 +142,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j012_y07_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(forbidden=「陛下幸而赦之」を依頼発話『お赦しください』と誤訳→謝意『お赦しいただきました』に修正/style=「歌吟之聲」の感情色づけ)、R2 pass(style のみ)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "chikujo",
+   "category": "B",
+   "file": "j012_y08_chikujo.jpg",
+   "caption": "長安城の築造。長安六百里以内から徴発された男女十四万六千人が、三十日間の労役で版築の城壁を築いた(水墨画・AI生成)。",
+   "anchor": "三十日で労役を終えさせて解散した。"
+  },
+  {
+   "slug": "kifu",
+   "category": "B",
+   "file": "j012_y08_kifu.jpg",
+   "caption": "冒頓単于の無礼な手紙に激怒し匈奴討伐を議する高后の朝議。「十万で匈奴を蹂躙してみせる」と豪語する樊噲を、中郎将の季布が「樊噲は斬るべきです」と真っ向から諫めた(水墨画・AI生成)。",
+   "anchor": "高后は「よし」と言った。"
+  }
+ ]
 }

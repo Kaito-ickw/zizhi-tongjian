@@ -206,5 +206,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j012_y06_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(forbidden=「以其私」を『帝の意図を隠した偽装』と過剰具体化→『私的に尋ねさせた』に簡略/style=「立派な屋敷」)、R2 pass(allowed/style のみ)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "chinshu",
+   "category": "B",
+   "file": "j012_y07_chinshu.jpg",
+   "caption": "鴆酒の宴——太后が酌んだ毒杯を帝が取ろうとし、太后があわてて自ら帝の杯をひっくり返す。傍らで齊悼惠王が怪しむ",
+   "anchor": "太后はあわてて、自分から立って帝の杯をひっくり返した。"
+  },
+  {
+   "slug": "junshu",
+   "category": "B",
+   "file": "j012_y07_junshu.jpg",
+   "caption": "曹参の醇酒——何か言いに来た官吏や賓客に、相国曹参がひたすら濃い酒を飲ませて何も言わせない。奥の役所は何事もなく静か",
+   "anchor": "曹参はそのたびに醇酒を飲ませた。"
+  }
+ ]
 }

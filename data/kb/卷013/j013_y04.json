@@ -114,5 +114,20 @@
  },
  "updated_at": "2026-06-28T13:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j013_y03_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "shotei",
+   "category": "B",
+   "file": "j013_y04_shotei.jpg",
+   "caption": "永巷に幽閉された少帝。実母を殺された恨みを口にした幼帝は、呂太后により深宮の小路に閉じ込められ、側近すら会うことを許されなかった(AI生成画像: Codex built-in image_gen)。",
+   "anchor": "側近の者もだれ一人会うことができなかった。"
+  },
+  {
+   "slug": "nanetsu",
+   "category": "B",
+   "file": "j013_y04_nanetsu.jpg",
+   "caption": "関市と鉄器の禁輸に怒る南越王趙佗。閉ざされた国境の関を望み、これを長沙王の謀と断じた(AI生成画像: Codex built-in image_gen)。",
+   "anchor": "自らの功(こう)にしようとしているのだ」。"
+  }
+ ]
 }

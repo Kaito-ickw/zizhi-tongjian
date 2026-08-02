@@ -237,5 +237,20 @@
  },
  "updated_at": "2026-06-28T14:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j013_y06_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(從祖昆弟の具体化過剰・「両軍」を南北軍と同定・絳侯注の相手取り違え+style「此爲我」)→R2 fail(「太后左右」を太后本人の心理に拡張)→R3 pass(別セッション)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "banquet",
+   "category": "B",
+   "file": "j013_y07_banquet.jpg",
+   "caption": "太后の宴席で「軍法行酒」を許された朱虛侯劉章。耕田歌で諸呂をあてこすり、酒席から逃げた呂氏の一人を剣で斬って報告した。これより諸呂は劉章を憚り、劉氏は勢いを強めた。",
+   "anchor": "劉氏はますます勢いを強めた。"
+  },
+  {
+   "slug": "counsel",
+   "category": "B",
+   "file": "j013_y07_counsel.jpg",
+   "caption": "呂氏の専権を憂えて思案に沈む丞相陳平のもとへ、陸賈がまっすぐ入って座る。「将相和調すれば天下に変あっても権は分かれず」と説き、太尉周勃と深く結ぶ策を授けた。",
+   "anchor": "その飲食の費(ついえ)とさせた。"
+  }
+ ]
 }

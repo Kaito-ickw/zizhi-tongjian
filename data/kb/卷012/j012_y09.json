@@ -138,5 +138,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=巻012 j012_y08_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(style指摘=「人主無過舉」を断定調へ調整し臣光曰の批判と整合)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kyosho",
+   "category": "B",
+   "file": "j012_y09_kyosho.jpg",
+   "caption": "挾書律の廃止。秦律で書物を隠し持てば一族皆殺しとされて以来、壁の中や甕に隠されてきた竹簡が、ようやく日の光の下に取り出された(水墨画・AI生成)。",
+   "anchor": "これを取り除いたのである〕。"
+  },
+  {
+   "slug": "fukudo",
+   "category": "B",
+   "file": "j012_y09_fukudo.jpg",
+   "caption": "複道と叔孫通の諫言。武庫の南に築かれた高架の複道が高帝の衣冠を運ぶ宗廟の道をまたぐと知り、「急いで壊せ」と恐れる若い惠帝に、叔孫通が渭北への原廟建立を献策した(水墨画・AI生成)。",
+   "anchor": "原廟を建てさせた。"
+  }
+ ]
 }

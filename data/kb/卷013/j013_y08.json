@@ -482,5 +482,20 @@
  },
  "updated_at": "2026-06-28T14:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j013_y07_c01 / c02 continuity=j013_y08_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(祿北軍・産南軍の配置逆転+style 股=脚)→R2 fail(掖=腋を「脇腹」と誤訳)→R3 pass。c02: R1 pass(allowed/style 各2件・捏造なし)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "soken",
+   "category": "B",
+   "file": "j013_y08_soken.jpg",
+   "caption": "祓の帰路、軹道で青黒い犬のような怪異が呂太后の腋をつかみ、たちまち消えた。占いは「趙王如意の祟り」と告げ、太后はこれより腋の傷を病み、この年崩じた。",
+   "anchor": "太后はこうして腋の下の傷を病むようになった。"
+  },
+  {
+   "slug": "satan",
+   "category": "B",
+   "file": "j013_y08_satan.jpg",
+   "caption": "呂祿から兵権を回収した太尉周勃は北軍の軍門で令した——「呂氏に味方する者は右肌を脱げ、劉氏に味方する者は左肌を脱げ」。軍中はみな左肌を脱ぎ、諸呂誅滅が動き出した。",
+   "anchor": "軍中の者はみな左肌を脱いだ。"
+  }
+ ]
 }

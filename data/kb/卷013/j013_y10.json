@@ -422,5 +422,20 @@
  },
  "updated_at": "2026-06-28T15:40:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(continuity=j013_y09←巻内逐次)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(「請賣爵子」を「爵を売る」と誤訳→胡注の請爵・賣子に修正・「宴席」の場面追加を削除・「よみして」誤字修正)→R2 pass(別セッション)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "haryo",
+   "category": "B",
+   "file": "j013_y10_haryo.jpg",
+   "caption": "霸陵の坂——険しい坂を六頭立てで駆け下りようとする文帝の車に馬を並べ、轡を取り押さえて諫める中郎将袁盎",
+   "anchor": "帝はそこで駆け下りるのをやめた。"
+  },
+  {
+   "slug": "sekiden",
+   "category": "B",
+   "file": "j013_y10_sekiden.jpg",
+   "caption": "藉田親耕——賈誼の農本の説を容れ、春正月、帝みずから犂を執って藉田を耕し天下に農を勧める",
+   "anchor": "詔して藉田(せきでん)を開き、帝みずから耕(たがや)して天下の民の手本(てほん)となった"
+  }
+ ]
 }

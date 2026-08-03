@@ -329,5 +329,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(巻頭=巻013 翻訳が並行中で未確定のため previous_translation=None。巻境界=自然なリセット点)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(注に無い「帝自身の陵」を霸陵へ付加)→R2 pass(別セッション・前ラウンド findings 同梱)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "tettsui",
+   "category": "B",
+   "file": "j014_y01_tettsui.jpg",
+   "caption": "淮南王劉長の復讐——袖から取り出した鉄椎を振り上げ、母の死の恨みを辟陽侯審食其に向ける(水墨場面)",
+   "anchor": "だが帝は聞き入れなかった。"
+  },
+  {
+   "slug": "hanpitsu",
+   "category": "B",
+   "file": "j014_y01_hanpitsu.jpg",
+   "caption": "張釋之の犯蹕裁定——中渭橋の下から男が飛び出し、乗輿の馬が驚く。廷尉張釋之は「法は天下の公共」と罰金刑を貫いた(水墨場面)",
+   "anchor": "帝は長いこと考えてから言った。「廷尉の判断が正しい」。"
+  }
+ ]
 }

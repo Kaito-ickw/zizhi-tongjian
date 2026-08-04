@@ -562,5 +562,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(巻頭年につき c01 の previous_translation は None=巻境界リセット、c02 continuity=c01)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(「以一擊十」の主語不明確で多寡関係が逆転して読める)→R2 fail(「二、三列城」を城数限定に誤訳)→R3 pass(別セッション・前ラウンド findings 反映)。c02: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "choki",
+   "category": "B",
+   "file": "j015_y01_choki.jpg",
+   "caption": "鼂錯の兵事上書——険しい山谷を駆け下りながら騎射する匈奴の騎兵と、平原に強弩・長戟・戦車を連ねて構える漢軍。「匈奴の長技は三つ、中国の長技は五つ」と説いた地形と兵種の対比。",
+   "anchor": "寵(ちょう)をもってこれに答えた。"
+  },
+  {
+   "slug": "jitsuhen",
+   "category": "B",
+   "file": "j015_y01_jitsuhen.jpg",
+   "caption": "徙民実辺——鼂錯の献策により塞下に築かれた高城深塹の邑。移住した民が家族ぐるみで田を耕し、遠くの烽火台が匈奴への備えを示す。",
+   "anchor": "帝はその言に従い、民を募って塞の下に移した。"
+  }
+ ]
 }

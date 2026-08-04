@@ -91,5 +91,13 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文(臣光曰=本文系として翻訳)+胡注+巻内連続コンテキスト。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(指摘3件すべて allowed)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "mourning",
+   "category": "B",
+   "file": "j014_y08_mourning.jpg",
+   "caption": "生前弔哭 — 文帝の命で喪服姿の群臣が邸に押しかけ、生きている薄昭を弔って哭する。堂前に立ち尽くす薄昭はついに自決を悟る(前170年)。",
+   "anchor": "薄昭はようやく自殺した。"
+  }
+ ]
 }

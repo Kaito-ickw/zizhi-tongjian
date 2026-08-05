@@ -113,5 +113,20 @@
  },
  "updated_at": "2026-06-28T05:40:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j015_y06_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(「百官之奉養或廢」を『俸禄・扶持に無駄があり』と意味反転)→R2 pass(別セッション・前ラウンド findings 反映)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "chumetsu",
+   "category": "B",
+   "file": "j015_y07_chumetsu.jpg",
+   "caption": "詐術を告発され、縄を打たれて引き立てられる新垣平。渭陽五帝廟の祭壇は主を失い、帝の祭祀への熱意も冷めた(前163年)。",
+   "anchor": "自分では出向かなくなった。"
+  },
+  {
+   "slug": "kyugen",
+   "category": "B",
+   "file": "j015_y07_kyugen.jpg",
+   "caption": "高楼から痩せた田畑と末業に流れる民を眺めて憂える文帝。民食の乏しさの咎を問い、群臣に率直な献策を求める詔を下した。",
+   "anchor": "何も隠し立てするな」。"
+  }
+ ]
 }

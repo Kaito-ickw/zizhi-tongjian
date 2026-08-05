@@ -174,5 +174,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity=j015_y02_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(肉刑の廃止・緹縈の上書・田租の廃止)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "teiei",
+   "category": "B",
+   "file": "j015_y03_teiei.jpg",
+   "caption": "緹縈の上書 — 斉の太倉令淳于意の末娘・緹縈が、長安の宮門の前で「官婢となってでも父の刑罪を贖いたい」と嘆願する。この訴えに心を動かされた文帝は肉刑の廃止を詔した(前167年)。",
+   "anchor": "父の刑罪を贖(あがな)い、身を立て直させてやりたいのです」。"
+  },
+  {
+   "slug": "josoze",
+   "category": "B",
+   "file": "j015_y03_josoze.jpg",
+   "caption": "田租の廃止 — 「農は天下の本」として文帝は田の租税をすべて廃止した。役人は官に安んじ、民は生業を楽しみ、蓄えは年ごとに増え、刑罰をほとんど用いぬ治世が広がった。",
+   "anchor": "田の租税を廃止せよ」。"
+  }
+ ]
 }

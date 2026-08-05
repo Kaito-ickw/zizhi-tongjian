@@ -94,5 +94,20 @@
  },
  "updated_at": "2026-06-28T05:40:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j015_y04_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "chao-cuo",
+   "category": "B",
+   "file": "j015_y05_chao-cuo.jpg",
+   "caption": "賢良への親策に答える鼂錯。対策で高第を取り中大夫に抜擢された(前165年)。",
+   "anchor": "その才を非凡だと認めた。"
+  },
+  {
+   "slug": "wangqi",
+   "category": "B",
+   "file": "j015_y05_wangqi.jpg",
+   "caption": "長安の東北に五彩の気が立つと帝に説く新垣平。これにより渭陽に五帝廟が造られた。",
+   "anchor": "気が五色(ごしき)をなしている、と言った。"
+  }
+ ]
 }

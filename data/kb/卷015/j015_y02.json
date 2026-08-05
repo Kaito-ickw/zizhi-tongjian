@@ -262,5 +262,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity=j015_y01_c02 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(鼂錯「論貴粟疏」)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kettei",
+   "category": "B",
+   "file": "j015_y02_kettei.jpg",
+   "caption": "黄河、酸棗に決す——冬十二月、黄河が酸棗で堤を破り、金隄と東郡へあふれ出した。大々的に徴発された兵士と人夫が土のうと柴束を担ぎ、濁流の決壊口を締め切ろうとする。",
+   "anchor": "千里隄(せんりてい)とも呼ばれた〕。"
+  },
+  {
+   "slug": "nyuzoku",
+   "category": "B",
+   "file": "j015_y02_nyuzoku.jpg",
+   "caption": "入粟拝爵——鼂錯の「貴粟」の献策により、農民たちが牛車を連ねて辺境の砦へ粟を運び、納めた量に応じて爵位を受けた。役人が穀物を検分し、穀倉が塞下に満ちてゆく。",
+   "anchor": "一万二千石で大庶長(だいしょちょう)の爵を与えた〕。"
+  }
+ ]
 }

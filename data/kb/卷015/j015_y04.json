@@ -258,5 +258,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity=j015_y03_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(「騎卒十萬」に「歩兵」を追加=兵種捏造)→R2 pass(別セッション・前ラウンド findings 反映)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "shurai",
+   "category": "B",
+   "file": "j015_y04_shurai.jpg",
+   "caption": "老上単于の来襲——十四万騎の匈奴軍が蕭関を突破して駆け下り、遠景に炎上する回中宮と烽火台の煙が上がる(水墨画・AI生成)。",
+   "anchor": "敵を討ち取ることはできなかった。"
+  },
+  {
+   "slug": "futo",
+   "category": "B",
+   "file": "j015_y04_futo.jpg",
+   "caption": "馮唐の直言——輦上の文帝に対し、老臣馮唐が「賞は軽く罰は重すぎる」と臆せず諫め、魏尚の赦免を引き出した場面(水墨画・AI生成)。",
+   "anchor": "馮唐を車騎都尉(しゃきとい)に任じた"
+  }
+ ]
 }

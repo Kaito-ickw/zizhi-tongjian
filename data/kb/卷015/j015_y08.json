@@ -154,5 +154,20 @@
  },
  "updated_at": "2026-06-28T05:40:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j015_y07_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "washin",
+   "category": "B",
+   "file": "j015_y08_washin.jpg",
+   "caption": "匈奴との和親回復——草原の単于庭に到着した漢の使者の車列が、国書の匣を捧げて毛皮姿の匈奴の貴人たちに差し出す(前162年)。",
+   "anchor": "ふたたび匈奴と和親(わしん)を結んだ。"
+  },
+  {
+   "slug": "donshu",
+   "category": "B",
+   "file": "j015_y08_donshu.jpg",
+   "caption": "丞相府の頓首——冠を脱ぎはだしのまま床に額をすりつけて詫びる鄧通と、壇上で平然と座したまま礼を返さない丞相申屠嘉。",
+   "anchor": "鄧通は頓首し、額じゅうから血を流したが、嘉は許そうとしなかった。"
+  }
+ ]
 }

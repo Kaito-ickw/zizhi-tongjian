@@ -106,5 +106,20 @@
  },
  "updated_at": "2026-06-28T05:40:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j015_y05_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "koshi",
+   "category": "B",
+   "file": "j015_y06_koshi.jpg",
+   "caption": "渭陽の五帝廟で五帝を郊祀する文帝。新垣平の進言で建てられた廟での親祭(前164年)。",
+   "anchor": "長安城の東南にある〕。"
+  },
+  {
+   "slug": "gyokuhai",
+   "category": "B",
+   "file": "j015_y06_gyokuhai.jpg",
+   "caption": "闕下に「人主延寿」と刻んだ玉杯を献上させる新垣平の使い。帝はこれを瑞祥として改元した。",
+   "anchor": "周の鼎を出現させようとした。"
+  }
+ ]
 }

@@ -1050,5 +1050,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(卷016は新規巻、c01 continuity=巻境界リセットで previous_translation=None、c02=c01、c03=c02)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(済北「閉じこめ」)→R2 fail(「守りを握った」掌握ニュアンス)→R3 fail(「漢十二」を1/12と誤訳)→R4 pass。各ラウンドは別セッション・前ラウンド findings 同梱で、指摘は矛盾せず逐次解消(収束)。c02: R1 fail(「六乗」を六頭立てと誤器物化)→R2 fail(「神密」に神速を追加)→R3 pass。c03: R1 fail(趙との約束/「遂」を人名化/脅迫主体の付加)→R2 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "toutei",
+   "category": "B",
+   "file": "j016_y01_toutei.jpg",
+   "caption": "「わしはもう東帝となった身。今さら誰に跪こうか」——詔を拒み傲然と笑う呉王劉濞",
+   "anchor": "袁盎に会おうとせず、軍中に留め置き、脅して(呉軍の)将にしようとした。"
+  },
+  {
+   "slug": "chouso",
+   "category": "B",
+   "file": "j016_y01_chouso.jpg",
+   "caption": "朝服のまま長安の東市で斬られる鼂錯——市中巡視と偽って召し出された",
+   "anchor": "鼂錯は朝服のまま、東の市場で斬られた。"
+  },
+  {
+   "slug": "kayu",
+   "category": "B",
+   "file": "j016_y01_kayu.jpg",
+   "caption": "下邑の対峙——塁を固めて出ない周亜夫の陣に、飢えた呉・楚軍が攻め寄せる",
+   "anchor": "二月、亜夫は精兵を出して追撃し、これを大いに破った。"
+  }
+ ]
 }

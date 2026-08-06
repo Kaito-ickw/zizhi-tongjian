@@ -214,5 +214,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity: c01 ← j015_y14_c01)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(「從之遊」を「遊学」と訳し学習の事実を追加)→R2 pass(別セッション・前ラウンド findings 反映、「従って交遊した」に修正)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "shintoka",
+   "category": "B",
+   "file": "j015_y15_shintoka.jpg",
+   "caption": "申屠嘉の憤死——鼂錯の誅殺を請うも、景帝は「わしが造らせたのだ、錯に罪はない」と退けた。憤りを呑んで拝礼する老丞相は、屋敷に帰り着くと血を吐いて死んだ。",
+   "anchor": "錯はこれによっていよいよ重んじられた。"
+  },
+  {
+   "slug": "ryoou",
+   "category": "B",
+   "file": "j015_y15_ryoou.jpg",
+   "caption": "梁孝王の栄華——方三百余里の東苑、七十里に広げた睢陽の城、宮殿から平臺まで三十余里を連ねる複道。竇太后の末子は天下の膏腴の地に、都をしのぐ富を積み上げた。",
+   "anchor": "漢(の朝廷)の宦官(かんがん)と変わるところがなかった。"
+  }
+ ]
 }

@@ -150,5 +150,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity: j015_y12←前年)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "hoka",
+   "category": "B",
+   "file": "j015_y12_hoka.jpg",
+   "caption": "烽火、甘泉・長安に通ず——匈奴六万騎が上郡・雲中へ攻め入り、雪の稜線に連なる烽火台が火と煙を次々に掲げて都へ急を告げる(前158年冬)。",
+   "anchor": "これを燧(すい)という〕。"
+  },
+  {
+   "slug": "sairyu",
+   "category": "B",
+   "file": "j015_y12_sairyu.jpg",
+   "caption": "細柳営の周亜夫——甲冑の兵が門を固める陣中を天子の車駕がゆっくり進み、武器を手にしたまま軍礼で迎える周亜夫に、文帝が軾に手をかけて敬意を表す。",
+   "anchor": "そして長いあいだ感嘆して褒(ほ)めたたえた。"
+  }
+ ]
 }

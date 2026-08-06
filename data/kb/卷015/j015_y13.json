@@ -214,5 +214,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity: c01 ← j015_y12_c01)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(喪服等級の注で師古が否定する「以日易月」説を確定説明として断定)→R2 pass(別セッション・前ラウンド findings 反映、師古説のみに修正)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "testament",
+   "category": "B",
+   "file": "j015_y13_testament.jpg",
+   "caption": "未央宮で崩御を前に薄葬の遺詔を託す文帝。厚葬と長い服喪を戒め、民の暮らしを損なわぬよう命じた(前157年)。",
+   "anchor": "みな実家へ帰らせた〕。"
+  },
+  {
+   "slug": "baling",
+   "category": "B",
+   "file": "j015_y13_baling.jpg",
+   "caption": "霸陵への埋葬。山をそのまま陵とし墳を築かず、副葬はすべて瓦器のみという文帝の薄葬が実行された。",
+   "anchor": "霸陵に葬った。"
+  }
+ ]
 }

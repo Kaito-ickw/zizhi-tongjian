@@ -149,5 +149,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(誉めた対象を王夫人→「王夫人の子」とすり替え)→R2 fail(「賢之」の対象を徹と誤認)→R3 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "yume",
+   "category": "B",
+   "file": "j016_y04_yume.jpg",
+   "caption": "日、懐に入る——徹(のちの武帝)を身ごもった王夫人が見た、太陽が懐に入る夢",
+   "anchor": "王夫人(=この長女)は、日(太陽)が懐(ふところ)に入る夢を見た。"
+  },
+  {
+   "slug": "taikou",
+   "category": "B",
+   "file": "j016_y04_taikou.jpg",
+   "caption": "「それはお前の言ってよいことか」——栗姫立后を願い出た大行に激怒する景帝",
+   "anchor": "そして(大行を)取り調べて誅した。"
+  }
+ ]
 }

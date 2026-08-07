@@ -114,5 +114,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(allowed/style のみ)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "yacho",
+   "category": "B",
+   "file": "j016_y05_yacho.jpg",
+   "caption": "上林苑の野猪——厠に駆け込んだ猪へ剣を取る景帝と、身を挺してひれ伏し諫める郅都",
+   "anchor": "帝は自ら武器を取って賈姫を救おうとした。"
+  },
+  {
+   "slug": "souyou",
+   "category": "C",
+   "file": "j016_y05_souyou.jpg",
+   "caption": "「蒼鷹」郅都——法を執行して貴戚も避けなかった剛直清廉の中尉",
+   "anchor": "彼を「蒼鷹(そうよう=あおたか)」と呼んだ〔注:師古は言う、その猛々しく襲いかかるさまの甚だしさをいう、と〕。"
+  }
+ ]
 }

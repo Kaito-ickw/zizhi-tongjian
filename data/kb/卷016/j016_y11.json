@@ -198,5 +198,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。 c01: R1 fail(「一餐」を「一食(ひとくち)」と誤読)→R2 pass。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "toutaigou",
+   "category": "B",
+   "file": "j016_y11_toutaigou.jpg",
+   "caption": "竇太后の慟哭——梁の孝王の死を聞き「帝はとうとうわが子を殺した」と食事もとらず泣き崩れる竇太后と、どうしてよいか分からず立ちすくむ景帝(前144年)",
+   "anchor": "帝はとうとうわが子を殺した"
+  },
+  {
+   "slug": "kaian",
+   "category": "B",
+   "file": "j016_y11_kaian.jpg",
+   "caption": "李廣の百騎解鞍——匈奴数千騎を前に「みな馬を下り、鞍を解け」と命じ、おとりの大軍と思わせて悠然と構える上郡太守・李廣と百騎",
+   "anchor": "みな馬を下り、鞍(くら)を解け"
+  },
+  {
+   "slug": "hakuba",
+   "category": "B",
+   "file": "j016_y11_hakuba.jpg",
+   "caption": "白馬の将を射る——日暮れの草原、十余騎とともに駆け出し、兵を見回る匈奴の白馬の将を射殺す李廣",
+   "anchor": "白馬の将を射殺し"
+  }
+ ]
 }

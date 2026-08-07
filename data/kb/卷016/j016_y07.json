@@ -274,5 +274,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(胡注に無い「與夷を殺して」を追加)→R2 fail(「關」を「函谷関」と特定)→R3 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "rinkou",
+   "category": "B",
+   "file": "j016_y07_rinkou.jpg",
+   "caption": "臨江王の最後の手紙——中尉府の堂内で刀筆を手に木簡へ詫び状を認める臨江王榮と、入口に立つ中尉・郅都",
+   "anchor": "臨江王は帝に詫びる手紙を書き終えると、そのまま自殺した。"
+  },
+  {
+   "slug": "denshuku",
+   "category": "B",
+   "file": "j016_y07_denshuku.jpg",
+   "caption": "田叔、獄辞を焼く——霸昌厩の前庭で梁の取り調べ調書の竹簡を火に投じ、手ぶらで帝にまみえる覚悟を決めた田叔ら",
+   "anchor": "火を取って梁の獄辞(ごくじ=取り調べの調書)をことごとく焼き、手ぶらで帝にまみえた。"
+  },
+  {
+   "slug": "shazai",
+   "category": "B",
+   "file": "j016_y07_shazai.jpg",
+   "caption": "宮門下の謝罪——斧と斧台を前に身を伏せて罪を詫びる梁孝王と、闕上から見下ろす人々",
+   "anchor": "そこで梁王は、(処刑用の)斧(おの)と斧台(おのだい)を前に身を伏せて、宮門の下で罪を詫びた。"
+  }
+ ]
 }

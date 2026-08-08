@@ -461,5 +461,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(卷017〈漢紀九〉冒頭・新巻のため巻境界リセット、c01 continuity=None)。forbidden=根拠集合外の事実/因果/心理/数値/発言/固有名の新規追加のみ。y01_c01: R1 pass。y01_c02: R1 fail(公儀休の行為に原文外の追放を付加)→R2 pass(別セッション・前ラウンド findings 同梱)。y02_c01: R1 fail(新垣平注に原文外の事実・心理を付加 / 申公の帰着先「魯」を補完)→R2 pass。y03_c01: R1 pass。y04_c01: R1 fail(佗・胡に原文外の氏「趙」を付加)→R2 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "taisaku",
+   "category": "B",
+   "file": "j017_y01_taisaku.jpg",
+   "caption": "賢良対策——若き武帝みずからの策問に、宮殿の庭で百余人の賢良の士が対策を認める。手前に筆を執る広川の董仲舒(AI生成イメージ)",
+   "anchor": "広川(こうせん)の董仲舒(とうちゅうじょ)が答えて言った。"
+  },
+  {
+   "slug": "tochujo",
+   "category": "C",
+   "file": "j017_y01_tochujo.jpg",
+   "caption": "董仲舒——天人三策を奉り、太学の設立と儒学の一尊を説いた『春秋』の大儒。礼にかなわぬふるまいをせず、学者みなに師と仰がれた(AI生成イメージ)",
+   "anchor": "董仲舒は礼でこれを匡(ただ)し正したので、王は彼を敬い重んじた。"
+  },
+  {
+   "slug": "ansha",
+   "category": "B",
+   "file": "j017_y01_ansha.jpg",
+   "caption": "申公を迎える安車駟馬——束帛に璧を添え、四頭立ての安車で八十余歳の老儒申公を長安へ迎える使者の行列(AI生成イメージ)",
+   "anchor": "明堂・巡狩(じゅんしゅ=天子の地方巡行)・改暦・服色の件を議論させた。"
+  }
+ ]
 }

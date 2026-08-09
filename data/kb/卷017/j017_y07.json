@@ -109,5 +109,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(卷017〈漢紀九〉)。forbidden=根拠集合外の事実/因果/心理/数値/発言/固有名の新規追加のみ。y07_c01: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "liguang_camp",
+   "category": "B",
+   "file": "j017_y07_liguang_camp.jpg",
+   "caption": "雲中に駐屯する李広軍の宿営。部伍・行陣を設けず、水草の良い川辺で兵はくつろぎ、馬は放たれ、遠くの丘には斥候だけが立つ(水墨画・AI想像図)",
+   "anchor": "当時、名が知られていた。"
+  },
+  {
+   "slug": "chengbushi_camp",
+   "category": "B",
+   "file": "j017_y07_chengbushi_camp.jpg",
+   "caption": "雁門に駐屯する程不識軍の陣営。柵で囲い、天幕を整然と並べ、歩哨を立て、夜には刁斗を打ち鳴らして警戒する(水墨画・AI想像図)",
+   "anchor": "いやがり苦にすることをいう〕。"
+  }
+ ]
 }

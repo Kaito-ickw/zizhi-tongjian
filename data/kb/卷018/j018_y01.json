@@ -346,5 +346,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(卷018 冒頭・新巻。c01 continuity=卷017 j017_y07_c01 だが卷017 未確定のため previous_translation=None、巻境界リセット)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(五畤の注に根拠外の「天地や五帝を祭る祭場」を付加)→R2 pass(別セッション・前ラウンド findings 同梱、当該注を削除)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "lishaojun",
+   "category": "B",
+   "file": "j018_y01_lishaojun.jpg",
+   "caption": "方士・李少君の謁見。竈を祠り丹砂を黄金に変え、蓬萊の仙人に会えば不死になれると説く李少君と、身を乗り出して聞き入る若き武帝。香炉の煙の中に蓬萊の島影、傍らには瓜ほどの大きさの棗(水墨画・AI想像図)",
+   "anchor": "神仙の事を語るようになった。"
+  },
+  {
+   "slug": "debate",
+   "category": "B",
+   "file": "j018_y01_debate.jpg",
+   "caption": "馬邑の計をめぐる御前論争。匈奴を撃つべしと激しく論じる大行・王恢と、和親の維持を説く御史大夫・韓安国が殿中で対峙し、武帝が玉座から見下ろす(水墨画・AI想像図)",
+   "anchor": "二年に議が決したのであろう〕。"
+  },
+  {
+   "slug": "mayi",
+   "category": "B",
+   "file": "j018_y01_mayi.jpg",
+   "caption": "馬邑の計の破綻。武州塞に入った単于の十万騎が、野に放たれたまま世話をする者のいない家畜の群れを怪しみ、馬邑を百余里前にして兵を返す(水墨画・AI想像図)",
+   "anchor": "やはり出撃しなかった。"
+  }
+ ]
 }

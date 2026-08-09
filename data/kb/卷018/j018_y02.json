@@ -166,5 +166,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=卷018 j018_y01_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(指摘はすべて allowed/style)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kessui",
+   "category": "B",
+   "file": "j018_y02_kessui.jpg",
+   "caption": "瓠子の決壊。濮陽の瓠子で堤が破れ、濁流が鉅野へ注いで十六郡に氾濫する。裂け目に土嚢と柴の束を運ぶ兵たちと、家財を担いで逃れる流民(水墨画・AI想像図)",
+   "anchor": "そこで天子は、その後長らく塞ぐことに手をつけなかった。"
+  },
+  {
+   "slug": "toucho",
+   "category": "B",
+   "file": "j018_y02_toucho.jpg",
+   "caption": "東朝廷弁。長楽宮の廷で魏其侯・竇嬰と丞相・武安侯・田蚡が互いを詆訐し合い、玉座の武帝が眉をひそめ、御簾の奥に太后の影がのぞく(水墨画・AI想像図)",
+   "anchor": "互いに相手を非難し、暴き立て合った。"
+  }
+ ]
 }

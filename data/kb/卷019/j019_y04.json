@@ -378,5 +378,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(c01 continuity=j019_y03_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(「数十巨万」へ「=数十億銭」の単位換算付加・「肯」を「喜んで」と感情付加)→R2 pass(別セッション・前ラウンド findings 同梱)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "yanzhishan",
+   "category": "B",
+   "file": "j019_y04_yanzhishan.jpg",
+   "caption": "焉支山を越えて千余里——票騎将軍・霍去病、一万騎を率いて河西へ攻め入る(水墨画イメージ)",
+   "anchor": "詔して去病に二千戸を加増して封じた。"
+  },
+  {
+   "slug": "liguang",
+   "category": "B",
+   "file": "j019_y04_liguang.jpg",
+   "caption": "矢は雨のように降り注ぐ——四万騎に囲まれ、円陣の中央で自ら大黄を引く李広(水墨画イメージ)",
+   "anchor": "軍中の者はみなその勇気に感服した。"
+  },
+  {
+   "slug": "hunye",
+   "category": "B",
+   "file": "j019_y04_hunye.jpg",
+   "caption": "黄河のほとり、渾邪王の降伏——単騎で陣中に乗り込む霍去病(水墨画イメージ)",
+   "anchor": "その部衆をことごとく率いて黄河を渡らせた。"
+  }
+ ]
 }

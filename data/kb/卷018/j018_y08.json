@@ -226,5 +226,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity=j018_y07_c01)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(指摘は allowed/style のみ)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "chouken",
+   "category": "B",
+   "file": "j018_y08_chouken.jpg",
+   "caption": "張騫の西域行。月氏との同盟を求めて隴西を発った張騫は匈奴に十余年抑留され、脱走して大宛・康居を経て大月氏に至るも同盟は成らず、出発から十三年、甘父とただ二人で漢に帰り着いた(水墨画・AI想像図)",
+   "anchor": "ただ二人だけが帰り着いた。"
+  },
+  {
+   "slug": "kyuan",
+   "category": "B",
+   "file": "j018_y08_kyuan.jpg",
+   "caption": "汲黯、廷前で張湯を面罵する。廷尉となり法文を厳しく弄して武帝の意を汲む張湯に対し、剛直の汲黯は「刀筆の吏を公卿にしてはならぬというが、はたしてそのとおりだ」と武帝の前で罵った(水墨画・AI想像図)",
+   "anchor": "横目でびくびくとうかがうようになるだろう」。"
+  },
+  {
+   "slug": "koson",
+   "category": "C",
+   "file": "j018_y08_koson.jpg",
+   "caption": "御史大夫・公孫弘。三公に列しながら布の夜具を用い食膳に肉を重ねず、汲黯に「見せかけ」と暴かれるや素直に認めて武帝の敬意をかえって深めた、山東出身の処世の達人(写意人物画・AI想像図)",
+   "anchor": "ますます彼を尊んだ。"
+  }
+ ]
 }

@@ -54,7 +54,7 @@ IMAGES.md の手動タスクとは別に、**6時間おきに agy / codex がそ
 - crontab: `agy=02/08/14/20`, `codex=05/11/17/23`(JST)。`.claude/image_cron.sh --engine agy|codex`。
 - 対象年は **`python3 pipeline/image_task.py frontier`**(未挿絵レコードを巻→年順、本文 800字未満はスキップ)。IMAGES.md は追記記録として使う(`--limit` / `--min-chars` で調整可)。
 - 翻訳ドレインと **同じ `/tmp/zzt_drain.lock`** を `flock -n` で取るので同時実行しない(翻訳が優先)。各回 `timeout 2700`(45分)。
-- ゲート: claude 5h≥80% / 7d≥85% で skip。エンジン側枠(agy 5h≥80% / codex 週次≥85%)でも skip。`ai-quota` が 429 等で読めないときは 3 回までリトライし、claude 枠が読めなければ安全側で skip、**エンジン枠だけ読めないときは警告付きで実行**(Antigravity トークン切れは agy 起動で自動更新されるため)。
+- ゲート: claude 5h≥80% / 7d≥92% で skip。エンジン側枠(agy 5h≥80% / codex 週次≥85%)でも skip。さらに `pipeline/weekly_quota_gate.py` を翻訳cronと共有し、他プロジェクトの直近48時間の実測消費速度をリセットまで外挿した予約量と8ptの安全余白を差し引く。初回48時間は shadow、その後は自動で enforce。ただしshadow中も絶対上限92%は超えない。`ai-quota` が 429 等で読めないときは安全側で skip。
 - ログ: `.claude/image_cron.log`。1回の実行=1年=1コミット。
 
 ## ドレインモード(ユーザーが「並列で回して」「使い切って」等と言ったら)
@@ -74,7 +74,7 @@ IMAGES.md の手動タスクとは別に、**6時間おきに agy / codex がそ
     1. **ドレイン実行の起動直後に** `ai-quota status --json` を実行し、Claude 5h% を `START%` として記録する(1回の実行中はこの値を保持し、波ごとに取り直さない)。
     2. **停止しきい値 = min(90, START% + 50)**。波をローンチする前に毎回 `ai-quota status --json` を実行し、Claude `five_hour.utilization`(+ `seven_day`)と Codex `five_hour`/`seven_day`(レビュー消費=しばしば真の律速)を読み、現在値がこの停止しきい値に達していれば**新規波を投げない**。
     3. 残ヘッドルーム = 停止しきい値 −(Claude 5h%)。**1エージェント ≒18pt**(実測較正)で割って投入エージェント数を決める。残ヘッドルームが 1エージェント分を切る、または Codex 週次が枯渇間近なら**新規波を投げない**。`resets_at` も判断材料。
-    4. **週次(7d)シーリング(cron 昼枠のみ、2026-07-26〜)**: 平日12:00 の追加枠(`drain_cron.sh --label noon --dynamic-weekly-ceiling`)は、claude 起動前にシェル側で `ceiling = clamp(100 − 5.0×(7d リセットまでの残り日数), 60, 90)` を計算し、`7d + 4.0 > ceiling` なら起動せず skip する。週次は使い切り型なのでリセットが近いほど上限を上げる。朝6:04 枠は無条件(このシーリング対象外)。
+    4. **適応型週次ゲート(全cron、2026-08-11〜)**: 朝・平日昼・画像の全枠で `pipeline/weekly_quota_gate.py` を使う。資治通鑑ジョブ前後の7d差分を自プロジェクト消費、ジョブ間の差分を他プロジェクト消費として記録し、直近48時間の他用途速度×残日数×1.25と8pt安全余白を予約する。残量から予約を引いて実行見積り(翻訳4pt、画像0.75pt。実測でEWMA更新)が残る場合だけ起動する。最初の48時間は判定をログに出す shadow mode、その後自動 enforce。絶対上限92%。週後半に他用途が少なければ残日数と予測予約が縮み、自動的に取り戻す。
     5. **しきい値に近づくほど単位を縮める**(K=3巻 → K=1巻 → 1サブバッチ)でオーバーシュート最小化。
 - **波の対象選定**: `python3 pipeline/translation_queue.py list` で未完巻を確認(司令塔が frontier を決める)。各エージェントは自巻の `data/staging/kb/卷NNN.json` 存在を確認してから着手。
 - **停止条件**: `ai-quota status` が Claude 5h≥90% または Claude 5h≥(START%+50pt)(いずれか先に到達)/ Codex 週次が枯渇 / 対象巻が尽きた / 429(ハード床)/ ユーザー停止。停止時は「確定した巻・年・現在の 5h%(ai-quota 実値)・起動時 START%・次に残っている巻」を報告。

@@ -190,5 +190,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(巻境界リセットのため continuity=None)。c01: R1 fail(去病が霍光の任官・昇進を直接行ったかのような作用主体の追加)→R2 pass(別セッション・前ラウンド findings 同梱。任=保任、後続昇進は霍光自身の経歴と訳し分け)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "rikan",
+   "category": "B",
+   "file": "j020_y02_rikan.jpg",
+   "caption": "甘泉宮の狩り——驃騎将軍・霍去病、父李広の仇と衛青を襲った郎中令・李敢を射殺する。帝は「鹿が突き当たった」と言いつくろった",
+   "anchor": "鹿が突き当たって死んだのだと言いつくろった。"
+  },
+  {
+   "slug": "kirenzan",
+   "category": "B",
+   "file": "j020_y02_kirenzan.jpg",
+   "caption": "冠軍景桓侯・霍去病の死——天子は深く悼み、祁連山をかたどった墓を築かせ、鉄甲の軍列が長安から墓所まで連なった",
+   "anchor": "祁連山(きれんざん)をかたどった墓を造らせた。"
+  },
+  {
+   "slug": "ganni",
+   "category": "B",
+   "file": "j020_y02_ganni.jpg",
+   "caption": "「腹誹」の罪——張湯、唇をゆがめただけの大農令・顔異を「腹の中で誹った」と弾劾する。以後、公卿は口をつぐみへつらうようになった",
+   "anchor": "公卿や大夫の多くはへつらって人の機嫌をとるようになった。"
+  }
+ ]
 }

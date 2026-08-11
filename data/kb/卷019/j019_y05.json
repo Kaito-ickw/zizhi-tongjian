@@ -222,5 +222,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(巻内連続: j019_y04 の確定訳を continuity として参照)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(「劉寄の関与」と謀反関与を付加 / 「罪を恐れて」と動機を付加)→R2 pass(別セッション・前ラウンド findings 同梱、付加を削除)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "imin",
+   "category": "B",
+   "file": "j019_y05_imin.jpg",
+   "caption": "冠蓋相望——山東の大水害で移される貧民七十余万、関中への果てなき隊列(水墨画イメージ)",
+   "anchor": "その費用は億を数え、数えきれぬほどであった。"
+  },
+  {
+   "slug": "konmeichi",
+   "category": "B",
+   "file": "j019_y05_konmeichi.jpg",
+   "caption": "水戦に備えよ——長安の西南に昆明池を掘る人夫と、水面で訓練する楼船(水墨画イメージ)",
+   "anchor": "昆明池を掘らせた。"
+  },
+  {
+   "slug": "shinba",
+   "category": "B",
+   "file": "j019_y05_shinba.jpg",
+   "caption": "渥洼水の神馬——水中から現れたとされる名馬と、岸辺で待つ暴利長(水墨画イメージ)",
+   "anchor": "はじめてその意味を通じて知ることができた。"
+  }
+ ]
 }

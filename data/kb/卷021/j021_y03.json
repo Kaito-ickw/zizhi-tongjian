@@ -162,5 +162,27 @@
  },
  "updated_at": "2026-06-28T02:10:00Z",
  "review_policy": "翻訳=claude-sonnet-4-6 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 fail(「精鋭の兵」→「奇兵」訂正)→R2 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "hokujun",
+   "category": "B",
+   "file": "j021_y03_hokujun.jpg",
+   "caption": "武帝の北巡——元封四年冬、雍で五畤を祭った天子の車駕が回中道を抜け、険阻な蕭關を北へ出る。隊列は獨鹿山・鳴澤を経て代の地から帰還した。",
+   "anchor": "代の地から帰途につき、河東に行幸した。"
+  },
+  {
+   "slug": "kyuro",
+   "category": "B",
+   "file": "j021_y03_kyuro.jpg",
+   "caption": "王烏、穹廬に入る——漢の使者・王烏は匈奴の風俗に従い、節を外してフェルトの天幕に入った。単于は彼を気に入り、太子を人質に送るという嘘の甘言を弄した。",
+   "anchor": "穹廬は羊毛の帳幕（フェルトのテント）〕"
+  },
+  {
+   "slug": "rojukoku",
+   "category": "B",
+   "file": "j021_y03_rojukoku.jpg",
+   "caption": "路充國、匈奴貴人の柩を送る——漢で客死した匈奴の貴人の遺体を、二千石の印綬を帯びた路充國が数千金相当の手厚い葬列で草原へ送り届ける。単于は「漢が使者を殺した」と思い込み、路充國を拘留した。",
+   "anchor": "「これは漢の貴人だ」と言った。"
+  }
+ ]
 }

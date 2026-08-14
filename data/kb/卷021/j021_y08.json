@@ -270,5 +270,20 @@
  },
  "updated_at": "2026-06-28T12:00:00Z",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 pass(forbidden なし。allowed/style のみ:「其季父」「屠」「易=気軽に」)。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "siege",
+   "category": "B",
+   "file": "j021_y08_siege.jpg",
+   "caption": "貳師将軍李広利による大宛城攻囲。漢軍は城外の水源を切って流れを移し、四十余日にわたり包囲した（AI生成イメージ）。",
+   "anchor": "こうして城を囲み、四十余日攻めた。"
+  },
+  {
+   "slug": "horses",
+   "category": "B",
+   "file": "j021_y08_horses.jpg",
+   "caption": "降伏した大宛が差し出した良馬を選び取る漢軍。良馬数十匹と中等以下三千余匹を得て兵を引いた（AI生成イメージ）。",
+   "anchor": "盟約を結んで兵を引いた。"
+  }
+ ]
 }

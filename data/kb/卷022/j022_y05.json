@@ -78,5 +78,20 @@
  },
  "updated_at": "2026-06-28T12:09:36",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(allowed/style のみ)。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "seizan",
+   "category": "B",
+   "file": "j022_y05_seizan.jpg",
+   "caption": "成山の拝日——東方巡幸の武帝が、海に突き出た成山の断崖で昇る朝日を拝む。眼下に砕ける波、海上には帰途につく楼船の帆影。このあと之罘山に登り、大海を船で渡って帰還した。",
+   "anchor": "大海を船で渡って帰還した。"
+  },
+  {
+   "slug": "chido",
+   "category": "B",
+   "file": "j022_y05_chido.jpg",
+   "caption": "馳道の摘発——天子専用の馳道を車馬で走った太子の家使を、江充が役人に引き渡して処分させる。太子の詫びにも取り合わず上奏し、武帝に「臣下たる者、こうあるべきだ」と言わしめた。巫蠱の禍へつながる確執の始まり。",
+   "anchor": "その威勢は京師を震わせた。"
+  }
+ ]
 }

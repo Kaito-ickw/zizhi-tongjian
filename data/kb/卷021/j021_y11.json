@@ -450,5 +450,20 @@
  },
  "updated_at": "2026-06-28T14:00:00Z",
  "review_policy": "",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "riryo",
+   "category": "B",
+   "file": "j021_y11_riryo.jpg",
+   "caption": "谷間に追い詰められた李陵の軍。歩兵五千の残兵は谷底で戦い、山上の匈奴軍から矢が雨のように降りそそいだ（AI生成イメージ）。",
+   "anchor": "矢が雨のように降りそそいだ。"
+  },
+  {
+   "slug": "shibasen",
+   "category": "C",
+   "file": "j021_y11_shibasen.jpg",
+   "caption": "太史令・司馬遷。ただ一人李陵を弁護して武帝の怒りに触れ、腐刑（宮刑）に処された（AI生成イメージ）。",
+   "anchor": "司馬遷を腐刑（宮刑）に処した〔注:沮は…。腐刑は宮刑のこと〕。"
+  }
+ ]
 }

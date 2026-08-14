@@ -278,5 +278,20 @@
  },
  "updated_at": "2026-06-28T14:00:00Z",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 fail(「使還」→移動中の含意除去)→R2 fail(「屯田」→「駐屯」訂正)→R3 pass。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kenritsu",
+   "category": "B",
+   "file": "j021_y10_kenritsu.jpg",
+   "caption": "衛律の剣に動じない蘇武。降伏を迫って剣を振り上げる衛律の前で、漢の使者・蘇武は身じろぎもしなかった（AI生成イメージ）。",
+   "anchor": "蘇武は身じろぎもしなかった。"
+  },
+  {
+   "slug": "hokkai",
+   "category": "B",
+   "file": "j021_y10_hokkai.jpg",
+   "caption": "北海のほとりで牡羊を飼う蘇武。「牡羊が乳を出したら帰してやろう」と告げられ、雪の無人の地に置かれた（AI生成イメージ）。",
+   "anchor": "それぞれ別の場所に置いた。"
+  }
+ ]
 }

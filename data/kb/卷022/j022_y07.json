@@ -66,5 +66,20 @@
  },
  "updated_at": "2026-06-28T12:09:36",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(allowed のみ)。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "daisou",
+   "category": "B",
+   "file": "j022_y07_daisou.jpg",
+   "caption": "長安の大捜索——建章宮の門内に現れた帯剣の怪人が逃亡したのを受け、武帝は三輔の騎士を動員して上林苑を大々的に捜索させ、長安の城門を十一日間閉ざした。巫蠱の禍はここに始まる。",
+   "anchor": "巫蠱（ふこ）の禍がここに起こり始めた。"
+  },
+  {
+   "slug": "shuansei",
+   "category": "B",
+   "file": "j022_y07_shuansei.jpg",
+   "caption": "獄中の朱安世——丞相・公孫賀に捕らえられた陽陵の大俠客・朱安世は「丞相の禍は一族にまで及ぶぞ」と笑い、獄中から上書して公孫敬聲の密通と呪詛を告発した。",
+   "anchor": "「詛」は「そ（莊助翻）」と読む。〕。"
+  }
+ ]
 }

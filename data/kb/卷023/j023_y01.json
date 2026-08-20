@@ -106,5 +106,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-sonnet-4-6 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。卷023 新規巻・continuity_reset（卷022未完のため previous_translation=None）。c01: R1 fail(forbidden: 「武帝から直々に」「功績により」)→R2 fail(forbidden: 「帰郷」「暖かすぎて」)→R3 pass。3回収束。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "etsuhei",
+   "category": "B",
+   "file": "j023_y01_etsuhei.jpg",
+   "caption": "燕王旦の武備——城外の平原に車騎を並べて閲兵し、遠くで民を駆り立てた大猟で兵馬を訓練しながら、決起の日を待ち構える燕王旦(水墨画・AI生成イメージ)",
+   "anchor": "決起の日を待ち構えていた。"
+  },
+  {
+   "slug": "heihan",
+   "category": "B",
+   "file": "j023_y01_heihan.jpg",
+   "caption": "雋不疑と母——録囚から戻った不疑に「冤罪を晴らしてやった者はいたか？何人の命を救えたか？」と問いかけ、微笑む母(水墨画・AI生成イメージ)",
+   "anchor": "そのため、不疑は役人として厳格ではあったが、残酷ではなかった。"
+  }
+ ]
 }

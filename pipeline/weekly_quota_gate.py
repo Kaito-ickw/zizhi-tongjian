@@ -14,6 +14,7 @@ import argparse
 import json
 import math
 import os
+import shlex
 import subprocess
 import sys
 import tempfile
@@ -31,6 +32,14 @@ ABSOLUTE_CEILING = 92.0
 RATE_WINDOW_HOURS = 48.0
 DEFAULT_OTHER_DAILY = 5.0
 DEFAULT_COSTS = {"drain": 4.0, "image": 0.75}
+CLAUDE_CREDENTIALS = Path(
+    os.environ.get("ZZT_CLAUDE_CREDENTIALS", "~/.claude/.credentials.json")
+).expanduser()
+TOKEN_MARGIN_SECONDS = 15 * 60
+TOKEN_REFRESH_TIMEOUT = 240
+TOKEN_REFRESH_CMD = os.environ.get(
+    "ZZT_TOKEN_REFRESH_CMD", "claude -p ok --model haiku"
+)
 
 
 @dataclass(frozen=True)
@@ -51,6 +60,51 @@ def iso_time(value: datetime) -> str:
     return value.astimezone(timezone.utc).isoformat()
 
 
+def token_expires_at() -> float | None:
+    """Return the credentials expiry as epoch seconds, or None if unreadable."""
+    try:
+        payload = json.loads(CLAUDE_CREDENTIALS.read_text(encoding="utf-8"))
+        expires_at = payload["claudeAiOauth"]["expiresAt"]
+        if isinstance(expires_at, bool):
+            return None
+        return float(expires_at) / 1000.0
+    except (KeyError, TypeError, ValueError, OSError, json.JSONDecodeError):
+        return None
+
+
+def ensure_claude_token(now: datetime) -> str:
+    """Refresh an absent or nearly expired Claude token without raising errors."""
+    try:
+        expires_at = token_expires_at()
+        threshold = now.timestamp() + TOKEN_MARGIN_SECONDS
+        if expires_at is not None and expires_at > threshold:
+            minutes = int((expires_at - now.timestamp()) / 60)
+            return f"valid (expires in {minutes}m)"
+
+        result = subprocess.run(
+            shlex.split(TOKEN_REFRESH_CMD),
+            timeout=TOKEN_REFRESH_TIMEOUT,
+            capture_output=True,
+            text=True,
+        )
+        expires_at = token_expires_at()
+        if expires_at is not None and expires_at > threshold:
+            minutes = int((expires_at - now.timestamp()) / 60)
+            return f"refreshed (expires in {minutes}m)"
+        return f"refresh-failed (exit={result.returncode})"
+    except Exception as exc:
+        return f"refresh-failed ({type(exc).__name__})"
+
+
+def _oneline(text: str) -> str:
+    return (
+        text.replace("\r\n", "\n")
+        .replace("\r", "\n")
+        .replace("\n", "; ")
+        .replace("|", "/")
+    )
+
+
 def quota_from_payload(payload: Any) -> Quota:
     if not isinstance(payload, list):
         raise ValueError("ai-quota response is not a provider array")
@@ -58,7 +112,12 @@ def quota_from_payload(payload: Any) -> Quota:
         (item for item in payload if isinstance(item, dict) and item.get("provider") == "claude"),
         None,
     )
-    seven = ((claude or {}).get("windows") or {}).get("seven_day") or {}
+    if claude is None:
+        raise ValueError("claude provider missing from ai-quota response")
+    if claude.get("status") != "ok":
+        detail = _oneline(str(claude.get("error", "")))[:200]
+        raise ValueError(f"claude provider error: {detail}")
+    seven = (claude.get("windows") or {}).get("seven_day") or {}
     utilization = seven.get("utilization")
     resets_at = seven.get("resets_at")
     if utilization is None or not resets_at:
@@ -70,6 +129,7 @@ def quota_from_payload(payload: Any) -> Quota:
 
 
 def read_live_quota() -> Quota:
+    ensure_claude_token(utc_now())
     result = subprocess.run(
         ["ai-quota", "status", "--json"],
         check=True,
@@ -301,9 +361,13 @@ def main(argv: list[str] | None = None) -> int:
     begin_parser.add_argument("--kind", choices=sorted(DEFAULT_COSTS), required=True)
     complete_parser = subparsers.add_parser("complete")
     complete_parser.add_argument("--run-id", required=True)
+    subparsers.add_parser("preflight")
     args = parser.parse_args(argv)
     now = parse_time(args.now) if args.now else utc_now()
     try:
+        if args.command == "preflight":
+            print(f"preflight|{ensure_claude_token(now)}")
+            return 0
         quota = read_live_quota()
         if args.command == "begin":
             print_begin(begin(args.state, args.kind, now, quota))

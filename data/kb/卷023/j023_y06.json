@@ -278,5 +278,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。卷023 y05 が HALT のため continuity の previous_translation=None(年境界リセット)。c01: R1 fail(forbidden: 「（父は）将軍」官位帰属の限定 / 「蘇武の部下」常恵の関係追加 / 「素行が正しくなく」=母閼氏「不正」の品行への具体化)→R2 pass。2回収束。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "bokuyou",
+   "category": "B",
+   "file": "j023_y06_bokuyou.jpg",
+   "caption": "蘇武牧羊——食糧も届かぬ北海のほとりで、旄の抜け落ちた漢の節を握りしめたまま羊を牧する蘇武(水墨画・AI生成イメージ)",
+   "anchor": "節の旄（房飾り）はすっかり抜け落ちてしまった。"
+  },
+  {
+   "slug": "kikan",
+   "category": "B",
+   "file": "j023_y06_kikan.jpg",
+   "caption": "十九年ぶりの帰還——壮年で漢を出て白髪白髯の老人となり、九人の部下とともに長安へ帰り着いた蘇武(水墨画・AI生成イメージ)",
+   "anchor": "帰ってきたときには髭も髪もすっかり白くなっていた。"
+  }
+ ]
 }

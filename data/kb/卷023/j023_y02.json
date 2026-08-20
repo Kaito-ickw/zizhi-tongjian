@@ -102,5 +102,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-sonnet-4-6 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 fail(forbidden: 主語の「その母」が不明確)→R2 fail(forbidden: 「種もみ」＝稲限定)→R3 fail(forbidden: 「上官桀」の姓が根拠集合外)→R4 pass。4回収束（名目上限3回を超過・R3の指摘は根拠集合厳格適用による境界事例）。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "shingen",
+   "category": "B",
+   "file": "j023_y02_shingen.jpg",
+   "caption": "霍光への進言——「諸呂一族の末路をご存じではありませんか」。宗室を遠ざけて滅んだ呂氏の轍を踏むなと説く進言者と、静かに聞き入る大将軍・霍光(水墨画・AI生成イメージ)",
+   "anchor": "辟疆を長楽衛尉の代行とした〔注：漢では長楽宮・建章宮・甘泉宮にそれぞれ衛尉が置かれたが、常設ではなかった〕。"
+  },
+  {
+   "slug": "mitsubou",
+   "category": "B",
+   "file": "j023_y02_mitsubou.jpg",
+   "caption": "単于庭の密謀——喪を秘匿した天幕の奥に狐鹿孤単于の遺体を隠し、燭火のそばで衛律と顓渠閼氏が単于の遺命を偽って幼い左谷蠡王の擁立を謀る(水墨画・AI生成イメージ)",
+   "anchor": "ここに匈奴の衰退が始まった。"
+  }
+ ]
 }

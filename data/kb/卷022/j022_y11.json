@@ -178,5 +178,20 @@
  },
  "updated_at": "2026-06-28T14:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kinjitsutei",
+   "category": "B",
+   "file": "j022_y11_kinjitsutei.jpg",
+   "caption": "馬何羅の変——白刃を袖にした馬何羅は宝瑟につまずいて倒れ、金日磾がすかさず抱きとめて「馬何羅が謀反だ」と叫ぶ。帳の奥で武帝が驚いて身を起こし、近侍が刀を抜いて駆けつける(水墨画・AI生成イメージ)",
+   "anchor": "徹底的に取り調べると、一味はみな罪に服した。"
+  },
+  {
+   "slug": "koyoku",
+   "category": "B",
+   "file": "j022_y11_koyoku.jpg",
+   "caption": "鉤弋夫人の賜死——簪と耳飾りが床に落ちたまま、掖庭の獄へ引き立てられる夫人が振り返る。武帝は玉座から手を挙げ「早く行け。おまえはもう生きられぬのだ」と突き放す(水墨画・AI生成イメージ)",
+   "anchor": "ついに死を賜った。"
+  }
+ ]
 }

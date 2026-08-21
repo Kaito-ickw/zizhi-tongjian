@@ -1229,5 +1229,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity_text に直前確定チャンクを同梱)。forbidden=根拠集合外の事実/因果/心理/数値/発言/固有名(姓)の新規追加のみ。本巻方針: 本文・胡注に現れない姓の補完は forbidden として削り、胡注で確認できる字義・人物同定のみ採用。各チャンクは別セッションで反復レビューし、前ラウンド findings を同梱して再litigation を抑止。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "anken",
+   "category": "B",
+   "file": "j024_y01_anken.jpg",
+   "caption": "田延年の按剣——未央宮の廃立会議、席を離れ剣の柄に手をかけて群臣に迫る田延年、上座に静座する霍光、驚き平伏する丞相以下の群臣(水墨画・AI生成イメージ)",
+   "anchor": "臣がこの剣で斬らせていただく!」"
+  },
+  {
+   "slug": "kyoshi",
+   "category": "B",
+   "file": "j024_y01_kyoshi.jpg",
+   "caption": "丙吉、勅使を拒む——夜の郡邸獄の門前、両腕を広げて閉ざした門の前に立ちはだかる丙吉と、灯火を掲げて詰め寄る使者郭穰の一行。獄中の幼い皇曾孫(後の宣帝)はこの一夜で生き延びた(水墨画・AI生成イメージ)",
+   "anchor": "郭穰は入ることができなかった"
+  }
+ ]
 }

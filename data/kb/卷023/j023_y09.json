@@ -394,5 +394,20 @@
  },
  "updated_at": "2026-06-28T16:30:00Z",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 fail(forbidden: 「燕王劉旦/蓋長公主」人物同定追加・「功労ある」評価追加)→R2 fail(forbidden: 「次々に」頻度追加)→R3 fail(forbidden: 「唱えさせた」使役・因果追加)。3回で未収束のため halt(max_iter_unconverged)。残課題: 「千秋…内外で異なる意見を唱えさせた」→「内外で意見が異なった」へ要修正。 [2026-06-28 高再審] HALT解消: 未修正だったR3 forbidden(『外内異言』→『唱えさせた』使役)を『内朝と外朝とで言が食い違った』へ訂正。微修正(わずか削除/身を寄せた→立ち寄った/二度と→それ以後再び)。R4 codex(gpt)/high=fail(趙充国の以爲を直接発言体で引用)→訳を間接話法(常体)へ修正→R5 codex(gpt)/high=pass(forbidden無し)。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "taiseki",
+   "category": "B",
+   "file": "j023_y09_taiseki.jpg",
+   "caption": "泰山の大石自立——山腹でひとりでに立ち上がった巨石を、驚き拝む農夫や旅人たちが見上げる。「公孫病已立」の瑞兆とともに宣帝が民間から興るしるしとされた(水墨画・AI生成イメージ)",
+   "anchor": "眭弘は妖言を立てて民衆を惑わした罪で処刑された。"
+  },
+  {
+   "slug": "doryou",
+   "category": "B",
+   "file": "j023_y09_doryou.jpg",
+   "caption": "度遼将軍范明友の烏桓攻撃——冬の遼東、雪の枯れ野を疾駆する漢の二万騎が、匈奴の攻撃で疲弊した烏桓の幕舎へ迫る(水墨画・AI生成イメージ)",
+   "anchor": "六千余りの首級を斬り、三人の王の首を獲た。"
+  }
+ ]
 }

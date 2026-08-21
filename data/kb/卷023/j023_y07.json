@@ -366,5 +366,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 fail(forbidden: 「廃された故太子」=「故太子」への状態追加→「かつての太子」に修正)→R2 pass。2回収束。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "meisatsu",
+   "category": "B",
+   "file": "j023_y07_meisatsu.jpg",
+   "caption": "昭帝の明察——冠を脱ぎ頭を垂れて謝罪する霍光に、偽の上書を見破った十四歳の昭帝が「将軍、冠をかぶりなさい」と手を差し伸べる朝廷の場面(水墨画・AI生成イメージ)",
+   "anchor": "このとき帝はわずか十四歳であった。"
+  },
+  {
+   "slug": "betsuen",
+   "category": "B",
+   "file": "j023_y07_betsuen.jpg",
+   "caption": "燕王旦の別れの宴——謀反発覚の夜、杯を掲げる燕王旦と袖で顔を覆って泣く妃妾たち、戸外には冬枯れの闇が広がる(水墨画・AI生成イメージ)",
+   "anchor": "酒宴を設けて群臣や妃妾と別れの宴を開いた。"
+  }
+ ]
 }

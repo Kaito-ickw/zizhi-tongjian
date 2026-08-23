@@ -182,5 +182,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 pass(allowed/style の指摘のみ)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "gozenu",
+   "category": "B",
+   "file": "j027_y02_gozenu.jpg",
+   "caption": "五単于並立——屠耆単于に背いた呼揭王・右奧鞬王・烏藉都尉が次々と単于を自称し、草原には五人の単于が並び立った。屠耆単于はみずから兵を率いて東西に転戦し、匈奴の内乱はさらに深まっていく。",
+   "anchor": "あわせて五人の単于が並び立ったのである。"
+  },
+  {
+   "slug": "shouboushi",
+   "category": "C",
+   "file": "j027_y02_shouboushi.jpg",
+   "caption": "御史大夫・蕭望之——匈奴の内乱に乗じて滅ぼせと沸き立つ朝議に対し、『春秋』の「喪を伐たず」の故事を引き、討伐ではなく弔問と救済によって徳を示すべしと説いた。天子はその意見に従った。",
+   "anchor": "天子はその意見に従った。"
+  },
+  {
+   "slug": "miokuri",
+   "category": "B",
+   "file": "j027_y02_miokuri.jpg",
+   "caption": "渭城の見送り——「狡猾にして不道」の罪で棄市と決まった韓延壽を、役人や民数千人が渭城まで見送った。老いも若きも車の轂にすがり、先を争って酒や炙り肉を差し出し、延壽は一人ひとりのために杯を受けて一石あまりを飲んだ。",
+   "anchor": "民はみな涙を流した。"
+  }
+ ]
 }

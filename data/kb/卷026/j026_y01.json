@@ -978,5 +978,27 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳。c01 は巻頭の境界リセットで continuity source なし(previous_translation=None)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。c02: R1 fail(「先行羌」を「羌を討つ者」と誤訳)→R2 pass(別セッション・前ラウンド findings 同梱)。c03: R1 fail(「虜」に「匈奴」を補足)→R2 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "hyakubun",
+   "category": "C",
+   "file": "j026_y01_hyakubun.jpg",
+   "caption": "老将趙充国——「百聞は一見に如かず」。羌の反乱を前に、七十余歳の宿将は「この老臣に勝る者はおりませぬ」と自ら将を買って出て、遠くから測るより金城へ馳せて方略を図り上ると答えた。",
+   "anchor": "夏、四月、充國にこれを率いさせ、西羌(せいきょう)を撃たせた。"
+  },
+  {
+   "slug": "tokou",
+   "category": "B",
+   "file": "j026_y01_tokou.jpg",
+   "caption": "金城の夜間渡河——趙充国は賊に遮られるのを恐れ、夜、三校に枚をくわえさせて音もなく先に黄河を渡らせ、渡るそばから陣営を築かせた。夜明けまでに全軍が渡り終え、四望陿を難なく抜けた。",
+   "anchor": "我が軍がどうして入れたものか。」"
+  },
+  {
+   "slug": "tsuigeki",
+   "category": "B",
+   "file": "j026_y01_tsuigeki.jpg",
+   "caption": "湟水の追撃——気のゆるんでいた先零羌は漢の大軍を望み見るや、車や輜重を捨てて湟水へ殺到した。「窮寇なり、迫るなかれ」と趙充国はゆっくり追わせ、賊は溺死数百、馬牛羊十万余頭と車四千余両を漢が捕獲した。",
+   "anchor": "のちに䍐は、ついに兵を煩わすことなく降伏した。"
+  }
+ ]
 }

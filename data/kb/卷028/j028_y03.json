@@ -138,5 +138,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "chougi",
+   "category": "B",
+   "file": "j028_y03_chougi.jpg",
+   "caption": "珠厓郡放棄をめぐる朝議。討つべし・守るべし・棄てるべしと意見の割れる群臣を前に、元帝は「万民の飢餓と遠蛮の不討、危うさはどちらが大きいか」と思いを巡らせ、ついに郡の廃止を決した(AI生成イメージ)。",
+   "anchor": "望まぬ者には、無理強いするな」。"
+  },
+  {
+   "slug": "kinou",
+   "category": "B",
+   "file": "j028_y03_kinou.jpg",
+   "caption": "甘泉宮・建章宮の衛兵の帰農。天子の住まぬ宮殿の警備を解かれた兵たちは、戟を鍬に持ち替えて故郷の田畑へと帰ってゆく。貢禹の上言を容れ、民の徭役を緩めた元帝の詔による(AI生成イメージ)。",
+   "anchor": "はばかって隠すことのないように」。"
+  }
+ ]
 }

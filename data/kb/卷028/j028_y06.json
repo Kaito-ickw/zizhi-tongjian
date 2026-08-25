@@ -530,5 +530,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 pass / c02: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kangen",
+   "category": "B",
+   "file": "j028_y06_kangen.jpg",
+   "caption": "薛広徳の諫言。楼船に乗ろうとする元帝の車の前に、御史大夫・薛広徳が冠を脱いで立ちはだかり、「お聞き入れなくば自ら首をはね、血で車輪を汚しましょう。さすれば陛下は宗廟に入れませぬぞ」と迫った。張猛のとりなしもあり、帝は橋を渡った(AI生成イメージ)。",
+   "anchor": "そこで橋を渡った。"
+  },
+  {
+   "slug": "hokki",
+   "category": "B",
+   "file": "j028_y06_hokki.jpg",
+   "caption": "呼韓邪単于の北帰。漢の塞下で力を蓄えた呼韓邪単于は、もはや郅支単于を恐れず、大臣たちの勧めに従って民衆を率い北の本拠へ帰還した。民は次第に彼のもとへ戻り、その国はついに安定した(AI生成イメージ)。",
+   "anchor": "その国はとうとう安定した。"
+  }
+ ]
 }

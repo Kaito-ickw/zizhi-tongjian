@@ -206,5 +206,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。c01: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kokkitsu",
+   "category": "B",
+   "file": "j028_y05_kokkitsu.jpg",
+   "caption": "単于庭に立つ漢使・谷吉。「使者一人を犠牲にして万民を安んじられるなら、それこそ国の計」と自ら志願し、漢が十年養った侍子を郅支単于の本拠まで送り届けた。しかし単于は怒り、ついに谷吉らを殺してしまう(AI生成イメージ)。",
+   "anchor": "襲われるのを恐れ、遠くへ立ち去ろうとした。"
+  },
+  {
+   "slug": "seisen",
+   "category": "B",
+   "file": "j028_y05_seisen.jpg",
+   "caption": "郅支単于の西遷。漢に背いたことを自覚した郅支は、康居の招きに応じて兵を率い西へ向かったが、酷寒の道中で部衆は次々と倒れ、生き残ったのはわずか三千人ほどであった(AI生成イメージ)。",
+   "anchor": "陳湯伝には「およそ千里」とあり、それに従うべきである〕。"
+  }
+ ]
 }

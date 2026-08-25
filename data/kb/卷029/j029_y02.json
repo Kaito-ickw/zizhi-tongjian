@@ -130,5 +130,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity=j029_y01_c01)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(style 指摘の「公車」=役所であることを明確化して反映)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "sekiken",
+   "category": "B",
+   "file": "j029_y02_sekiken.jpg",
+   "caption": "中書令・石顕の専権——尚書たちを従え文書を手に政務を握る石顕(壇上)と、階下に遠ざけられ謁見のかなわぬ老臣・周堪。周堪は声を失って没し、張猛は讒言により公車で自殺に追い込まれた",
+   "anchor": "公車(こうしゃ)の役所で自殺させた。"
+  },
+  {
+   "slug": "haibyo",
+   "category": "B",
+   "file": "j029_y02_haibyo.jpg",
+   "caption": "郡国の祖宗廟の廃止——貢禹の建議により古礼にかなわぬとされた郡国の廟は祭祀を止められ、祭器が運び出されて門は閉ざされ、番の吏卒だけが残された",
+   "anchor": "郡国にある祖宗の廟を廃した。"
+  }
+ ]
 }

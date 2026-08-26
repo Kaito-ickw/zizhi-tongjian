@@ -130,5 +130,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。(卷030巻頭=連続訳リセット、previous_translation=None。)forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kozui_dema",
+   "category": "B",
+   "file": "j030_y01_kozui_dema.jpg",
+   "caption": "長安大水の流言——関内に大雨が四十日あまり降り続くなか、「大洪水が押し寄せてくる」というデマが広まり、民衆は我先にと逃げ惑って踏み合い、老人も子供も泣き叫び、長安の街は大混乱に陥った",
+   "anchor": "天下の徒刑(ずけい、労役刑)の囚人に大赦を行った。"
+  },
+  {
+   "slug": "oushou_gozen",
+   "category": "B",
+   "file": "j030_y01_oushou_gozen.jpg",
+   "caption": "王商、独り流言を斥ける——前殿の御前会議で、大将軍王鳳の「船と城壁への避難」案に群臣がみな従うなか、左将軍王商だけが「これはきっとデマにすぎません」と動じず反対した。はたして流言であり、成帝は王商の見識を称え、王鳳は失言を深く恥じた",
+   "anchor": "軽々しく失言したことを悔やんだ〔注:これがのちに王鳳が王商を排斥する伏線(ふくせん)となる〕。"
+  }
+ ]
 }

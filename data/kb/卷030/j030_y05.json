@@ -129,5 +129,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。continuity=j030_y04。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(心理描写「憂え」の追加)→修正→R2 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "jishin",
+   "category": "B",
+   "file": "j030_y05_jishin.jpg",
+   "caption": "犍為の地震——山崩れが長江をせき止め、行き場を失った水が渦を巻いて逆流し岸辺の村へあふれる。斜面には崩れた岩と折れた松、逃げまどう人々の姿。",
+   "anchor": "水が逆流した。"
+  },
+  {
+   "slug": "kousho",
+   "category": "B",
+   "file": "j030_y05_kousho.jpg",
+   "caption": "劉向の校書——散逸した書物を集めた宮中の書庫で、灯火のもと竹簡を繙く劉向。かたわらでは助手たちが竹簡の束を仕分けし、書物の一大校訂事業が進む。",
+   "anchor": "まとめて奏上(そうじょう)した。"
+  }
+ ]
 }

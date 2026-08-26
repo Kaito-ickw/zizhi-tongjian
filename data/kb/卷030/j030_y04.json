@@ -418,5 +418,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(注に「正月」追加・「參」を「王参」と姓断定・「起家」を「平民の身」と補完・反間の結果「寝返らせた」を追加)→R2 pass(別セッション・前ラウンド findings 同梱)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "mokuzou",
+   "category": "B",
+   "file": "j030_y04_mokuzou.jpg",
+   "caption": "夜郎の反抗——和解の命令に従わぬ夜郎王興らは、木を漢の役人の姿に刻んで道ばたに立て、これを矢で射た",
+   "anchor": "木を漢の役人の姿に刻んで道ばたに立て、これを矢で射た。"
+  },
+  {
+   "slug": "yarou",
+   "category": "B",
+   "file": "j030_y04_yarou.jpg",
+   "caption": "陳立、夜郎王興を誅す——且同亭に興を呼び出して首を斬り、その首を示すと、興の兵数千はみな武器を捨てて降伏した",
+   "anchor": "陳立は郡へ引き返した。"
+  }
+ ]
 }

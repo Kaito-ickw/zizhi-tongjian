@@ -209,5 +209,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(+巻内continuity)。continuity=j030_y07。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(大将軍=王鳳/劉康/劉興の補入を continuity 未供与で指摘)→continuity_text 供与し R2 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "gokou_shashi",
+   "category": "B",
+   "file": "j030_y08_gokou_shashi.jpg",
+   "caption": "五侯の奢侈——王音が御史大夫となって王氏はいよいよ盛んになり、郡国の守相・刺史はみなその門下から出た。五侯たちは競って奢侈にふけり、賄賂や珍宝が四方から集まり、賓客は門に満ちてその名声をはやし立てた。これを見た劉向は「必ずや劉氏を危うくする」と封事を奉る決意を固めた",
+   "anchor": "そこで封事(ふうじ)を奉り、口を極めてこう諫(いさ)めた。"
+  },
+  {
+   "slug": "ryukyo_gokkan",
+   "category": "B",
+   "file": "j030_y08_ryukyo_gokkan.jpg",
+   "caption": "劉向の極諫——「王氏と劉氏は並び立たず、下に泰山の安があれば、上には累卵の危があるのです」。封事を読んだ成帝は劉向を召して嘆息し、「そなた、ひとまず休むがよい。私はよく考えてみよう」と言ったが、ついにその言葉を用いることはできなかった",
+   "anchor": "しかし、ついにその言葉を用いることはできなかった。"
+  }
+ ]
 }

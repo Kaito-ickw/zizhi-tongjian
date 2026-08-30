@@ -922,5 +922,20 @@
  },
  "updated_at": "2026-06-28T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(+巻内連続訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(『千數』を『千人』に矮小化=数値改変)→R2 pass(修正・前ラウンド findings 同梱)。c02: R1 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "seiobo",
+   "category": "B",
+   "file": "j034_y03_seiobo.jpg",
+   "caption": "西王母の籌――関東の民数千人が藁や麻の茎を手渡しながら西へ走り、村里では歌い舞って西王母を祀った(建平四年春)",
+   "anchor": "これは秋になってようやくやんだ。"
+  },
+  {
+   "slug": "danshu",
+   "category": "B",
+   "file": "j034_y03_danshu.jpg",
+   "caption": "断袖――昼寝で袖を董賢に敷かれた哀帝は、彼を起こすに忍びず自らの袖を断ち切って起きた",
+   "anchor": "罘罳(ふし=門前の網状の塀飾り)も実に立派であった。"
+  }
+ ]
 }

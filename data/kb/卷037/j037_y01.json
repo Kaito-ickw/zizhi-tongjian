@@ -430,5 +430,20 @@
  },
  "updated_at": "2026-06-29T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(各チャンクの continuity=直前チャンク確定訳。y01_c01 は巻頭=巻036 j036_y06_c01 を継承)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "abdication",
+   "category": "B",
+   "file": "j037_y01_abdication.jpg",
+   "caption": "漢の号を廃した王莽は、孺子(劉嬰)の手を取り「周公のように政を返したかった」と涙ながらに嘆いてみせ、幼い孺子は北面して臣下の礼をとった。居並ぶ百官もみな心を動かされた(AI生成イメージ)。",
+   "anchor": "居並ぶ百官は、みな心を動かされぬ者はなかった。"
+  },
+  {
+   "slug": "five_generals",
+   "category": "B",
+   "file": "j037_y01_five_generals.jpg",
+   "caption": "天文を描いた乾文車に乗り、六頭の牝馬を駕し、背に鷩鳥の羽毛を負った五威将。符命四十二篇を奉じて四方へ出発し、匈奴・西域・東夷にいたるまで新室の印綬を授けて漢の印綬を回収した(AI生成イメージ)。",
+   "anchor": "のちに王莽が印綬を改めて四夷をかき乱す原因となった〕。"
+  }
+ ]
 }

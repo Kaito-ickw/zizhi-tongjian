@@ -36,6 +36,7 @@ YEAR_NOTE_RE = re.compile(
     rf"^[（(]?([{GAN}][{ZHI}])、(前)?([{POSITIONAL_DIGITS}]+)[）)]?"
 )
 RECORD_PATH_RE = re.compile(r"卷(\d{3})/j(\d{3})_y(\d{2})\.json$")
+PLAIN_YEAR_LABEL_RE = re.compile(r"^(?:前)?([元零一二三四五六七八九十百]+)年$")
 
 
 def cn_positional2int(s: str) -> int:
@@ -59,17 +60,32 @@ def first_year_note(record: dict) -> re.Match[str] | None:
     chunks = record.get("chunks") or []
     notes = (chunks[0].get("hu_notes") or []) if chunks else []
     for note in notes:
-        match = YEAR_NOTE_RE.match(note.get("text", ""))
+        if isinstance(note, str):
+            text = note
+        elif isinstance(note, dict):
+            text = note.get("text", "")
+        else:
+            continue
+        match = YEAR_NOTE_RE.match(text)
         if match:
             return match
     return None
 
 
-def year_number(year_label: str) -> int:
-    value = cn2int(year_label.removesuffix("年"))
-    if value is None:
-        raise ValueError(f"cannot parse year_label: {year_label!r}")
-    return value
+def year_number(year_label: str) -> int | None:
+    """即位からの通し年次と確実に読める素の年次だけを返す。"""
+    # accession_astro = astro - (year_number - 1) なので、ここの数値は
+    # 「即位からの通し年次」でなければならない。年號成立後（漢武帝の建元以降）の
+    # 「建元二年」などは元号内の年次であり、末尾の数字から即位年を算出できない。
+    # ラベルだけでは両者を機械的に判別できないため、元号付きや「後…」等は
+    # None とし、accession 一致検査を素の年次ラベルがある巻に限定する。
+    match = PLAIN_YEAR_LABEL_RE.fullmatch(year_label)
+    if match is None:
+        return None
+    try:
+        return cn2int(match.group(1))
+    except ValueError:
+        return None
 
 
 def warning(kind: str, **details: object) -> dict:
@@ -156,24 +172,31 @@ def main() -> int:
 
     ruler_groups: dict[str, list[dict]] = defaultdict(list)
     for item in records:
-        accession_astro = item["astro"] - (year_number(item["year_label"]) - 1)
+        number = year_number(item["year_label"])
+        accession_astro = item["astro"] - (number - 1) if number is not None else None
         item["accession_astro"] = accession_astro
         ruler_groups[item["ruler"]].append(item)
 
     accession_inconsistency_count = 0
     ruler_accession = []
     for ruler, items in ruler_groups.items():
-        accession_values = sorted({item["accession_astro"] for item in items})
+        accession_values = sorted({
+            item["accession_astro"]
+            for item in items
+            if item["accession_astro"] is not None
+        })
         if len(accession_values) > 1:
             accession_inconsistency_count += 1
             warnings.append(warning(
                 "accession_inconsistency", ruler=ruler,
                 accession_astro_values=accession_values
             ))
-        accession_astro = items[0]["accession_astro"]
+        accession_astro = accession_values[0] if accession_values else None
         ruler_accession.append({
             "ruler": ruler,
-            "accession_western": astro_to_disp(accession_astro),
+            "accession_western": (
+                astro_to_disp(accession_astro) if accession_astro is not None else None
+            ),
             "accession_astro": accession_astro,
             "years": [{
                 "id": item["id"],

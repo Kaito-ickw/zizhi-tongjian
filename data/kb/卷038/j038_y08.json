@@ -506,5 +506,27 @@
  },
  "updated_at": "2026-06-29T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。continuity は巻内逐次連鎖(y05←y04…)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。各 chunk の R1〜 詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kagai",
+   "category": "B",
+   "file": "j038_y08_kagai.jpg",
+   "caption": "九廟の完成——王莽、九重の華蓋を四輪車に載せて参拝する。引き手は「登仙」と叫び、百官は「喪車に似ている」とささやき合った(地皇三年正月)",
+   "anchor": "仙人の乗り物などではない」と。"
+  },
+  {
+   "slug": "seisho",
+   "category": "B",
+   "file": "j038_y08_seisho.jpg",
+   "caption": "成昌の戦い——王匡が逃げる中、廉丹は印・紱・節を渡して「小僧は逃げてもよかろう。だが私はそうはいかぬ」と踏みとどまり、赤眉の大軍の前に戦死した(地皇三年冬)",
+   "anchor": "大司空の王邑(おうゆう)には三公の職を兼ねさせた。"
+  },
+  {
+   "slug": "shochoan",
+   "category": "B",
+   "file": "j038_y08_shochoan.jpg",
+   "caption": "小長安聚の敗走——深い霧の中、劉秀は妹の伯姫を馬に乗せて逃れ、姉の元は「お行きなさい」と手を振って残り、三人の娘とともに死んだ(地皇三年)",
+   "anchor": "縯の弟の仲(ちゅう)をはじめ一族で死んだ者は数十人にのぼった。"
+  }
+ ]
 }

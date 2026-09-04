@@ -382,5 +382,27 @@
  },
  "updated_at": "2026-06-29T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity=j042_y02_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(『河西の五郡』地理限定・『人質の子』付加)→R2 fail(『懼不自安』に恐れの対象を付加)→R3 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "ryakuyo",
+   "category": "B",
+   "file": "j042_y03_ryakuyo.jpg",
+   "caption": "略陽の籠城——山を削って築いた堤から水を城へ流し込む隗囂の数万の軍勢と、矢が尽きて屋根の材を武器に守り抜く来歙の兵。",
+   "anchor": "隗囂は精鋭を尽くして攻めたが、幾月たっても落とせなかった。"
+  },
+  {
+   "slug": "shubei",
+   "category": "B",
+   "file": "j042_y03_shubei.jpg",
+   "caption": "馬援、米を聚めて山を為す——漆の陣中、卓上に米で山谷をかたどり進軍路を指し示す馬援と、身を乗り出す帝。「敵はもうわしの目の中にある」。",
+   "anchor": "高平県には第一城がある〕。"
+  },
+  {
+   "slug": "seijo",
+   "category": "B",
+   "file": "j042_y03_seijo.jpg",
+   "caption": "西城の水攻めと蜀の救援——城壁まであと一丈に迫る水の上、高みから太鼓を打ち鳴らして現れた王元らの五千が漢軍の囲みを突き破る。",
+   "anchor": "こうして安定・北地・天水・隴西は、ふたたび漢に背いて隗囂についた。"
+  }
+ ]
 }

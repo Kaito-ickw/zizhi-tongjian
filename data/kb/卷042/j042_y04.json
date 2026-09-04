@@ -222,5 +222,27 @@
  },
  "updated_at": "2026-06-29T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity=j042_y03_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(馮異・馮駿の姓の読みに関する style 指摘のみ反映)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "saijun",
+   "category": "B",
+   "file": "j042_y04_saijun.jpg",
+   "caption": "祭遵の葬列を見送る帝——素服の帝が城門の楼上から、白布に覆われた柩の車と喪服の列が門を出てゆくのを涙して見送る。",
+   "anchor": "帝はそこで(祭遵を口にするのを)やめた。"
+  },
+  {
+   "slug": "keimon",
+   "category": "B",
+   "file": "j042_y04_keimon.jpg",
+   "caption": "荊門・虎牙の封鎖——紅い岩壁の虎牙山と門のような荊門山のあいだ、公孫述軍が浮橋と関楼を架け、欑柱を立てて江水をふさぎ、両岸の尾根に陣営を連ねる。",
+   "anchor": "陸路をふさいで、漢軍を防いだ。"
+  },
+  {
+   "slug": "inko",
+   "category": "B",
+   "file": "j042_y04_inko.jpg",
+   "caption": "陰興、印綬を辞す——帝の前に置かれた印綬の盆に手を触れず、深く伏して封侯を固辞する陰興。帳のかげから陰貴人が見守る。",
+   "anchor": "ついに親族のために官位を求めることはしなかった。"
+  }
+ ]
 }

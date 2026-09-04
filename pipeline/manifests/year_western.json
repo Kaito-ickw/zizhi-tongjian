@@ -10,7 +10,7 @@
  "range_violation_count": 32,
  "sequence_violation_count": 18,
  "accession_inconsistency_count": 42,
- "interpolated_count": 8,
+ "interpolated_count": 4,
  "ruler_accession": [
   {
    "ruler": "威烈王",
@@ -11845,41 +11845,41 @@
      "id": "j194_y03",
      "juan": 194,
      "year_label": "八年",
-     "ganzhi": null,
+     "ganzhi": "甲午",
      "western_year": "634 CE",
-     "ganzhi_ok": null,
+     "ganzhi_ok": true,
      "in_range": true,
-     "interpolated": true
+     "interpolated": false
     },
     {
      "id": "j194_y04",
      "juan": 194,
      "year_label": "九年",
-     "ganzhi": null,
+     "ganzhi": "乙未",
      "western_year": "635 CE",
-     "ganzhi_ok": null,
+     "ganzhi_ok": true,
      "in_range": true,
-     "interpolated": true
+     "interpolated": false
     },
     {
      "id": "j194_y05",
      "juan": 194,
      "year_label": "十年",
-     "ganzhi": null,
+     "ganzhi": "丙申",
      "western_year": "636 CE",
-     "ganzhi_ok": null,
+     "ganzhi_ok": true,
      "in_range": true,
-     "interpolated": true
+     "interpolated": false
     },
     {
      "id": "j194_y06",
      "juan": 194,
      "year_label": "十一年",
-     "ganzhi": null,
+     "ganzhi": "丁酉",
      "western_year": "637 CE",
-     "ganzhi_ok": null,
+     "ganzhi_ok": true,
      "in_range": true,
-     "interpolated": true
+     "interpolated": false
     }
    ]
   },

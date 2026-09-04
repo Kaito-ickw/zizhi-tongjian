@@ -218,5 +218,27 @@
  },
  "updated_at": "2026-06-29T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注+巻内連続訳(continuity=j042_y01_c02 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(『多』を『きまって』と頻度断定化)→R2 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "nisshoku",
+   "category": "B",
+   "file": "j042_y02_nisshoku.jpg",
+   "caption": "晦の日食と封事——欠けた日の下、百官が封をした上奏を捧げて並ぶ宮中の庭で、鄭興が帝に「柔克の政」を説く。",
+   "anchor": "それゆえ、鄭興の上奏はこの点にまで及んだのである。"
+  },
+  {
+   "slug": "inban",
+   "category": "B",
+   "file": "j042_y02_inban.jpg",
+   "caption": "隗囂の安定侵攻——黄土の谷を陰槃へ下る隗囂の三万の軍勢と、城壁で待ち受ける馮異。雨雲が道を断ち、軍は引き返す。",
+   "anchor": "太中大夫に任じ、向義侯(こうぎこう)に封じた。"
+  },
+  {
+   "slug": "toshi",
+   "category": "B",
+   "file": "j042_y02_toshi.jpg",
+   "caption": "南陽太守杜詩の堤と池——堤上で水利を指さす杜詩、田植えの農民と水牛、道端で礼をする老農。「前に召父、後に杜母」。",
+   "anchor": "後(のち)には杜母(とぼ=杜詩)あり」。"
+  }
+ ]
 }

@@ -146,5 +146,20 @@
  },
  "updated_at": "2026-06-29T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(巻044冒頭・continuity source=巻043 j043_y11_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 fail(原文にない「輿が死んで」を追加)→R2 pass(別セッション・前ラウンド findings 同梱)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "bukei",
+   "category": "B",
+   "file": "j044_y01_bukei.jpg",
+   "caption": "武谿の伏兵——沅水をさかのぼって武谿に深入りした劉尚の軍を、武陵の蛮族が険しい崖の上から待ち伏せて襲う。一軍はことごとく壊滅した(建武二十三年)。",
+   "anchor": "劉尚の一軍はことごとく壊滅してしまった。"
+  },
+  {
+   "slug": "hachibu",
+   "category": "B",
+   "file": "j044_y01_hachibu.jpg",
+   "caption": "八部の兵を集める比——右薁鞬日逐王の比が南辺八部の兵四、五万人を集結させる。単于の誅殺を勧めた二人の骨都侯は企てを察して逃げ去り、単于が遣わした一万騎も軍勢の盛んなさまを見て引き返した。",
+   "anchor": "踏み込むことができずに引き返した。"
+  }
+ ]
 }

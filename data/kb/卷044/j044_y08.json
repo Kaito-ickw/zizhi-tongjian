@@ -110,5 +110,20 @@
  },
  "updated_at": "2026-06-29T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(巻044 j044_y08・continuity source=j044_y07_c01 確定訳)。forbidden=根拠集合外の事実/因果/心理/数値/発言の新規追加のみ。c01: R1 pass(allowed 指摘のみ=「泰山」→「泰山の神」/「方面之勳」→「一方面を独力で指揮した武勲」、いずれも禁止脚色に当たらず)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "housen",
+   "category": "B",
+   "file": "j044_y08_housen.jpg",
+   "caption": "建武三十年、東巡中の光武帝に群臣が泰山での封禅を上奏する。帝は「民の怨みは腹いっぱいにたまっている」と手を上げてこれを退け、遠くには泰山が霞む(AI生成・水墨画調)。",
+   "anchor": "こうして群臣は、二度とこのことを口にしなかった。"
+  },
+  {
+   "slug": "kafuku",
+   "category": "B",
+   "file": "j044_y08_kafuku.jpg",
+   "caption": "諸将が手柄を論じ合う中、傷だらけの賈復だけは腕を組んで黙している。光武帝は「賈君の功は私がちゃんと知っている」と彼を指さす(AI生成・水墨画調)。",
+   "anchor": "「賈君(かくん)の功は、この私がちゃんと知っている」。"
+  }
+ ]
 }

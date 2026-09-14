@@ -346,5 +346,27 @@
  },
  "updated_at": "2026-06-29T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(+continuity=y07確定訳で①「王薨」=東平王蒼を補完)。巻内逐次連鎖(y08←y07)。c01: R1 fail(「以貴戚發錮」を『貴戚のせいで禁錮』と原因を誤帰属)→R2 fail(「親毀君」に『面と向かって』を追加=上書での誹りに反する/「毀服」を『喪服のような』と過具体化)→R3 pass(別セッション・前ラウンド findings 同梱)。司馬光の論評(臣光曰)を含む。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "shinsui",
+   "category": "B",
+   "file": "j046_y08_shinsui.jpg",
+   "caption": "帝、沁水公主の庭園のそばで竇憲を問い詰める——外出の帝が車上から庭園を指さして問うが、竇憲は左右をひそかに制して答えられない(水墨画・AI生成)",
+   "anchor": "それでも彼に重い任務を授けることもしなかった。"
+  },
+  {
+   "slug": "shikan",
+   "category": "B",
+   "file": "j046_y08_shikan.jpg",
+   "caption": "止姦亭の夜、亭長の霍延が竇篤に剣を突きつける——雒陽令周紆の下で貴戚が身をすくめた都の取り締まり(水墨画・AI生成)",
+   "anchor": "数日して赦(ゆる)して釈放した。"
+  },
+  {
+   "slug": "kyodo",
+   "category": "B",
+   "file": "j046_y08_kyodo.jpg",
+   "caption": "鄭弘、零陵・桂陽の嶠道を開く——難破の相次ぐ東冶からの海路に代え、交趾七郡の貢ぎ物が山越えの道を行く(水墨画・AI生成)",
+   "anchor": "帝はこれに従った。"
+  }
+ ]
 }

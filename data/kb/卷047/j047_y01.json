@@ -290,5 +290,27 @@
  },
  "updated_at": "2026-06-29T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。巻頭年・fresh volume のため previous_translation=None(巻境界リセット)。c01: R1 fail(「以輕爲德、以重爲威」の輕/重を『刑』に限定/「宗祀」を『合祀』と狭めた/「事祖及孫」の世代起点ずれ)→R2 pass(別セッション・前ラウンド findings 同梱)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "choho",
+   "category": "B",
+   "file": "j047_y01_choho.jpg",
+   "caption": "帝、東郡で師の張酺に弟子の礼を尽くす——郡庁の庭に門人と属吏を集め、『尚書』を一篇講義させてから君臣の礼を行った(水墨画・AI生成)",
+   "anchor": "その場の誰もが恩恵に浴さぬ者はなかった。"
+  },
+  {
+   "slug": "ketsuri",
+   "category": "B",
+   "file": "j047_y01_ketsuri.jpg",
+   "caption": "闕里で孔子と七十二弟子を祀る——六代の楽を奏し、孔氏の男子六十二人を集めた帝は孔僖の答えに大笑した(水墨画・AI生成)",
+   "anchor": "そして孔僖を郎中(ろうちゅう)に任じた。"
+  },
+  {
+   "slug": "chodo",
+   "category": "B",
+   "file": "j047_y01_chodo.jpg",
+   "caption": "朝堂の捕虜返還論争——鄭弘が桓虞を「不忠者」と怒鳴りつけ、弾劾された諸臣が印綬を差し出して謝罪する(水墨画・AI生成)",
+   "anchor": "通常の規定どおりとせよ」。"
+  }
+ ]
 }

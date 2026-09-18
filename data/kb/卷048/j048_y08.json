@@ -98,5 +98,20 @@
  },
  "updated_at": "2026-06-30T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(+巻内連続=y07確定訳)。c01: R1 pass(forbidden 指摘なし。幽遠の style 指摘に従い『片田舎』を平易化)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "ronnan",
+   "category": "B",
+   "file": "j048_y08_ronnan.jpg",
+   "caption": "帝、朝会に諸儒を召して魯丕・賈逵・黃香らに経義を論難させる——魯丕の説を善しとし、朝を罷えると衣冠を賜った",
+   "anchor": "帝は魯丕の論(説)を善(よ)しとし、朝(ちょう)を罷(お)えると、特別に衣冠(いかん、衣服と冠)を賜った。"
+  },
+  {
+   "slug": "kiku",
+   "category": "D",
+   "file": "j048_y08_kiku.jpg",
+   "caption": "規(ぶんまわし)・矩(さしがね)・權(分銅)・衡(はかりざお)——魯丕が「経説は互いに譲ってはならぬ」ことの喩えに引いた四つの規準の道具",
+   "anchor": "ぶんまわし(規)・さしがね(矩)・分銅(權)・はかりざお(衡)が枉(ま)げてはならぬのと同じです"
+  }
+ ]
 }

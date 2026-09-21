@@ -122,5 +122,20 @@
  },
  "updated_at": "2026-07-01T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(+巻内連続=y08確定訳)。c01: R1 fail(坐徵を『処罰された』と過剰具体化→forbidden)→R2 pass(『召還された』に修正、forbidden 解消)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kinjo",
+   "category": "B",
+   "file": "j048_y09_kinjo.jpg",
+   "caption": "金城に住みついた迷唐の飢えた一族——護羌校尉の吳祉らが金帛を賜って塞外へ出るよう促すが、迷唐は遠景の河橋を憚って動かず、一族はかえって疑い恐れた",
+   "anchor": "だが一族はかえって疑い恐れた。"
+  },
+  {
+   "slug": "hanran",
+   "category": "B",
+   "file": "j048_y09_hanran.jpg",
+   "caption": "迷唐ふたたび叛く——湟中の諸胡を脅して率い、家畜を駆って寇鈔し去る。王信・耿譚・吳祉は責めを問われ召還された",
+   "anchor": "寇鈔(こうしょう、襲って略奪)して去った。"
+  }
+ ]
 }

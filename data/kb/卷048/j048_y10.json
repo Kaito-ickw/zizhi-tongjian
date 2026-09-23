@@ -122,5 +122,20 @@
  },
  "updated_at": "2026-07-01T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(+巻内連続=y09確定訳)。c01: R1 pass(forbidden 指摘なし。撫接の style 指摘に従い『撫(なで)接する』→『なだめ接する』に平易化)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "inshen",
+   "category": "B",
+   "file": "j048_y10_inshen.jpg",
+   "caption": "允川の戦い——護羌校尉周鮪と金城太守侯霸が諸郡兵・属国の羌胡三万で賜支河の曲に迫り、迷唐の種人は瓦解して六千余口が降る。遠景で迷唐は賜支河首を踰えて發羌へ逃れる",
+   "anchor": "降伏した者は六千余口(こう、人)に上った。"
+  },
+  {
+   "slug": "kyosei",
+   "category": "B",
+   "file": "j048_y10_kyosei.jpg",
+   "caption": "巫蠻許聖の反乱——郡の税の取り立ての不公平を怨み、巫山の峡谷から蠻の衆が南郡の平地へ押し出す",
+   "anchor": "辛卯(かのとう)の日、南郡(なんぐん)を侵した。"
+  }
+ ]
 }

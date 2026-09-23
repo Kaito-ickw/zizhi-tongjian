@@ -158,5 +158,20 @@
  },
  "updated_at": "2026-07-01T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(+巻内連続=y11確定訳)。c01: R1 pass(forbidden 指摘なし。allowed/style の語義補足のみ)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "reishi",
+   "category": "B",
+   "file": "j048_y12_reishi.jpg",
+   "caption": "嶺南の龍眼・荔枝の駅伝——十里ごとの置と五里ごとの候を継ぎ、炎熱の山道を昼夜兼行で早馬が走る。道端には倒れた馬と運び手、藪には虎、路上には毒蛇。臨武の長唐羌が上書して献上を止めさせた",
+   "anchor": "昼夜兼行で伝え送っていた。"
+  },
+  {
+   "slug": "kansui",
+   "category": "B",
+   "file": "j048_y12_kansui.jpg",
+   "caption": "漢水のほとりで車駕を回らす——章陵・雲夢から江陵へ向かおうとした帝は、留守を預かる太尉張禹の駅馬の諫めを得て、漢水の岸で車を返し都へ還る",
+   "anchor": "十一月、甲申(きのえさる)の日、宮に還った。"
+  }
+ ]
 }

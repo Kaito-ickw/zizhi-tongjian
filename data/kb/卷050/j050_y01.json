@@ -130,5 +130,20 @@
  },
  "updated_at": "2026-06-29T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。巻頭年・fresh volume のため previous_translation=None(巻境界リセット)。c01: R1 pass(findings は allowed/style のみ・forbidden なし。越巂内属の帰属先補完=allowed、「師表百姓」の訓読調を平易化)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "reishu",
+   "category": "B",
+   "file": "j050_y01_reishu.jpg",
+   "caption": "度遼将軍鄧遵が南単于の騎兵を率い、霊州で零昌の羌を撃つ。黄河の湾曲部を望む黄土の原を漢の騎兵と匈奴の弓騎兵が駆け、羌の人々は羊や荷を捨てて谷へ潰走する(元初三年・三月)。",
+   "anchor": "八百余りの首級(しゅきゅう)を斬った。"
+  },
+  {
+   "slug": "hokuchi",
+   "category": "B",
+   "file": "j050_y01_hokuchi.jpg",
+   "caption": "任尚の遣わした兵が北地の零昌の本拠を急襲し、その廬舎を焼く。雪の谷に燃え上がる土屋と穹廬を、丘の上の将が見下ろす。羌の勢いはこれより衰えた(元初三年・十二月)。",
+   "anchor": "七百余りの首級を斬った〔注:羌の勢いは、これより衰えていった〕。"
+  }
+ ]
 }

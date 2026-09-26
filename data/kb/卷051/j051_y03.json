@@ -314,5 +314,27 @@
  },
  "updated_at": "2026-06-29T12:01:32",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(+巻内連続=y02確定訳)。c01: R1 pass(forbidden なし。allowed=「發哀→喪に服し」「奉引→車を引かせて」、style=「小人」の評価語/臣光曰・樊英対話の長注を本文化)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "haha",
+   "category": "B",
+   "file": "j051_y03_haha.jpg",
+   "caption": "帝、雒陽の北に埋められていた生母・李氏の墓に出向き、あらためて礼をもって殯をする。",
+   "anchor": "みずから埋葬の場所に出向いて、あらためて礼をもって殯(かりもがり)をした"
+  },
+  {
+   "slug": "hanei",
+   "category": "B",
+   "file": "j051_y03_hanei.jpg",
+   "caption": "樊英、無理やり輿に乗せて殿に入れられても、なお帝に屈しない。",
+   "anchor": "なお彼を屈服させることはできなかった。"
+  },
+  {
+   "slug": "riko",
+   "category": "B",
+   "file": "j051_y03_riko.jpg",
+   "caption": "李固、姓名を変えて驢馬を駆り、笈を負って千里の遠きをいとわず師を求める。",
+   "anchor": "笈(きゅう、書箱)を背負って師に従い、千里の遠きをもいとわず"
+  }
+ ]
 }

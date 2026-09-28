@@ -278,5 +278,27 @@
  },
  "updated_at": "2026-06-29T00:00:00",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。巻頭年・fresh volume のため previous_translation=None(巻境界リセット)。c01: R1 pass(質帝弑逆・桓帝擁立の大段。findings は allowed/style のみで、子弟→子・不能用・折骨の3点を反映)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "bakko",
+   "category": "B",
+   "file": "j053_y01_bakko.jpg",
+   "caption": "本初元年夏、朝会の席で九歳の質帝が梁冀を見すえて言う——「これは跋扈将軍だ」。壇上の幼帝がまっすぐ指さす先に、居並ぶ百官の中で振り向く大将軍。ひと言が凶行を招く。",
+   "anchor": "これは跋扈将軍(ばっこしょうぐん)だ"
+  },
+  {
+   "slug": "shahei",
+   "category": "B",
+   "file": "j053_y01_shahei.jpg",
+   "caption": "閏月甲申、毒を仕込んだ煑餅(湯餅)に苦しむ質帝の枕もとで、太尉の李固が病の原因を問う。水を運ぶ侍者を梁冀が手で制し、「吐くといけない」と飲ませることを許さない。",
+   "anchor": "吐くといけませんから、水を飲ませてはなりません"
+  },
+  {
+   "slug": "kaigi",
+   "category": "B",
+   "file": "j053_y01_kaigi.jpg",
+   "caption": "翌日の公卿の再会議。気色荒々しい梁冀の激語に胡広・趙戒以下がみな平伏して「ただ大将軍の御命令のままに」と言う中、李固と杜喬の二人だけが背を伸ばし、清河王蒜を立てる議を固く守る。",
+   "anchor": "ただ李固と杜喬だけは、もとの議(=清河王を立てる)を固く守った"
+  }
+ ]
 }

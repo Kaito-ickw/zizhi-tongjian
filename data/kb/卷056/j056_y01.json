@@ -338,5 +338,27 @@
  },
  "updated_at": "2026-06-29T13:18:25",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。巻頭年・fresh volume のため previous_translation=None(巻境界リセット)。c01: R1 pass(findings は style/allowed のみ・forbidden なし)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "sanboku",
+   "category": "B",
+   "file": "j056_y01_sanboku.jpg",
+   "caption": "獄中の党人たち――三木をはめられ頭に袋をかぶせられた范滂らを、中常侍の王甫が階(きざはし)の上から順々に訊問する。范滂の答えに王甫は顔色を改め、桎梏が解かれた",
+   "anchor": "そこで(党人らは)みな桎梏(しっこく、手かせ足かせ)を解いてもらえた。"
+  },
+  {
+   "slug": "kikyo",
+   "category": "B",
+   "file": "j056_y01_kikyo.jpg",
+   "caption": "范滂の帰郷――赦されて汝南へ帰る范滂を、南陽の士大夫が車数千両で出迎える。范滂は付き添う殷陶・黄穆に「禍を重くするだけだ」と告げ、ひそかに郷里へ去った",
+   "anchor": "そしてひそかに郷里へ帰っていった。"
+  },
+  {
+   "slug": "mukae",
+   "category": "B",
+   "file": "j056_y01_mukae.jpg",
+   "caption": "解瀆亭侯宏の迎え――桓帝崩御の後、竇武の策で守光禄大夫の劉鯈と中常侍の曹節が節を持ち、中黄門・虎賁・羽林の兵千人を率いて河間の解瀆亭へ十二歳の宏(のちの霊帝)を迎えに行く",
+   "anchor": "袁紀(の十二歳の説)が正しい〕。"
+  }
+ ]
 }

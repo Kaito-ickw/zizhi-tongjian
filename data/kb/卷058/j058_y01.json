@@ -210,5 +210,27 @@
  },
  "updated_at": "2026-06-29T16:32:35",
  "review_policy": "翻訳=claude-opus-4-8 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。巻頭年・fresh volume のため previous_translation=None(巻境界リセット)。c01: R1 pass(forbidden なし。findings は allowed/style のみ=「更相盜竊爭鬭」具体化・「弄狗」補足・「野人」語感・「卒」文体)。style 指摘の「野人」を『庶民』へ調整。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "shushun",
+   "category": "B",
+   "file": "j058_y01_shushun.jpg",
+   "caption": "朱儁の交趾平定——交趾の烏滸蛮の乱が長引き、梁龍らも郡県を攻め落とすなか、蘭陵令の朱儁が交趾刺史に任ぜられた。朱儁は梁龍を撃ち斬り、降伏する者は数万人に及び、ひと月あまりで南方の地を平定して都亭侯に封ぜられた。",
+   "anchor": "ひと月あまりですっかり平定した。"
+  },
+  {
+   "slug": "resshi",
+   "category": "B",
+   "file": "j058_y01_resshi.jpg",
+   "caption": "後宮の市——帝は後宮に商店の立ち並ぶ市(列肆)を作り、采女たちに商売をさせた。女官たちは互いに盗み合い奪い合って争い、帝は商人の服を着て彼女らに付き合い、飲み食いして宴を楽しんだ。",
+   "anchor": "宴を楽しんだ。"
+  },
+  {
+   "slug": "roba",
+   "category": "B",
+   "file": "j058_y01_roba.jpg",
+   "caption": "西園の驢馬車——帝は西園で犬をもてあそび、文官の進賢冠をかぶらせ綬を帯びさせた。また四頭の驢馬に車を引かせ、みずから手綱を操って駆けめぐった。都じゅうが次々と真似をし、驢馬の値はついに馬と同じほどになった。",
+   "anchor": "驢馬の値はついに馬と同じほどになった。"
+  }
+ ]
 }

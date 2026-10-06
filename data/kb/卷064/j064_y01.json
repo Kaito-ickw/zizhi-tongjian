@@ -274,5 +274,20 @@
  },
  "updated_at": "2026-06-30T19:38:32+00:00",
  "review_policy": "Codex(gpt)/low による独立クロスベンダー・レビューで forbidden 0 を確認後に pass 化(前ラウンド findings 同梱で再レビュー)。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "hiniku",
+   "category": "B",
+   "file": "j064_y01_hiniku.jpg",
+   "caption": "髀肉の嘆——劉表の席で厠から戻った劉備が、鞍を離れて髀に肉がついたことを嘆いて涙を流す(建安六年、荊州)",
+   "anchor": "天下三分の業(ぎょう)を成しえたのだ、という〕。"
+  },
+  {
+   "slug": "choryo",
+   "category": "B",
+   "file": "j064_y01_choryo.jpg",
+   "caption": "張遼の三公山——東海の囲みで昌豨を説き伏せた張遼が、単身で山上の昌豨の家を訪ねてその妻子に拝礼する(建安六年)",
+   "anchor": "操は豨を還した。"
+  }
+ ]
 }

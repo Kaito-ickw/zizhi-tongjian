@@ -310,5 +310,27 @@
  },
  "updated_at": "2026-06-30T19:51:57+00:00",
  "review_policy": "Codex(gpt)/low による独立クロスベンダー・レビューで forbidden 0 を確認後に pass 化(前ラウンド findings 同梱で再レビュー)。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kaki",
+   "category": "B",
+   "file": "j064_y02_kaki.jpg",
+   "caption": "絳城の賈逵——郭援に城を囲まれて降った絳で、賈逵が「国家の長吏が賊に叩頭することがあろうか」と拝礼を拒み、城壁の吏民が殺すなら共に死ぬと叫ぶ(建安七年、河東)",
+   "anchor": "自分の姓名(せいめい)は告げなかった。"
+  },
+  {
+   "slug": "funsui",
+   "category": "B",
+   "file": "j064_y02_funsui.jpg",
+   "caption": "汾水の戦い——平陽を囲む鍾繇が、汾水を渡りきらぬ郭援軍を馬超の援軍とともに撃って大破する(建安七年、河東)",
+   "anchor": "南単于はそこで降(くだ)った。"
+  },
+  {
+   "slug": "shuyu",
+   "category": "B",
+   "file": "j064_y02_shuyu.jpg",
+   "caption": "周瑜の質子諫止——曹操に人質を求められた孫権が呉夫人の前で周瑜に議を定めさせ、周瑜が「人に制せられる」と送らぬよう説く(建安七年、呉)",
+   "anchor": "そこで質を送らなかった。"
+  }
+ ]
 }

@@ -609,5 +609,28 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-07-02T20:48:36",
- "review_policy": "翻訳=claude-sonnet-5 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。巻頭年・fresh volume のため previous_translation=None(巻境界リセット)。c01: R1/R2 forbidden(「謝之」の事実拡張、「面縛帰死」への心理追加)を修正しR3 pass。c02: R1/R2 forbidden(「勢偪」の国力評価化、「委質於魏」の人質先取り)を修正しR3 pass。詳細は chunks[].review_history を参照。"
+ "review_policy": "翻訳=claude-sonnet-5 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。巻頭年・fresh volume のため previous_translation=None(巻境界リセット)。c01: R1/R2 forbidden(「謝之」の事実拡張、「面縛帰死」への心理追加)を修正しR3 pass。c02: R1/R2 forbidden(「勢偪」の国力評価化、「委質於魏」の人質先取り)を修正しR3 pass。詳細は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "jushu",
+   "category": "B",
+   "file": "j070_y01_jushu.jpg",
+   "caption": "濡須の朱桓——黄初四年春、曹仁の数万に対し手元の兵五千で濡須城に拠る朱桓。旗や太鼓を伏せてわざと弱く見せ、南に長江、北に山を背負って疲れた敵を待ち受ける。中洲へは油船が向かう。(AI生成・水墨画調)",
+   "anchor": "王双を生け捕りにし、戦場で殺し溺死させた者は千余人に上った。"
+  },
+  {
+   "slug": "fukyo",
+   "category": "B",
+   "file": "j070_y01_fukyo.jpg",
+   "caption": "江陵の浮橋——長江の水が浅くなった隙に夏侯尚が中洲へ架けた浮橋を、董昭の上奏を容れた文帝の詔により魏軍が一本道の橋づたいに急ぎ退く。潘璋が用意した荻の筏は使われずに終わった。(AI生成・水墨画調)",
+   "anchor": "ちょうどそのころ天下に疫病が大流行したため、文帝はすべての軍を呼び戻した。"
+  },
+  {
+   "slug": "takuko",
+   "category": "B",
+   "file": "j070_y01_takuko.jpg",
+   "caption": "永安の託孤——病の重くなった劉備が永安の宮で諸葛亮に太子を託す。「もし不才であれば、そなたが自ら位を取ってもよい」の言葉に、諸葛亮は涙を流して忠節を誓う。(AI生成・水墨画調)",
+   "anchor": "漢の主は永安で崩御し、諡(おくりな)を昭烈(しょうれつ)といった。"
+  }
+ ]
 }

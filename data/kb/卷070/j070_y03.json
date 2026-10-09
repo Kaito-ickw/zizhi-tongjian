@@ -345,5 +345,28 @@
   "reviewer": "codex(gpt)/high"
  },
  "updated_at": "2026-07-02T22:18:30",
- "review_policy": "翻訳=claude-sonnet-5 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。previous_translation=j070_y02_c01(巻内継続)。c01: R1/R2 forbidden(人材限定の事実追加、威の帰属誤り、父兄死喪の数量追加)を都度修正。R3 で「觀兵」への「(軍事演習)」注記がforbidden判定(R1では同一箇所がallowed済で reviewer 揺れ)となり3ラウンド上限で非収束。halt_reason=max_iter_unconverged。修正案は「軍を閲した」で次回対応可。詳細は chunks[].review_history を参照。"
+ "review_policy": "翻訳=claude-sonnet-5 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。previous_translation=j070_y02_c01(巻内継続)。c01: R1/R2 forbidden(人材限定の事実追加、威の帰属誤り、父兄死喪の数量追加)を都度修正。R3 で「觀兵」への「(軍事演習)」注記がforbidden判定(R1では同一箇所がallowed済で reviewer 揺れ)となり3ラウンド上限で非収束。halt_reason=max_iter_unconverged。修正案は「軍を閲した」で次回対応可。詳細は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "bashoku",
+   "category": "B",
+   "file": "j070_y03_bashoku.jpg",
+   "caption": "馬謖の見送り——黄初六年春、南中へ出征する諸葛亮を参軍の馬謖が数十里まで見送る。「心を攻めるのが上策、城を攻めるのは下策」と進言し、諸葛亮はこれを容れた。(AI生成・水墨画調)",
+   "anchor": "馬謖は馬良(ばりょう)の弟である。"
+  },
+  {
+   "slug": "mokaku",
+   "category": "B",
+   "file": "j070_y03_mokaku.jpg",
+   "caption": "孟獲に陣営を見せる諸葛亮——滇池のほとり、生け捕りにした孟獲を縛らずに陣営の間を歩かせ「この軍はどう思うか」と問う。七度捕らえて七度放ち、南人は二度と反乱を起こさなかった。(AI生成・水墨画調)",
+   "anchor": "諸葛亮はそのまま滇池(てんち)に至った。"
+  },
+  {
+   "slug": "koryo",
+   "category": "B",
+   "file": "j070_y03_koryo.jpg",
+   "caption": "広陵の観兵——冬十月、文帝は十余万の軍勢と数百里に連なる旗指物を長江岸に並べたが、厳寒で氷が張り船は長江に入れない。渦巻く波濤を前に「天が南北を隔てるゆえんであろう」と嘆じて帰還した。(AI生成・水墨画調)",
+   "anchor": "ようやく帰還することができた。"
+  }
+ ]
 }

@@ -610,5 +610,27 @@
  },
  "updated_at": "2026-07-02T20:57:41",
  "review_policy": "翻訳=claude-sonnet-5 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注(+巻内連続=y02確定訳)。c01: R1 fail(死地にの補足を forbidden 指摘)→修正しR2 pass。c02: R1 fail(無臣の誤読/漢の火徳の追加/還った方向の逆転)→修正しR2 pass。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kako",
+   "category": "B",
+   "file": "j069_y03_kako.jpg",
+   "caption": "閏月、陸遜の火攻め——呉兵が茅を一把ずつ担いで山伝いに登り、夷陵の峡谷に連なる蜀の四十余営が次々と燃え上がる(AI生成・水墨画調)",
+   "anchor": "杜路(とろ)・劉寧(りゅうねい)らは窮迫(きゅうはく)して降(こう)を請うた。"
+  },
+  {
+   "slug": "anken",
+   "category": "B",
+   "file": "j069_y03_anken.jpg",
+   "caption": "陸遜、剣を按じて諸将を諭す——「僕は書生にすぎぬが、主上より命を受けている」。旧将と公室の貴戚が服さぬ本営で、軍令の常を説く(AI生成・水墨画調)",
+   "anchor": "改めて江陵侯(こうりょうこう)に封じた。"
+  },
+  {
+   "slug": "bofu",
+   "category": "B",
+   "file": "j069_y03_bofu.jpg",
+   "caption": "洞口の暴風——もやい綱を断たれた呂範の呉船が風に流され、曹休ら魏軍の営の下へ吹き寄せられる(AI生成・水墨画調)",
+   "anchor": "将軍(しょうぐん)の尹盧(いんろ)が戦死した。"
+  }
+ ]
 }

@@ -280,5 +280,28 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-07-02T20:54:25",
- "review_policy": "翻訳=claude-sonnet-5 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。previous_translation=j070_y01_c02(巻内継続)。c01: R1 forbidden(「挙清厲濁」への処罰行為追加、「保太原鴈門」への保護依頼追加)を修正しR2 pass。詳細は chunks[].review_history を参照。"
+ "review_policy": "翻訳=claude-sonnet-5 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。previous_translation=j070_y01_c02(巻内継続)。c01: R1 forbidden(「挙清厲濁」への処罰行為追加、「保太原鴈門」への保護依頼追加)を修正しR2 pass。詳細は chunks[].review_history を参照。",
+ "illustrations": [
+  {
+   "slug": "gijo",
+   "category": "B",
+   "file": "j070_y02_gijo.jpg",
+   "caption": "徐盛の偽城——黄初五年秋、広陵まで親征した文帝に対し、呉の徐盛は木を植え葦で覆った偽の城壁と楼閣を石頭から江乗まで数百里、一晩で築かせ、長江に多くの軍船を浮かべた。増水した大河を望んだ文帝は「魏に千群の騎兵があっても用いる場所がない」と嘆いて引き返す。(AI生成・水墨画調)",
+   "anchor": "また長江に多くの舟や軍船を浮かべた。"
+  },
+  {
+   "slug": "taigaku",
+   "category": "B",
+   "file": "j070_y02_taigaku.jpg",
+   "caption": "太学の再興——黄初五年夏四月、初平以来廃れていた学問の道を立て直すため、文帝は洛陽に初めて太学を立て、博士を置き、漢の制度にならって五経の課試の法を定めた。(AI生成・水墨画調)",
+   "anchor": "漢の制度にならって《五経》の課試(かし、試験)の法を定めた。"
+  },
+  {
+   "slug": "hodokon",
+   "category": "B",
+   "file": "j070_y02_hodokon.jpg",
+   "caption": "歩度根の帰附——兄扶羅韓を軻比能に殺された鮮卑の歩度根は、勢力の衰えた配下一万余落を率いて太原・雁門に身を寄せ、この年朝廷に貢物を献じた。一方の軻比能はますます強盛となり、やがて魏の辺境を侵すようになる。(AI生成・水墨画調)",
+   "anchor": "幽州(ゆうしゅう)・并州(へいしゅう)はこれに苦しめられた。"
+  }
+ ]
 }

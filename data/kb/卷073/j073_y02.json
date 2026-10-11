@@ -270,5 +270,20 @@
  },
  "updated_at": "2026-07-02T20:59:00",
  "review_policy": "翻訳=claude-sonnet-5 / 独立レビュー=Codex(gpt)/low。根拠集合=本文+胡注。前年(j073_y01)が両chunkともhaltのため previous_translation=None(context.py は status=pass のみ継承)。c01: R1 fail(forbidden=湔の行政区分捏造・楊阜評の心理内容追加)→反映、R2 fail(forbidden=苻健弟の降伏先を魏と誤って明示)→反映、R3 pass(残る指摘はstyle/allowedのみ)。詳細は chunks[].review_history を参照。",
- "illustrations": []
+ "illustrations": [
+  {
+   "slug": "kanhan",
+   "category": "B",
+   "file": "j073_y02_kanhan.jpg",
+   "caption": "観阪の遊覧——夏四月、漢主(劉禅)は湔に赴き、観阪に登って汶水の流れを眺め、十日ほどしてから戻った。胡注は、汶水が㟭山に源を発して都安県を経る㟭江の水であること、そして諸葛亮が亡くなった後は漢主の遊覧を誰も止める者がいなかったことを記す。(AI生成・水墨画調)",
+   "anchor": "十日ほどしてから戻った。"
+  },
+  {
+   "slug": "suisei",
+   "category": "B",
+   "file": "j073_y02_suisei.jpg",
+   "caption": "大辰の彗星と高堂隆の諫言——冬十月、彗星が大辰(心宿)の位置に現れ、また東方にも現れた。高堂隆は、天地・社稷・宗廟の位置がまだ定まらないのに居室ばかりを飾り立て、士人も民も本業を失っていると上奏し、宮室の盛大な造営と彗星の出現は慈父のような天の切実な訓戒だと諫めた。たび重なる切諫に皇帝は不機嫌になったが、侍中の盧毓が「君主が明君であれば臣下は率直にものを言う」と進言し、皇帝は機嫌を直した。(AI生成・水墨画調)",
+   "anchor": "盧毓は盧植の子である。"
+  }
+ ]
 }

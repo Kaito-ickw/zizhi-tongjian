@@ -820,5 +820,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-04T00:00:00Z"
+ "updated_at": "2026-07-04T00:00:00Z",
+ "illustrations": [
+  {
+   "slug": "tessa",
+   "category": "B",
+   "file": "j081_y01_tessa.jpg",
+   "caption": "王濬の大筏と巨大な松明——草人形を載せた筏が川底の鉄錐を引き抜き、麻油の松明が長江を塞ぐ鉄鎖を焼き切る",
+   "anchor": "胡奮(こふん)は江安を攻め落とした。"
+  },
+  {
+   "slug": "kofuku",
+   "category": "B",
+   "file": "j081_y01_kofuku.jpg",
+   "caption": "石頭城の軍門に出た孫晧——後ろ手に縛り棺を車に載せて降り、王濬は縄を解いて棺を焼く。長江は晋の船列が百里を埋める",
+   "anchor": "四代の君主を経て五十七年で滅んだ〕"
+  },
+  {
+   "slug": "kimei",
+   "category": "B",
+   "file": "j081_y01_kimei.jpg",
+   "caption": "洛陽宮での対面——「この座を設けて長らくそなたを待っていた」と言う武帝と、臆することなく応じる歸命侯孫晧",
+   "anchor": "孫晧は顔をしかめることもなく、恥じる様子もなかった。"
+  }
+ ]
 }

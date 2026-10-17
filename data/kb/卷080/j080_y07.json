@@ -490,5 +490,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-05T12:48:46+09:00"
+ "updated_at": "2026-07-05T12:48:46+09:00",
+ "illustrations": [
+  {
+   "slug": "bohei",
+   "category": "B",
+   "file": "j080_y07_bohei.jpg",
+   "caption": "咸寧五年春、洛陽郊外の教練場で馬隆が募兵の試験を行う。強弓を引く者、足で巨大な弩を張る者を見定め、朝から昼までに三千五百人を得た。",
+   "anchor": "さらに三年分の軍需物資を与えて出発させた。"
+  },
+  {
+   "slug": "igo",
+   "category": "B",
+   "file": "j080_y07_igo.jpg",
+   "caption": "武帝と囲碁を打っていた張華が、杜預の上表が届くや碁盤を押しやり、呉討伐の決断を迫る。武帝はここに至って伐呉を許した。",
+   "anchor": "むしろよい策ではないか。」"
+  },
+  {
+   "slug": "hensha",
+   "category": "B",
+   "file": "j080_y07_hensha.jpg",
+   "caption": "涼州の険路を進む馬隆の扁箱車。木の小屋を載せた車列が狭い山道を千余里進み、十二月、樹機能を斬って涼州を平定した。",
+   "anchor": "涼州はこうして平定された。"
+  }
+ ]
 }

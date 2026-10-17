@@ -134,5 +134,21 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-04T00:00:00Z"
+ "updated_at": "2026-07-04T00:00:00Z",
+ "illustrations": [
+  {
+   "slug": "yosha",
+   "category": "B",
+   "file": "j081_y02_yosha.jpg",
+   "caption": "羊車で後宮をさまよう武帝——宮女たちは戸口に竹の葉を挿し、地面に塩水をまいて、帝の車を牽く羊を自分の部屋へ誘おうとした",
+   "anchor": "武帝は分かってはいても、改めることができなかった。"
+  },
+  {
+   "slug": "hoyo",
+   "category": "B",
+   "file": "j081_y02_hoyo.jpg",
+   "caption": "步搖の冠をかぶった鮮卑の莫護跋——辺塞の外から入って遼西・棘城の北に住み着いた一族は、やがて「慕容部」と呼ばれるようになる",
+   "anchor": "涉歸が初めて昌黎(しょうれい)に侵攻してきた。"
+  }
+ ]
 }

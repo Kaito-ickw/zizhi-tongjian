@@ -277,5 +277,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-05T21:56:53+09:00"
+ "updated_at": "2026-07-05T21:56:53+09:00",
+ "illustrations": [
+  {
+   "slug": "rikuhaku",
+   "category": "B",
+   "file": "j082_y09_rikuhaku.jpg",
+   "caption": "六陌の周處——弦は切れ矢は尽き、援軍は来ない。日暮れの平原で剣を按さえて立つ。",
+   "anchor": "朝廷は司馬肜をとがめはしたものの、罪に問うことはできなかった。"
+  },
+  {
+   "slug": "gachu",
+   "category": "B",
+   "file": "j082_y09_gachu.jpg",
+   "caption": "夜ごと牙籌を手に勘定する司徒・王戎。傍らには錐で種に穴をあけた李の籠。",
+   "anchor": "いつもその核(たね)に錐(きり)で穴をあけた。"
+  },
+  {
+   "slug": "hitsutaku",
+   "category": "B",
+   "file": "j082_y09_hitsutaku.jpg",
+   "caption": "隣室の酒を盗み飲みして縛られた畢卓。夜が明けてみれば畢吏部その人であった。",
+   "anchor": "なんと畢吏部(ひつりぶ)その人であった。"
+  }
+ ]
 }

@@ -829,5 +829,28 @@
   "reviewer": "codex(gpt)/low"
  },
  "updated_at": "2026-07-04T21:17:51Z",
- "review_policy": null
+ "review_policy": null,
+ "illustrations": [
+  {
+   "slug": "doda",
+   "category": "B",
+   "file": "j083_y01_doda.jpg",
+   "caption": "洛陽の宮門前、銅駝を指さして嘆く索靖。「いずれお前が茨の中に埋もれているのを見ることになろうよ」。",
+   "anchor": "いずれお前が茨(いばら)の中に埋もれているのを見ることになろうよ」。"
+  },
+  {
+   "slug": "ichi",
+   "category": "B",
+   "file": "j083_y01_ichi.jpg",
+   "caption": "東宮に市を開き、みずから秤で肉の目方を量る太子。側近が囲んで笑い、お守り役は隅で顔を曇らせる。",
+   "anchor": "太子の母はもともと肉屋の娘だったので、太子はこういうことを好んだのである。"
+  },
+  {
+   "slug": "kinyo",
+   "category": "B",
+   "file": "j083_y01_kinyo.jpg",
+   "caption": "廃されて庶人となり、承華門を歩いて出て犢車に乗る太子。妃と三人の子とともに金墉城へ送られる。",
+   "anchor": "太子と妃の王氏、三人の子の虨・臧・尚とを、そろって金墉城に幽閉した。"
+  }
+ ]
 }

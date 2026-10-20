@@ -720,5 +720,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-04T00:00:00Z"
+ "updated_at": "2026-07-04T00:00:00Z",
+ "illustrations": [
+  {
+   "slug": "hitsugi",
+   "category": "B",
+   "file": "j083_y02_hitsugi.jpg",
+   "caption": "棺を車に載せて洛陽の宮門に赴き、廃太子のために上書する閻纘。帝は顧みなかった。",
+   "anchor": "纘は閻圃の孫である。"
+  },
+  {
+   "slug": "haiko",
+   "category": "B",
+   "file": "j083_y02_haiko.jpg",
+   "caption": "趙王倫の夜の政変。門上から帝に「人に妻を廃させれば、いずれご自分も廃されましょうぞ」と呼びかける賈后。庭には齊王冏と兵が立つ。",
+   "anchor": "こうして后を廃して庶人とし、建始殿に幽閉した。"
+  },
+  {
+   "slug": "byakko",
+   "category": "B",
+   "file": "j083_y02_byakko.jpg",
+   "caption": "承華門前。白虎幡を掲げて宮中から出てきた伏胤を詔使と信じ、陣を開いて車を下りる淮南王允。",
+   "anchor": "洛陽にだけ大赦(曲赦)が行われた。"
+  }
+ ]
 }

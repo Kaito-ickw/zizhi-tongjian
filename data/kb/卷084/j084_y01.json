@@ -998,5 +998,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-04T00:00:00Z"
+ "updated_at": "2026-07-04T00:00:00Z",
+ "illustrations": [
+  {
+   "slug": "hoga",
+   "category": "B",
+   "file": "j084_y01_hoga.jpg",
+   "caption": "趙王倫の簒奪——乙丑の日、法駕を仕立てた趙王倫の行列が宮城の正門へ進み、同じ朝、惠帝はわずかな衛兵に伴われて華林園の西門から金墉城へ移された(水墨画、AI生成)",
+   "anchor": "倫は張衡に兵を率いてこれを守らせた。"
+  },
+  {
+   "slug": "fukui",
+   "category": "B",
+   "file": "j084_y01_fukui.jpg",
+   "caption": "惠帝の復位——孫秀誅殺ののち、甲士数千に迎えられて金墉城から帰った惠帝が端門から殿に昇り、群臣が頭を地につけて謝罪し、民衆は万歳を唱えた(水墨画、AI生成)",
+   "anchor": "群臣は頭を地につけて謝罪した。"
+  },
+  {
+   "slug": "shichirikan",
+   "category": "B",
+   "file": "j084_y01_shichirikan.jpg",
+   "caption": "七里澗の別れ——鄴へ帰る成都王穎を齊王冏が馬を駆って追い、七里澗で追いつく。穎は車を停め、母の病だけを憂えて涙を流し、政治には触れなかった(水墨画、AI生成)",
+   "anchor": "士民の称賛はみな穎に集まった。"
+  }
+ ]
 }

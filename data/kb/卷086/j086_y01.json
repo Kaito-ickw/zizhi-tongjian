@@ -602,5 +602,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-03T20:05:06Z"
+ "updated_at": "2026-07-03T20:05:06Z",
+ "illustrations": [
+  {
+   "slug": "bokujo",
+   "category": "B",
+   "file": "j086_y01_bokujo.jpg",
+   "caption": "茌平の馬牧場——奴隷から解き放たれた羯人の石勒が、牧場の頭目・汲桑と組んで壮士を集める。汲桑はここで初めて彼に「石勒」の姓名を与えた",
+   "anchor": "唐では洛州の地〕。"
+  },
+  {
+   "slug": "isshi",
+   "category": "B",
+   "file": "j086_y01_isshi.jpg",
+   "caption": "襄陽の劉弘——太守や国相へ手ずから丁寧な書を送る。人々は「劉公の一紙の書を得るのは、十部の従事にまさる」と言い合った",
+   "anchor": "〔注:史（司馬光）は劉弘の忠純を述べている〕。"
+  },
+  {
+   "slug": "kansen",
+   "category": "B",
+   "file": "j086_y01_kansen.jpg",
+   "caption": "武昌の陶侃——輸送船を戦艦に仕立てて陳敏軍を迎え撃つ。「官の船で官の賊を撃つのに、何がいけないのか」",
+   "anchor": "とすれば長岐は江夏郡の境界あたりにあったのだろう〕。"
+  }
+ ]
 }

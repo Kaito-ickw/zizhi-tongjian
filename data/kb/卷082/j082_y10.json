@@ -170,5 +170,21 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-05T22:00:17+09:00"
+ "updated_at": "2026-07-05T22:00:17+09:00",
+ "illustrations": [
+  {
+   "slug": "kenkaku",
+   "category": "B",
+   "file": "j082_y10_kenkaku.jpg",
+   "caption": "劍閣を越える流民の列と李特。「劉禪はこれほどの地を持ちながら、みずから縛について人に降ったのだ」。",
+   "anchor": "これを聞いた者は、彼を並々ならぬ人物だと思った。"
+  },
+  {
+   "slug": "mokan",
+   "category": "B",
+   "file": "j082_y10_mokan.jpg",
+   "caption": "関中の野に布陣した孟觀。みずから最前列に立ち、齊萬年の軍を望む。",
+   "anchor": "十数回の大戦を戦って、ことごとくこれを撃ち破った。"
+  }
+ ]
 }

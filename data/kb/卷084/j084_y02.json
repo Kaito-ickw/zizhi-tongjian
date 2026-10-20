@@ -612,5 +612,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-04T21:21:48Z"
+ "updated_at": "2026-07-04T21:21:48Z",
+ "illustrations": [
+  {
+   "slug": "junsai",
+   "category": "B",
+   "file": "j084_y02_junsai.jpg",
+   "caption": "秋風が立つと、故郷の呉の蓴羹・鱸魚の膾を思い、「人生は志に適うことこそ貴い」と嘆いて職を辞した張翰。",
+   "anchor": "そうしてすぐに職を辞して去った。"
+  },
+  {
+   "slug": "kyuchu",
+   "category": "B",
+   "file": "j084_y02_kyuchu.jpg",
+   "caption": "十二月、左右百余人を率いて宮中に馳せ入り、諸門を閉ざして帝を奉じる長沙王乂。宮の西では董艾の兵が千秋神武門に火を放った。",
+   "anchor": "李含らは冏が死んだと聞いて、兵を率いて長安へ還った。"
+  },
+  {
+   "slug": "kyokujo",
+   "category": "B",
+   "file": "j084_y02_kyokujo.jpg",
+   "caption": "棘城を十万の兵で囲まれた慕容廆は「素怒延は兵こそ多いが、統制がない」と言い、城門を開いて宇文部の陣営へ出撃する。",
+   "anchor": "審理は明白で公正妥当であった。"
+  }
+ ]
 }

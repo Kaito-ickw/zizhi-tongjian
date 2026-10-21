@@ -596,5 +596,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-03T20:24:53Z"
+ "updated_at": "2026-07-03T20:24:53Z",
+ "illustrations": [
+  {
+   "slug": "hakusen",
+   "category": "B",
+   "file": "j086_y03_hakusen.jpg",
+   "caption": "白羽扇ひと振り——建業の川を隔てて向かい合った陳敏の軍は、顧榮が白羽扇をさっと振ると、戦わずして崩れ散った。橋は断たれ、船は南岸に寄せられている",
+   "anchor": "兵はみな崩れ去った。"
+  },
+  {
+   "slug": "gyousho",
+   "category": "B",
+   "file": "j086_y03_gyousho.jpg",
+   "caption": "燃える鄴——汲桑は司馬騰を殺し、成都王穎の棺を掘り出して車に載せ、事あるごとに棺に申し上げてから動いた。火を放たれた宮殿は十日たっても消えなかった",
+   "anchor": "大いに掠奪して去った。"
+  },
+  {
+   "slug": "misogi",
+   "category": "B",
+   "file": "j086_y03_misogi.jpg",
+   "caption": "禊の日の行列——建業に着いたばかりの琅邪王司馬睿を、王導は肩輿に乗せて威儀を整え、名士たちが騎馬で従った。見物していた紀瞻・顧榮らは驚き、道の傍らで拝礼した",
+   "anchor": "そろって道の傍らで拝礼した。"
+  }
+ ]
 }

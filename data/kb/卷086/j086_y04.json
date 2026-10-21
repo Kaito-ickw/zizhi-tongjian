@@ -277,5 +277,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-03T20:28:49Z"
+ "updated_at": "2026-07-03T20:28:49Z",
+ "illustrations": [
+  {
+   "slug": "ryoshu",
+   "category": "B",
+   "file": "j086_y04_ryoshu.jpg",
+   "caption": "涼州の内紛——病に倒れた張軌を追おうとした張鎭は、甥の令狐亞に利害を説かれ、「人が私を誤らせた」と涙を流して張寔のもとへ出て罪に服した",
+   "anchor": "そして張寔のもとへ出て罪に服した。"
+  },
+  {
+   "slug": "kenshun",
+   "category": "B",
+   "file": "j086_y04_kenshun.jpg",
+   "caption": "王彌の洛陽退却——北宮純の決死隊に敗れた王彌は、建春門を焼いて東へ去った。宮城の門が昼も閉ざされた京師の恐慌は、ひとまず去った",
+   "anchor": "七里澗で戦って、またこれを破った。"
+  },
+  {
+   "slug": "sekiroku",
+   "category": "B",
+   "file": "j086_y04_sekiroku.jpg",
+   "caption": "石勒に靡く五十余塁——魏郡・汲郡・頓丘の塁主たちは風になびくように降り、壮丁五万は軍士に編入され、老弱は元の塁へ帰された",
+   "anchor": "老弱はもとどおり安堵させた。"
+  }
+ ]
 }

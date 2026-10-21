@@ -402,5 +402,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-03T20:12:07Z"
+ "updated_at": "2026-07-03T20:12:07Z",
+ "illustrations": [
+  {
+   "slug": "gyusha",
+   "category": "B",
+   "file": "j086_y02_gyusha.jpg",
+   "caption": "長安から洛陽へ——鮮卑の騎兵に護られ、天子は牛車に乗せられて東へ還る。山へ逃げ散った百官は、どんぐりを拾って飢えをしのいだ",
+   "anchor": "〔注:光熙と改元した〕。"
+  },
+  {
+   "slug": "neishu",
+   "category": "B",
+   "file": "j086_y02_neishu.jpg",
+   "caption": "寧州の籠城——父・李毅を亡くした娘の李秀が城壁に立ち、鼠を炙り草を食べる兵を励ます。夷の油断を見ては打って出て、これを破った",
+   "anchor": "そのつど兵を出して不意打ちし、これを破った。"
+  },
+  {
+   "slug": "shinyo",
+   "category": "B",
+   "file": "j086_y02_shinyo.jpg",
+   "caption": "焼け落ちた晉陽——幷州刺史の劉琨が五百の兵を率いて辿り着いた州都は、役所も町も荒れ果てていた。慰撫に応じて流民が少しずつ戻ってくる",
+   "anchor": "流民は少しずつ集まってきた。"
+  }
+ ]
 }

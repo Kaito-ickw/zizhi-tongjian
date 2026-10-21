@@ -440,5 +440,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-03T20:39:20Z"
+ "updated_at": "2026-07-03T20:39:20Z",
+ "illustrations": [
+  {
+   "slug": "kanbatsu",
+   "category": "B",
+   "file": "j087_y01_kanbatsu.jpg",
+   "caption": "干上がった洛水——この夏の大旱魃で、長江・漢水・黄河・洛水がみな涸れ、人々は河床を歩いて渡った。洛陽の城壁を遠くに望む",
+   "anchor": "歩いて渡れるほどになった。"
+  },
+  {
+   "slug": "gunmon",
+   "category": "B",
+   "file": "j087_y01_gunmon.jpg",
+   "caption": "張賓、剣を提げて軍門に至る——「この胡将軍ほどの者はいない」と見込んだ張賓は、石勒の陣の門前で大声で面会を求めた。石勒はまだ彼を非凡とは思っていなかった",
+   "anchor": "事の動き（進退）をこれに諮るようになった。"
+  },
+  {
+   "slug": "suzan",
+   "category": "B",
+   "file": "j087_y01_suzan.jpg",
+   "caption": "嵩山に祈る劉聰——洛陽包囲が行き詰まるなか、劉聰は自ら嵩山に登って祈った。眼下には洛陽の城壁と漢軍の陣営が広がる",
+   "anchor": "留守の軍を統督させた。"
+  }
+ ]
 }

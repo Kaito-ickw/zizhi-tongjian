@@ -525,5 +525,28 @@
   "translator": "claude-opus-4-8",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-03T20:48:40Z"
+ "updated_at": "2026-07-03T20:48:40Z",
+ "illustrations": [
+  {
+   "slug": "kougai",
+   "category": "B",
+   "file": "j087_y02_kougai.jpg",
+   "caption": "六州の大蝗害——この夏、幽・幷・司・冀・秦・雍の六州にイナゴが大発生し、草木ばかりか牛馬の毛までことごとく食い尽くされた。空を覆う群れの下、民はなすすべもなく立ち尽くす",
+   "anchor": "草木や牛馬の毛までことごとく食い尽くされた。"
+  },
+  {
+   "slug": "keihoku",
+   "category": "B",
+   "file": "j087_y02_keihoku.jpg",
+   "caption": "鴈門に入る拓跋猗盧——劉琨から陘北の地を与えられた猗盧は、部落一万余家を率いて雲中から鴈門へ入った。五県の民は陘南へ移され、鮮卑の天幕が草原に広がる",
+   "anchor": "これによって猗盧はますます勢いを増した。"
+  },
+  {
+   "slug": "shutsujin",
+   "category": "B",
+   "file": "j087_y02_shutsujin.jpg",
+   "caption": "洛陽を去る司馬越——十一月、司馬越は甲士四万と朝廷の名将・精兵を率いて許昌へ向かった。飢えた都には、もはや守衛もほとんど残らなかった",
+   "anchor": "宮中を監視・警戒させた。"
+  }
+ ]
 }

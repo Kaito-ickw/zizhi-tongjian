@@ -203,5 +203,21 @@
   "translator": "claude-opus-4-x",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-09T06:22:23"
+ "updated_at": "2026-07-09T06:22:23",
+ "illustrations": [
+  {
+   "slug": "hokufu",
+   "category": "B",
+   "file": "j104_y02_hokufu.jpg",
+   "caption": "京口(北府)の長江岸の調練場。壇上の謝玄が新たに募った北来の勇士たちを前に、先鋒の命を受けて跪く劉牢之へ指示を下す。のちに「北府兵」と呼ばれる精鋭の始まり。",
+   "anchor": "敵はこれを恐れた。"
+  },
+  {
+   "slug": "kibako",
+   "category": "B",
+   "file": "j104_y02_kibako.jpg",
+   "caption": "雪の会稽。亡き郗超が門下生に託した書箱を開いた老父郗愔は、散らばった桓温との密議の書状を見て、悲しみを一転させて怒り、それきり泣くのをやめた。",
+   "anchor": "それきり泣くのをやめた。"
+  }
+ ]
 }

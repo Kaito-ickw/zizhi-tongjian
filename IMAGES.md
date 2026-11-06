@@ -3157,3 +3157,11 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷104/j104_y02.json` + `docs/images/卷104/j104_y02_{hokufu,kibako}.jpg` + `docs/卷104/j104_y02.md`
 参照: `docs/卷104/j104_y02.md`
+
+## [x] I547 — 卷104 孝武帝 太元三年 (j104_y03) の画像追加 [Claude/agy]
+結果: 水墨画3枚(B×3)を agy/nano-banana(`agy -p "nano-banana で画像を1枚だけ生成し、/tmp/zzt_image_agy_j104_y03/<slug>.png に PNG として保存してください。他のファイルは作らないでください。画像生成は事前定義の image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼んでください(バックグラウンド実行・schedule・manage_task・複数回生成・追加サブエージェント定義・新規サブエージェント作成は禁止)。サブエージェントには下記の英語プロンプト全文と保存先パスをそのまま渡し、もし別の場所に保存されたら run_command の cp で複製してください。保存できたら即座に終了してください。生成プロンプト(英語): <場面記述> <共通スタイル・禁則文(I545 と同一の style.txt: sumi-e ink wash, medium-light detail, 16:9, NO text/letters/calligraphy/seal/stamp/plaque/banner writing/signature/border, NO red, 旗・衣・幕・壁・柱は無地, 門は門楼なしの壁の切れ目, 戦闘・血・火なし)>" --dangerously-skip-permissions`、timeout 290、3枚を並行フォアグラウンド実行、各≒80〜110秒、exit 0)で生成。場面: (1) `fujinjo` 襄陽西北隅で朱序の母・韓氏が城壁上から指図し、婢女・城中の女たちが内側に邪城(夫人城)を築く、対岸に秦軍の陣営(anchor「襄陽の人々はこれを「夫人城(ふじんじょう)」と呼んだ。」)。(2) `shutoku` 長安の夜宴で趙整が「酒徳の歌」を歌い、苻堅が身を乗り出して聴く、侍者が白紙の巻物に筆を構える(anchor「礼にかなう程度の飲酒にとどめるようになった。」)。(3) `kanketsuba` 冬の長安、大宛の使者が献上した汗血馬を苻堅が階上から手を挙げて送り返し、群臣が無地の札を手に「馬を止める詩」を作る(anchor「名声を求める行き過ぎである、という史官の評〕。」)。各1回生成で採用(バリアント生成なし)。目視検証: 全体 1200px 縮小と四隅 1/3 クロップの計6枚、ならびに fujinjo の城壁基部に見えた細かな波線を 6 倍拡大して確認し、煉瓦目地のハッチングで文字状ではないと判断。shutoku の巻物・kanketsuba の群臣の札はいずれも白紙で文字なし、朱色・落款・枠なし。anchor は3件とも translation_full 内に1回のみ出現することを機械確認、本文未編集=書き戻し前後で translation_full の md5 同一(77d896fb…)、既存ファイルが `indent=1`・末尾改行なしの round-trip と一致することを書き戻し前に assert、`illustrations` は updated_at の後に追加、git diff --numstat は 24 追加/1 変更(updated_at 行のカンマ追加)のみ。image_sync.py で 1376x768・158KB/161KB/182KB に圧縮配置。build_view.py 再生成(volumes 294 / generated files 1692)後、docs/卷104/j104_y03.md の3リンク(../images/卷104/…)が docs/images/卷104/ の実ファイルに解決することを確認(他の md に差分なし)。中間 PNG・検証用クロップは `/tmp/zzt_image_agy_j104_y03/` のみでリポジトリ内に残さず。
+*   **エンジン**: agy(Antigravity CLI 1.3.x、nano-banana=Gemini 画像生成、image-generator サブエージェント経由、サブスク内・従量 API 不使用)
+*   **来歴(§3.6)**: AI生成画像。Google Gemini nano-banana(agy image-generator サブエージェント)による生成、Claude(Fable 5.1)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-07
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷104/j104_y03.json` + `docs/images/卷104/j104_y03_{fujinjo,shutoku,kanketsuba}.jpg` + `docs/卷104/j104_y03.md`
+参照: `docs/卷104/j104_y03.md`

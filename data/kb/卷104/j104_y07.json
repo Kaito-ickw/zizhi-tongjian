@@ -423,5 +423,28 @@
   "translator": "claude-opus-4-x",
   "reviewer": "codex(gpt)/low"
  },
- "updated_at": "2026-07-12T00:00:00"
+ "updated_at": "2026-07-12T00:00:00",
+ "illustrations": [
+  {
+   "slug": "taikyokuden",
+   "category": "B",
+   "file": "j104_y07_taikyokuden.jpg",
+   "caption": "太極殿の伐晉論争——苻堅は群臣に晉討伐の可否を問うが、權翼・石越らが相次いで諫め、議論は長らく決しなかった(382年10月)",
+   "anchor": "朕は自らの心中で決断するのみだ!」。"
+  },
+  {
+   "slug": "seiiki",
+   "category": "B",
+   "file": "j104_y07_seiiki.jpg",
+   "caption": "呂光の西域遠征——車師・鄯善の王を道案内に、十万の兵と鉄騎五千が長安を離れて西へ向かう。苻融の諫言は聞き入れられなかった(382年9月)",
+   "anchor": "鉄騎五千を率いて西域を伐たせた。"
+  },
+  {
+   "slug": "touen",
+   "category": "B",
+   "file": "j104_y07_touen.jpg",
+   "caption": "東苑の輦の上で——苻堅は信頼する沙門道安と同じ御車に乗り、江南遠征の夢を語るが、道安の諫めにも耳を貸さなかった(382年11月)",
+   "anchor": "自ら長江・淮水を渡られるには及びません」。だが苻堅は聞き入れなかった。"
+  }
+ ]
 }

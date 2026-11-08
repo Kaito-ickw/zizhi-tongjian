@@ -3298,3 +3298,13 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷108/j108_y03.json` + `docs/images/卷108/j108_y03_{haikyo,daiheki,choushi}.jpg` + `docs/卷108/j108_y03.md`
 参照: `docs/卷108/j108_y03.md`
+
+## [x] I563 — 卷108 太元二十年(j108_y04)挿絵3枚(codex image_gen)
+*   **対象年**: `data/kb/卷108/j108_y04.json`(烈宗孝武皇帝下 二十年・395年)。`python3 pipeline/image_task.py frontier` の先頭。
+*   **場面選定**: 本文5643字(胡注なし)——①⑧⑫⑮慕容垂の魏遠征(高湖の諫言、張袞の羸形の計、慕容寶の五原対峙、船を焼いて夜遁、氷合の渡河、支曇猛の警告、參合陂の大敗と坑殺)、⑥司馬道子の東第と趙牙・茹千秋、徐邈の諫言、⑦乞伏益州の大寒嶺敗戦、⑪呂光の西秦征伐と乾歸の称藩、⑬禿髮烏孤の廉川築城、⑭長星と孝武帝の勧酒。參合陂が後燕衰退の転換点のため3枚とした。採用3場面: (1) chousei=華林園の夜、池と松の上に長い尾を引く彗星、露台で杯を掲げる孝武帝、灯籠を持ち控える近侍(anchor「どこに万歳(ばんざい)の天子があったか」。」)、(2) koorigawa=暴風の夜明け、凍結した黄河の氷上を渡る魏の騎兵の大列、上岸に残した輜重と駱駝、下岸に焼け残った船と棄てられた燕営、遠景に去る燕軍の列(anchor「精鋭二万余騎を選んで急いでこれを追った。」)、(3) sangouhi=參合陂の日の出、左上の尾根に並ぶ魏騎兵の影、水辺の燕営で振り返り指さして擾乱する士卒、幄の下で振り向く騎馬の諸王(anchor「士卒は大いに驚き擾乱(じょうらん)した。」)。anchor は3件とも translation_full 内に1回のみ出現することを機械確認、本文未編集=書き戻し前後で translation_full の md5 同一(a79ae622…)、既存ファイルが `indent=1`・末尾改行なしの round-trip と一致することを書き戻し前に assert、`illustrations` は末尾キー updated_at の後に追加、git diff --numstat は kb 24 追加/1 削除(削除1行は updated_at 行の末尾カンマ付与のみ)。生成は `/tmp/zzt_image_codex_j108_y04/{slug}/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message … -`(prompt=stdin、3 slug 並行、2.5分)、各セッションの `~/.codex/generated_images/<session id>/` に PNG 1枚のみ・SOURCE と out.png の md5 一致を確認。検証: 全体図+四隅タイル+危険箇所(庇下・灯籠・遠景の門・旗・幄)の拡大クロップを目視し文字/落款/額/紋章なし、512px 縮小で強赤画素 0。image_sync.py で 1600x900 JPEG(185/196/240KB)に圧縮配置。build_view.py 再生成後、docs/卷108/j108_y04.md の3リンク(../images/卷108/…)が実ファイルに解決することを確認。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。
+*   **エンジン**: codex(OpenAI Codex CLI 0.160.0、built-in `image_gen` ツール、ChatGPT サブスク枠・従量 API 不使用)
+*   **モデル**: OpenAI image_gen(Codex CLI 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.1)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-09
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷108/j108_y04.json` + `docs/images/卷108/j108_y04_{chousei,koorigawa,sangouhi}.jpg` + `docs/卷108/j108_y04.md`
+参照: `docs/卷108/j108_y04.md`

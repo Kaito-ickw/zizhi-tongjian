@@ -3319,3 +3319,14 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷108/j108_y05.json` + `docs/images/卷108/j108_y05_{doukoku,kouchuu,seishoden}.jpg` + `docs/卷108/j108_y05.md`
 参照: `docs/卷108/j108_y05.md`
+
+## [x] I565 — 卷109 隆安元年(j109_y01)挿絵3枚(codex image_gen)
+*   **対象年**: `data/kb/卷109/j109_y01.json`(安皇帝甲 隆安元年・397年)。`python3 pipeline/image_task.py frontier` の先頭。
+*   **場面選定**: 本文21444字——①安帝元服・王國寶が吏部を領す、②鄴の丁建離間と信都陥落、③呂光の西秦征伐と呂延戦死、④禿髮烏孤の西平王自称、⑤柏肆の夜襲と燕軍の大風雪潰走・張袞と崔逞・慕輿皓の弑逆未遂、⑦中山籠城の出撃論争(慕容隆四たび阻まれる)・慕容麟の精殺害と出奔・寶の龍城脱出・珪の巢車と「參合の衆」・王建の顔に唾、⑨夏謙澤の勝利・黃榆谷の變(會が隆を殺害)・龍城西門の父子対峙と會の敗死・高雲、⑩⑪王恭挙兵と王國寶誅殺・桓玄と殷仲堪、⑫沮渠羅仇の死と蒙遜の会葬挙兵、⑬王廞の乱、⑭⑰慕容詳の即位と麟の中山奪取、⑲郭黁の叛乱と呂纂、⑳姚興の服喪、㉔義臺の戦いと中山陥落、㉗寶の南還計画、㉘麟が德に滑臺移鎮を説く。後燕の都・中山の喪失と北涼の萌芽が重なる大年のため3枚とした。採用3場面: (1) hakushi=月夜の滹沱水、風に裂かれる煙と炎に包まれる魏の陣営、川を渡って走り込む松明の列、大天幕から裸足で逃げる拓跋珪、対岸に並ぶ燕本隊と無地の旌旗(anchor「珪は驚いて起き、営を棄てて跣(はだし)で走げた。」)、(2) ryuujou=夕暮れの龍城、版築の城壁上に立つ慕容寶と衛兵、原野に独り馬を立てる慕容會、背後で拳を上げて叫ぶ大軍と無地の軍旗(anchor「寶はこれを責め讓(なじ)った。」。門楼を描かず壁線の切れ目の扉だけにして額の混入を回避)、(3) kaisou=雪の祁連山を背にした河西の草原、二つの柩と無地の天蓋、一万余の喪服の群れ、塚の上で腕を上げる沮渠蒙遜、穹廬と馬と羊(anchor「衆はみな万歳を称した。」)。黃榆谷の殺害・郭黁の孫殺し・大風雪の凍死者は描かず、暴力描写を回避した。
+*   **実施**: `/tmp/zzt_image_codex_j109_y01/{slug}/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message … -`(prompt=stdin、3 slug 並行、1分42秒)、各セッションの `~/.codex/generated_images/<session id>/` に PNG 1枚のみ・SOURCE と out.png の md5 一致を確認。検証: 全体図+四隅タイル+危険箇所(大天幕・城門と壁上・天蓋と柩)の2倍クロップを目視し文字/落款/額/紋章なし、512px 縮小で強赤画素 0(炎は墨+淡黄土のみ)。image_sync.py で 1600x900 JPEG(230/190/266KB)に圧縮配置。build_view.py 再生成後、docs/卷109/j109_y01.md の3リンク(../images/卷109/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・キー順維持で書き戻し(diff は illustrations 追加分のみ、+24/-1)。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。
+*   **エンジン**: codex(OpenAI Codex CLI、built-in `image_gen` ツール、ChatGPT サブスク枠・従量 API 不使用)
+*   **モデル**: OpenAI image_gen(Codex CLI 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.1)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-09
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷109/j109_y01.json` + `docs/images/卷109/j109_y01_{hakushi,ryuujou,kaisou}.jpg` + `docs/卷109/j109_y01.md`
+参照: `docs/卷109/j109_y01.md`

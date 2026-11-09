@@ -3308,3 +3308,14 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷108/j108_y04.json` + `docs/images/卷108/j108_y04_{chousei,koorigawa,sangouhi}.jpg` + `docs/卷108/j108_y04.md`
 参照: `docs/卷108/j108_y04.md`
+
+## [x] I564 — 卷108 太元二十一年(j108_y05)挿絵3枚(codex image_gen)
+*   **対象年**: `data/kb/卷108/j108_y05.json`(烈宗孝武皇帝下 二十一年・396年)。`python3 pipeline/image_task.py frontier` の先頭。
+*   **場面選定**: 本文10744字——①慕容隆の龍城兵が中山入城、③平規の反乱、④慕容垂の雲中奇襲と平城陥落・參合陂の慟哭祭・沮陽での死と慕容寶即位、⑦後段后の自殺と眭邃の抗議、⑩士族旧籍の校定、⑪呂光の大涼天王即位と禿髮烏孤の拒絶、⑭拓跋珪の皇始改元と歩騎四十余万の燕征伐、⑮慕容會と太子策、⑯晉陽陥落と幷州占領、⑰孝武帝の弑逆と安帝即位・王恭と王國寶、⑳魏軍の常山・中山攻め。後燕の崩壊開始と東晉の帝位交替が重なる大年のため3枚とした。採用3場面: (1) doukoku=霧に沈む參合陂の塚の群れ、供物と煙の立つ祭壇の脇で従者に支えられる老王・慕容垂と幌馬車、泣き伏す全軍と無地の軍旗(anchor「軍士はみな慟哭し、声は山谷を震わせた。」)、(2) kouchuu=句注の峠の関門を抜け平原へ連なる魏軍四十余万の列、鼓車と無地の旌旗、尾根の物見櫓、遠景の幷州の野(anchor「旌旗は二千余里、鼓を鳴らして進んだ。」)、(3) seishoden=清暑殿の宴、酔い伏す孝武帝、顔を背けて坐る張貴人、楽人と舞姫、灯火、格子戸の外の蓮池(anchor「貴人はひそかに怒った。」)。弑逆の瞬間ではなく宴中の一言の直後を描き、暴力描写を回避した。
+*   **実施**: `/tmp/zzt_image_codex_j108_y05/{slug}/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message … -`(prompt=stdin、3 slug 並行、2分53秒)、各セッションの `~/.codex/generated_images/<session id>/` に PNG 1枚のみ・SOURCE と out.png の md5 一致を確認。検証: 全体図+四隅タイル+危険箇所(祭壇と幌馬車・峠の関門と物見櫓・屏風と柱)の2倍クロップを目視し文字/落款/額/紋章なし、512px 縮小で強赤画素 0。image_sync.py で 1600x900 JPEG(183/273/186KB)に圧縮配置。build_view.py 再生成後、docs/卷108/j108_y05.md の3リンク(../images/卷108/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・キー順維持で書き戻し(diff は illustrations 追加分のみ)。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。
+*   **エンジン**: codex(OpenAI Codex CLI 0.160.0、built-in `image_gen` ツール、ChatGPT サブスク枠・従量 API 不使用)
+*   **モデル**: OpenAI image_gen(Codex CLI 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.1)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-09
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷108/j108_y05.json` + `docs/images/卷108/j108_y05_{doukoku,kouchuu,seishoden}.jpg` + `docs/卷108/j108_y05.md`
+参照: `docs/卷108/j108_y05.md`

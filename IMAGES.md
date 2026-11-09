@@ -3341,3 +3341,14 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷110/j110_y01.json` + `docs/images/卷110/j110_y01_{chokudo,sakubaku,shintei}.jpg` + `docs/卷110/j110_y01.md`
 参照: `docs/卷110/j110_y01.md`
+
+## [x] I567 — 卷111 隆安三年(j111_y01)挿絵3枚(codex image_gen)
+*   **対象年**: `data/kb/卷111/j111_y01.json`(安皇帝丙 隆安三年・399年)。`python3 pipeline/image_task.py frontier` の先頭。
+*   **場面選定**: 本文17557字——③⑦⑪拓跋珪の高車遠征と牛川の大巻狩り・鹿苑、⑫南燕の滑臺喪失と廣固遷都の議、㉞孫恩の乱(会稽陥落・八郡呼応)、㊴劉牢之の浙江渡河と孫恩の海島逃走・劉裕の初陣、㊵桓玄の江陵攻略と殷仲堪・楊佺期の滅亡、羅企生の節義、呂光の死と呂纂の簒奪。カテゴリーB 3枚: (1) makigari=早春の草原、高車の人垣の大きな弧が鹿・野馬の群れを南へ追い、手前の丘に珪と側近、右下に築造中の鹿苑の土塁(門楼なし・切れ目のみ)(anchor「高車に鹿苑(ろくえん)を築かせた。広さ数十里であった。」)、(2) sekko=冬の浙江河口、無地の帆と旗で整然と渡る北府軍の船、対岸を海へ逃げる民衆の長い列と棄てられた櫃・甕・車(anchor「恩はこれによって脱(のが)れることができ、ふたたび海島へ逃げ入った。」)、(3) rakisei=茅屋と竹垣の門前で企生を抱きとめる弟の遵生、戸口の老母、路の先で振り返る仲堪(anchor「企生に脱(のが)れる理(すべ)がないのを見て、馬に策(むち)うって去った。」)。会稽での殺戮・謝道蘊の抜刀・劉裕の斬り込み・佺期と仲堪の最期・呂紹の自殺は描かず、暴力描写を回避した。
+*   **実施**: `/tmp/zzt_image_codex_j111_y01/{slug}/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message … -`(prompt=stdin、3 slug 並行、約3分、Bash foreground・timeout 560000)、各セッションの `~/.codex/generated_images/<session id>/` に PNG 1枚のみ・SOURCE と out.png の md5 一致を確認。再生成なし(初回の3枚を採用)。検証: 全体図+四隅タイル+危険箇所(人垣の小旗と丘上の騎馬・渡河船の旗と帆と棄てられた櫃や甕・茅屋の戸口と竹垣と路上の騎馬)の2倍クロップを目視し文字/落款/額/紋章なし、512px 縮小で強赤画素 0(黄土 wash は草原・鹿・帆・葦・茅葺き・竹垣のみ)。image_sync.py で 1600x900 JPEG(174/235/227KB)に圧縮配置。build_view.py 再生成後、docs/卷111/j111_y01.md の3リンク(../images/卷111/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・キー順維持で書き戻し(diff は illustrations 追加分のみ、+24/-1)。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。
+*   **エンジン**: codex(OpenAI Codex CLI 0.160.0、built-in `image_gen` ツール、ChatGPT サブスク枠・従量 API 不使用)
+*   **モデル**: OpenAI image_gen(Codex CLI 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-10
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷111/j111_y01.json` + `docs/images/卷111/j111_y01_{makigari,sekko,rakisei}.jpg` + `docs/卷111/j111_y01.md`
+参照: `docs/卷111/j111_y01.md`

@@ -3392,3 +3392,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷113/j113_y01.json` + `docs/images/卷113/j113_y01_{keika,ryutoen,gyoza}.jpg` + `docs/卷113/j113_y01.md`
 参照: `docs/卷113/j113_y01.md`
+## [x] I572 — 卷113 元興三年(j113_y02, 404 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: 安皇帝元興三年(甲辰・西暦404年、本文20141字、hu_notes は None で胡注は本文内〔注:〕のみ)にカテゴリーB(水墨画調・文字なし)の挿絵3枚を追加。(1) gekibun=何無忌の檄文と母:夜、屏風の陰で灯火ひとつを頼りに筆を執る無忌、腰掛けに登って屏風越しに覗き見て袖で涙をぬぐう母、窓の細い月と寝静まった京口の川べり(anchor「この事が必ず成る道理を説いて息子を励ました。」)、(2) fukushuzan=覆舟山の戦い:山上に並べた疑兵の旗、幾筋もの道から進む劉裕の隊列、東北の風に乗って桓謙の陣営へ流れる火と煙、崩れて逃げ散る兵、遠景に建康の城壁(anchor「謙らの諸軍は大いに潰えた。」)、(3) muchi=桓玄、鞭で天を指す:宮城の塀の外で轡にすがって諫める胡藩、答えず馬鞭を天に挙げる桓玄、従う子の昇と親信の列、覆舟山の方角の煙、行く手の石頭と江の舟(anchor「玄は答えず、ただ馬鞭(むち)を挙げて天を指すのみであった」)。
+*   **実施**: `/tmp/zzt_image_codex_j113_y02/{slug}/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message … -`(prompt=stdin、3 slug 並行、約1.5分、Bash foreground・timeout 560000)、各セッションの `~/.codex/generated_images/<session id>/` に PNG 1枚のみ・SOURCE と out.png の md5 一致を確認。再生成なし(3枚とも初回を採用)。検証: 3枚とも全体図と四隅タイルを目視、加えて危険箇所の2倍クロップ(gekibun の机上の紙・箱の留め金・甕・屏風、muchi の宮殿屋根と塀の切れ目、fukushuzan の遠景城壁と天幕)を確認し、文字・落款・印章・額・看板なし(紙は無地、屏風・旗・天幕・塀は無地、宮門は門楼なしの塀の切れ目、遠景の城門に額なし)。512px 縮小の全画素走査で強い赤の画素は3枚とも 0。既知の難点: fukushuzan の桓謙陣営は逃げ散る兵のみで交戦は描いていない(流血・交戦を描かない方針)、muchi の桓玄は冠でなく髷姿。image_sync.py で 1600x900 JPEG(gekibun 153,166 / fukushuzan 197,576 / muchi 178,251 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷113/j113_y02.md の3リンク(../images/卷113/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(diff は illustrations 追加分のみ、+24/-1)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。
+*   **エンジン**: codex(OpenAI Codex CLI 0.160.0、built-in `image_gen` ツール、ChatGPT サブスク枠・従量 API 不使用)
+*   **モデル**: OpenAI image_gen(Codex CLI 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-11
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷113/j113_y02.json` + `docs/images/卷113/j113_y02_{gekibun,fukushuzan,muchi}.jpg` + `docs/卷113/j113_y02.md`
+参照: `docs/卷113/j113_y02.md`

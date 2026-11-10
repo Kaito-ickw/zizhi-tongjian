@@ -3373,3 +3373,13 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷112/j112_y01.json` + `docs/images/卷112/j112_y01_{yuboku,kujo,rosen}.jpg` + `docs/卷112/j112_y01.md`
 参照: `docs/卷112/j112_y01.md`
+
+## [x] I570 — 卷112 元興元年(j112_y02)挿絵3枚(codex image_gen)
+*   **結果**: 元興元年(402年、本文13649字)にカテゴリーB(水墨画調・文字なし)の挿絵3枚を追加。(1) bakuhoku=社崙の漠北移動:フェルトの天幕を積んだ牛車・駱駝・馬と羊の群れを連れて砂丘と枯草の原を北へ向かう長い列、丘の上から行く手を望む社崙、遠景に雪の山並みと凍った湖(anchor「北方に雄となった。」)、(2) seichi=西池の餞の宴:池畔の亭で見送る帝と侍臣、桟橋に繋がれたまま帆をたたんだ船と甲板に立ちつくす元顕、岸に並んで待つ兵船、芽吹きの柳(anchor「元顕は船に乗ったものの出発しなかった。」)、(3) saiheki=柴壁の重囲:黄土の崖の上で二重の柵に囲まれた小城、汾水に架かる浮橋、上流から流される束ねた丸太を鉤で引き寄せる魏兵、岸に積まれた薪と炊煙、遠く谷あいの秦の陣(anchor「薪(たきぎ)にしてしまった。」)。姑臧の飢饉と生き埋め・元顕らの処刑・劉牢之の自縊と斬棺・姚平らの入水・道子の毒殺は描かず、暴力描写を回避した。桓玄と劉敬宣の書画鑑賞の宴は文字混入の危険が高いため見送った。
+*   **実施**: `/tmp/zzt_image_codex_j112_y02/{slug}/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message … -`(prompt=stdin、3 slug 並行、約1.5分、Bash foreground・timeout 560000)、各セッションの `~/.codex/generated_images/<session id>/` に PNG 1枚のみ・SOURCE と out.png の md5 一致を確認。再生成なし(3枚とも初回を採用)。検証: 3枚とも全体図を目視、加えて2倍タイル(seichi の左上の柳と兵船の旗・遠景の宮殿・亭の柱と卓・右下隅、saiheki の左岸の陣と天幕・右下の薪と炊煙、bakuhoku の左下の枯草と馬群・右下の車と騎者)を目視し文字/落款/額/紋章なし、旗・帆・天幕・柱はすべて無地、512px 縮小で強赤画素 0(黄土 wash は砂丘と枯草・船体と柳・黄土の崖と丸太のみ。saiheki の炊ぎ火にごく小さな橙あり)。検証用クロップは ffmpeg で作成。image_sync.py で 1600x900 JPEG(220/237/229KB)に圧縮配置。build_view.py 再生成後、docs/卷112/j112_y02.md の3リンク(../images/卷112/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・キー順維持で書き戻し(diff は illustrations 追加分のみ、+24/-1)、anchor は translation_full 内に各1回のみ出現を機械確認。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。
+*   **エンジン**: codex(OpenAI Codex CLI 0.160.0、built-in `image_gen` ツール、ChatGPT サブスク枠・従量 API 不使用)
+*   **モデル**: OpenAI image_gen(Codex CLI 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-10
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷112/j112_y02.json` + `docs/images/卷112/j112_y02_{bakuhoku,seichi,saiheki}.jpg` + `docs/卷112/j112_y02.md`
+参照: `docs/卷112/j112_y02.md`

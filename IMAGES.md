@@ -3352,3 +3352,14 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷111/j111_y01.json` + `docs/images/卷111/j111_y01_{makigari,sekko,rakisei}.jpg` + `docs/卷111/j111_y01.md`
 参照: `docs/卷111/j111_y01.md`
+
+## [x] I568 — 卷111 隆安四年(j111_y02)挿絵3枚(codex image_gen)
+*   **対象年**: `data/kb/卷111/j111_y02.json`(安皇帝丙 隆安四年・400年)。`python3 pipeline/image_task.py frontier` の先頭。
+*   **場面選定**: 本文8140字——⑥慕容盛の高句麗遠征、⑦拓跋珪の金人鋳造による立后の卜、⑨呂弘の乱と房晷の諫言、⑫㉟李暠の敦煌自立(西涼の始まり)、⑱謝琰の敗死と孫恩の再来、㉔禿髮傉檀の姑臧奇襲、㉗乞伏乾歸の大敗と西秦の一時滅亡、㊱車胤の自殺、㊳珪の仙坊と李粟誅殺、㊵慕容德の即位。カテゴリーB 3枚: (1) kinjin=宮廷の中庭、炉と台上の二体の金人(成った像と崩れた像)、慕容氏と幼子を連れた劉氏、壇上の珪(anchor「三月、戊午、慕容氏を立てて皇后とした。」)、(2) wakare=黄河のほとりの黄土台地で泣き伏す豪帥たちを馬上から振り返る乾歸、西へ去る数百騎の列(anchor「そうして大いに哭して別れた。」)、(3) senbo=冬の山中の仙坊、湯気を上げる四基の竈、薬草を搗き選る人々、西山から薪を運ぶ列と牛車、茅の庇の下で杯を受ける珪(anchor「西山を封じて薪蒸(たきぎ)に供させた。」)。盧溥の車裂・東苑の掠奪・呂弘の拉殺・謝琰の敗死・庾桓の殺戮・死罪人への試薬は描かず、暴力描写を回避した。姑臧の朱明門上の酒宴は門楼の額混入リスクのため見送り。
+*   **実施**: `/tmp/zzt_image_codex_j111_y02/{slug}/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message … -`(prompt=stdin、3 slug 並行、約1.5分、Bash foreground・timeout 560000)、各セッションの `~/.codex/generated_images/<session id>/` に PNG 1枚のみ・SOURCE と out.png の md5 一致を確認。再生成1回: wakare 初回は路面に米粒大(約15px)の文字様の筆致が1つあったため、scene に「路面と地面は無地のぼかし・孤立した小さな筆致なし」を追記して再生成し、2枚目を採用(初回は破棄)。kinjin・senbo は初回を採用。検証: 全体図+四隅タイル+危険箇所(壇上の柱と壁・騎馬列の旗と槍・茅の庇と盆と杯、wakare は全面の2倍タイル)を目視し文字/落款/額/紋章なし、512px 縮小で強赤画素 0(黄土 wash は金人と炉口・黄土崖と枯草・薪と炉口のみ)。検証用クロップは ffmpeg で作成(ImageMagick/PIL 無し)。image_sync.py で 1600x900 JPEG(192/148/215KB)に圧縮配置。build_view.py 再生成後、docs/卷111/j111_y02.md の3リンク(../images/卷111/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・キー順維持で書き戻し(diff は illustrations 追加分のみ、+24/-1)、anchor は translation_full 内に各1回のみ出現を機械確認。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。
+*   **エンジン**: codex(OpenAI Codex CLI 0.160.0、built-in `image_gen` ツール、ChatGPT サブスク枠・従量 API 不使用)
+*   **モデル**: OpenAI image_gen(Codex CLI 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-10
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷111/j111_y02.json` + `docs/images/卷111/j111_y02_{kinjin,wakare,senbo}.jpg` + `docs/卷111/j111_y02.md`
+参照: `docs/卷111/j111_y02.md`

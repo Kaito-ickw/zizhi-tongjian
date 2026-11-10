@@ -3363,3 +3363,13 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷111/j111_y02.json` + `docs/images/卷111/j111_y02_{kinjin,wakare,senbo}.jpg` + `docs/卷111/j111_y02.md`
 参照: `docs/卷111/j111_y02.md`
+
+## [x] I569 — 卷112 隆安五年(j112_y01)挿絵3枚(codex image_gen)
+*   **結果**: 隆安五年(401年、本文14298字)にカテゴリーB(水墨画調・文字なし)の挿絵3枚を追加。(1) yuboku=鍮勿崙の進言:天幕と馬・羊の群れが散る河西の草原、蓬髪の国人の騎射稽古(藁の的)、遠景に霞む城と畑、敷物に坐して進言を聞く利鹿孤(anchor「利鹿孤は言った――「安国の言うことは正しい。」」)、(2) kujo=劉裕の海塩の空城:門を開け放った版築の小城、壁上に杖をつく病弱な数人、壁の内に伏せた旗・太鼓と潜む兵、葦原から押し寄せる賊の群れ(anchor「明け方に門を開き、病弱な者数人を城壁に登らせた。」)、(3) rosen=孫恩の楼船:向かい風と波に逆らって長江をさかのぼる楼船の列、なびく葦、遠景に柵で河口を断った建康の岸(anchor「数日してようやく白石に至った。」)。呂纂の刺殺と梟首・楊氏の自害・段業の斬首・慕容盛の遭難・蒜山の潰走・傉檀の火攻めは描かず、暴力描写を回避した。
+*   **実施**: `/tmp/zzt_image_codex_j112_y01/{slug}/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message … -`(prompt=stdin、3 slug 並行、約1.7分、Bash foreground・timeout 560000)、各セッションの `~/.codex/generated_images/<session id>/` に PNG 1枚のみ・SOURCE と out.png の md5 一致を確認。再生成なし(3枚とも初回を採用)。検証: 全体図+2倍タイル(rosen の遠景の都・砦の旗・船体と帆・右下の葦、yuboku の遠景の城と右下隅、kujo の群衆・壁内の旗と太鼓・右下隅)を目視し文字/落款/額/紋章なし、旗・帆はすべて無地、512px 縮小で強赤画素 0(黄土 wash は枯草と的・土壁と朝焼け・船体と葦のみ)。検証用クロップは ffmpeg で作成。image_sync.py で 1600x900 JPEG(166/198/258KB)に圧縮配置。build_view.py 再生成後、docs/卷112/j112_y01.md の3リンク(../images/卷112/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・キー順維持で書き戻し(diff は illustrations 追加分のみ、+24/-1)、anchor は translation_full 内に各1回のみ出現を機械確認。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。
+*   **エンジン**: codex(OpenAI Codex CLI 0.160.0、built-in `image_gen` ツール、ChatGPT サブスク枠・従量 API 不使用)
+*   **モデル**: OpenAI image_gen(Codex CLI 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-10
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷112/j112_y01.json` + `docs/images/卷112/j112_y01_{yuboku,kujo,rosen}.jpg` + `docs/卷112/j112_y01.md`
+参照: `docs/卷112/j112_y01.md`

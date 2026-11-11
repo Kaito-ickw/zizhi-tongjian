@@ -3427,3 +3427,13 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷114/j114_y03.json` + `docs/images/卷114/j114_y03_{sousha,koori,bajikan}.jpg` + `docs/卷114/j114_y03.md`
 参照: `docs/卷114/j114_y03.md`
+
+## [x] I576 — 卷114 義熙四年(j114_y04, 408 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: 安皇帝義熙四年(戊申・西暦408年、本文6014字、hu_notes キーなしで胡注は本文内〔注:〕のみ)にカテゴリーB(水墨画調・文字なし)の挿絵3枚を追加。(1) nankou=南郊の祭壇を襲う大風:円い土壇の上で袖で顔を覆う南燕主の慕容超、折れ曲がる羽飾りの竿と裂けて飛ぶ無地の幕、暗い渦雲、壇の脇の砂塵に半ば隠れた馬ほどの鼠形の獣(anchor「羽儀(うぎ=儀仗の羽飾り)や帷幄(いあく=幕)がみな毀(こわ)れ裂けた。」)。(2) gyuyo=姑臧の野に放たれた牛羊を追う秦兵:雪山を背にした土壁の城(門楼なし・壁線の切れ目)、平原一面に散った牛羊、隊列を崩して縄や棒で家畜を追う騎兵・歩兵と置き去りの無地の旗(anchor「斂成(れんせい)は兵を縦(はな)ってこれを鈔掠(しょうりゃく=かすめ奪)した。」)。(3) kouko=黄虎で足止めされる劉敬宣の遠征軍:峡谷の川辺の天幕群、細い炊煙を囲んで座り込む兵、天幕の下の病人、谷を見上げる将、崖上に連なる守備側の木柵と物見(anchor「相い持すること六十余日、敬宣は進むことができなかった。」)。劉穆之の密書の場面は書状に文字が出る危険、蘇霸の斬首・五千人の阬殺・莫題父子の処刑は暴力描写となるため見送った。目視検証: 全体3枚と原寸四隅 600x340 の2x2タイル3枚を確認し、文字状の描き込み・落款・印章・額・短冊・枠・朱色なし(旗・幕・天幕・帆は無地)。512px 縮小の全画素走査で強い赤の画素は3枚とも 0。既知の難点: nankou の獣は本文の「赤い」を朱禁止のため墨一色で描いた。gyuyo の城内には屋根の並ぶ家並みが見え、秦兵は甲冑でなく短衣姿。kouko は帆を半ば掲げた小舟2艘で、黄虎の実地形は不明のため一般的な峡谷として描いた。
+*   **実施**: `/tmp/zzt_image_codex_j114_y04/{slug}/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message … -`(prompt=stdin、instr/style はメモリの骨子から再構築、3 slug 並行、約1.3分、Bash foreground・timeout 560000)、各セッションの `~/.codex/generated_images/<session id>/` に PNG 1枚のみ・SOURCE と out.png の md5 一致を確認、3枚とも1回目の生成で採用(再生成なし)。image_sync.py で 1600x900 JPEG(nankou 149,141 / gyuyo 177,191 / kouko 205,818 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷114/j114_y04.md の3リンク(../images/卷114/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(diff は illustrations 追加分のみ、+24/-1)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。
+*   **エンジン**: codex(OpenAI Codex CLI 0.160.0、built-in `image_gen` ツール、ChatGPT サブスク枠・従量 API 不使用)
+*   **モデル**: OpenAI image_gen(Codex CLI 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-11
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷114/j114_y04.json` + `docs/images/卷114/j114_y04_{nankou,gyuyo,kouko}.jpg` + `docs/卷114/j114_y04.md`
+参照: `docs/卷114/j114_y04.md`

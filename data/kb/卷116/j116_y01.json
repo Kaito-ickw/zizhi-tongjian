@@ -382,5 +382,28 @@
   "reviewer": "codex(gpt)/low",
   "pipeline": "drain-wave"
  },
- "updated_at": "2026-07-20"
+ "updated_at": "2026-07-20",
+ "illustrations": [
+  {
+   "slug": "kiri",
+   "category": "B",
+   "file": "j116_y01_kiri.jpg",
+   "caption": "掠めた民戸と家畜を連れて引き揚げる南涼の軍。にわかに濃霧と風雨が起こり、霧の向こうから沮渠蒙遜の兵が迫る。",
+   "anchor": "蒙遜の兵が大挙して至り、傉檀は敗走した。"
+  },
+  {
+   "slug": "shiga",
+   "category": "B",
+   "file": "j116_y01_shiga.jpg",
+   "caption": "京口の射堂。盛んな料理を前にした庾悦に、貧しい劉毅が子ガチョウの炙りを求めたが、悦は怒って与えなかった。",
+   "anchor": "毅はこれによって恨みを銜(ふく)んだ。"
+  },
+  {
+   "slug": "uma",
+   "category": "B",
+   "file": "j116_y01_uma.jpg",
+   "caption": "柔然の可汗・斛律の使者が馬三千匹を燕王の跋に献じ、楽浪公主を娶ることを求める。",
+   "anchor": "そこで楽浪公主をこれに妻せた。"
+  }
+ ]
 }

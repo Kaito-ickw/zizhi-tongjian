@@ -3446,3 +3446,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷115/j115_y01.json` + `docs/images/卷115/j115_y01_{taiken,rousha,sanchu}.jpg` + `docs/卷115/j115_y01.md`
 参照: `docs/卷115/j115_y01.md`
+
+## [x] I578 — 卷115 義熙六年(j115_y02, 410 CE)に挿絵3枚を追加(codex image_gen)
+結果: 水墨画3枚(B×3)を Codex built-in `image_gen`(`codex exec --skip-git-repo-check -C /tmp/zzt_image_codex_j115_y02/<slug> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、各 slug 1回・3並行・フォアグラウンド、約1.5分)で生成し、`~/.codex/generated_images/<session>/` の PNG(各セッション1枚、md5 一致確認)を /tmp へコピー。場面: zosen=始興の河岸で徐道覆が溜めておいた船材から軍船を十日で組み上げる(anchor「ここに至って、ことごとく取って艦(いくさぶね)を装(こしら)え、旬日(=十日)で仕上げた。」)、toko=強風の長江へ劉裕が舟を出させ、舟が動くと風がやむ(anchor「すぐに舟に乗るよう命じ、舟が動くと風が止んだ。」)、funsho=劉道規が桓謙への内通の手紙を開かずに焼く(anchor「ここに至ってこれを検(あらた)め得たが、道規はことごとく焼いて見ず、」)。場面選定: 広固陥落後の処刑・生き埋めの議、何無忌の戦死、桑落洲・大雷・左里の会戦は暴力描写となるため見送り、江陵の「夜どおし城門を開く」場面は門楼の額の危険があるため見送った。目視検証: 全体3枚と原寸四隅 600x340 の2x2タイル3枚、さらに zosen の従者が抱える板と funsho の束・箱を拡大確認し、文字状の描き込み・落款・印章・額・短冊・枠・朱色なし(板・木簡の束・箱・柱・壁は無地)。512px 縮小の全画素走査で強い赤の画素は3枚とも 0。既知の難点: zosen の船は櫓のない平底の河船で「艦」としては小ぶり、従者の1人が無地の板を抱える。toko は劉裕が鎧でなく旅装の袍で船尾寄りに立ち、漕ぎ手3人・岸の兵4人(本文は数十人)。funsho は手紙が木簡の束として描かれ、屋外の中庭で鼎形の火鉢を使う構図(本文に場所の記載なし)。image_sync.py で 1600x900 JPEG(zosen 272,321 / toko 205,737 / funsho 224,931 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷115/j115_y02.md の3リンク(../images/卷115/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(diff は illustrations 追加分のみ、+24/-1)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。安皇帝義熙六年(庚戌・西暦410年、本文15125字、hu_notes は None で胡注は本文内〔注:〕のみ)。
+*   **エンジン**: codex(Codex CLI 0.160.0 の built-in `image_gen`、ChatGPT サブスク枠・従量 API(`OPENAI_API_KEY`)不使用)
+*   **モデル**: OpenAI gpt-image 系画像生成モデル(Codex built-in `image_gen`)
+*   **来歴(§3.6)**: AI生成画像。OpenAI の画像生成モデル(Codex built-in `image_gen`)による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-12
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷115/j115_y02.json` + `docs/images/卷115/j115_y02_{zosen,toko,funsho}.jpg` + `docs/卷115/j115_y02.md`
+参照: `docs/卷115/j115_y02.md`

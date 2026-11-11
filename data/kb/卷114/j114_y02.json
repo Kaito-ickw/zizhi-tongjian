@@ -313,5 +313,28 @@
   "reviewer": "codex(gpt)/low",
   "pipeline": "drain-wave"
  },
- "updated_at": "2026-07-19"
+ "updated_at": "2026-07-19",
+ "illustrations": [
+  {
+   "slug": "keichu",
+   "category": "B",
+   "file": "j114_y02_keichu.jpg",
+   "caption": "「桀・紂です」と答えて退出する封孚:高欄にもたれて怒りをこらえる南燕主の慕容超、顔色ひとつ変えず庭をゆっくり歩み去る七十歳の封孚、戻って謝るよう促す鞠仲",
+   "anchor": "孚は徐(おもむろ)に歩いて退出し、顔色を変えなかった。"
+  },
+  {
+   "slug": "kenba",
+   "category": "B",
+   "file": "j114_y02_kenba.jpg",
+   "caption": "禿髮傉檀が秦に献じた馬三千匹・羊三万口:河西の谷を埋めて進む馬と羊の大群、追い立てる騎馬の牧人たち",
+   "anchor": "馬三千匹・羊三万口を秦に献じた。"
+  },
+  {
+   "slug": "heijo",
+   "category": "B",
+   "file": "j114_y02_heijo.jpg",
+   "caption": "平城の大造営:土を運び版築で外城の壁を突き固める男丁たち、溝池を掘る列、建ち上がる宮室の骨組み、普請を見渡す魏主の拓跋珪",
+   "anchor": "三十日で罷(や)めた。"
+  }
+ ]
 }

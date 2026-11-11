@@ -3409,3 +3409,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷114/j114_y01.json` + `docs/images/卷114/j114_y01_{rajuu,koshi,kintou}.jpg` + `docs/卷114/j114_y01.md`
 参照: `docs/卷114/j114_y01.md`
+## [x] I574 — 卷114 義熙二年(j114_y02, 406 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: 安皇帝義熙二年(丙午・西暦406年、本文4711字、hu_notes キーなしで胡注は本文内〔注:〕のみ)にカテゴリーB(水墨画調・文字なし)の挿絵3枚を追加。(1) keichu=「桀・紂です」と答えて退出する封孚:高欄にもたれて怒りをこらえる南燕主の慕容超と侍臣、顔色を変えず庭をゆっくり歩み去る七十歳の封孚、戻って謝るよう促す鞠仲(anchor「孚は徐(おもむろ)に歩いて退出し、顔色を変えなかった。」)、(2) kenba=禿髮傉檀が秦に献じた馬三千匹・羊三万口:河西の谷を埋めて進む馬と羊の大群、追い立てる騎馬の牧人、遠景に雪山と土の城(anchor「馬三千匹・羊三万口を秦に献じた。」)、(3) heijo=平城の大造営:土を運び版築で外城の壁を突き固める男丁、溝池を掘る列、宮室の骨組みと足場、縄張りの杭と縄のそばで普請を見渡す魏主の珪(anchor「三十日で罷(や)めた。」)。燕軍の凍死者が路に連なる行軍、封嵩の車裂きは遺体・暴力描写となるため、王尚と傉檀が別々の門から出入りする場面は門楼の額の危険があるため見送った。
+*   **実施**: `/tmp/zzt_image_codex_j114_y02/{slug}/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message … -`(prompt=stdin、instr/style は I572 と同文、3 slug 並行、約1.5分、Bash foreground・timeout 560000)、各セッションの `~/.codex/generated_images/<session id>/` に PNG 1枚のみ・SOURCE と out.png の md5 一致を確認。再生成なし(3枚とも初回を採用)。検証: 3枚とも全体図と原寸四隅 700x400 の2x2タイルを目視し、文字・落款・印章・額・看板・枠・朱色なし(殿舎の柱・壁・軒は無地で額なし、旗なし、遠景の城は門楼なしの壁の切れ目、足場・杭・縄は無地)。512px 縮小の全画素走査で強い赤の画素は3枚とも 0。既知の難点: keichu の慕容超は冠でなく小さな巾姿、kenba の遠景の城は姑臧・長安いずれとも特定しない想像上の土城、heijo は高さ十余丈の闕門を描かず(額の混入回避)版築と溝池掘りを主題とした。image_sync.py で 1600x900 JPEG(keichu 189,511 / kenba 200,322 / heijo 232,598 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷114/j114_y02.md の3リンク(../images/卷114/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(diff は illustrations 追加分のみ、+24/-1)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。
+*   **エンジン**: codex(OpenAI Codex CLI 0.160.0、built-in `image_gen` ツール、ChatGPT サブスク枠・従量 API 不使用)
+*   **モデル**: OpenAI image_gen(Codex CLI 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-11
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷114/j114_y02.json` + `docs/images/卷114/j114_y02_{keichu,kenba,heijo}.jpg` + `docs/卷114/j114_y02.md`
+参照: `docs/卷114/j114_y02.md`

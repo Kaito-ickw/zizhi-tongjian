@@ -534,5 +534,28 @@
   "reviewer": "codex(gpt)/low",
   "pipeline": "drain-wave"
  },
- "updated_at": "2026-07-19"
+ "updated_at": "2026-07-19",
+ "illustrations": [
+  {
+   "slug": "sousha",
+   "category": "B",
+   "file": "j114_y03_sousha.jpg",
+   "caption": "后の苻氏の葬送。高大な喪車を通すために北門を毀(こわ)し、燕王の熙は髪を振り乱し、はだしで柩のあとを歩いて従った。",
+   "anchor": "歩いて二十余里従った。"
+  },
+  {
+   "slug": "koori",
+   "category": "B",
+   "file": "j114_y03_koori.jpg",
+   "caption": "陽武の下峡で、夏王の勃勃の兵が氷を鑿(うが)ち、車を埋めて路を塞ぐ。追ってくる禿髮傉檀の軍を待ち受ける備え。",
+   "anchor": "氷を鑿(うが)ち車を埋めて路を塞ぎ、"
+  },
+  {
+   "slug": "bajikan",
+   "category": "B",
+   "file": "j114_y03_bajikan.jpg",
+   "caption": "秦から還された母と妻を、南燕主の超が後宮を率いて馬耳関で出迎える。",
+   "anchor": "馬耳関(ばじかん)で出迎えた。"
+  }
+ ]
 }

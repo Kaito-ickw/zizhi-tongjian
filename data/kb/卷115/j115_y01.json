@@ -855,5 +855,28 @@
   "reviewer": "codex(gpt)/low",
   "pipeline": "drain-wave"
  },
- "updated_at": "2026-07-20"
+ "updated_at": "2026-07-20",
+ "illustrations": [
+  {
+   "slug": "taiken",
+   "category": "B",
+   "file": "j115_y01_taiken.jpg",
+   "caption": "大峴(だいけん)の険を越えた劉裕の軍。南燕の兵は出て来ず、麦の実る平野を前に、劉裕は手を挙げて天を指し喜びを表した。",
+   "anchor": "裕は手を挙げて天を指し、喜びを色に表した。"
+  },
+  {
+   "slug": "rousha",
+   "category": "B",
+   "file": "j115_y01_rousha.jpg",
+   "caption": "長い囲みと三重の塹(ほり)で囲まれた広固。捕らえられた張綱が楼車に登らされ、城をめぐって「救いに来る兵はない」と呼ばわる。",
+   "anchor": "城中の者で色を失わぬ者はなかった。"
+  },
+  {
+   "slug": "sanchu",
+   "category": "B",
+   "file": "j115_y01_sanchu.jpg",
+   "caption": "変を聞いて戻った斉王の嗣。昼は山中に隠れ、夜は従者とともに王洛児の家に身を寄せた。遠くに平城が見える。",
+   "anchor": "昼は山中に伏し隠れ、夜は王洛児(おうらくじ)の家に宿った。"
+  }
+ ]
 }

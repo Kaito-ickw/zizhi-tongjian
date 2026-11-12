@@ -3464,3 +3464,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷116/j116_y01.json` + `docs/images/卷116/j116_y01_{kiri,shiga,uma}.jpg` + `docs/卷116/j116_y01.md`
 参照: `docs/卷116/j116_y01.md`
+
+## [x] I580 — 卷116 義熙八年(j116_y02, 412 CE)に挿絵3枚を追加(codex image_gen)
+結果: 水墨画3枚(B×3)を Codex built-in `image_gen`(`codex exec --skip-git-repo-check -C /tmp/zzt_image_codex_j116_y02/<slug> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、各 slug 1回・3並行・フォアグラウンド、約2分、再生成なし)で生成し、`~/.codex/generated_images/<session>/` の PNG(各セッション1枚、md5 一致確認)を /tmp へコピー。場面: tsuzumi=王鎮悪が豫章口で舟を捨て、岸に旗と鼓を残して大軍を装い江陵へ徒歩で急襲する(anchor「後方に大軍がいるように見せかけよ」。」)、tera=敗走した劉毅が夜、牛牧寺の門前で僧に受け入れを拒まれる(anchor「今、まことに他人を容れることはできません」。」)、hako=蜀遠征の出発で劉裕が朱齢石に「白帝に至って開け」の函を託す(anchor「函の縁に署(しる)して言った――「白帝(はくてい)に至って開け」。」)。目視検証: 全体3枚と原寸四隅 600x340 の2x2タイル3枚(コントラスト強調)、さらに tsuzumi の遠景の城・tera の門と僧・hako の函を3倍拡大で確認し、文字状の描き込み・落款・印章・額・短冊・枠・朱色なし(旗・帆・盾・函・扉・壁は無地、城壁は門楼なしの切れ目)。512px 縮小の全画素走査で強い赤の画素は3枚とも 0。既知の難点: tsuzumi は旗7本・鼓6つ・留守兵2人で本文(舸ごとに一、二人)より簡略、舟は十数艘(本文は百艘)、遠景の城は江陵としては小さく行軍は一列縦隊、盾は背負った無地の板。tera は寺の僧1人・毅の従者2人と馬1頭(本文は夜半に三百人ばかりで突出した後)、塔は四層の木塔で時代考証上は推測、毅は深く頭を垂れた姿。hako は函が紐掛けの木箱として描かれ(本文は封書の函)、冬景色の雪と背景の峡谷は演出、帆船の形は後世風、見守る幕僚は3人。image_sync.py で 1600x900 JPEG(tsuzumi 206,332 / tera 183,031 / hako 225,940 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷116/j116_y02.md の3リンク(../images/卷116/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(diff は illustrations 追加分のみ、+24/-1)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。安皇帝義熙八年(壬子・西暦412年、本文8860字、hu_notes は None で胡注は本文内〔注:〕のみ)。
+*   **エンジン**: codex(Codex CLI 0.160.0 の built-in `image_gen`、ChatGPT サブスク枠・従量 API(`OPENAI_API_KEY`)不使用)
+*   **モデル**: OpenAI gpt-image 系(Codex built-in `image_gen` の既定画像モデル)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in `image_gen` による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-12
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷116/j116_y02.json` + `docs/images/卷116/j116_y02_{tsuzumi,tera,hako}.jpg` + `docs/卷116/j116_y02.md`
+参照: `docs/卷116/j116_y02.md`

@@ -3500,3 +3500,13 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷117/j117_y01.json` + `docs/images/卷117/j117_y01_{gake,sekiden,hoshi}.jpg` + `docs/卷117/j117_y01.md`
 参照: `docs/卷117/j117_y01.md`
+
+## [x] I584 — 卷117 義熙十二年(j117_y02, 416 CE)に挿絵3枚を追加(codex image_gen)
+結果: カテゴリーB(水墨の名場面)3枚を生成・登録。(1) `kohaku` 寧州から献じられた琥珀の枕を、劉裕が刀傷の薬として砕き擣かせ北征の将士に分け与える(anchor「砕き擣(つ)いて北征の将士に分け賜わるよう命じた。」)。(2) `kokusaku` 黄河のほとりに塁を築き黒い矟を立てる魏の于栗磾と、河を西へ遡る晋の水軍(anchor「魏はこれにより栗磾を黒矟将軍に拝した。」)。(3) `shakuhou` 洛陽を降した檀道済が、阬めにせよという議を退けて秦人四千余人を釈放する(anchor「みな釈(ゆる)して遣(かえ)した。」)。場面選定: 劉穆之の政務(文書が階に満ちる)は書面に文字が出る危険があるため、端門の焼き討ち・趙玄の戦死・曇永が幼子を打つ場面は暴力描写となるため見送った。生成: 3枚とも1回の生成で採用(再生成なし)、各セッション配下の PNG は1枚で out.png と md5 一致。目視検証: 全体3枚と原寸四隅 600x340 の2x2タイル3枚(コントラスト強調)を確認し、文字状の描き込み・落款・印章・額・短冊・枠・朱色なし(帆・衣・壁・柱は無地、旗なし、洛陽城は門楼なしの壁線の切れ目)。512px 縮小の全画素走査で強い赤の画素は3枚とも 0。既知の難点: kohaku は枕が小さな直方体の塊で、庭・臼と杵・居並ぶ兵と船は本文にない補い(本文は命じたとだけ記す)。kokusaku は塁が低い土手と木柵で、于栗磾と晋水軍が同じ画面に入るのは構図上の補い、船は帆を上げた小舟が十数艘。shakuhou は釈放された人々が城壁の切れ目(城内)と遠くの村の双方へ流れる、檀道済は兜に長衣、人数は百人ほど(本文は四千余)。image_sync.py で 1600x900 JPEG(kohaku 172,634 / kokusaku 193,376 / shakuhou 217,125 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷117/j117_y02.md の3リンク(../images/卷117/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(diff は illustrations 追加分のみ、+24/-1)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間 PNG・検証用クロップは /tmp/zzt_image_codex_j117_y02/ のみでリポジトリ内に残さず。安皇帝義熙十二年(丙辰・西暦416年、本文12078字、hu_notes は None で胡注は本文内〔注:〕のみ)。
+*   **エンジン**: codex(Codex CLI 0.160.0 の built-in `image_gen`、ChatGPT サブスク枠・従量 API(`OPENAI_API_KEY`)不使用)
+*   **モデル**: OpenAI GPT Image(Codex built-in `image_gen` が使う画像生成モデル)
+*   **生成コマンド(§3.4)**: slug ごとに `codex exec --skip-git-repo-check -C /tmp/zzt_image_codex_j117_y02/<slug> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`(prompt は stdin、16:9・built-in `image_gen` を1回)
+*   **来歴(§3.6)**: AI生成画像。OpenAI の画像生成モデル(Codex built-in `image_gen`)による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-12
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷117/j117_y02.json` + `docs/images/卷117/j117_y02_{kohaku,kokusaku,shakuhou}.jpg` + `docs/卷117/j117_y02.md`
+参照: `docs/卷117/j117_y02.md`

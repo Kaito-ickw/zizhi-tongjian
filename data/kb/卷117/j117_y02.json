@@ -712,5 +712,28 @@
   "reviewer": "codex(gpt)/low",
   "pipeline": "drain-wave"
  },
- "updated_at": "2026-07-20"
+ "updated_at": "2026-07-20",
+ "illustrations": [
+  {
+   "slug": "kohaku",
+   "category": "B",
+   "file": "j117_y02_kohaku.jpg",
+   "caption": "寧州から献じられた琥珀の枕を、劉裕は刀傷の薬にするため砕かせ、北征の将士に分け与えた(AI生成の想像図)",
+   "anchor": "砕き擣(つ)いて北征の将士に分け賜わるよう命じた。"
+  },
+  {
+   "slug": "kokusaku",
+   "category": "B",
+   "file": "j117_y02_kokusaku.jpg",
+   "caption": "黄河のほとりに塁を築き、黒い矟を立てて晋の水軍に備える魏の于栗磾(AI生成の想像図)",
+   "anchor": "魏はこれにより栗磾を黒矟将軍に拝した。"
+  },
+  {
+   "slug": "shakuhou",
+   "category": "B",
+   "file": "j117_y02_shakuhou.jpg",
+   "caption": "洛陽を降した檀道済は、捕らえた秦人四千余人を阬めにせよという議を退け、みな釈して帰した(AI生成の想像図)",
+   "anchor": "みな釈(ゆる)して遣(かえ)した。"
+  }
+ ]
 }

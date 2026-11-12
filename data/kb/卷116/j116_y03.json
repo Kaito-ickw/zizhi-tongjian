@@ -322,5 +322,28 @@
   "reviewer": "codex(gpt)/low",
   "pipeline": "drain-wave"
  },
- "updated_at": "2026-07-20"
+ "updated_at": "2026-07-20",
+ "illustrations": [
+  {
+   "slug": "touman",
+   "category": "B",
+   "file": "j116_y03_touman.jpg",
+   "caption": "夏王の赫連勃勃が朔方水の北・黒水の南に新都・統万城を築かせる。土を蒸して突き固めた城壁に、監督の叱干阿利が錐を当てて硬さを試す(AI生成の想像図)",
+   "anchor": "新城を統万(とうばん)と名づけるのがよい」。"
+  },
+  {
+   "slug": "heimo",
+   "category": "B",
+   "file": "j116_y03_heimo.jpg",
+   "caption": "平模で両岸に築かれた譙縦方の城。朱齢石は険しい北城から先に全力で攻め落とし、南城はひとりでに崩れた(AI生成の想像図)",
+   "anchor": "南城は自ら潰えた。"
+  },
+  {
+   "slug": "haka",
+   "category": "B",
+   "file": "j116_y03_haka.jpg",
+   "caption": "成都を棄てて逃げる譙縦が先祖の墓に別れを告げる。娘は「同じ死ぬなら先人の墓で」と引き止めたが、縦は聞き入れなかった(AI生成の想像図)",
+   "anchor": "縦は従わなかった。"
+  }
+ ]
 }

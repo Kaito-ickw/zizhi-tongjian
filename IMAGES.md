@@ -3482,3 +3482,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷116/j116_y03.json` + `docs/images/卷116/j116_y03_{touman,heimo,haka}.jpg` + `docs/卷116/j116_y03.md`
 参照: `docs/卷116/j116_y03.md`
+
+## [x] I582 — 卷116 義熙十年(j116_y04, 414 CE)に挿絵3枚を追加(codex image_gen)
+結果: 水墨画3枚(B×3)を Codex built-in `image_gen`(`codex exec --skip-git-repo-check -C /tmp/zzt_image_codex_j116_y04/<slug> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、各 slug 1回・3並行・フォアグラウンド、約1.3分、再生成なし)で生成し、`~/.codex/generated_images/<session>/` の PNG(各セッション1枚、md5 一致確認)を /tmp へコピー。場面: rakuto=西秦の乞伏熾磐が傉檀の留守を突いて楽都を四面から囲む(anchor「虎台は城に憑(よ)って拒み守り、熾磐は四面からこれを攻めた。」)、rirou=将士が散り、老いた傉檀が陰利鹿ただ一人を連れて熾磐のもとへ降る(anchor「そこで熾磐に帰し、ただ陰利鹿だけがこれに随った。」)、ooyuki=柔然の大檀を追う魏軍が大雪に遭い凍死・凍傷が続出する(anchor「士卒で凍死した者や指を墮(お)とした者が十のうち二、三であった。」)。検証: 全体図と四隅タイル(1.5倍)を3枚とも目視、rakuto は内城の堂と壁の切れ目を3倍に拡大確認し、文字状の描き込み・落款・印章・額・短冊・枠・朱色なし(城壁・堂・衣は無地、旗なし、門楼なし)。512px 縮小の全画素走査で強い赤の画素は3枚とも 0。既知の難点: rakuto は攻め手が数百人規模(本文は歩騎二万)、外城・内城とも整った方形で内城の堂は3棟のみ、守兵は外城上に十数人、城壁に胸壁がなく低い、手前の指揮官(熾磐)は漢人風の髷で鮮卑らしさがない。rirou は傉檀・陰利鹿とも漢人風の衣で、陰利鹿が若く描かれる(本文に年齢の記載なし)、去っていく騎馬は十数騎のみ。ooyuki は焚き火を囲む場面が本文にない補い、凍死者そのものは描いていない、逃げる柔然は3騎のみ。image_sync.py で 1600x900 JPEG(rakuto 188,120 / rirou 161,054 / ooyuki 88,941 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷116/j116_y04.md の3リンク(../images/卷116/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(diff は illustrations 追加分のみ、+24/-1)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。安皇帝義熙十年(甲寅・西暦414年、本文8883字、hu_notes は None で胡注は本文内〔注:〕のみ)。
+*   **エンジン**: codex(Codex CLI 0.160.0 の built-in `image_gen`、ChatGPT サブスク枠・従量 API(`OPENAI_API_KEY`)不使用)
+*   **モデル**: OpenAI GPT Image(Codex built-in `image_gen` が使う画像生成モデル)
+*   **来歴(§3.6)**: AI生成画像。OpenAI の画像生成モデル(Codex built-in `image_gen`)による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-12
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷116/j116_y04.json` + `docs/images/卷116/j116_y04_{rakuto,rirou,ooyuki}.jpg` + `docs/卷116/j116_y04.md`
+参照: `docs/卷116/j116_y04.md`

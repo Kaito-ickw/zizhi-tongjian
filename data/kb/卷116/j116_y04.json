@@ -479,5 +479,28 @@
   "reviewer": "codex(gpt)/low",
   "pipeline": "drain-wave"
  },
- "updated_at": "2026-07-20"
+ "updated_at": "2026-07-20",
+ "illustrations": [
+  {
+   "slug": "rakuto",
+   "category": "B",
+   "file": "j116_y04_rakuto.jpg",
+   "caption": "南涼王の傉檀が乙弗へ遠征した留守を突き、西秦の乞伏熾磐が歩騎二万で楽都を四面から囲む。太子の虎台は広い外城を守りきれず、一夜で城は潰えた(AI生成の想像図)",
+   "anchor": "虎台は城に憑(よ)って拒み守り、熾磐は四面からこれを攻めた。"
+  },
+  {
+   "slug": "rirou",
+   "category": "B",
+   "file": "j116_y04_rirou.jpg",
+   "caption": "将士が散り散りに去るなか、老いた傉檀は妻子のいる熾磐のもとへ降る道を行く。最後まで従ったのは陰利鹿ただ一人だった(AI生成の想像図)",
+   "anchor": "そこで熾磐に帰し、ただ陰利鹿だけがこれに随った。"
+  },
+  {
+   "slug": "ooyuki",
+   "category": "B",
+   "file": "j116_y04_ooyuki.jpg",
+   "caption": "柔然の大檀を追う魏軍が大雪に遭う。士卒の十人に二、三人が凍死するか、凍傷で指を失った(AI生成の想像図)",
+   "anchor": "士卒で凍死した者や指を墮(お)とした者が十のうち二、三であった。"
+  }
+ ]
 }

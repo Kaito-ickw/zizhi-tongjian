@@ -787,5 +787,28 @@
   "reviewer": "codex(gpt)/low",
   "pipeline": "drain-wave"
  },
- "updated_at": "2026-07-20"
+ "updated_at": "2026-07-20",
+ "illustrations": [
+  {
+   "slug": "kyakugetsu",
+   "category": "B",
+   "file": "j118_y01_kyakugetsu.jpg",
+   "caption": "義熙十三年(417年)四月、黄河北岸の卻月陣。車百乗を半月形に並べて両端を河に接し、一本の白毦を立てる。魏の騎兵は意図が解せず遠巻きに動かない(AI生成の想像図)",
+   "anchor": "魏人はその意図が解せず、みな動かなかった。"
+  },
+  {
+   "slug": "moushou",
+   "category": "B",
+   "file": "j118_y01_moushou.jpg",
+   "caption": "義熙十三年(417年)八月、渭水を溯る王鎮惡の蒙衝の小艦。漕ぎ手はみな艦の内にいて姿が見えず、秦の人々は神業だと驚く(AI生成の想像図)",
+   "anchor": "みな驚いて神業だと思った。"
+  },
+  {
+   "slug": "furou",
+   "category": "B",
+   "file": "j118_y01_furou.jpg",
+   "caption": "義熙十三年(417年)冬、劉裕が還ると聞いて門を訪れ、涙ながらに引き留める三秦の父老と、慰め諭す劉裕。傍らに年十二の義眞、遠くに長安の陵と宮殿の跡(AI生成の想像図)",
+   "anchor": "これを捨ててどこへ行こうというのですか!」"
+  }
+ ]
 }

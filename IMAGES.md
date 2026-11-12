@@ -3519,3 +3519,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷118/j118_y01.json` + `docs/images/卷118/j118_y01_{kyakugetsu,moushou,furou}.jpg` + `docs/卷118/j118_y01.md`
 参照: `docs/卷118/j118_y01.md`
+
+## [x] I586 — 卷118 義熙十四年(j118_y02, 418 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵)3枚を生成・登録。生成は `/tmp/zzt_image_codex_j118_y02/<slug>/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`(prompt は stdin、built-in `image_gen` を各1回・16:9、3セッション並行・フォアグラウンド)。各セッションは自分の `CODEX_THREAD_ID` 配下 `~/.codex/generated_images/<session>/` の PNG だけを `out.png` に cp(各 session dir の PNG は1枚、SOURCE と out.png の md5 一致を確認)。3枚とも1回目の生成で採用、再生成なし。(1) `dankou`: 青泥の敗戦の日暮れ、背の高い草むらから出てくる年少の劉義眞と、馬上から手を差し伸べる段宏。山道の奥に棄てられた車、稜線に沈む日(anchor「宏は泣いて言った――「死生を共にします。わたしは忍びません。」」)。(2) `hokubou`: 彭城の城壁の上で北を望み袖で涙をぬぐう劉裕の後ろ姿、離れて頭を垂れる従者3人、冬枯れの平原と北へうねる河(anchor「ただ城に登って北を望み、慨然として涙を流すばかりだった。」)。(3) `suisei`: 夜の平城、長い尾を引く彗星を見上げる魏主の嗣と、彗星を指して説く崔浩、うつむく諸儒・術士(anchor「衆はその言を改めることができなかった。」)。場面選定: 沈田子による王鎮惡の斬・傅弘之の死と髑髏臺・朱齡石兄弟の最期・安帝の縊殺は暴力描写となるため見送り、関中喪失の帰結(義眞の生還と裕の涙)と年末の彗星問答を選んだ。目視検証: 全体3枚と原寸四隅 600x340 の2x2タイル3枚(コントラスト強調)を確認し、文字状の描き込み・落款・印章・額・短冊・枠・朱色なし(衣・壁・車・台の床は無地、旗なし、門楼なし)。512px 縮小の全画素走査で強い赤の画素は3枚とも 0。既知の難点: dankou は出会いの瞬間で、本文の「背に束りつけて単騎で帰る」は描いていない。義眞は裸足の少年、段宏は甲でなく長衣と頭巾、棄てられた車3両は構図上の補い。hokubou は城壁のすぐ外に民家が並び(指定は無人の平原)、劉裕は長衣と小冠。suisei は儒者・術士が十人、台は屋根のない露台で、黄土色は彗星の尾と崔浩の衣に限定。image_sync.py で 1600x900 JPEG(dankou 157,646 / hokubou 149,760 / suisei 153,702 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷118/j118_y02.md の3リンク(../images/卷118/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(diff は illustrations 追加分のみ、+24/-1)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。安皇帝義熙十四年(戊午・西暦418年、本文6117字、hu_notes は None で胡注は本文内〔注:〕のみ)。
+*   **エンジン**: codex(Codex CLI 0.160.0 の built-in `image_gen`、ChatGPT サブスク枠・従量 API(`OPENAI_API_KEY`)不使用)
+*   **モデル**: OpenAI GPT Image(Codex built-in `image_gen` が使う画像生成モデル)
+*   **来歴(§3.6)**: AI生成画像。OpenAI GPT Image(Codex built-in `image_gen`)による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-13
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷118/j118_y02.json` + `docs/images/卷118/j118_y02_{dankou,hokubou,suisei}.jpg` + `docs/卷118/j118_y02.md`
+参照: `docs/卷118/j118_y02.md`

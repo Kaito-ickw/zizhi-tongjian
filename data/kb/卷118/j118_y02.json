@@ -445,5 +445,28 @@
   "reviewer": "codex(gpt)/low",
   "pipeline": "drain-wave"
  },
- "updated_at": "2026-07-20"
+ "updated_at": "2026-07-20",
+ "illustrations": [
+  {
+   "slug": "dankou",
+   "category": "B",
+   "file": "j118_y02_dankou.jpg",
+   "caption": "青泥の敗戦の日暮れ、草むらに隠れていた劉義眞を、単騎で探しに来た段宏が見つける(AI生成の想像図)",
+   "anchor": "宏は泣いて言った――「死生を共にします。わたしは忍びません。」"
+  },
+  {
+   "slug": "hokubou",
+   "category": "B",
+   "file": "j118_y02_hokubou.jpg",
+   "caption": "彭城の城壁の上から北を望み、涙をぬぐう劉裕。関中を失い、子の義眞がかろうじて生還したと知って北伐をやめた(AI生成の想像図)",
+   "anchor": "ただ城に登って北を望み、慨然として涙を流すばかりだった。"
+  },
+  {
+   "slug": "suisei",
+   "category": "B",
+   "file": "j118_y02_suisei.jpg",
+   "caption": "八十余日も夜空にとどまった彗星を前に、魏主の嗣に「劉裕が簒奪する応」と説く崔浩(AI生成の想像図)",
+   "anchor": "衆はその言を改めることができなかった。"
+  }
+ ]
 }

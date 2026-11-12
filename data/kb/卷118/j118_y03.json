@@ -247,5 +247,28 @@
   "reviewer": "codex(gpt)/low",
   "pipeline": "drain-wave"
  },
- "updated_at": "2026-07-20"
+ "updated_at": "2026-07-20",
+ "illustrations": [
+  {
+   "slug": "touman",
+   "category": "B",
+   "file": "j118_y03_touman.jpg",
+   "caption": "元熙元年(419年)、長安に都せよという群臣の請いを退けて統万へ還った夏主の勃勃。城の上に立ち、弓を傍らに東の魏の方角を望む(AI生成の想像図)",
+   "anchor": "真興と改元した。"
+  },
+  {
+   "slug": "yakuyu",
+   "category": "B",
+   "file": "j118_y03_yakuyu.jpg",
+   "caption": "病と偽った刺客の沐謙を、みずから湯薬を携えて見舞う司馬楚之。謙は忍びず、席の下に隠した匕首のことを打ち明けてひれ伏す(AI生成の想像図)",
+   "anchor": "その防衛に当たった。"
+  },
+  {
+   "slug": "taihi",
+   "category": "B",
+   "file": "j118_y03_taihi.jpg",
+   "caption": "元熙元年(419年)冬、道憐を揚州刺史にせよと迫る蕭太妃と、十歳の義眞を名目の刺史に据えて実権を手放さない宋王の裕。庭には幼い義眞(AI生成の想像図)",
+   "anchor": "太妃はそこで言葉がなかった。"
+  }
+ ]
 }

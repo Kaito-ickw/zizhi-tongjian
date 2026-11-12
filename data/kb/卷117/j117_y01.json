@@ -515,5 +515,28 @@
   "reviewer": "codex(gpt)/low",
   "pipeline": "drain-wave"
  },
- "updated_at": "2026-07-20"
+ "updated_at": "2026-07-20",
+ "illustrations": [
+  {
+   "slug": "gake",
+   "category": "B",
+   "file": "j117_y01_gake.jpg",
+   "caption": "義熙十一年(415年)三月、江陵攻め。切り立った岸に布陣した司馬休之軍を前に、自ら登ろうとする劉裕を謝晦が抱きとめ、胡藩が岸に足がかりを穿って先頭で登る(AI生成の想像図)",
+   "anchor": "跳ね上がって登った。"
+  },
+  {
+   "slug": "sekiden",
+   "category": "B",
+   "file": "j117_y01_sekiden.jpg",
+   "caption": "飢饉のなか鄴への遷都を見送った魏主の拓跋嗣が、平城の郊外でみずから藉田を耕し、農桑を勧める(AI生成の想像図)",
+   "anchor": "民はついに富み安んじた。"
+  },
+  {
+   "slug": "hoshi",
+   "category": "B",
+   "file": "j117_y01_hoshi.jpg",
+   "caption": "見失われた熒惑(火星)は秦に入ったと説く崔浩。居並ぶ儒者たちが怒って反駁しても、笑って応えない(AI生成の想像図)",
+   "anchor": "浩は笑って応えなかった。"
+  }
+ ]
 }

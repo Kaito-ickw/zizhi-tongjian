@@ -492,5 +492,28 @@
   "translator": "claude-opus-4-x",
   "reviewer": "codex(gpt)"
  },
- "updated_at": "2026-07-21T06:23:02"
+ "updated_at": "2026-07-21T06:23:02",
+ "illustrations": [
+  {
+   "slug": "karinen",
+   "category": "B",
+   "file": "j120_y01_karinen.jpg",
+   "caption": "華林園に市の店を並べ、みずから物を売って遊ぶ少帝。池では側近が船を引き、龍舟が浮かぶ(AI生成の想像図)",
+   "anchor": "龍舟(=竜船)のうえで寝た。"
+  },
+  {
+   "slug": "touka",
+   "category": "B",
+   "file": "j120_y01_touka.jpg",
+   "caption": "江陵を発ち長江を下る宜都王の舟。朱容子が刀を抱いて戸口に控え、自軍の舟が囲んで行臺の百官を近づけなかった(AI生成の想像図)",
+   "anchor": "幾旬(いくじゅん=数十日)も帯を解かなかった。"
+  },
+  {
+   "slug": "ya",
+   "category": "B",
+   "file": "j120_y01_ya.jpg",
+   "caption": "吐谷渾の阿柴の遺訓。一本の矢は折れても、十九本を束ねた矢は慕利延にも折れなかった(AI生成の想像図)",
+   "anchor": "慕利延は折ることができなかった。"
+  }
+ ]
 }

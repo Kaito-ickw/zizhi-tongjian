@@ -3573,3 +3573,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷119/j119_y04.json` + `docs/images/卷119/j119_y04_{choujou,korou,tenshi}.jpg` + `docs/卷119/j119_y04.md`
 参照: `docs/卷119/j119_y04.md`
+
+## [x] I592 — 卷120 元嘉元年(j120_y01, 424 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果(2026-11-13)**: カテゴリーB(水墨の場面挿絵)3枚。(1) `karinen` 華林園に茅葺きの市の店を並べ、少帝がみずから店番となって瓢箪を売る。池の岸では側近が縄で船を引き、沖に龍舟が浮かぶ(anchor「龍舟(=竜船)のうえで寝た。」)。(2) `touka` 江陵を発って長江を下る宜都王の舟。朱容子が刀を抱いて戸口に坐り、自軍の小舟が環になって囲み、行臺の百官の舟は水面を隔てて後方に従う(anchor「幾旬(いくじゅん=数十日)も帯を解かなかった。」)。(3) `ya` 吐谷渾の阿柴が天幕の前で諸子・諸弟を集め、慕利延が束ねた矢を折ろうとして折れず、手前に折れた一本の矢が落ちている(anchor「慕利延は折ることができなかった。」)。場面選定: 少帝の廃位(侍者殺害・負傷)、営陽王・廬陵王の弑殺、雲中の包囲戦、高平の戦いは死・交戦描写となるため見送り、廃位前夜の遊興と東下の警戒で代えた。江陵の仮門「大司馬門」は題額が本文の要点で文字が不可避のため見送った。生成は3回(3枚並行、再生成なし・破棄なし)。目視検証: 全体図と四隅 600x340 の2x2タイル(コントラスト強調)を全画像で確認し、文字状の描き込み・落款・印章・額・看板・短冊・枠・朱色なし(店・帆・幟・天幕・衣は無地)。512px 縮小の全画素走査で強い赤の画素は全て 0。既知の難点: karinen の少帝は側近と同じ質素な衣で身分差が読み取れず、龍舟は小ぶりな屋形船に龍頭を付けた形。touka の護衛は槍を立てて持ち(交戦なし)、小舟1艘に2人ずつで実際の兵力より著しく少なく、百官の舟も4艘のみ。朱容子は刀を膝に横たえて坐る。ya の束は十九本より少なく見え、参集者は二十数人で全員同型の毛皮帽・毛皮襟、天幕はモンゴル風の円形。image_sync.py で 1600x900 JPEG(karinen 259,355 / touka 188,405 / ya 217,422 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷120/j120_y01.md の3リンク(../images/卷120/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間 PNG・検証用クロップは /tmp/zzt_image_codex_j120_y01/ のみでリポジトリ内に残さず。太祖文皇帝元嘉元年(甲子・西暦424年、本文8505字、hu_notes は None で胡注は本文内〔注:〕と(=…)の割注)。
+*   **エンジン**: codex(codex-cli 0.160.0、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を1セッション1回・16:9、ChatGPT サブスク枠・従量 API(`OPENAI_API_KEY` / `scripts/image_gen.py`)不使用。出力は `~/.codex/generated_images/<session>/*.png` から自セッション分のみコピー(各セッション dir に PNG 1枚・md5 一致を確認))
+*   **モデル**: OpenAI GPT Image(Codex built-in `image_gen`、出力 1672x941 PNG)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-13
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷120/j120_y01.json` + `docs/images/卷120/j120_y01_{karinen,touka,ya}.jpg` + `docs/卷120/j120_y01.md`
+参照: `docs/卷120/j120_y01.md`

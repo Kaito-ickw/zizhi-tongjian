@@ -3555,3 +3555,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷119/j119_y02.json` + `docs/images/卷119/j119_y02_{tonko,kyotei,shasen}.jpg` + `docs/卷119/j119_y02.md`
 参照: `docs/卷119/j119_y02.md`
+
+## [x] I590 — 卷119 永初三年(j119_y03)に挿絵3枚を追加(codex image_gen)
+*   **結果(2026-11-13)**: カテゴリーB(水墨の場面挿絵)3枚。(1) `igo` 亭で二人が碁を打つかたわら、徐羨之が袖に手を入れて黙って盤を観る。奥では二人が盛んに語り合う(anchor「当世の人はますますこれによって彼を高く見た。」)。(2) `kankoku` 魏の太子・燾が壇上で臨朝し、左輔三人と右弼三人が東西に向かい合って坐す。中央で一人が奏上し、左端の物陰から明元帝が窺う(anchor「西の廂に坐して東を向かせた。」)。(3) `katsudai` 奚斤らの魏軍が黄河を舟で渡り、滑臺の城の東に天幕の営を構える(anchor「滑臺の東に営を構えた。」)。場面選定: 劉裕の臨終・崩御、滑臺・虎牢の攻城戦は死・交戦描写となるため見送り、渡河後の布陣で代えた。生成は4回(3枚並行+`katsudai` の再生成1回)。`katsudai` 初回は営が城と川を挟んだ対岸に描かれ本文(河を渡って滑臺の東に営)と食い違ったため、同岸であることを明示して再生成し差し替えた(初回分は破棄)。目視検証: 全体図と四隅 600x340 の2x2タイル(コントラスト強調)を確認し、文字状の描き込み・落款・印章・額・短冊・枠・朱色なし(衣・柱・壁・旗・天幕は無地、城門は壁の切れ目のみ)。512px 縮小の全画素走査で強い赤の画素は全て 0。既知の難点: igo の徐羨之は対局者の横ではなく盤の奥正面に坐し、主役として目立つ(本文の「解っていないかのよう」な表情までは読み取れない)。kankoku は太子が十代前半の少年、輔臣が全員毛皮襟の同型で個人の区別はなく、堂の奥が吹き抜けで山が見える。明元帝は「西宮」ではなく堂の脇の仕切りの陰に立つ。katsudai の滑臺は円形の小さな土塁の集落として描かれ実際の城より小さく、天幕は遊牧風の円形、舟は筏に近い。方位(営が城の東)は画面右=東と読めば整合。image_sync.py で 1600x900 JPEG(igo 187,440 / kankoku 118,970 / katsudai 186,673 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷119/j119_y03.md の3リンク(../images/卷119/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間 PNG・検証用クロップは /tmp/zzt_image_codex_j119_y03/ のみでリポジトリ内に残さず。高祖武皇帝永初三年(壬戌・西暦422年、本文7485字、hu_notes は None で胡注は本文内〔注:〕と(=…)の割注)。
+*   **エンジン**: codex(`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を1セッション1回・16:9、ChatGPT サブスク枠・従量 API(`OPENAI_API_KEY` / `scripts/image_gen.py`)不使用。出力は `~/.codex/generated_images/<session>/*.png` から自セッション分のみコピー)
+*   **モデル**: OpenAI GPT Image(Codex built-in `image_gen`、出力 1672x941 PNG)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-13
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷119/j119_y03.json` + `docs/images/卷119/j119_y03_{igo,kankoku,katsudai}.jpg` + `docs/卷119/j119_y03.md`
+参照: `docs/卷119/j119_y03.md`

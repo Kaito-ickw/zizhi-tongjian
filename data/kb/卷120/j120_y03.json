@@ -548,5 +548,28 @@
   "translator": "claude-opus-4-x",
   "reviewer": "codex(gpt)"
  },
- "updated_at": "2026-07-21T06:38:14"
+ "updated_at": "2026-07-21T06:38:14",
+ "illustrations": [
+  {
+   "slug": "kantai",
+   "category": "B",
+   "file": "j120_y03_kantai.jpg",
+   "caption": "江陵を発つ謝晦の船団。江津から破冢まで舟艦が連なり、軍旗が日を蔽う。晦は「これを勤王の師とできないのが恨めしい」と嘆いた(AI生成の想像図)",
+   "anchor": "旌旗(せいき=軍旗)が日を蔽(おお)った。"
+  },
+  {
+   "slug": "kokui",
+   "category": "B",
+   "file": "j120_y03_kokui.jpg",
+   "caption": "「黒衣の宰相」惠琳。門前には牛車が並び、贈り物が相次ぎ、敷物を七、八並べても座は常に満ちた(AI生成の想像図)",
+   "anchor": "座上は常に満ちていた。"
+  },
+  {
+   "slug": "hyouga",
+   "category": "B",
+   "file": "j120_y03_hyouga.jpg",
+   "caption": "君子津でにわかに氷結した黄河を、魏主(太武帝)の軽騎が渡って統萬へ向かう(AI生成の想像図)",
+   "anchor": "軽騎二万を率いて河を渡り統萬(とうまん)を襲った。"
+  }
+ ]
 }

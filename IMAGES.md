@@ -3591,3 +3591,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷120/j120_y02.json` + `docs/images/卷120/j120_y02_{kisei,sabaku,kansen}.jpg` + `docs/卷120/j120_y02.md`
 参照: `docs/卷120/j120_y02.md`
+
+## [x] I594 — 卷120 元嘉三年(j120_y03, 426 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: 3枚(いずれもカテゴリーB・水墨画調・画像内テキストなし・1回生成で採用)を `/tmp/zzt_image_codex_j120_y03/` で並行生成(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各1回・16:9、各セッションの `~/.codex/generated_images/<session>/` の PNG(1枚のみ・md5一致)を out.png に cp)。(1) `kantai` 江陵を発つ謝晦の船団。江津から破冢まで舟艦が連なり、無地の旗が日を蔽う。手前の艦上で晦が嘆く(anchor「旌旗(せいき=軍旗)が日を蔽(おお)った。」)。(2) `kokui` 「黒衣の宰相」惠琳。門前に牛車が並び、贈り物が運び込まれ、堂内の方筵は客で満ち、孔覬が端で顔をそむける(anchor「座上は常に満ちていた。」)。(3) `hyouga` 君子津で氷結した黄河を魏主の軽騎が渡り統萬へ向かう(anchor「軽騎二万を率いて河を渡り統萬(とうまん)を襲った。」)。場面選定: 徐羨之・傅亮の誅殺、忌置洲での潰走、統萬西宮の焼き討ちは流血・交戦描写となるため見送り、出陣・渡河・世相の場面で構成。目視検証: 全体図(1400px)と四隅 418x235 の2x2拡大タイルを全画像で確認し、文字状の描き込み・落款・印章・額・看板・短冊・枠なし(旗・帆・車蓋・衣・柱・壁は無地)、512px 縮小での強赤画素 0。既知の難点: kantai は帆を上げた船が多く「停泊して列ねる」より航行中に見える。kokui は遠景に層塔が1基あり(劉宋期の建康としては様式が後代寄り)、冠服は唐風寄り、敷物は9枚前後。hyouga の騎列は一列縦隊で二万騎の規模感は出ていない。image_sync.py で 1600x900 JPEG(kantai 232,357 / kokui 251,678 / hyouga 187,611 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷120/j120_y03.md の3リンク(../images/卷120/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j120_y03/ のみでリポジトリ内に残さず。太祖文皇帝元嘉三年(丙寅・西暦426年、本文11358字、hu_notes は None で胡注は本文内〔注:〕と(=…)の割注)。
+*   **エンジン**: codex(codex-cli 0.160.0、built-in `image_gen`、ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路は不使用)
+*   **モデル**: OpenAI gpt-image 系(Codex built-in `image_gen`)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-14
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷120/j120_y03.json` + `docs/images/卷120/j120_y03_{kantai,kokui,hyouga}.jpg` + `docs/卷120/j120_y03.md`
+参照: `docs/卷120/j120_y03.md`

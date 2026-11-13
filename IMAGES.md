@@ -3537,3 +3537,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷118/j118_y03.json` + `docs/images/卷118/j118_y03_{touman,yakuyu,taihi}.jpg` + `docs/卷118/j118_y03.md`
 参照: `docs/卷118/j118_y03.md`
+
+## [x] I588 — 卷119 永初元年(j119_y01, 420 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵)3枚を生成・登録。生成は `/tmp/zzt_image_codex_j119_y01/<slug>/` で `codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`(prompt は stdin、built-in `image_gen` を各1回・16:9、3セッション並行・フォアグラウンド)。各セッションは自分の `CODEX_THREAD_ID` 配下 `~/.codex/generated_images/<session>/` の PNG だけを `out.png` に cp(各 session dir の PNG は1枚、SOURCE と out.png の md5 一致を確認)。3枚とも1回目の生成で採用、再生成なし。(1) `chosei`: 寿陽の夜、宋王(劉裕)の真意を悟って宮門を辞した傅亮が、天を横切る長星を仰いで髀を打つ。門は塀に直接はめた無地の板戸、従者が無地の提灯を持つ(anchor「「私はつねづね天文を信じなかったが、今はじめてその験(あかし)を得た」。」)。(2) `sokui`: 六月丁卯、建康南郊の三段の土壇の頂で劉裕が天を仰いで即位し、壇下に百官が跪く。旗は無地、遠景に川と城壁(anchor「丁卯、王は南郊に壇を築き、皇帝の位に即いた。」)。(3) `inshi`: 姑臧の堂で、国も子(李歆)も失った西涼の太后尹氏が、榻に座る沮渠蒙遜の前に臆せず立つ(anchor「ただ速やかに死ぬのを幸いと思うのみ」。」)。場面選定: 恭帝が赤紙に禅譲の詔を書く場面は書面に文字が出る危険と朱色禁止の方針に反するため、懐城・蓼泉の戦いと司馬国璠らの族誅は暴力描写となるため見送った。目視検証: 全体3枚と原寸四隅 600x340 の2x2タイル3枚(コントラスト強調)を確認し、文字状の描き込み・落款・印章・額・短冊・枠・朱色なし(旗・衣・壁・柱・戸・提灯は無地、門楼なし)。512px 縮小の全画素走査で強い赤の画素は3枚とも 0。既知の難点: chosei は前年 j118_y02 の `suisei`(平城の彗星)と題材が近い(別の彗星・別の場所)。提灯と路面にも淡い黄土色の光が広がる。sokui の跪く官人は二十数人と少なく、壇上の冠は冕旒のない平板のみ、鼎の煙は考証でなく演出。inshi の尹氏は蒙遜でなく斜め上を見上げており、堂は柱だけの簡素な造り。image_sync.py で 1600x900 JPEG(chosei 143,482 / sokui 125,651 / inshi 112,279 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷119/j119_y01.md の3リンク(../images/卷119/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間 PNG・検証用クロップは /tmp のみでリポジトリ内に残さず。高祖武皇帝永初元年(庚申・西暦420年、本文4788字、hu_notes は None で胡注は本文内〔注:〕のみ)。
+*   **エンジン**: codex(Codex CLI 0.160.0 の built-in `image_gen`、ChatGPT サブスク枠・従量 API(`OPENAI_API_KEY`)不使用)
+*   **モデル**: OpenAI GPT Image(Codex built-in `image_gen` が使う画像生成モデル)
+*   **来歴(§3.6)**: AI生成画像。OpenAI GPT Image(Codex built-in `image_gen`)による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-13
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷119/j119_y01.json` + `docs/images/卷119/j119_y01_{chosei,sokui,inshi}.jpg` + `docs/卷119/j119_y01.md`
+参照: `docs/卷119/j119_y01.md`

@@ -178,5 +178,28 @@
   "translator": "claude-opus-4-x",
   "reviewer": "codex(gpt)"
  },
- "updated_at": "2026-07-21T06:25:41"
+ "updated_at": "2026-07-21T06:25:41",
+ "illustrations": [
+  {
+   "slug": "kisei",
+   "category": "B",
+   "file": "j120_y02_kisei.jpg",
+   "caption": "元嘉二年(425年)正月、徐羨之と傅亮が政を返す上表を三度差し出し、若い文帝がはじめて自ら政務を執る(AI生成の想像図)",
+   "anchor": "そこで羨之はふたたび詔を奉じて政務にあたった。"
+  },
+  {
+   "slug": "sabaku",
+   "category": "B",
+   "file": "j120_y02_sabaku.jpg",
+   "caption": "柔然を伐つ魏軍。砂漠の南に輜重を置き、十五日分の糧だけを携えた身軽な騎兵が幾筋にも分かれて砂漠を越えていく(AI生成の想像図)",
+   "anchor": "跡を絶(た)って北へ逃げた。"
+  },
+  {
+   "slug": "kansen",
+   "category": "B",
+   "file": "j120_y02_kansen.jpg",
+   "caption": "魏を伐つ、陵に参拝すると称して建康で整えられる艦船と旅装。ふだんと違う朝廷の動きに、謀は漏れはじめていた(AI生成の想像図)",
+   "anchor": "その謀(はかりごと)はかなり漏れていた。"
+  }
+ ]
 }

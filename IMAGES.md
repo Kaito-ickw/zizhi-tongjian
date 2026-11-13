@@ -3582,3 +3582,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷120/j120_y01.json` + `docs/images/卷120/j120_y01_{karinen,touka,ya}.jpg` + `docs/卷120/j120_y01.md`
 参照: `docs/卷120/j120_y01.md`
+
+## [x] I593 — 卷120 元嘉二年(j120_y02, 425 CE)に挿絵3枚を追加(agy/nano-banana)
+結果: 水墨画3枚(B×3)を agy/nano-banana(`agy -p "nano-banana で画像を1枚だけ生成し、/tmp/zzt_image_agy_j120_y02/<slug>.png に PNG として保存してください。他のファイルは作らないでください。画像生成は事前定義の image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼んでください(バックグラウンド実行・schedule・manage_task・複数回生成・追加サブエージェント定義・新規サブエージェント作成は禁止)。サブエージェントには下記の英語プロンプト全文と保存先パスをそのまま渡し、もし別の場所に保存されたら run_command の cp で複製してください。保存できたら即座に終了してください。生成プロンプト(英語): <場面記述 scene_<slug>.txt> <共通スタイル・禁則文 style.txt(I591 と同文で時代設定のみ 425 CE)>" --dangerously-skip-permissions`、`/tmp/zzt_image_agy_j120_y02/run.sh <slug>`(各 `timeout 290`)を Bash tool フォアグラウンドで3枚 `&` + `wait` 並行、agy 1.5.8)で生成。2026-11-14 02:00〜02:01 JST、3回とも exit 0。429 なし・フィルタ拒否なし・再生成なし(生成3枚=採用3枚)。生成物は 1376x768(中身は JPEG)。場面(本文順): (1) `kisei` 徐羨之・傅亮が政を返す上表を差し出し、若い文帝が親政を始める。殿内で老臣2人が跪き、巻いた無地の絹巻を捧げる。庭に咲き始めの梅(anchor「そこで羨之はふたたび詔を奉じて政務にあたった。」)。(2) `sabaku` 柔然を伐つ魏軍が漠南に輜重(牛車・天幕・荷)を置き、軽騎の縦隊が分かれて砂漠を越える。地平に遠ざかる円形天幕と家畜(anchor「跡を絶(た)って北へ逃げた。」)。(3) `kansen` 魏を伐つ・陵に参拝すると称して建康の岸で艦船と旅装が整えられ、手前で2人の官人が耳打ちする(anchor「その謀(はかりごと)はかなり漏れていた。」)。場面選定: 臨松の襲撃・黑水羌の撃破は交戦描写となるため見送り、柔然遠征は出撃(交戦なし)で描いた。目視検証: 全体図と四隅 344x192 の2x2拡大タイルを全画像で、kansen は城壁上の楼閣部を4倍クロップでも確認し、文字状の描き込み・落款・印章・額・看板・短冊・枠・朱色なし(帆・旗・天幕・衣・柱・壁・巻物は無地)。既知の難点: kisei の文帝と官人の冠服は唐風寄りで、侍者は3人のみ。sabaku の縦隊は4筋(本文は五道)で、柔然の天幕はモンゴル風の円形。kansen の城壁上に小さな楼閣が2つ残る(額なし)、船は少人数で艦隊としては小規模。image_sync.py で 1376x768 JPEG(kisei 158,230 / sabaku 159,250 / kansen 197,850 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷120/j120_y02.md の3リンク(../images/卷120/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_agy_j120_y02/ のみでリポジトリ内に残さず。太祖文皇帝元嘉二年(乙丑・西暦425年、本文2078字、hu_notes は None で胡注は本文内〔注:〕と(=…)の割注)。
+*   **エンジン**: agy(Antigravity CLI 1.5.8、image-generator サブエージェント経由の nano-banana、Google サブスク枠・従量 API 不使用)
+*   **モデル**: Gemini nano-banana(Nano Banana 2 系画像生成モデル `gemini-3.1-flash-image`、agy 組み込み)
+*   **来歴(§3.6)**: AI生成画像。Google Gemini nano-banana(agy image-generator)による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-14
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷120/j120_y02.json` + `docs/images/卷120/j120_y02_{kisei,sabaku,kansen}.jpg` + `docs/卷120/j120_y02.md`
+参照: `docs/卷120/j120_y02.md`

@@ -3609,3 +3609,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷120/j120_y04.json` + `docs/images/卷120/j120_y04_{kougu,fuusa,touman}.jpg` + `docs/卷120/j120_y04.md`
 参照: `docs/卷120/j120_y04.md`
+
+## [x] I596 — 卷121 元嘉五年(j121_y01, 428 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: 3枚(いずれもカテゴリーB・水墨画調・画像内テキストなし・1回生成で採用)を `/tmp/zzt_image_codex_j121_y01/` で並行生成(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各1回・16:9、各セッションの `~/.codex/generated_images/<session>/` の PNG(1枚のみ・md5一致)を out.png に cp)。(1) `fuujin` 安定城外、大風が塵を巻き上げて昼が暗くなる中、単騎で敗走する夏主・赫連昌を安頡の騎兵が追う(anchor「折しも天に大風が塵を巻き上げ、昼が暗くなり、夏主は敗走した。」、段落途中)。(2) `shika` 魏主と赫連昌が二騎だけで鹿を逐い山澗へ入る。遠くで供の諸将が案じる(anchor「親しく遇すること初めのとおりであった。」)。(3) `yuusan` 従者を連れて山水を遊行する謝霊運(anchor「しかし霊運は遊び飲むこと平生のままで、法司(=司法官)に糾弾され、坐して官を免ぜられた。」)。場面選定: 赫連昌の落馬・生け捕り、馬髦嶺での魏軍潰走、楽都の攻防(門の焼き討ち)は交戦・流血描写となるため見送り、追撃(接触なし)・狩り・遊行で構成。目視検証: 全体図(1376px)と四隅 418x235 の2x2拡大タイルを全画像で確認し、文字状の描き込み・落款・印章・額・看板・短冊・枠なし(衣・包み・亭の柱・城壁は無地)、512px 縮小での強赤画素 0。既知の難点: fuujin の城は低い土壁に楣(まぐさ)付きの開口のみ(額なし)で、追手は十騎ほどと小規模、赫連昌は無冠・外套姿。shika の二人の冠服は漢風寄り(鮮卑・匈奴らしさは薄い)で、弓は背に負うのみ。yuusan の笠・木屐は謝霊運の逸話に拠る演出で、本文の当該箇所に直接の記述はない。image_sync.py で 1600x900 JPEG(fuujin 117,802 / shika 216,401 / yuusan 219,063 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷121/j121_y01.md の3リンク(../images/卷121/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j121_y01/ のみでリポジトリ内に残さず。太祖文皇帝元嘉五年(戊辰・西暦428年、本文4477字、hu_notes は None で胡注は本文内〔注:〕と(=…)の割注)。
+*   **エンジン**: codex(codex-cli 0.160.0、built-in `image_gen`、ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路は不使用)
+*   **モデル**: OpenAI gpt-image 系(Codex built-in `image_gen`)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-14
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷121/j121_y01.json` + `docs/images/卷121/j121_y01_{fuujin,shika,yuusan}.jpg` + `docs/卷121/j121_y01.md`
+参照: `docs/卷121/j121_y01.md`

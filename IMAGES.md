@@ -3627,3 +3627,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷121/j121_y02.json` + `docs/images/卷121/j121_y02_{ronnan,rissui,karanzan}.jpg` + `docs/卷121/j121_y02.md`
 参照: `docs/卷121/j121_y02.md`
+
+## [x] I598 — 卷121 元嘉七年(j121_y03)に挿絵3枚を追加(codex image_gen)
+*   **結果**: 2026-11-14 完了。カテゴリーB(水墨画調の名場面)3枚を `illustrations[]` に登録。(1) `suigun` 水が浅く日に十里しか進めず、両岸から綱で曳かれて泗水を進む到彦之の水軍(anchor「ようやく須昌(すしょう)に至った。」)。(2) `funayaki` 歴城で舟を焼き甲を棄て、徒歩で彭城へ退く宋軍と、目の病で支えられて歩く到彦之(anchor「舟を焼き甲を棄てて、徒歩で彭城へ趨(はし)った。」)。(3) `kaimon` 兵を伏せて城門を開け放った済南太守・蕭承之と、伏兵を疑って引き去る魏軍(anchor「魏人は伏兵があるかと疑い、そこで引き去った。」)。場面選定: この年の主軸である宋の北伐の「遅い進軍→壊走→済南の空城の計」を選んだ。冶坂・洛陽・虎牢・鶉觚原の戦闘、北燕の馮弘の簒奪(射殺・皇子誅殺)、敕勒の餓死は交戦・流血描写となるため見送り、崔浩の献策や宗舒らとの宴は堂内場面で文字混入の危険があるため見送り。目視検証: 3枚とも全体図と四隅の2倍拡大タイルを確認し、文字状の描き込み・落款・印章・額・看板・枠なし(帆・衣・城壁・門扉・荷は無地)、512px 縮小での強赤画素 0。各 codex セッションの生成 PNG は1枚で out.png と md5 一致。既知の難点: suigun は輸送船が小ぶりで「甲卒五万の水軍」の規模感は出ていない。funayaki の棄てられた兜はつば付きの鉢形で時代考証は緩く、季節は雪の残る初冬として描かれている。kaimon は城壁が低い土塀・門楼なし(額の誘発回避のため意図的)で、町並みは雪景、魏騎はすでに大半が背を向けて去りつつある構図。image_sync.py で 1600x900 JPEG(suigun 272,346 / funayaki 230,043 / kaimon 193,823 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷121/j121_y03.md の3リンク(../images/卷121/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j121_y03/ のみでリポジトリ内に残さず。太祖文皇帝元嘉七年(庚午・西暦430年、本文10777字、hu_notes は None で胡注は本文内〔注:〕と(=…)の割注)。
+*   **エンジン**: codex(Codex CLI `codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を1枚につき1回、3セッション並行・フォアグラウンド実行、ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI Codex built-in `image_gen`(GPT Image 系画像生成モデル、Codex CLI 組み込み)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-14
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷121/j121_y03.json` + `docs/images/卷121/j121_y03_{suigun,funayaki,kaimon}.jpg` + `docs/卷121/j121_y03.md`
+参照: `docs/卷121/j121_y03.md`

@@ -3663,3 +3663,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷122/j122_y03.json` + `docs/images/卷122/j122_y03_{rikushi,kokushi,sanyu}.jpg` + `docs/卷122/j122_y03.md`
 参照: `docs/卷122/j122_y03.md`
+
+## [x] I602 — 卷122 元嘉十一年(j122_y04, 434 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調・俯瞰)3枚を追加。(1) `umaokuri` 柔然の敕連可汗の妹を載せた牛車と禿鹿傀の一行、その後ろに続く献上の馬二千匹の群れを、丘上で迎える魏の一行(anchor「あわせて馬二千匹を献じた。」)、(2) `tansaku` 氐の陣に幾重にも囲まれた柵内で、矟を短く切り詰め大斧で打ち込む備えをする蕭承之の兵(anchor「一本の矟でそのつど数人を貫いた。」)、(3) `chinken` 山胡の伏兵が斜面を駆け下る中、落馬した魏主の前に立ちはだかる陳建(anchor「魏主はようやく免れた。」)。場面選定: 柔然との通婚・宋の漢中回復・魏主の山胡親征から各1場面。漢中の白兵戦と陳建の奮戦は交戦・流血描写を避け、前者は戦闘前の備え、後者は庇う瞬間として構成。于什門の帰還(節を持つ使者)は前年 j122_y02 `kiza` の使者像と重なるため見送り、劉滋の諫死・赫連昌の格殺・金当川の斬は処刑描写となるため見送り。目視検証: 3枚とも全体図と四隅の2倍拡大タイルを確認し、文字状の描き込み・落款・印章・額・看板・枠なし(天幕・牛車の幌・衣・盾は無地、旗なし)、512px 縮小での強赤画素 0。各セッションの生成 PNG は1枚で、コピー元と md5 一致。既知の難点: umaokuri の遠景の都城は後世風の楼閣を載せ(額は視認できず)、魏側の出迎えは漢風の衣と髷で鮮卑風ではなく、天幕は後世のゲル風、手前に花木が入る。tansaku は対になって斧で矟の尻を打つ動作が「斧を振りかぶる兵と矟を構える兵」に留まり、切り株を台にしている。兵は鎧なしの軽装。chinken の陳建は円盾と短剣を持つ姿(原文に盾の記述なし)、山胡は十数人が一方向から駆け下り「十余か所の伏兵」は表現しきれず、魏主・護衛とも漢風の衣。交戦・負傷の描写なし。image_sync.py で 1600x900 JPEG(umaokuri 234,730 / tansaku 256,905 / chinken 232,400 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷122/j122_y04.md の3リンク(../images/卷122/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j122_y04/ のみでリポジトリ内に残さず。太祖文皇帝元嘉十一年(甲戌・西暦434年、本文2501字、hu_notes は None で胡注は本文内〔注:〕と(=…)の割注)。
+*   **エンジン**: codex(codex-cli 0.160.0、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、3セッション並行・フォアグラウンド実行。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-15
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷122/j122_y04.json` + `docs/images/卷122/j122_y04_{umaokuri,tansaku,chinken}.jpg` + `docs/卷122/j122_y04.md`
+参照: `docs/卷122/j122_y04.md`

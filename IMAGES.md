@@ -3645,3 +3645,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷122/j122_y01.json` + `docs/images/卷122/j122_y01_{ryosa,toka,shika}.jpg` + `docs/卷122/j122_y01.md`
 参照: `docs/卷122/j122_y01.md`
+
+## [x] I600 — 卷122 元嘉九年(j122_y02, 432 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調・俯瞰)3枚を追加。(1) `zango` 降った燕の民三万を動員して和龍の周囲に包囲の壕を掘らせる魏軍と、丘上から見守る魏主一行(anchor「和龍を(封鎖して)守らせた。」)、(2) `taimatsu` 囲まれた成都の夜、流言に怯える城中で劉道済が松明を並べ裴方明の無事を人々に示す場面(anchor「衆はようやく安んじた。」)、(3) `kiza` 脚を投げ出し几に凭れたまま魏の使者を迎える涼王・沮渠蒙遜と、節を握って庭に立つ李順(anchor「立ち動く様子がなかった。」)。場面選定: この年の三本柱である魏の燕攻め(和龍包囲)・益州の趙広/程道養の乱(成都籠城)・李順の涼への使いから各1場面。和龍城外の会戦・高紹の斬・晋原陥落は流血描写となるため見送り、謝弘微の帳簿・東郷君の帰宅は帳簿や門で文字混入の危険があるため見送り。目視検証: 3枚とも全体図と四隅の拡大タイルを確認し、文字状の描き込み・落款・印章・額・看板・枠なし(天幕・衣・壁・柱・門は無地)、512px 縮小での強赤画素 0。各 codex セッションの生成ディレクトリに PNG が1枚だけで、コピー元と md5 一致(取り違えなし)。既知の難点: zango の城は隅の墩台のみで門が描かれず、天幕は後世のゲル風、人夫は数十人規模で「三万」には及ばない。taimatsu は屋根と城壁に雪が積もる(本文に雪の記述はなく、冬十二月の想像)、劉道済は病身に見えない。kiza の蒙遜は箕坐というより横臥に近い姿勢で、庭の奥に額のない小さな門がある。image_sync.py で 1600x900 JPEG(zango 203,260 / taimatsu 221,443 / kiza 156,108 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷122/j122_y02.md の3リンク(../images/卷122/…)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j122_y02/ のみでリポジトリ内に残さず。太祖文皇帝元嘉九年(壬申・西暦432年、本文7466字、hu_notes は None で胡注は本文内〔注:〕と(=…)の割注)。
+*   **エンジン**: codex(codex-cli 0.160.0、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、3セッション並行・所要約1.4分。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-14
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷122/j122_y02.json` + `docs/images/卷122/j122_y02_{zango,taimatsu,kiza}.jpg` + `docs/卷122/j122_y02.md`
+参照: `docs/卷122/j122_y02.md`

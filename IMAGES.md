@@ -3708,3 +3708,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷123/j123_y03.json` + `docs/images/卷123/j123_y03_{bakuhoku,gakkan,genka}.jpg` + `docs/卷123/j123_y03.md`
 参照: `docs/卷123/j123_y03.md`
+
+## [x] I607 — 卷123 元嘉十六年(j123_y04, 439 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調・俯瞰)3枚を追加。(1) `rofu` 春の狩りに出た衡陽王・劉義季が、蓑をまとって耕す老父に諫められ、馬を止めて聞き入る(anchor「義季は馬を止めて言った――「賢者だ」。」)、(2) `kozo` 姑臧の城外に泉と河と豊かな水草が広がるのを見て、太武帝が崔浩に語りかける(anchor「卿(けい)がかつて言ったことが、今まさに実証されたぞ」。」)、(3) `tenmon` 夜の観測台で星の運行を論じる崔浩と高允(anchor「一同はそこで感嘆して服した。」)。目視検証(全体図+四隅タイル)で3枚とも文字・文字状の描き込み・落款・印章・額・看板・枠なし(衣・壁・天幕は無地、旗なし、姑臧の城壁は門楼なしの開口のみ)、512px 縮小での強赤画素 0、武器なし。再生成なし(生成3枚=採用3枚)。既知の難点: rofu の従者・義季は髻に小冠の画一的な姿で、鷹2羽と猟犬2頭のみで狩りを示す(弓は描かせていない)、老父の牛と蓑笠に黄土色が強め。kozo の姑臧城は整った多角形の土壁で、包囲陣は丸い天幕の列として穏やかに描かれ(攻囲の緊張は薄い)、太武帝と崔浩は漢風の寛衣に髻で鮮卑らしさが無い、左手に小さな滝があり「涌き出る泉」より山水画寄り。tenmon は明るい星が4つしか描かれず(本文は五星)、渾儀は簡略な環の組み合わせ、観測台・平城の屋並みは後世風の瓦屋根。キャプションでは星の数に触れていない。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(279,008 / 274,740 / 169,270 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷123/j123_y04.md の3リンク(../images/卷123/j123_y04_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用タイルは /tmp/zzt_image_codex_j123_y04/ のみでリポジトリ内に残さず(この環境に ImageMagick は無く、プレビュー・タイル・縮小は ffmpeg で作成)。太祖文皇帝元嘉十六年(己卯・西暦439年、本文9547字、hu_notes キー無しで胡注は本文内〔注:〕と(=…)の割注)。
+*   **エンジン**: codex(codex-cli、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、3セッション並行・フォアグラウンド実行、所要約1.3分。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in `image_gen` による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-15
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷123/j123_y04.json` + `docs/images/卷123/j123_y04_{rofu,kozo,tenmon}.jpg` + `docs/卷123/j123_y04.md`
+参照: `docs/卷123/j123_y04.md`

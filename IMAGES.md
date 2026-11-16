@@ -3735,3 +3735,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷123/j123_y06.json` + `docs/images/卷123/j123_y06_{johyo,shusen,ryusa}.jpg` + `docs/卷123/j123_y06.md`
 参照: `docs/卷123/j123_y06.md`
+
+## [x] I610 — 卷124 元嘉十九年(j124_y01)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵)3枚を登録。(1) `seirin` — 寇謙之の奏請で造営中の静輪宮(①)、(2) `kosho` — 高昌に着いた沮渠無諱の一行と、門を閉ざして拒む闞爽の城(⑥)、(3) `bensui` — 劉道産の柩を沔水沿いに追い送る山蠻の人々(⑫)。各1回生成・再生成なし。全体図+四隅タイルを目視検証し、3枚とも文字・落款・印章・額・旗なし、512px 縮小での強赤画素 0。史実性の留保: seirin の静輪宮は形状の記録がなく、足場に包まれた未完成の高層木造楼閣として想像で描いた(基壇・斜路・作業小屋・牛車も想像)。背景の城壁は平城を示す無地の壁線。本文①の「青一色の旗幟」は文字混入回避のため描いていない。kosho の高昌城は実際よりかなり小さく、門は額の文字混入を避けるため門楼のない壁面の板戸とした(実際の城門の姿ではない)。城外の一行は人馬・駱駝・荷車・家族連れで、武器・旗なし。背景の葡萄棚と山並み(火焔山風)は想像。bensui の柩を載せた苫舟、岸を歩く人々の服装・髪型、茅葺きの村落と水田・水牛はいずれも想像で、本文にあるのは「沔水沿いに村落を作った」「沔口まで追い送った」のみ。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(193,514 / 216,199 / 228,273 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷124/j124_y01.md の3リンク(../images/卷124/j124_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用タイルは /tmp/zzt_image_codex_j124_y01/ のみでリポジトリ内に残さず。太祖文皇帝元嘉十九年(壬午・西暦442年、本文2727字、hu_notes キー無しで胡注は本文内〔注:…〕の割注)。
+*   **エンジン**: codex(codex-cli、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、3セッション並行・フォアグラウンド実行。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in `image_gen` による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-16
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷124/j124_y01.json` + `docs/images/卷124/j124_y01_{seirin,kosho,bensui}.jpg` + `docs/卷124/j124_y01.md`
+参照: `docs/卷124/j124_y01.md`

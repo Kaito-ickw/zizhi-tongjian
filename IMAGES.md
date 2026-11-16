@@ -3744,3 +3744,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷124/j124_y01.json` + `docs/images/卷124/j124_y01_{seirin,kosho,bensui}.jpg` + `docs/卷124/j124_y01.md`
 参照: `docs/卷124/j124_y01.md`
+
+## [x] I611 — 卷124 元嘉二十年(j124_y02)に挿絵3枚を追加(codex image_gen)
+*   **結果**: 2026-11-16 実施。カテゴリーB(水墨画調の場面挿絵)3枚を追加: sekibyo(本文③ 烏洛侯の知らせで魏主が李敞を遣わして祭らせた北の荒地の石廟)、rokkon(本文⑩ 鹿渾谷で柔然の営の塵を望み、太子晃が即攻を説き劉絜が諫める場面)、hyojo(本文⑩ 司馬楚之が柳を伐って囲いを作り水を注いで凍らせた氷の城)。3枚とも1回の生成で採用(再生成なし)。目視検証(全体図+四隅の等倍クロップ)で文字・落款・印章・額・旗の描き込みなし、512px 縮小での強赤画素 0。想像で補った点: sekibyo の岩窟は自然洞窟の大きな開口として描き、本文の「高さ七十尺、奥行き九十歩」の寸法は再現していない。本文の「祝文を壁に刻んで」は文字混入回避のため描かず、岩壁は無地(供物の卓・焚火・拝礼する一行・馬・白樺と松の林は想像)。rokkon の魏主・太子・劉絜の容姿と服装、柔然の営の円形天幕、散っていく騎馬と家畜は想像で、本文にあるのは「営中に塵が盛んに立つ」「太子は急襲を説き劉絜は諫めた」のみ。武器・旗は描いていない。hyojo の囲いは柳の幹と編んだ枝の方形の柵に氷をまとわせた姿で、規模・形は想像(川の氷に穴を開けて水を汲む兵、糧車・驢馬・牛・天幕、遠景の騎馬の列も想像)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(218,855 / 151,534 / 231,013 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷124/j124_y02.md の3リンク(../images/卷124/j124_y02_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j124_y02/ のみでリポジトリ内に残さず。太祖文皇帝元嘉二十年(癸未・西暦443年、本文2464字、hu_notes キー無しで胡注は本文内〔注:…〕の割注)。
+*   **エンジン**: codex(codex-cli、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、3セッション並行・フォアグラウンド実行。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in `image_gen` による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-16
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷124/j124_y02.json` + `docs/images/卷124/j124_y02_{sekibyo,rokkon,hyojo}.jpg` + `docs/卷124/j124_y02.md`
+参照: `docs/卷124/j124_y02.md`

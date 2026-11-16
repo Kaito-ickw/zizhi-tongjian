@@ -3726,3 +3726,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷123/j123_y05.json` + `docs/images/卷123/j123_y05_{kan,noui,nagisa}.jpg` + `docs/卷123/j123_y05.md`
 参照: `docs/卷123/j123_y05.md`
+
+## [x] I609 — 卷123 元嘉十八年(j123_y06)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵)3枚を登録。(1) `johyo` — 扶令育が宮門前で劉義康の召還を求めて上表する場面(②)、(2) `shusen` — 魏の奚眷軍に囲まれ食糧の尽きた酒泉(⑨)、(3) `ryusa` — 流沙を越えて鄯善へ向かう沮渠安周の軍(⑨)。各1回生成・再生成なし。全体図+四隅タイルを目視検証し、3枚とも文字・落款・印章・額・旗なし、512px 縮小での強赤画素 0。史実性の留保: johyo は「闕」を門楼のない壁の開口部として描いた(額の文字混入を避ける構図上の処置で、実際の宮門の姿ではない)。衛士は4人、後世風の幞頭。扶令育の衣と巻いた表に薄い黄土色。shusen の包囲陣は円形の天幕(ゲル風)と繋ぎ馬・焚き火で表し、交戦・旗・武器なし。城内は平屋根の家と枯れ木、壁際に座り込む人影3人。城の規模は実際よりかなり小さい。ryusa は駱駝・荷馬を伴う長い縦列と、遠景の湖畔の城(鄯善)。本文に行軍の具体的描写はなく、地形・湖・隊列は想像。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(134,360 / 207,183 / 129,910 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷123/j123_y06.md の3リンク(../images/卷123/j123_y06_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用タイルは /tmp/zzt_image_codex_j123_y06/ のみでリポジトリ内に残さず。太祖文皇帝元嘉十八年(辛巳・西暦441年、本文2663字、hu_notes キー無しで胡注は本文内(=…)の割注)。
+*   **エンジン**: codex(codex-cli、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、3セッション並行・フォアグラウンド実行。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in `image_gen` による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-16
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷123/j123_y06.json` + `docs/images/卷123/j123_y06_{johyo,shusen,ryusa}.jpg` + `docs/卷123/j123_y06.md`
+参照: `docs/卷123/j123_y06.md`

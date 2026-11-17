@@ -3779,3 +3779,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷124/j124_y05.json` + `docs/images/卷124/j124_y05_{hibutsu,shishi,tanba}.jpg` + `docs/卷124/j124_y05.md`
 参照: `docs/卷124/j124_y05.md`
+
+## [x] I615 — 卷125 元嘉二十四年(j125_y01)に挿絵2枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵・文字なし)2枚を追加。(1) `fuko` 開け放たれた府庫から民が宝物を持ち去る(anchor「小民が争って入りこれを盗み取り、役所が盗人を捜索したが捕えられなかった。」)、(2) `kanin` 帝の戒めの書をよそに酒を飲みつづける衡陽王義季(anchor「義季はなお平然と酣飲(かんいん=痛飲)をつづけ、ついに病を成して死んだ。」)。本文 1792 字と短いため2枚に留めた。初回2セッション並行で各1回生成、`fuko` のみ1回再生成(初版は手前の青銅鼎の帯模様が3倍拡大で文字めいて見えたため、器を無地の壺・人物を小さめに指定して再生成し、初版は破棄)。目視検証(全体図+四隅の等倍クロップ、fuko 初版は青銅器を3倍拡大)で確定2枚に文字・落款・印章・額・旗の描き込みなし、512px 縮小での強赤画素 0。想像で補った点: fuko の庫の造り・壺や箱・担ぎ棒・町並みと煙は想像で、本文は「府庫を斫り開かせ…二度と閉じなかった。小民が争って入りこれを盗み取り」のみ(確定版の扉は斧痕なしの開放状態)。kanin の水辺の亭・柳・舟・酒甕・巻いたままの書・従者は想像で、本文は「帝は書をもってなじり責め…なお平然と酣飲をつづけ」のみ。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(197,582 / 211,425 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷125/j125_y01.md の2リンク(../images/卷125/j125_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 17追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j125_y01/ のみでリポジトリ内に残さず。太祖文皇帝元嘉二十四年(丁亥・西暦447年、hu_notes キー無しで胡注は本文内〔注:…〕の割注)。
+*   **エンジン**: codex(codex-cli、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、初回2セッション並行+再生成1セッション・すべてフォアグラウンド実行。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in `image_gen` による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-17
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷125/j125_y01.json` + `docs/images/卷125/j125_y01_{fuko,kanin}.jpg` + `docs/卷125/j125_y01.md`
+参照: `docs/卷125/j125_y01.md`

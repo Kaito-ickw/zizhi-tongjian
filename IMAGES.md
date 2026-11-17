@@ -3806,3 +3806,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷125/j125_y03.json` + `docs/images/卷125/j125_y03_{zango,tozan}.jpg` + `docs/卷125/j125_y03.md`
 参照: `docs/卷125/j125_y03.md`
+
+## [x] I618 — 卷125 元嘉二十七年(j125_y04, 450 CE)に挿絵3枚を追加(agy/nano-banana)
+*   **結果**: カテゴリB(水墨の名場面)3枚を登録。(1) `kouin` 太武帝の前で太子晃のとりなしを否定して事実を述べる高允(anchor「こうしてこれを赦した。」)、(2) `tessa` 黄河を断つ鉄鎖を長柄の斧で断ち切って下る垣護之の船団(anchor「余はみな完備して返った。」)、(3) `kaho` 瓜歩山のめぐり道と頂の氈屋、水を運ぶ駱駝、葦の筏(anchor「その上に氈屋を設けた。」)。本文 23396 字の長い年(崔浩の国史事件・元嘉北伐・魏の瓜歩到達)のため3枚。3枚並行(`&` + `wait`、フォアグラウンド、約80秒)で各1回生成、429 なし・再生成なし。目視検証(全体図+四隅の2倍クロップ)で3枚とも文字・落款・印章・額の描き込みなし(旗・帆は無地、堂内の柱と壁も無地)、朱系の彩色なし。想像で補った点: kouin の堂の造り・帝の座・衣冠・人物配置(本文は問答のみ)。tessa の船の形・帆・岸の景は想像で、鎖は画面上は船ごとに1〜2条(本文は「鉄鎖で三重に連ね」「長柄の斧でこれを断ち切り」)。kaho の山の形・旗・人物の装い・対岸の城と艦列の見え方は想像(本文は「瓜歩山を鑿って蟠道を作り、その上に氈屋を設けた」「橐駝に河北の水を負わせ」「葦を伐って筏を作り」)。生成物は 1376x768(中身は JPEG)、image_sync.py で 1376x768 JPEG(106,335 / 208,379 / 194,268 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷125/j125_y04.md の3リンク(../images/卷125/j125_y04_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_agy_j125_y04/ のみでリポジトリ内に残さず。太祖文皇帝元嘉二十七年(庚寅・西暦450年、record の hu_notes は null、胡注は chunk 側 list と本文内〔注:…〕)。
+*   **エンジン**: agy(Antigravity CLI 1.5.10、`agy -p "…image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼び、nano-banana で生成して /tmp/zzt_image_agy_j125_y04/<slug>.png に保存…" --dangerously-skip-permissions`、プロンプトは場面記述(英語)+共通スタイル文(水墨・俯瞰・中程度の描き込み・朱色不使用・no text/seals/signatures・旗と柱は無地・16:9))
+*   **モデル**: Gemini nano-banana(Nano Banana 2 / `gemini-3.1-flash-image`)
+*   **来歴(§3.6)**: AI生成画像。Google Gemini nano-banana(agy 経由)による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-18
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷125/j125_y04.json` + `docs/images/卷125/j125_y04_{kouin,tessa,kaho}.jpg` + `docs/卷125/j125_y04.md`
+参照: `docs/卷125/j125_y04.md`

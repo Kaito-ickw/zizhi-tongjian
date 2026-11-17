@@ -3761,3 +3761,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷124/j124_y03.json` + `docs/images/卷124/j124_y03_{goban,kakou,nikkei}.jpg` + `docs/卷124/j124_y03.md`
 参照: `docs/卷124/j124_y03.md`
+
+## [x] I613 — 卷124 元嘉二十二年(j124_y04)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリB(場面)3枚を追加。ryusa(本文⑮ 万度帰が輜重を敦煌に残し、軽騎五千で流沙を渡って鄯善へ向かう)、buchoko(本文⑱ 武帳岡で食事を禁じられたまま文帝の到着を待ち、飢えた顔色になる皇子たち)、bakuchi(本文㉕ 孔熙先が博打でわざと負けて范曄に財物を渡し、近づいていく場面)。3枚とも1回の生成で採用(再生成なし)。目視検証(全体図+四隅の等倍クロップ、buchoko は遠景の宮殿を3倍拡大)で文字・落款・印章・額・旗の描き込みなし、512px 縮小での強赤画素 0。想像で補った点: ryusa のオアシスの町・湖・ポプラ・雪山・騎兵の装いは想像で、本文にあるのは「軽騎五千で流沙を渡った」のみ(描かれた騎数は数十騎)。buchoko の幕舎・空の膳机・侍者・遠景の川と宮殿・近づく車駕は想像で、皇子の人数(4人)も本文に根拠はない。bakuchi の遊具(投げ棒と丸い駒=樗蒲を想定)・絹の反物・灯・酒壺・屏風・庭は想像で、本文は「博打」「財物」とのみ記す。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(132,032 / 202,897 / 165,446 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷124/j124_y04.md の3リンク(../images/卷124/j124_y04_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j124_y04/ のみでリポジトリ内に残さず。太祖文皇帝元嘉二十二年(乙酉・西暦445年、本文8985字、hu_notes キー無しで胡注は本文内〔注:…〕の割注)。
+*   **エンジン**: codex(codex-cli、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、3セッション並行・フォアグラウンド実行。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in `image_gen` による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-17
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷124/j124_y04.json` + `docs/images/卷124/j124_y04_{ryusa,buchoko,bakuchi}.jpg` + `docs/卷124/j124_y04.md`
+参照: `docs/卷124/j124_y04.md`

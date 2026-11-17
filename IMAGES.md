@@ -3788,3 +3788,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷125/j125_y01.json` + `docs/images/卷125/j125_y01_{fuko,kanin}.jpg` + `docs/卷125/j125_y01.md`
 参照: `docs/卷125/j125_y01.md`
+
+## [x] I616 — 卷125 元嘉二十五年(j125_y02, 448 CE)に挿絵2枚を追加(agy/nano-banana)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵・文字なし)2枚を追加。(1) `kangen` 庾炳之の非を文帝に陳べる何尚之(anchor「上はそこで炳之の官を免じ、徐湛之(じょたんし)を丹楊尹とした。」)、(2) `jukou` 柔然が見えぬまま受降城に糧を積み戍を置いて還る魏軍(anchor「受降城〔注:すなわち漢の武帝が築いた受降城〕に至ったが、柔然は見えず、そこで糧を城内に積み、戍(まもり)を置いて還った。」)。本文 2594 字で短い記事が多いため2枚に留めた。生成は各1回を順次フォアグラウンド実行、`kangen` のみ1回再生成(初版は庭の地面に文字めいた小さな点描が3倍拡大で認められたため、庭の地面を無地と指定して再生成し、初版は破棄)。目視検証(全体図+四隅の等倍クロップ、jukou は旗・城門を3倍拡大、kangen 確定版は木の根元の落葉・左下を3倍拡大)で確定2枚に文字・落款・印章・額・旗の描き込みなし(旗は無地、城の入口は門楼なしの素通し)。想像で補った点: kangen の殿舎の造り・笏・侍者・庭の木、および炳之がその場に立つ構図は想像で、本文は「僕射の何尚之はそこで炳之の欠点を洗いざらい陳べて言った」のみ。jukou の城の形・牛車・穀物袋・毛皮の騎兵・旗は想像で、本文は「受降城に至ったが、柔然は見えず、そこで糧を城内に積み、戍を置いて還った」のみ。生成物は 1376x768(拡張子 .png だが中身は JPEG)、image_sync.py で 1376x768 JPEG(110,330 / 148,915 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷125/j125_y02.md の2リンク(../images/卷125/j125_y02_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 17追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_agy_j125_y02/ のみでリポジトリ内に残さず。太祖文皇帝元嘉二十五年(戊子・西暦448年、hu_notes キー無しで胡注は本文内〔注:…〕の割注)。
+*   **エンジン**: agy(Antigravity CLI 1.5.9、`agy -p "画像を1枚だけ生成してください。画像生成は事前定義の image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼んでください(バックグラウンド実行・schedule・manage_task・複数回生成・追加サブエージェント定義は禁止)。サブエージェントには次の英語プロンプト全文をそのまま渡し、nano-banana で生成して /tmp/zzt_image_agy_j125_y02/<slug>.png に保存させてください。…英語プロンプト: <Scene…> <Style: traditional Chinese ink and wash painting, monochrome, bird's-eye view, medium-light detail, 16:9, no red, no text/calligraphy/signature/seal/plaque/border, corners empty>" --dangerously-skip-permissions`、Google サブスク枠・従量 API 不使用。画像枠 429 のリセット(2026-11-18 02:02 JST)直後の 02:03 起動で3回とも成功)
+*   **モデル**: Gemini nano-banana(Nano Banana 2 系画像生成モデル `gemini-3.1-flash-image`、agy 組み込み)
+*   **来歴(§3.6)**: AI生成画像。Google Gemini nano-banana(agy image-generator)による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-18
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷125/j125_y02.json` + `docs/images/卷125/j125_y02_{kangen,jukou}.jpg` + `docs/卷125/j125_y02.md`
+参照: `docs/卷125/j125_y02.md`

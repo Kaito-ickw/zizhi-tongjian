@@ -3770,3 +3770,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷124/j124_y04.json` + `docs/images/卷124/j124_y04_{ryusa,buchoko,bakuchi}.jpg` + `docs/卷124/j124_y04.md`
 参照: `docs/卷124/j124_y04.md`
+
+## [x] I614 — 卷124 元嘉二十三年(j124_y05)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(名場面)3枚を登録。(1) `hibutsu` 廃仏の詔を逃れ仏像と経典を山へ運ぶ僧たち(anchor「沙門の多くは逃げ隠れて免れることを得、あるいは経像を収め蔵(かく)した。」)、(2) `shishi` 宗慤が獅子の形を作って林邑の象軍を走らせる(anchor「象は果たして驚き走り、林邑の兵は大敗した。」)、(3) `tanba` 陸俟が単騎で長安の任地へ向かう(anchor「俟はそこで単馬(=馬一頭)で鎮(=任地)へ赴いた。」)。初回3セッション並行で各1回生成、`hibutsu` のみ1回再生成(初版は経巻の巻き口に文字めいた渦模様が出たため、経巻を無地の布包み・籠に変えて再生成し、初版は破棄)。目視検証(全体図+四隅の等倍クロップ、tanba は遠景の城門を3倍拡大、hibutsu 初版は経巻と塔を拡大)で確定3枚に文字・落款・印章・額・旗の描き込みなし、512px 縮小での強赤画素 0。想像で補った点: hibutsu の山道・洞窟・布包みと籠・担ぎ棒の仏像・谷の塔と堂・遠くの煙は想像で、本文は「逃げ隠れ」「経像を収め蔵した」とのみ記す。shishi の獅子像の造り(藁のたてがみ・布・台車)・川と舟・椰子は想像で、本文は「その形を製って象と相拒ませた」のみ(象は本文どおり布の鎧を着せた)。tanba の街道・木橋・枯れ木・丘の陣営と騎馬は想像で、遠景の長安は門楼付きの低い城壁として描かれた(額なし)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(230,026 / 219,211 / 190,596 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷124/j124_y05.md の3リンク(../images/卷124/j124_y05_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j124_y05/ のみでリポジトリ内に残さず。太祖文皇帝元嘉二十三年(丙戌・西暦446年、本文8367字、hu_notes キー無しで胡注は本文内〔注:…〕の割注)。
+*   **エンジン**: codex(codex-cli、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、初回3セッション並行+再生成1セッション・すべてフォアグラウンド実行。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in `image_gen` による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-17
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷124/j124_y05.json` + `docs/images/卷124/j124_y05_{hibutsu,shishi,tanba}.jpg` + `docs/卷124/j124_y05.md`
+参照: `docs/卷124/j124_y05.md`

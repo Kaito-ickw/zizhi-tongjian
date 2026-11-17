@@ -3797,3 +3797,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷125/j125_y02.json` + `docs/images/卷125/j125_y02_{kangen,jukou}.jpg` + `docs/卷125/j125_y02.md`
 参照: `docs/卷125/j125_y02.md`
+
+## [x] I617 — 卷125 元嘉二十六年(j125_y03, 449 CE)に挿絵2枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵・文字なし)2枚を追加。(1) `zango` 柔然の騎兵に囲まれながら塹壕を掘って堅守する高涼王那の陣(anchor「処羅はしばしば挑戦したが、そのたびに那に敗れた。」)、(2) `tozan` 木を斬り払い鼓を打って蛮の山へ登る沈慶之の軍(anchor「鼓を打ち鬨(とき)の声を上げて前進させると、群蛮は震え恐れた。」)。本文 1712 字と短いため2枚に留めた。2セッション並行で各1回生成、再生成なし(各セッション dir の PNG は1枚、SOURCE と out.png の md5 一致)。目視検証(全体図+四隅の2倍クロップ)で2枚とも文字・落款・印章・額の描き込みなし(旗は無地)、512px 縮小での強赤画素 0。想像で補った点: zango の円形の塹壕と土塁・氈帳・陣内の馬・無地の旗・騎兵の毛皮帽は想像で、包囲の輪は画面上2重ほど(本文は「那を数十重に囲んだ。那は塹壕を掘って堅く守り」のみ)。tozan の担ぎ棒に吊った太鼓・兵の装い・山上の茅葺きの倉と穀物の山・逃げる蛮の姿・複数の尾根筋の隊列は想像で、本文は「木を斬り払って山に登り、鼓を打ち鬨の声を上げて前進させると、群蛮は震え恐れた」「穀物を重巌に積んでいる」「八道からともに進んだ」のみ。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(167,855 / 281,317 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷125/j125_y03.md の2リンク(../images/卷125/j125_y03_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 17追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j125_y03/ のみでリポジトリ内に残さず。太祖文皇帝元嘉二十六年(己丑・西暦449年、hu_notes は null で胡注は本文内〔注:…〕の割注)。
+*   **エンジン**: codex(codex-cli 0.160.0、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、2セッション並行・すべてフォアグラウンド実行。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in `image_gen` による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-18
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷125/j125_y03.json` + `docs/images/卷125/j125_y03_{zango,tozan}.jpg` + `docs/卷125/j125_y03.md`
+参照: `docs/卷125/j125_y03.md`

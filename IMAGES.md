@@ -3853,3 +3853,13 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷128/j128_y01.json` + `docs/images/卷128/j128_y01_{ryozan,hasu,rosha}.jpg` + `docs/卷128/j128_y01.md`
 参照: `docs/卷128/j128_y01.md`
+
+
+## [x] I623 — 卷128 孝建二年(j128_y02, 455 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵・文字なし)3枚を追加。(1) `jikan` 自邸に退いた沈慶之が、再起用を説きに来た何尚之を「この沈公は何公の真似はせぬ」と笑って退ける場面(anchor「尚之は恥じてやめた。」)、(2) `biraku` 郊廟の祭祀にはじめて備楽を設けた郊壇の祭りの俯瞰(anchor「魏・晋以来の世俗の楽である〕。」)、(3) `karo` 家族を魏に捕らえられながら葭蘆を固く守る氐の楊頭(anchor「それでも頭は宋のために固く守って二心がなかった。」)。本文 1716 字と短いが、性格の異なる3場面(人物の逸話・礼楽制度・辺境の守り)があるため3枚。武昌王渾の「戯れの即位ごっこ」は檄文=文字混入の危険と自殺に至る結末のため採らなかった。3セッション並行で各1回生成(約2分)、429 なし・再生成なし(各セッション dir の PNG は1枚、SOURCE と out.png の md5 一致)。目視検証(全体図+四隅クロップ)で3枚とも文字・落款・印章・額の描き込みなし(jikan の柱は無地・門楼なし、biraku は旗なしで鐘・磬の架は無地、karo の旗3本は無地で入口は壁線の切れ目)、512px 縮小での強赤画素 0。想像で補った点: jikan の茅葺きの縁側・松・竹・池・牛車・召使い・急須と茶碗(本文は「始興公として自邸に退く」「慶之は笑って言った」のみ。急須は時代的には想像)。biraku の円形の土壇・鼎・編鐘8口・磬・建鼓・琴3面・笛・羽を持つ舞人12人という編成はすべて想像(本文は「はじめて備楽を設けよ」、胡注は「雅楽を備えられたのではなく、魏・晋以来の世俗の楽」。caption に想像と明記)。karo の岬状の岩山・土塁の輪・茅屋・物見台・峡谷の川と葦は想像(本文は「頭はさきに葭蘆を守っていた」)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(259,644 / 212,758 / 162,067 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷128/j128_y02.md の3リンク(../images/卷128/j128_y02_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j128_y02/ のみでリポジトリ内に残さず。世祖孝武皇帝孝建二年(乙未・西暦455年、record の hu_notes キーなし、胡注は本文内〔注:…〕)。
+*   **エンジン**: codex(codex-cli 0.160.0、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、3セッション並行・すべてフォアグラウンド実行。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in `image_gen` による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-18
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷128/j128_y02.json` + `docs/images/卷128/j128_y02_{jikan,biraku,karo}.jpg` + `docs/卷128/j128_y02.md`
+参照: `docs/卷128/j128_y02.md`

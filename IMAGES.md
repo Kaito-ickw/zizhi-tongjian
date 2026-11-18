@@ -3815,3 +3815,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷125/j125_y04.json` + `docs/images/卷125/j125_y04_{kouin,tessa,kaho}.jpg` + `docs/卷125/j125_y04.md`
 参照: `docs/卷125/j125_y04.md`
+
+## [x] I619 — 卷126 元嘉二十八年(j126_y01, 451 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵・文字なし)3枚を追加。(1) `kousha` 盱眙の攻防で、魏軍の鉤車が掛けた鉤を城内が大綱で数百人がかりで引き返す場面(anchor「車は退くことができなかった。」)、(2) `tsubame` 魏軍通過後の焼け落ちた村里と、林の木に巣をかける燕(anchor「林の木に巣をかけた。」)、(3) `nanpon` 長社を発ち千余家を率いて南へ奔る魯爽・魯秀兄弟(anchor「汝南に奔った。」)。本文 9015 字(盱眙攻城・魏軍北帰・魯爽の南奔・景穆太子の死)のため3枚。3セッション並行で各1回生成、429 なし・再生成なし(各セッション dir の PNG は1枚、SOURCE と out.png の md5 一致)。目視検証(全体図+四隅の2倍クロップ)で3枚とも文字・落款・印章・額の描き込みなし(旗は無地、nanpon 遠景の城門に額なし)、512px 縮小での強赤画素 0。想像で補った点: kousha の鉤車・城楼(茅葺きの望楼)の形、城内の家並み、遠景の長囲・氈帳・浮橋の配置(本文は「鉤車で城楼を鉤にかけた」「彄絚でつなぎ、数百人が叫び呼ばわってこれを引き」「長囲」「君山に浮橋」)。tsubame の廃墟・井戸・木の姿は想像(本文は「赤地となって何も残らず、春に燕が帰ってきても、林の木に巣をかけた」)。nanpon の兄弟の装い・牛車・羊・渡渉・柳は想像(本文は「部曲および従うことを願う者千余家を率いて汝南に奔った」)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(260,716 / 236,937 / 239,781 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷126/j126_y01.md の3リンク(../images/卷126/j126_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j126_y01/ のみでリポジトリ内に残さず。太祖文皇帝元嘉二十八年(辛卯・西暦451年、record の hu_notes は null、胡注は本文内〔注:…〕)。
+*   **エンジン**: codex(codex-cli 0.160.0、`codex exec -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -` に prompt を stdin で渡し built-in `image_gen` を各1回、3セッション並行・すべてフォアグラウンド実行。ChatGPT サブスク枠・`OPENAI_API_KEY` 従量経路不使用)
+*   **モデル**: OpenAI built-in `image_gen`(Codex 組み込み画像生成モデル、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in `image_gen` による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-18
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷126/j126_y01.json` + `docs/images/卷126/j126_y01_{kousha,tsubame,nanpon}.jpg` + `docs/卷126/j126_y01.md`
+参照: `docs/卷126/j126_y01.md`

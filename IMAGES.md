@@ -3872,3 +3872,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷128/j128_y03.json` + `docs/images/卷128/j128_y03_{keikoku,rekijo,enshi}.jpg` + `docs/卷128/j128_y03.md`
 参照: `docs/卷128/j128_y03.md`
+
+## [x] I625 — 卷128 大明元年(j128_y04)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリB(水墨画調の場面挿絵)3枚を追加。`ninshin`(日照りのなか任城のいばらの藪で群盗「任榛」を追うが空振りに終わる申坦らの軍、anchor「功なく還った。」)、`shijo`(処刑されかけた申坦を市場で抱いて泣く老将沈慶之、anchor「上はそこでこれを免じた。」)、`keiko`(長江をはさんで向かい合う京口と広陵、竟陵王誕の広陵移鎮と劉延孫の京口配置、anchor「京口を鎮させてこれを防がせた。」)。各1回生成・再生成なし。全体図+四隅タイルの目視で文字・落款・印章・額・看板なし(旗・幕・帆はすべて無地)、朱色なし(ninshin の太陽は薄い黄土色)。想像で補った点: ninshin の干上がった川床・空の小屋と焚き火跡・瓢や桶を持つ兵(本文は「任榛はこれを聞いて、みな逃げ散った。時に天が旱で、人馬が渇して乏しく」のみ)。shijo の市場の屋台・柳・見物人・縛られた姿(本文は「坦を抱いて市で哭して」のみ)。keiko の城の形・丘・港・物見台・水田は概念的な想像(京口=南岸・広陵=北岸の位置関係のみ史実)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(296,854 / 215,897 / 180,033 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷128/j128_y04.md の3リンク(../images/卷128/j128_y04_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j128_y04/ のみでリポジトリ内に残さず。世祖孝武皇帝大明元年(丁酉・西暦457年、record の hu_notes キーなし、胡注は本文内〔注:…〕)。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各1回・16:9、3プロセス並行・すべてフォアグラウンド実行、各 timeout 540 秒。`~/.codex/generated_images/<session>/` の PNG を自セッション id 指定でコピー、md5 一致確認。`OPENAI_API_KEY` 従量経路は不使用)
+*   **モデル**: OpenAI Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-19
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷128/j128_y04.json` + `docs/images/卷128/j128_y04_{ninshin,shijo,keiko}.jpg` + `docs/卷128/j128_y04.md`
+参照: `docs/卷128/j128_y04.md`

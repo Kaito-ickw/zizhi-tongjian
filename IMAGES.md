@@ -3890,3 +3890,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷128/j128_y05.json` + `docs/images/卷128/j128_y05_{kesseki,soka,taibaku}.jpg` + `docs/卷128/j128_y05.md`
 参照: `docs/卷128/j128_y05.md`
+
+## [x] I627 — 卷129 大明三年(j129_y01, 459 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: 竟陵王誕の広陵籠城(4〜7月)から、カテゴリーB(名場面)3枚を追加。`sokaku`=広陵城の堀端を馬で駆け「我こそは宗慤だ」と名乗る宗慤と、城壁上から見下ろす城兵(anchor「城を巡って馬を躍らせ叫んだ――「我こそは宗慤だ」。」)/ `noroshi`=桑里の三つの烽火台と、長雨で止まった攻城陣(行楼・土山)(anchor「上は怒り、太史に日を択(えら)ばせ…固く諫めたので、やめた。」)/ `banzai`=広陵平定の報に側近が万歳を叫ぶなか、輦のかたわらで独り声を上げない蔡興宗(anchor「上は悦ばなかった。」)。3枚とも画像内テキストなし: 全体図(1200px)と四隅(各1/3)タイルを目視し、文字・落款・印章・額・看板なし、512px 縮小での強赤画素 0 を確認、再生成なし(各1回生成で確定、バリアント無し)。想像で補った要素: sokaku の堀と葦・城内の屋根・包囲軍の天幕と無地の幟・遠山、宗慤の装束と片手を挙げる姿(本文は「城を巡って馬を躍らせ叫んだ」のみ。城門・門楼は額の混入回避のため描かず、城壁は切れ目のない線にした)。noroshi の烽火台の形(木組みの櫓に柴を積む)・蓑笠の兵・天幕・ぬかるみ・遠山(本文は「桑里に三つの烽火台」「行楼・土山および諸々の攻城具を立てたが、長雨に遭って城を攻められなかった」。桑里と広陵城の位置関係・距離は不明で、同一画面に収めたのは構図上の都合。雨は薄い斜めのぼかしで表現)。banzai の場所の造り(本文は「宣陽門に出て」。額の混入回避のため門楼を描かず、塀の切れ目で表現)・輦の形(二頭立ての車に円蓋。本文は「輦」のみ)・柳・遠景の殿舎・側近の人数と装束。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(194,635 / 169,152 / 190,900 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷129/j129_y01.md の3リンク(../images/卷129/j129_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j129_y01/ のみでリポジトリ内に残さず。世祖孝武皇帝大明三年(己亥・西暦459年、record の hu_notes キーなし、胡注は本文内〔注:…〕)。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -C <dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3プロセス並行・すべてフォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。`OPENAI_API_KEY`/`scripts/image_gen.py` 経路は不使用、429・拒否なし。生成物は `~/.codex/generated_images/<session id>/` の PNG(各セッション1枚、md5 一致を確認)を cp)
+*   **モデル**: OpenAI Codex built-in image_gen(gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex CLI の built-in image_gen による生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-19
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷129/j129_y01.json` + `docs/images/卷129/j129_y01_{sokaku,noroshi,banzai}.jpg` + `docs/卷129/j129_y01.md`
+参照: `docs/卷129/j129_y01.md`

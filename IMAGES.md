@@ -3926,3 +3926,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷129/j129_y04.json` + `docs/images/卷129/j129_y04_{kiji,ryuzan,koyomi}.jpg` + `docs/卷129/j129_y04.md`
 参照: `docs/卷129/j129_y04.md`
+
+## [x] I631 — 卷129 大明七年(j129_y05, 463 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵)3枚を追加。(1) `haka` — 殷貴妃の墓前で鞭を挙げて石柱を指し江智淵を責める孝武帝(anchor「「これには『懐』の字を用いてはならぬぞ」。」)。(2) `utage` — 拝謝しようとしてよろけ倒れる宗霊秀と笑い興じる孝武帝(anchor「拝謝しようとしてよろけ倒れるのを見て笑い興じた。」)。(3) `suigun` — 梁山での水軍訓練を船上から見守る孝武帝(anchor「上は梁山(りょうざん)で水軍を訓練した。」)。各1回生成・再生成なし。目視検証(全体図+四隅タイル+石柱と中庭の門の拡大クロップ)で文字・落款・印章・額なし、512px 縮小での強赤画素 0。想像で補った要素: haka の石柱の形(無地の円柱+丸い笠。本文は「墓前の石柱」のみ、文字混入回避のため刻字は描かない)・墳丘と参道・松・随行4騎(本文は「群臣とともに馬に乗って」)。utage の堂の造り・卓と食器・床に落ちた絹(本文は「しばしば物を賜い」のみで品目なし)・脇に端座する一人(蔡興宗を念頭に置いたが本文はこの場面への同席を記さない)・中庭の門と木。帝も肥えた体つきに描かれているが本文に根拠なし。suigun の全体(本文は「梁山で水軍を訓練した」のみ。両岸に向かい合う山は梁山=東西梁山の地形に基づくが、船の形・隻数・陣形・太鼓・傘蓋・葦はすべて想像)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(220,184 / 174,443 / 219,998 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷129/j129_y05.md の3リンク(../images/卷129/j129_y05_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j129_y05/ のみでリポジトリ内に残さず。世祖孝武皇帝大明七年(癸卯・西暦463年、record の hu_notes キーなし、胡注は本文内〔注:…〕)。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各1回、3プロセス並行・すべてフォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。codex-cli 0.160.0、429・拒否なし。`OPENAI_API_KEY` 従量経路は不使用)
+*   **モデル**: Codex built-in `image_gen`(OpenAI gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in `image_gen` が生成(`~/.codex/generated_images/<session>/` から自セッション分のみコピー、session 01a1f41b-f2f5…/f2f2…/f2f4…)、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-19
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷129/j129_y05.json` + `docs/images/卷129/j129_y05_{haka,utage,suigun}.jpg` + `docs/卷129/j129_y05.md`
+参照: `docs/卷129/j129_y05.md`

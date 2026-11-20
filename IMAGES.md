@@ -3944,3 +3944,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷129/j129_y06.json` + `docs/images/卷129/j129_y06_{nemuri,jiju,kosha}.jpg` + `docs/卷129/j129_y06.md`
 参照: `docs/卷129/j129_y06.md`
+
+## [x] I633 — 卷130 泰始元年(j130_y01, 465 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵)3枚を追加。(1) `kuruma` — 朝服を整えて牛車に乗り召しに応じる柳元景と、路地の出口で待ち受ける軍士(anchor「路地を出ると、軍士が大挙して押し寄せた。」)。(2) `kago` — 肥えた叔父の王を竹籠に入れて重さを量らせ、指さして笑う廃帝(anchor「休祐を「賊王」と呼んだ。」)。(3) `hadashi` — 廃帝が弑された夜、はだし・烏帽のまま休仁に導かれて西堂の御座へ上る湘東王彧と、白帽を盆に載せて駆け寄る主衣(anchor「なお烏帽(=黒い帽子)をかぶったままであった。」)。各1回生成・再生成なし(バリアント無し)。目視検証(全体図 1200px+原寸の四隅クロップ)で文字・落款・印章・額なし(壁・柱・衝立・車蓋・盆はすべて無地)、512px 縮小での強赤画素 0。想像で補った要素: kuruma の牛車(本文は「車に乗り」のみ。牛・御者1人・車蓋は想像)・路地の土塀と柳・軍士の人数と無地の槍(本文は「軍士が大挙して押し寄せた」で、絵は整列して待ち受ける姿=押し寄せる直前の静的な構図。流血・刑の場面は描かない)。kago の天秤の構造(三脚+横木+石の分銅。本文は「竹籠を作って中に入れて重さを量り」のみ)・殿舎と松・控える二王と見張り2人・空の籠2つ(籠の中は彧を念頭、控える二人は休仁・休祐を念頭)。hadashi の堂の造り・燭台・衝立と御座の形・伏す官人と衛士の人数・戸外の竹と三日月(十一月戊午=月末で実際の月相とは合わない可能性あり、夜の記号として描いた)。白帽を運ぶ人物は本文「主衣を呼んで白帽に代えさせた」に基づくが、絵では御座に着く前の時点に前倒ししている。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(177,787 / 158,572 / 149,493 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷130/j130_y01.md の3リンク(../images/卷130/j130_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j130_y01/ のみでリポジトリ内に残さず。太宗明皇帝泰始元年(乙巳・西暦465年、record の hu_notes キーなし、胡注は本文内〔注:…〕)。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各1回、3プロセス並行・すべてフォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。codex-cli 0.160.0、429・拒否なし。`OPENAI_API_KEY` 従量経路は不使用)
+*   **モデル**: Codex built-in `image_gen`(OpenAI gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in `image_gen` が生成(`~/.codex/generated_images/<session>/` から自セッション分のみコピー、session 01a1f942-a279…/a278…/a290…)、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-20
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷130/j130_y01.json` + `docs/images/卷130/j130_y01_{kuruma,kago,hadashi}.jpg` + `docs/卷130/j130_y01.md`
+参照: `docs/卷130/j130_y01.md`

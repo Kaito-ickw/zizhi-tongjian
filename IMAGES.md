@@ -3962,3 +3962,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷131/j131_y01.json` + `docs/images/卷131/j131_y01_{kome,hokake,uma}.jpg` + `docs/卷131/j131_y01.md`
 参照: `docs/卷131/j131_y01.md`
+
+## [x] I635 — 卷132 泰始三年(j132_y01, 467 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵)3枚を追加。(1) `yuki` — 大雪で泗水が凍り、船を棄てて徒歩で逃げる張永の軍(anchor「折しも大雪となり、泗水は凍りついた。」)。(2) `taimatsu` — 朐山で一人二本の松明を掲げて山に登り太鼓を打って大軍を装う垣崇祖の兵と、引き返す魏の斥候騎(anchor「魏の斥候の騎兵は軍備がきわめて盛んだと見て、退いた」)。(3) `daibutsu` — 魏が天宮寺で造った高さ四十三尺の大仏(anchor「高さ四十三尺、銅十万斤、黄金六百斤を用いた。」)。各1回生成・再生成なし。**画像内テキストなし**を全体図+四隅(コントラスト強調・3倍拡大)+遠景の城門楼の4倍クロップで目視確認(文字・落款・印章・額なし)、512px 縮小での強赤画素 0。**本文に根拠のない想像要素**: yuki の柳・荷車・盾・俵、遠景の城(彭城を念頭)と門楼、氷に閉ざされた船の数と形(本文は「船を棄てて徒歩で走った」のみ。後段で棄船九百艘)、外套の将と支える従者(張永を念頭、本文は「足の指が落ち」のみ)、追撃・凍死・負傷は描かず。taimatsu の円形の土塁(朐山の戍)・浜の小舟4艘・沖の島・松・太鼓2面・斥候3騎(本文は「一人が二本ずつ松明を持って山に登り、太鼓を打って喚声を上げさせた」「水際に舟を浮かべ」「弱った者は島へ入らせ」)。daibutsu の坐像という姿・竹足場・炉とふいご・地金を担ぐ工人・僧と官人・遠景の塔と堂(本文は像高・銅・黄金の量のみ。黄金は淡い黄土色の wash で表現)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(200,090 / 236,412 / 208,971 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷132/j132_y01.md の3リンク(../images/卷132/j132_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j132_y01/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各1回、3プロセス並行・すべてフォアグラウンド実行(`&` + `wait`、約73秒)、各 timeout 540 秒。codex-cli 0.160.0、429・拒否なし。`OPENAI_API_KEY` 従量経路は不使用)
+*   **モデル**: Codex built-in `image_gen`(OpenAI gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-21
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷132/j132_y01.json` + `docs/images/卷132/j132_y01_{yuki,taimatsu,daibutsu}.jpg` + `docs/卷132/j132_y01.md`
+参照: `docs/卷132/j132_y01.md`

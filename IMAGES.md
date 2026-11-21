@@ -4043,3 +4043,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷133/j133_y05.json` + `docs/images/卷133/j133_y05_{keiji,gyuba,tanki}.jpg` + `docs/卷133/j133_y05.md`
 参照: `docs/卷133/j133_y05.md`
+
+## [x] I644 — 卷134 元徽四年(j134_y01)に挿絵3枚を追加
+*   **結果**: カテゴリB(場面)3枚を登録。`rincho`=再び臨朝した馮太后と幼い高祖、賜爵の先例を諫めた程駿への衣・帛の下賜(anchor「そして駿に衣一揃いと帛二百匹を賜った。」)/`keiko`=京口に迫る台軍と市街の煙、うろたえる建平王景素と顔を見合わせる諸将(anchor「うろたえてどうしてよいか分からなかった。」)/`kyo`=劉攘兵らが兵を整えて峡を封鎖し軍船を足止めする(anchor「軍が下るのを許さなかった。」)。3枚とも目視検証で文字・印章・落款・朱なし(四隅含む、rincho の壁の掛け物と衝立は無地)、再生成なし。想像で補った要素: rincho の殿舎・壇・座具・列立する群臣・掛け物、太后と高祖の同席の配置(本文は太后の言葉と下賜のみ)、keiko の城壁上に立つ景素・草葺きの市街・遠景の船(本文は「火を放って市街を焼いた」「うろたえて」のみ。城門は門楼なしの開口部)、kyo の横並びの小舟による封鎖・柵・岩棚の太守(本文は「兵を整えて峡を封鎖し」のみ)。生成物は 1376x768(中身 JPEG)、image_sync.py で 1376x768 JPEG(165,979 / 183,955 / 203,086 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷134/j134_y01.md の3リンク(../images/卷134/j134_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_agy_j134_y01/ のみでリポジトリ内に残さず。蒼梧王下 元徽四年(丙辰・西暦476年、hu_notes は None、胡注は本文内〔注:…〕)。
+*   **エンジン**: agy(`agy -p "<指示+英語プロンプト>" --dangerously-skip-permissions`、事前定義 `image-generator` サブエージェントを invoke_subagent で同期1回呼び出し・nano-banana・16:9、probe 1枚→2枚並行・フォアグラウンド実行(`&` + `wait`)、各 timeout 280 秒、各≒60〜75秒。agy 1.5.14、429・拒否なし。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: Google Gemini 画像モデル(nano-banana / `gemini-3.1-flash-image`、agy 経由)
+*   **来歴(§3.6)**: AI生成画像。agy(Antigravity CLI)の image-generator サブエージェントが nano-banana で生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-22
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷134/j134_y01.json` + `docs/images/卷134/j134_y01_{rincho,keiko,kyo}.jpg` + `docs/卷134/j134_y01.md`
+参照: `docs/卷134/j134_y01.md`

@@ -3998,3 +3998,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷132/j132_y04.json` + `docs/images/卷132/j132_y04_{hyou,josui,uten}.jpg` + `docs/卷132/j132_y04.md`
 参照: `docs/卷132/j132_y04.md`
+
+## [x] I639 — 卷133 泰始七年(j133_y01, 471 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(水墨画調の場面挿絵)3枚を追加。(1) `gansan` — 巖山の雉狩りの夕暮れ、馬から落とされ倒れた晋平王・休祐と「落馬したぞ」と触れ回る者(anchor「そして「驃騎(休祐)が落馬したぞ！」と触れ回らせた。」)。(2) `ginko` — 淮陰で、明帝から賜った銀壺の酒を先に飲んでみせる呉喜と、それを見つめる蕭道成(anchor「喜は朝廷に戻ると、道成の潔白を保証した。」)。(3) `sukokyu` — 北苑の崇光宮に移った上皇(献文帝)、削らぬ垂木・土の階・西山の鹿野浮図(anchor「崇光宮は北苑の中にあり、さらに苑中の西山に鹿野浮図(仏塔)を建て、禅僧とともに住んだ。」)。いずれも画像内テキストなし(全体図と、sukokyu 遠景の城壁・門、ginko の軒先と旗の拡大クロップを目視し、文字・落款・印章・額なしを確認。初回生成の3枚をそのまま採用、再生成なし)。想像図であり本文にない補い: gansan の松林・梅・飛び立つ雉・遠景の丸傘と無地の旗・取り囲む従者の人数(本文は「寿寂之ら数人」。殴打は描かず、落馬後の場面として表現)、ginko の屋外の卓と敷物・川辺の船と柳・無地の旗・双方の従者・解いた紐と包み布(本文は「銀の壺に酒を封じ」「先に自分が飲んでみせた」のみ)、sukokyu の茅葺き屋根・鹿・小川・紅葉・遠景の城壁と門・上皇と禅僧の対座(本文は「垂木は削らず、階は土のまま」「西山に鹿野浮図を建て、禅僧とともに住んだ」のみ。胡注は采椽=山から採った垂木に斧を入れないこと)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(213,533 / 186,874 / 249,094 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷133/j133_y01.md の3リンク(../images/卷133/j133_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j133_y01/ のみでリポジトリ内に残さず。太宗明皇帝泰始七年(辛亥・西暦471年、record の hu_notes キーなし、胡注は本文内〔注:…〕)。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各1回、3プロセス並行・すべてフォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。codex-cli 0.160.0、429・拒否なし。`OPENAI_API_KEY` 従量経路は不使用)
+*   **モデル**: OpenAI Codex built-in `image_gen`(gpt-image 系、Codex CLI 経由・サブスク内)
+*   **来歴(§3.6)**: AI生成画像。OpenAI Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-21
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷133/j133_y01.json` + `docs/images/卷133/j133_y01_{gansan,ginko,sukokyu}.jpg` + `docs/卷133/j133_y01.md`
+参照: `docs/卷133/j133_y01.md`

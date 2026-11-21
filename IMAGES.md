@@ -4016,3 +4016,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷133/j133_y02.json` + `docs/images/卷133/j133_y02_{igo,zasezu,keishu}.jpg` + `docs/卷133/j133_y02.md`
 参照: `docs/卷133/j133_y02.md`
+
+## [x] I641 — 卷133 元徽元年(j133_y03, 473 CE)に挿絵3枚を追加(codex image_gen)
+結果: カテゴリB(場面)3枚を追加。kashiushi=北魏の勧農の詔(牛を余分に持つ家が持たない家に貸す。anchor「家に牛を余分に持つ者は持たない者に貸し与えること。」)、jinyo=尋陽の桂陽王・休範が城と堀の修繕を名目に資材を蓄える(anchor「そして城と堀を修繕すると上表し、資材を多く切り出して蓄えた。」)、karitori=長孫観の軍が吐谷渾の秋の作物を刈り取って飼い葉にする(anchor「長孫観が吐谷渾の領内に入り、その秋の作物を刈り取って飼い葉にした。」)。3枚とも1回目の生成で採用(再生成なし)。目視検証(全体図+文字が出やすい箇所の四分割クロップ)で文字・落款・印章・額なし、512px 縮小での強赤画素 0。想像で補った要素: kashiushi の牛小屋・犂・見守る県官と従者(従者は無地の帳面を抱える。本文は詔の文言のみ)、jinyo の材木の山・筏・鋸引きの人夫・台上の休範と許公輿らしき側近・背後の湖と山(本文は「資材を多く切り出して蓄えた」のみ。城壁は門楼なしの切れ目として描画)、karitori の雪山・円い天幕・繋がれた馬・丘の上の指揮官と遠景の牧民とヤク(本文は「秋の作物を刈り取って飼い葉にした」のみ)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(224,571 / 260,035 / 267,366 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷133/j133_y03.md の3リンク(../images/卷133/j133_y03_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j133_y03/ のみでリポジトリ内に残さず。蒼梧王上 元徽元年(癸丑・西暦473年、record の hu_notes キーなし、胡注は本文内〔注:…〕)。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3セッション並行・フォアグラウンド実行(`&` + `wait`、計約2.5分)、各 timeout 540 秒。codex-cli 0.160.0、429・拒否なし。`OPENAI_API_KEY` 経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみコピー(各セッション PNG 1枚、md5 一致確認))
+*   **モデル**: OpenAI GPT Image(Codex built-in `image_gen` 経由)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in `image_gen` が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-21
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷133/j133_y03.json` + `docs/images/卷133/j133_y03_{kashiushi,jinyo,karitori}.jpg` + `docs/卷133/j133_y03.md`
+参照: `docs/卷133/j133_y03.md`

@@ -4034,3 +4034,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷133/j133_y04.json` + `docs/images/卷133/j133_y04_{shintei,rinsokan,yoru}.jpg` + `docs/卷133/j133_y04.md`
 参照: `docs/卷133/j133_y04.md`
+
+## [x] I643 — 卷133 元徽三年(j133_y05, 475 CE)に挿絵3枚を追加(codex image_gen)
+結果: カテゴリB(場面)3枚を追加。keiji=雍州行きを求めて蕭道成を説く張敬児と、笑って答えない道成(anchor「道成は笑って何も言わなかった。」)、gyuba=北魏が初めて牛馬の屠殺を禁じる(anchor「六月、庚午、魏が初めて牛馬の屠殺を禁じた」)、tanki=王季符が単騎で建康へ逃げる(anchor「単騎で建康へ逃亡し、景素が謀反を企んでいると告発した。」)。3枚とも1回目の生成で採用(再生成なし)。目視検証(全体図+文字が出やすい箇所の四分割クロップ)で文字・落款・印章・額なし、512px 縮小での強赤画素 0。想像で補った要素: keiji の開放的な堂・低い壇・屏風・松・庭の端の従者・遠景の川(本文は二人の問答のみ。敬児が西方を手で指す所作も想像)、gyuba の放牧地・牛小屋・使われていない俎板台・馬上の役人と頭を下げる村人・遠景の犂耕と騎乗(本文は禁令の一文と胡注「牛は農の資、馬は兵の資」のみ)、tanki の川沿いの土手道・枯れ木・葦・小舟・遠景の京口らしき城邑と建康らしき城壁(本文は「単騎で建康へ逃亡し」のみ。城壁は門楼なしの切れ目として描画。画面上、騎者の進行方向と遠景の都城の位置関係は厳密でない)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(170,825 / 260,144 / 179,913 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷133/j133_y05.md の3リンク(../images/卷133/j133_y05_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像・検証用クロップは /tmp/zzt_image_codex_j133_y05/ のみでリポジトリ内に残さず。蒼梧王上 元徽三年(乙卯・西暦475年、record の hu_notes キーなし、胡注は本文内〔注:…〕)。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3セッション並行・フォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。codex-cli 0.160.0、429・拒否なし。`OPENAI_API_KEY` 経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみコピー(各セッション PNG 1枚、md5 一致確認))
+*   **モデル**: OpenAI GPT Image(Codex built-in `image_gen` 経由)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in `image_gen` が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-22
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷133/j133_y05.json` + `docs/images/卷133/j133_y05_{keiji,gyuba,tanki}.jpg` + `docs/卷133/j133_y05.md`
+参照: `docs/卷133/j133_y05.md`

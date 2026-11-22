@@ -4070,3 +4070,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷134/j134_y03.json` + `docs/images/卷134/j134_y03_{eika,tsuru,shoku}.jpg` + `docs/卷134/j134_y03.md`
 参照: `docs/卷134/j134_y03.md`
+
+## [x] I647 — 卷135 建元元年(j135_y01)に挿絵3枚を追加(codex image_gen)
+結果: 完了(2026-11-22、画像 cron・codex)。対象は `python3 pipeline/image_task.py frontier` の先頭 `j135_y01`(太祖高皇帝 建元元年・己未・西暦479年、translation_full 10,879字、hu_notes は None で胡注は本文内〔注:…〕)。カテゴリーB(水墨の場面挿絵・無文字)を3枚: houkai(禅譲の日に仏の宝蓋の下へ逃げ込んだ順帝を太后と宦官が探し、殿庭で王敬則が兵を並べ板輿を据えて待つ)、makura(璽綬を解く役を拒んで枕を引き寄せ横になる侍中の謝朏とうろたえる伝詔、外に列する百官)、garin(画輪車で東掖門を出る順帝、車の獺尾に取りすがって慟哭する王琨、涙する百官)。makura は初回生成で遠景の殿舎の軒下に文字様の額が出たため不採用とし、「遠景に殿舎・門・額なし、低い塀と木だけ」の構図に改めて1回再生成して採用(不採用版は /tmp のみ)。目視検証: 3枚とも全体図+危険箇所の拡大で文字・落款・額・印章なし、512px 縮小での強赤画素 0。想像で補った要素(caption に「想像図」明記): houkai の仏像の姿・蓮台・宝蓋の形・堂の造り・宦官3人・兵の人数と長柄・敬則が輿の脇に立つ配置(本文は「仏の宝蓋の下に逃げ込んだ」「兵を殿庭に整列させ、板輿を担ぎ入れて」「太后は…自ら宦官を率いて探し出した」のみ)、makura の部屋・牀・卓・敷物、伝詔の身振り、戸口越しに百官の列が見える構図(本文は「枕を引き寄せて横になった」「百官が列に陪した」のみ)、garin の牛・車の天蓋と車輪の帯模様・随行の者・塀の切れ目として描いた東掖門・王琨の白鬚・袖で涙をぬぐう百官の並び(本文は「画輪車に乗り…東掖門を出て」「車の獺尾に取りすがって慟哭し」「百官は雨のように涙を流した」のみ。門は門楼なしの開口部)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(176,876 / 141,033 / 165,907 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷135/j135_y01.md の3リンク(../images/卷135/j135_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j135_y01/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3枚並行・フォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒、+ makura の単独再生成1回。429・拒否なし。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみ cp(各 session に PNG 1枚・md5 一致を確認)。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: OpenAI 画像モデル(Codex CLI built-in `image_gen`、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-22
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷135/j135_y01.json` + `docs/images/卷135/j135_y01_{houkai,makura,garin}.jpg` + `docs/卷135/j135_y01.md`
+参照: `docs/卷135/j135_y01.md`

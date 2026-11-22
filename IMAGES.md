@@ -4088,3 +4088,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷135/j135_y02.json` + `docs/images/卷135/j135_y02_{seki,ougi}.jpg` + `docs/卷135/j135_y02.md`
 参照: `docs/卷135/j135_y02.md`
+
+## [x] I649 — 卷135 建元三年(j135_y03, 481 CE)に挿絵3枚を追加(codex image_gen)
+結果: 完了(2026-11-22、画像 cron・codex)。対象は `python3 pipeline/image_task.py frontier` の先頭 `j135_y03`(太祖高皇帝 建元三年・辛酉・西暦481年、translation_full 4,311字、hu_notes は None で胡注は本文内〔注:…〕)。カテゴリーB(水墨の場面挿絵・無文字)を3枚: fushi(淮陽の戦いで魏の大軍のただ中を二騎で駆ける周盤龍・奉叔の父子)、houzan(方山で山川を指して自らの葬地を語る馮太后と魏主)、tonden(薛虎子の献策による彭城の屯田=兵の半ばが牛耕、半ばが見張り)。3枚とも初回生成を採用(再生成なし)。目視検証: 全体図+四隅 2 倍クロップで文字・落款・額・印章なし、旗は無地、512px 縮小での強赤画素 0。想像で補った要素(caption に「想像図」明記): fushi の川辺の葦原・遠山・甲冑と矟の形・魏騎が左右に退く配置と旗(本文は「父子二騎が縦横に暴れ回り、魏の数万の衆で誰一人当たろうとする者がなかった」のみ。交戦・流血は描かず)、houzan の山頂の草地・松・傘と従者4人・太后の指さす身振り・眼下の川(本文は「馮太后はその山川を気に入り、こう言った」のみ。寿陵・永固石室は描かず)、tonden の土塁と門楼のない切れ目・円形の穀倉・犂の形・合流する二筋の川(清水・汴水を念頭)・見張り6人(本文は上表の「半分の兵に耕作させ、残りの兵を屯戍させて」「兵の絹で牛を買えば」と「魏人はこれに従った」のみ)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(151,335 / 137,447 / 226,820 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷135/j135_y03.md の3リンク(../images/卷135/j135_y03_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j135_y03/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3枚並行・フォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。429・拒否なし。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみ cp(各 session に PNG 1枚・md5 一致を確認)。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: OpenAI 画像モデル(Codex CLI built-in `image_gen`、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-22
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷135/j135_y03.json` + `docs/images/卷135/j135_y03_{fushi,houzan,tonden}.jpg` + `docs/卷135/j135_y03.md`
+参照: `docs/卷135/j135_y03.md`

@@ -4052,3 +4052,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷134/j134_y01.json` + `docs/images/卷134/j134_y01_{rincho,keiko,kyo}.jpg` + `docs/卷134/j134_y01.md`
 参照: `docs/卷134/j134_y01.md`
+
+## [x] I645 — 卷134 昇明元年(j134_y02)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(場面)3枚を追加。`bikou`=身軽な馬で駆け去る蒼梧王と青犢車で追いきれない陳太妃、`hakusa`=殿庭の槐の下で王敬則が白紗帽を蕭道成に載せて即位を迫る会議、`sekito`=石頭城の夜に燭を並べて立つ袁粲と父をかばう子の最。3枚とも1回目の生成で採用(再生成なし)。目視検証(全体図+危険箇所・下隅の拡大クロップ、512px 縮小での強赤画素 0)で文字・印章・落款・朱なし(bikou の旗・城壁の開口部、hakusa の柱・壁・巻物、sekito の城壁と遠景の建物はいずれも無地)。想像で補った要素: bikou の柳・水田・遠景の城壁・従う騎馬の人数・旗を持つ儀仗の並び(本文は「部隊を整えて別の場所に控え、遠くから眺めているだけ」)、hakusa の殿舎・周囲の衛士・三人の座る牀の配置、敬則の刀は鞘に収めた姿とし(本文は「白刃を抜き」。交戦・抜刀表現を避けた)、褚淵が議案を差し出す所作を同一画面に収めた(本文では帽子の場面の直後)、sekito の城壁・崖・江上の船・後ろに控える従者(本文は「城を下り、燭を並べて自ら照らし」「身をもって粲をかばった」、火は府の西門)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(225,814 / 191,291 / 110,629 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷134/j134_y02.md の3リンク(../images/卷134/j134_y02_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j134_y02/ のみでリポジトリ内に残さず。順皇帝 昇明元年(丁巳・西暦477年、hu_notes は None、胡注は本文内〔注:…〕)。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3セッション並行・フォアグラウンド実行(`&` + `wait`)、全体≒2分。codex-cli 0.160.0、429・拒否なし。`OPENAI_API_KEY` 経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみ cp(各セッション dir に PNG 1枚・md5 一致を確認)。プロンプトは場面別 scene + 共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: OpenAI Codex built-in `image_gen`(GPT 画像モデル、Codex CLI 経由・サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-22
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷134/j134_y02.json` + `docs/images/卷134/j134_y02_{bikou,hakusa,sekito}.jpg` + `docs/卷134/j134_y02.md`
+参照: `docs/卷134/j134_y02.md`

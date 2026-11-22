@@ -4097,3 +4097,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷135/j135_y03.json` + `docs/images/卷135/j135_y03_{fushi,houzan,tonden}.jpg` + `docs/卷135/j135_y03.md`
 参照: `docs/卷135/j135_y03.md`
+
+## [x] I650 — 卷135 建元四年(j135_y04, 482 CE)に挿絵3枚を追加(codex image_gen)
+結果: 完了(2026-11-23、画像 cron・codex)。対象は `python3 pipeline/image_task.py frontier` の先頭 `j135_y04`(太祖高皇帝 四年・壬戌・西暦482年、translation_full 2,467字、hu_notes は None で胡注は本文内〔注:…〕)。カテゴリーB(水墨の場面挿絵・無文字)を3枚: gyokudo(御衣の蔵にあった玉の導を打ち砕かせる斉の高帝。anchor「そのまま命じて打ち砕かせ」)、koran(虎の檻に臨み、虎を捕らえて献じるのをやめよと命じる魏主。anchor「今後は捕らえて献ずるのをやめよ」。」)、koro(李崇が兗州の村ごとに置かせた鼓楼と、太鼓を合図に要所へ走る村人。anchor「楼にはみな鼓を懸けさせた。」)。3枚とも初回生成で採用(再生成なし)。目視検証(全体図+四隅タイル)で文字・落款・印章・額・看板なし、512px 縮小での強赤画素は3枚とも 0。本文にない想像補完: gyokudo の中庭・松・石の台・木槌・箱を捧げる従者・椅子に掛けた高帝の姿(本文は「そのまま命じて打ち砕かせ」のみ。椅子は時代考証上は想像)、koran の木柵の囲い・物見台・竿を持つ従者6人・枯れ木と丘(本文は「魏主が虎の檻に臨み、こう詔した」のみ。負傷者は描かず)、koro の四本柱に茅葺きの櫓・村3つの配置・棒を持つ村人4人・小川と板橋(本文は「村ごとに一つの楼」「楼にはみな鼓を懸けさせた」「みな人を出して要害を固める」のみ。盗賊・捕縛は描かず)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(138,138 / 209,686 / 214,633 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷135/j135_y04.md の3リンク(../images/卷135/j135_y04_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j135_y04/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3枚並行・フォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。429・拒否なし。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみ cp(各 session に PNG 1枚・md5 一致を確認)。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: OpenAI 画像モデル(Codex CLI built-in `image_gen`、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-23
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷135/j135_y04.json` + `docs/images/卷135/j135_y04_{gyokudo,koran,koro}.jpg` + `docs/卷135/j135_y04.md`
+参照: `docs/卷135/j135_y04.md`

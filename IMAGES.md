@@ -4134,3 +4134,13 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷136/j136_y02.json` + `docs/images/卷136/j136_y02_{funsho,okaku,kinden}.jpg` + `docs/卷136/j136_y02.md`
 参照: `docs/卷136/j136_y02.md`
+
+## [x] I654 — 卷136 永明四年(j136_y03, 486 CE)に挿絵3枚を追加(codex image_gen)
+*   **目的**: 卷136 世祖武皇帝上之下・永明四年(本文 2835 字)に、南斉の唐㝢之の乱の平定・北魏の三長制の創設・孝文帝がはじめて袞冕を着けて南郊を祀った礼制改革という、この年の3つの節目を場面挿絵で補う。
+*   **結果**: 挿絵3枚(すべてカテゴリーB・画像内文字なし)を登録。`kihei`=③銭唐で騎兵を恐れて潰える唐㝢之の衆(anchor「㝢之の衆は烏合の集まりで騎兵を恐れ、一戦して潰え」)、`sancho`=⑧三長のもとで調を納める民(anchor「甲戌、はじめて党・里・鄰の三長を立て、民の戸籍を定めた。」)、`nankou`=⑩法服で御輦に乗り南郊へ向かう孝文帝(anchor「甲子、はじめて法服を着け御輦に乗って南郊を祀った」)。3枚とも初回生成で採用(再生成なし)。目視検証: 全体図+四隅タイル+sancho の三長と布・穀袋、nankou の御輦と冕冠の1.5倍クロップで、文字・落款・印章・額・看板・旗なし(袋・敷物・土壁・天蓋・車体・衣はすべて無地)。512px 縮小での強赤画素は3枚とも 0。本文にない絵作り上の補い: kihei の河口の葦原と土塁・騎兵約15騎・竹竿や鍬を捨てて逃げる徒歩の衆(本文は「烏合の集まりで騎兵を恐れ、一戦して潰え」のみ。交戦・流血は描かず、両者の間を空けた)、sancho は制度施行後の納調場面の想像図(本文は李沖の上言と朝議のみ。敷物に並ぶ三人の長老・算木・帛と粟の袋・騎馬の官人・茅葺きの村は補い。「三長」を三人の長老で象徴した)、nankou の三段の円丘と煙・四頭立ての御輦と天蓋・徒歩の官人と騎馬の衛士の人数(本文は「法服を着け御輦に乗って南郊を祀った」のみ。冕冠の前後の旒は胡注「法服は袞冕」による)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(164,558 / 168,742 / 115,743 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷136/j136_y03.md の3リンク(../images/卷136/j136_y03_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j136_y03/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3枚並行、すべてフォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみ cp(各 session に PNG 1枚・md5 一致を確認)。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: OpenAI 画像モデル(Codex CLI built-in `image_gen`、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-24
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷136/j136_y03.json` + `docs/images/卷136/j136_y03_{kihei,sancho,nankou}.jpg` + `docs/卷136/j136_y03.md`
+参照: `docs/卷136/j136_y03.md`

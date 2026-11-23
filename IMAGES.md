@@ -4106,3 +4106,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷135/j135_y04.json` + `docs/images/卷135/j135_y04_{gyokudo,koran,koro}.jpg` + `docs/卷135/j135_y04.md`
 参照: `docs/卷135/j135_y04.md`
+
+## [x] I651 — 卷135 永明元年(j135_y05, 483 CE)に挿絵3枚を追加(codex image_gen)
+結果: 完了(2026-11-23、画像 cron・codex)。対象は `python3 pipeline/image_task.py frontier` の先頭 `j135_y05`(世祖武皇帝上之上 永明元年・癸亥・西暦483年、translation_full 5,634字、胡注は本文内〔注:…〕と chunks[].hu_notes)。カテゴリーB(水墨の場面挿絵・無文字)を3枚: genpo(王敬則に無理やり輿へ乗せられて東宮に来た太祖を囲む玄圃の和解の宴。華蓋・雉尾扇・酒鎗・酒と料理を捧げる諸王。anchor「みな酔いつくしてから帰った。」)、kanten(華林園の八関斎の席で捕らえられ、冠と貂の飾りを地に投げつける張敬児。anchor「「この物がわしを誤らせた」。」)、hakugi(王弘の家の集まりで遊ぶ僧達・僧綽・僧虔。anchor「また積み直しもしなかった。」)。genpo は初回採用。kanten は初回が「Selected model is at capacity」で生成前に失敗(画像なし)、単独再試行1回で生成・採用。hakugi は初回の虎の子のまねをする子の指が獣の鉤爪状に描かれたため不採用とし、scene に「普通の子どもの手・爪なし・牙なし」を足して1回再生成したものを採用。目視検証(全体図+四隅タイル)で3枚とも文字・落款・印章・額・看板なし、512px 縮小での強赤画素 0。本文にない想像要素: genpo の柳・池・竹・岩、低い筵敷きの台と卓、人物の配置と人数(本文は「玄圃で宴」と各人の持ち物のみ。図では華蓋と扇を持つ2人・酒をつぐ1人・杯を差し出す1人・盆を運ぶ3人)、kanten の屋外の筵に2列で坐る朝臣10人・香炉・池の蓮・両脇で袖を取る無武装の従者2人(本文は「朝臣がみな列席」「その座で敬児を捕らえた」のみ)、hakugi の開放的な広間・蝋燭台・談笑する大人3人と見守る老人(王弘のつもり)・子どもの年頃(本文は年齢を記さない)。積んだ駒は図では11個前後で、本文の十二個を正確には再現していない(キャプションでは個数を述べていない)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(193,747 / 176,325 / 143,920 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷135/j135_y05.md の3リンク(../images/卷135/j135_y05_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j135_y05/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、初回3枚並行+再試行2回(kanten・hakugi 各1回)、すべてフォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみ cp(各 session に PNG 1枚・md5 一致を確認)。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: OpenAI 画像モデル(Codex CLI built-in `image_gen`、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-23
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷135/j135_y05.json` + `docs/images/卷135/j135_y05_{genpo,kanten,hakugi}.jpg` + `docs/卷135/j135_y05.md`
+参照: `docs/卷135/j135_y05.md`

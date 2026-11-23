@@ -4115,3 +4115,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷135/j135_y05.json` + `docs/images/卷135/j135_y05_{genpo,kanten,hakugi}.jpg` + `docs/卷135/j135_y05.md`
 参照: `docs/卷135/j135_y05.md`
+
+## [x] I652 — 卷136 永明二年(j136_y01, 484 CE)に挿絵3枚を追加(codex image_gen)
+結果: 完了(2026-11-23、画像 cron・codex)。対象は `python3 pipeline/image_task.py frontier` の先頭 `j136_y01`(世祖武皇帝上之下 永明二年・甲子・西暦484年、translation_full 6,432字、胡注は本文内〔注:…〕を参照。top-level `hu_notes` は無し)。カテゴリーB(水墨の場面挿絵)3枚、いずれも画像内テキスト無し: `hana`(范縝が蕭子良に「同じ樹の花が敷物にも肥だめにも落ちる」と答える場面、anchor「肥だめに落ちたのが私です。」)、`chojo`(高閭の長城上表の想像図、anchor「六鎮の北に長城を築き」)、`kojo`(十四歳の蕭鑑が韓武方の降伏を受け入れる場面、anchor「武方が出て降った。」)。初回3枚並行で全採用(再生成なし)。目視検証は全体図+四隅 500x300 クロップで文字・落款・印章・額の混入なしを確認、512px 縮小での強赤画素は3枚とも 0。本文にない絵作り上の補い: hana の屋外の敷物と竹簾の枠・聞き手3人(本文は対話の場所や同席者を記さない)・肥だめは籬と土塀の外の濁った水たまりとして表現、chojo は実現した景ではなく提案内容の想像図(門は門楼を描かず壁線の切れ目+傍らの小城、去っていく騎馬の一団と南側の放牧は「五利」の図解)、kojo の峡谷の河岸・舟2艘・属僚4人・地面に置かれた槍・降る者の人数(本文は上明という地名と「一千人余りの党」のみ)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(178,555 / 149,980 / 188,690 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷136/j136_y01.md の3リンク(../images/卷136/j136_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j136_y01/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3枚並行、すべてフォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみ cp(各 session に PNG 1枚・md5 一致を確認)。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: OpenAI 画像モデル(Codex CLI built-in `image_gen`、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-23
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷136/j136_y01.json` + `docs/images/卷136/j136_y01_{hana,chojo,kojo}.jpg` + `docs/卷136/j136_y01.md`
+参照: `docs/卷136/j136_y01.md`

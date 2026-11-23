@@ -4124,3 +4124,13 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷136/j136_y01.json` + `docs/images/卷136/j136_y01_{hana,chojo,kojo}.jpg` + `docs/卷136/j136_y01.md`
 参照: `docs/卷136/j136_y01.md`
+
+## [x] I653 — 卷136 永明三年(j136_y02, 485 CE)に挿絵3枚を追加(codex image_gen)
+*   **目的**: 卷136 世祖武皇帝上之下・永明三年(本文 4043 字)に、北魏の図讖禁止・南斉の王倹と国学再興・北魏の均田令という、この年の制度史上の3つの節目を場面挿絵で補う。
+*   **結果**: 挿絵3枚(すべてカテゴリーB・画像内文字なし)を登録。`funsho`=②図讖・秘緯の焼却(anchor「今後、図讖・秘緯はすべて焼き捨てよ。持ち続ける者は死罪として論ずる」)、`okaku`=⑩諸生を監試する王倹(anchor「その威儀は非常に盛んであった。」)、`kinden`=⑮均田の測量と給田(anchor「牧守とともに天下の田を均しく給させた。」)。3枚とも初回生成で採用(再生成なし)。目視検証: 全体図+四隅タイル+okaku の巻物を持つ令史3人の2倍クロップで、文字・落款・印章・額・看板なし(巻物・敷物・柱・土塀・杭はすべて無地)。512px 縮小での強赤画素は3枚とも 0。本文にない絵作り上の補い: funsho は詔の執行場面の想像図(本文は詔の文言のみで、焼却の場所・立ち会う官人・見守る民と老いた卜者は補い)、okaku の縁側と老松・学生約20人と敷物・衛士と令史の人数(本文は「庭に並び」「剣をもつ衛士や令史がひかえ」のみ。解散髻と斜めの簪は本文どおり)、kinden の縄と杭による測量・騎馬の使者と徒歩の牧守・牛を連れた農民と桑の並木(本文は給田の規定のみで測量の様子は記さない)。生成物は 1672x941 PNG、image_sync.py で 1600x900 JPEG(125,550 / 137,798 / 162,175 bytes、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷136/j136_y02.md の3リンク(../images/卷136/j136_y02_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j136_y02/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3枚並行、すべてフォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみ cp(各 session に PNG 1枚・md5 一致を確認)。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: OpenAI 画像モデル(Codex CLI built-in `image_gen`、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-23
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷136/j136_y02.json` + `docs/images/卷136/j136_y02_{funsho,okaku,kinden}.jpg` + `docs/卷136/j136_y02.md`
+参照: `docs/卷136/j136_y02.md`

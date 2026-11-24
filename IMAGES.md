@@ -4163,3 +4163,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷136/j136_y05.json` + `docs/images/卷136/j136_y05_{kakujo,gyutai,johei}.jpg` + `docs/卷136/j136_y05.md`
 参照: `docs/卷136/j136_y05.md`
+
+## [x] I657 — 卷136 永明七年(j136_y06, 489 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリーB(場面)3枚。`shikyu`=⑥魏主が楼から物をまく施しをやめ、老人・病人・貧者・身寄りのない者へ配らせる場面(anchor「老人・病人・貧者・身寄りのない者に賜ることとせよ」)、`koshindo`=⑫皇信堂で馮太后と魏主が収賄の二王(汝陰王・天賜、南安王・楨)の処分を王公に問う場面(anchor「王公を引見した。」)、`isho`=㉒江斅が自分の牀を紀僧真から遠ざけさせる場面(anchor「私の牀を客から遠ざけよ」)。3枚とも初回生成で採用(再生成なし)。目視検証: 全体図(1400px)で文字・落款・印章・額・旗・柱の短冊なしを確認、512px 縮小での強赤画素 0。施しの場は楼や門楼を描かず壁線の切れ目とし、堂内2枚は「柱と壁は完全に無地」を明示して文字混入を回避。`pipeline/image_sync.py` で 1600x900 JPEG(121〜139KB、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷136/j136_y06.md の3リンク(../images/卷136/j136_y06_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j136_y06/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3枚並行、すべてフォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみ cp(各 session に PNG 1枚・md5 一致を確認)。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: OpenAI 画像モデル(Codex CLI built-in `image_gen`、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-24
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷136/j136_y06.json` + `docs/images/卷136/j136_y06_{shikyu,koshindo,isho}.jpg` + `docs/卷136/j136_y06.md`
+参照: `docs/卷136/j136_y06.md`

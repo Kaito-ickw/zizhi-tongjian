@@ -4181,3 +4181,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷137/j137_y01.json` + `docs/images/卷137/j137_y01_{hakui,saru,mofuku}.jpg` + `docs/卷137/j137_y01.md`
 参照: `docs/卷137/j137_y01.md`
+
+## [x] I659 — 卷137 永明九年(j137_y02、491年)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリB(名場面)3枚。`raifuku`=⑤朝服のまま弔問しようとする南斉の使者・裴昭明と謝竣に、魏の成淹が礼を説き弔いの衣と幍を差し出す場面(anchor「そこで衣と幍を昭明らに与え、それを着て使命を果たさせた。」)、`ryo`=⑱永固陵に詣でてなおやつれたまま慕い続ける魏の孝文帝と諫める群臣(anchor「魏主は永固陵に詣でたが、やつれ痩せることはなお甚だしかった。」)、`chii`=㉚苻承祖の迎えの車を拒んで大声で泣く貧しい姚氏の姨(anchor「そのため苻氏の内外では「癡姨(ばか叔母)」と呼ばれた。」)。3枚とも1回の生成で確定(バリアントなし、3本並行・失敗なし)。目視検証(全体図+四隅タイル): 文字・落款・印章・額・旗の文字なし、512px 縮小での強赤画素 0。陵には碑・門・祭壇を描かず墳丘のみ、客館は門楼なしで柱・壁は無地、「朱の衣」は画面に赤を出さず墨の濃淡で表現。各セッションの generated_images は PNG 1枚のみ・SOURCE と out.png の md5 一致。`pipeline/image_sync.py` で 1600x900 JPEG(144〜169KB、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷137/j137_y02.md の3リンク(../images/卷137/j137_y02_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j137_y02/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、prompt は stdin、built-in `image_gen` を各1回・16:9、フォアグラウンド実行。`OPENAI_API_KEY`/`scripts/image_gen.py` 経路は不使用。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: OpenAI Codex CLI built-in `image_gen`(GPT Image 系、サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in `image_gen` が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-25
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷137/j137_y02.json` + `docs/images/卷137/j137_y02_{raifuku,ryo,chii}.jpg` + `docs/卷137/j137_y02.md`
+参照: `docs/卷137/j137_y02.md`

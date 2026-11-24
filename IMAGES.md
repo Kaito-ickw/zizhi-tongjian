@@ -4172,3 +4172,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷136/j136_y06.json` + `docs/images/卷136/j136_y06_{shikyu,koshindo,isho}.jpg` + `docs/卷136/j136_y06.md`
 参照: `docs/卷136/j136_y06.md`
+
+## [x] I658 — 卷137 永明八年(j137_y01, 490 CE)に挿絵3枚を追加(agy/nano-banana)
+*   **結果**: 3枚(いずれもカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`hakui`=⑩白い衣のまま江陵の城壁に立ち、燕尾洲に城を築いた台軍へ訴えて涙する巴東王・子響(anchor「子響は白い衣のまま城に登り」)、`saru`=⑩華林園で子を失った猿の悲鳴を聞き、子響を思って泣く武帝(anchor「一匹の猿が跳ね回って悲しげに鳴くのを見て」)、`mofuku`=⑪麻の喪服のまま公除を迫る群臣と論じ合い慟哭する魏の孝文帝(anchor「群官もまた哭して辞し出た。」)。3枚とも採用分は1回の生成で確定(バリアントなし)。ただし `hakui` は生成に至るまで失敗5回: 1回目は画像枠リセット(2026-11-25 02:02:42 JST)の80秒前で 429、リセット後は 503「No capacity available for model gemini-3.1-flash-image」が4回続き、約150秒待った6回目で成功。その後 `saru`/`mofuku` は2本並行で各1回成功。目視検証: 3枚とも文字・落款・印章・額・旗の文字なし、四隅は余白。思賢門は門楼を描かず壁線の切れ目とし、子響の場面は武器を描かず(弩の戦闘は caption/本文側)。`pipeline/image_sync.py` で 1376x768 JPEG(90〜189KB、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷137/j137_y01.md の3リンク(../images/卷137/j137_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_agy_j137_y01/ のみでリポジトリ内に残さず。
+*   **エンジン**: agy(`timeout 280 agy -p "…事前定義の image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼び、nano-banana で生成し /tmp/zzt_image_agy_j137_y01/<slug>.png に保存…" --dangerously-skip-permissions`、すべてフォアグラウンド実行。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: Gemini nano-banana(`gemini-3.1-flash-image`、agy 1.3.3 の image-generator サブエージェント経由)
+*   **来歴(§3.6)**: AI生成画像。agy(Gemini nano-banana)が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-25
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷137/j137_y01.json` + `docs/images/卷137/j137_y01_{hakui,saru,mofuku}.jpg` + `docs/卷137/j137_y01.md`
+参照: `docs/卷137/j137_y01.md`

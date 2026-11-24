@@ -4190,3 +4190,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷137/j137_y02.json` + `docs/images/卷137/j137_y02_{raifuku,ryo,chii}.jpg` + `docs/卷137/j137_y02.md`
 参照: `docs/卷137/j137_y02.md`
+
+## [x] I660 — 卷137 永明十年(j137_y03, 492 CE)に挿絵3枚を追加(agy/nano-banana)
+*   **結果**: 3枚(いずれもカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`yoro`=⑱明堂で三老の尉元・五更の游明根を養い、自ら爵を執って勧める魏の孝文帝(anchor「帝は三老に再拝し」)、`sabaku`=⑯三道に分かれて大磧を越え柔然へ向かう魏の歩騎十万(anchor「軍は大磧を過ぎ」)、`ryo`=⑲文明太后の再朞に永固陵のかたわらで終日哭する孝文帝(anchor「永固陵の左で哭し」)。3枚とも1回の生成で確定(バリアントなし・失敗なし。`yoro` を probe として単独先行、成功後に `ryo`/`sabaku` を2本並行)。目視検証: 3枚とも文字・落款・印章・額・旗の文字なし、四隅は余白。明堂は柱・梁とも無地、陵は碑・門を描かず、遠征は無地の小旗のみ。`pipeline/image_sync.py` で 1376x768 JPEG(109〜152KB、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷137/j137_y03.md の3リンク(../images/卷137/j137_y03_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_agy_j137_y03/ のみでリポジトリ内に残さず。
+*   **エンジン**: agy(`timeout 280 agy -p "…事前定義の image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼び、nano-banana で生成し /tmp/zzt_image_agy_j137_y03/<slug>.png に保存…" --dangerously-skip-permissions`、すべてフォアグラウンド実行。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: Gemini nano-banana(`gemini-3.1-flash-image`、agy 1.3.3 の image-generator サブエージェント経由)
+*   **来歴(§3.6)**: AI生成画像。agy(Gemini nano-banana)が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-25
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷137/j137_y03.json` + `docs/images/卷137/j137_y03_{yoro,sabaku,ryo}.jpg` + `docs/卷137/j137_y03.md`
+参照: `docs/卷137/j137_y03.md`

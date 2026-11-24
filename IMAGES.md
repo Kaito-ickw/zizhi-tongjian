@@ -4144,3 +4144,13 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷136/j136_y03.json` + `docs/images/卷136/j136_y03_{kihei,sancho,nankou}.jpg` + `docs/卷136/j136_y03.md`
 参照: `docs/卷136/j136_y03.md`
+
+## [x] I655 — 卷136 永明五年(j136_y04, 487 CE)に挿絵3枚を追加(codex image_gen)
+*   **目的**: 卷136 世祖武皇帝上之下・永明五年(本文 4704 字)に、南斉の范雲が東田で文恵太子を諫めた逸話・北魏の大旱魃で民が関を出て食を求めた救荒策・高車の阿伏至羅が柔然を離れて西へ走り自立した事件という、この年の3つの場面を挿絵で補う。
+*   **結果**: 挿絵3枚(すべてカテゴリーB・画像内文字なし)を登録。`touden`=②東田で収穫を見物する太子を諫める范雲(anchor「みな「ごもっとも」と言うばかりであったが、雲だけはこう言った」)、`sekisho`=⑨旱魃の代で関を出て食を求める民と賑給(anchor「民が関を出て食を求めに行くことを許した」)、`kousha`=⑩部落を率いて西へ走る阿伏至羅と窮奇(anchor「従弟の窮奇とともに部落を率いて西へ走り」)。3枚とも初回生成で採用(再生成なし)。目視検証: 全体図+四隅タイルで文字・落款・印章・額・旗なしを確認、512px 縮小での強赤画素 0。関所は門楼を描かず土壁の切れ目+跳ね上げ棒の構図で額の混入を回避。`pipeline/image_sync.py` で 1600x900 JPEG(152〜172KB、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷136/j136_y04.md の3リンク(../images/卷136/j136_y04_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j136_y04/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3枚並行、すべてフォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみ cp(各 session に PNG 1枚・md5 一致を確認)。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: OpenAI 画像モデル(Codex CLI built-in `image_gen`、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-24
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷136/j136_y04.json` + `docs/images/卷136/j136_y04_{touden,sekisho,kousha}.jpg` + `docs/卷136/j136_y04.md`
+参照: `docs/卷136/j136_y04.md`

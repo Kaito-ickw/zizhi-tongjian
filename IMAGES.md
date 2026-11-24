@@ -4154,3 +4154,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷136/j136_y04.json` + `docs/images/卷136/j136_y04_{touden,sekisho,kousha}.jpg` + `docs/卷136/j136_y04.md`
 参照: `docs/卷136/j136_y04.md`
+
+## [x] I656 — 卷136 永明六年(j136_y05, 488 CE)に挿絵3枚を追加(codex image_gen)
+*   **結果**: カテゴリB(場面)3枚。`kakujo`=③深い霧に乗じて薪舟で角城の戍に近づき魏兵を引き入れる張蒲(anchor「深い霧に乗じて船で清水の中に入って薪を採り、ひそかに魏兵を引き入れた。」)、`gyutai`=⑱西陵の牛埭で牛に船を曳かせて堰を越えさせ、税を取る場面(anchor「牛で船を曳くので牛埭という〕」)、`johei`=⑲李彪の建議した豊年買い入れ・凶年放出の官倉(anchor「豊年には粟を買い入れて倉に積み、凶年には民間の値に二割を加えて人々に売るべきです。」)。3枚とも初回生成で採用(再生成なし)。目視検証: 全体図+四隅タイルで文字・落款・印章・額・旗なしを確認、512px 縮小での強赤画素 0。戍と倉の囲いは門楼を描かず土壁の切れ目とし、税を取る小屋も無看板の構図で文字混入を回避。`pipeline/image_sync.py` で 1600x900 JPEG(69〜201KB、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷136/j136_y05.md の3リンク(../images/卷136/j136_y05_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j136_y05/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`codex exec --skip-git-repo-check -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true -`、prompt は stdin、built-in `image_gen` を各セッション1回・16:9、3枚並行、すべてフォアグラウンド実行(`&` + `wait`)、各 timeout 540 秒。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。生成物は `~/.codex/generated_images/<session>/` から自セッション分のみ cp(各 session に PNG 1枚・md5 一致を確認)。プロンプトは共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定)+場面別 scene)
+*   **モデル**: OpenAI 画像モデル(Codex CLI built-in `image_gen`、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex CLI の built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-24
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷136/j136_y05.json` + `docs/images/卷136/j136_y05_{kakujo,gyutai,johei}.jpg` + `docs/卷136/j136_y05.md`
+参照: `docs/卷136/j136_y05.md`

@@ -4238,3 +4238,13 @@
 *   **対象**: `data/kb/卷141/j141_y01.json` + `docs/images/卷141/j141_y01_{gan,hashi,hi}.jpg` + `docs/卷141/j141_y01.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662・I663 と同じ扱い)。
 参照: `docs/卷141/j141_y01.md`
+
+## [x] I665 — 卷141 永泰元年(j141_y02)挿絵3枚(codex image_gen)
+*   **結果**: 2026-11-26 実施。`python3 pipeline/image_task.py frontier` の先頭1年(j141_y02・498年・本文13550字)に挿絵3枚(すべてカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`koto`=御前で蔡邕の焦尾の琴を弾き『懊憹歌』を歌う王仲雄と疑いを深める明帝(anchor「上はますます疑いを深め、また後ろめたくもなった。」)、`kare`=長岡の埭を切られて涸れた水路で足止めされる王敬則の軍勢(anchor「はたして足止めを食って進めなくなった。」)、`inori`=汝水のほとりの壇で孝文帝の身代わりを祈る元勰(anchor「王莽のような者がやれば偽りである〕。」)。各 anchor は `translation_full` 内に1回のみ出現を機械確認、`translation_full` は不変(md5 一致)、kb 差分は illustrations 分のみ(+24/-1)。`build_view.py` 再生成後、`docs/卷141/j141_y02.md` の画像リンク3件の解決を確認。
+*   **検証**: 全体図+四隅の拡大クロップを目視し、文字・落款・印章・額・柱の短冊の描き込みなし、朱なし。3枚とも初回採用(各1回生成)。圧縮後 1600x900・123〜244KB。中間 PNG は `/tmp/zzt_image_codex_j141_y02/` のみでリポジトリ内に残さず。場面選定と scene プロンプトは同日 02:00 の agy 回(nano-banana 側 503 で未生成・未コミット)が残したものを流用。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <slug dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、prompt は stdin、フォアグラウンド実行。built-in `image_gen` を各1回呼び、`~/.codex/generated_images/<自セッションid>/*.png` を `out.png` へコピー(md5 一致を確認)。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: OpenAI Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-26
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷141/j141_y02.json` + `docs/images/卷141/j141_y02_{koto,kare,inori}.jpg` + `docs/卷141/j141_y02.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I664 と同じ扱い)。

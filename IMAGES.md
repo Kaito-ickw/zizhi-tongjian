@@ -4227,3 +4227,14 @@
 *   **対象**: `data/kb/卷140/j140_y02.json` + `docs/images/卷140/j140_y02_{rou,ame,kita}.jpg` + `docs/卷140/j140_y02.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した。frontier は作業ツリーを見て j139_y01 を「登録済み」と数えるので、人手で検証して確定するか破棄しない限り cron は拾わない。
 参照: `docs/卷140/j140_y02.md`
+
+## [x] I664 — 卷141 建武四年(j141_y01)挿絵3枚(codex image_gen)
+*   **結果**: 2026-11-25 実施。`python3 pipeline/image_task.py frontier` の先頭1年(j141_y01・497年・本文12860字)に挿絵3枚(すべてカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`gan`=⑧雁の列とともに秋に南下して洛陽へ朝見に向かう北方の部族長たち(anchor「当時の人はこれを「雁臣」と呼んだ」)、`hashi`=㉔宛城東南隅の橋を渡る魏主一行と、水抜きの穴の下に潜む虎頭帽の勇士(anchor「水抜きの穴の下に伏せさせ」)、`hi`=㉘夜の淮水で傅永の瓠の偽火に浅瀬を見失う斉兵(anchor「火が競うように方々で上がっているので」)。各 anchor は `translation_full` 内に1回のみ出現を機械確認、`translation_full` は不変、kb 差分は illustrations 分のみ(+24/-1)。`build_view.py` 再生成後、`docs/卷141/j141_y01.md` の画像リンク3件の解決を確認。
+*   **検証**: 全体図+四隅の等倍クロップを目視し、文字・落款・印章・額の描き込みなし。512px 縮小での強赤画素 0。3枚とも初回採用(`gan` のみ初回起動が codex 側サンドボックス起動エラーで未生成のため単独で再起動、画像生成自体は1回)。圧縮後 1600x900・151〜185KB。中間 PNG は `/tmp/zzt_image_codex_j141_y01/` のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <slug dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、prompt は stdin、フォアグラウンド実行。built-in `image_gen` を各1回呼び、`~/.codex/generated_images/<自セッションid>/*.png` を `out.png` へコピー(各セッション dir の PNG は1枚・md5 一致を確認)。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: OpenAI Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-25
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷141/j141_y01.json` + `docs/images/卷141/j141_y01_{gan,hashi,hi}.jpg` + `docs/卷141/j141_y01.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662・I663 と同じ扱い)。
+参照: `docs/卷141/j141_y01.md`

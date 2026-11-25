@@ -4208,3 +4208,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷138/j138_y01.json` + `docs/images/卷138/j138_y01_{jubi,toden,rakuyo}.jpg` + `docs/卷138/j138_y01.md`
 参照: `docs/卷138/j138_y01.md`
+
+## [x] I662 — 卷140 建武二年(j140_y01)挿絵3枚(codex image_gen)
+*   **結果**: 2026-11-25 実施。`python3 pipeline/image_task.py frontier` の先頭1年(j140_y01・495年・本文16737字)に挿絵3枚(すべてカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`kasa`=①寿陽をのぞむ八公山でひどい雨のなか傘蓋を取り除かせる魏の孝文帝(anchor「傘蓋を取り除けと命じ」)、`ikada`=①柴を積んだ筏に火を放ち、淮水の中洲を押さえる斉の船艦へ流す奚康生(anchor「風に乗じて火を放って斉の船艦を焼き」)、`take`=④斜谷で大雨に遭い、竹に米を入れ松明をかざして馬上で炊く拓跋英の軍(anchor「松明を手にして馬上で炊いた」)。3枚とも初回生成で採用(再生成なし)。全体図+四隅拡大を目視し、文字・落款・印章・額・旗の描き込みなし、512px 縮小での強赤画素 0 を確認。`pipeline/image_sync.py` で 1600x900・各約166〜169KB に圧縮配置、`build_view.py` 再生成後 `docs/卷140/j140_y01.md` の画像リンク3件の解決を確認。kb record は `json.dumps(ensure_ascii=False, indent=1)`・末尾改行なしで書き戻し(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j140_y01/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <slug dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、prompt は stdin、フォアグラウンド実行。built-in `image_gen` を各1回呼び、`~/.codex/generated_images/<自セッションid>/*.png` を `out.png` へコピー(各セッション dir の PNG は1枚・md5 一致を確認)。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: OpenAI Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-25
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷140/j140_y01.json` + `docs/images/卷140/j140_y01_{kasa,ikada,take}.jpg` + `docs/卷140/j140_y01.md`
+*   **備考**: 卷139 建武元年(j139_y01)は 14:00 の agy 回が登録・配置まで済ませたところで異常終了(API 529)しており、未コミット・IMAGES.md 未記録のまま作業ツリーに残っている。本コミットには含めていない(未検証のため)。

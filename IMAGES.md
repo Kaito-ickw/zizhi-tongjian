@@ -4199,3 +4199,12 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷137/j137_y03.json` + `docs/images/卷137/j137_y03_{yoro,sabaku,ryo}.jpg` + `docs/卷137/j137_y03.md`
 参照: `docs/卷137/j137_y03.md`
+
+## [x] I661 — 卷138 永明十一年(j138_y01)挿絵3枚(codex image_gen)
+*   **結果**: 2026-11-25 実施。`python3 pipeline/image_task.py frontier` の先頭1年(j138_y01・493年・本文17323字)に挿絵3枚(すべてカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`jubi`=①九江の岸辺で子の休尚の麈尾を取り上げて焼く陳顕達(anchor「そしてその場で取り上げて焼いてしまった」)、`toden`=④文恵太子の東田の小苑に立ち寄り、その壮麗さに怒る斉の武帝(anchor「その壮麗さを見て大いに怒り」)、`rakuyo`=㉙長雨の洛陽で馬を進めようとする孝文帝の馬前にひれ伏して南伐を諫める群臣=洛陽遷都の決定場面(anchor「群臣は馬前に額を地につけて拝した」)。3枚とも1回の生成で確定(3本並行・バリアントなし・失敗なし・429なし)。目視検証(全体図+四隅タイル): 3枚とも文字・落款・印章・額・旗の文字なし、四隅は余白または無地の描写、512px 縮小での強赤画素 0。東田は門楼を描かず壁の切れ目とし、亭・柱・車は無地、洛陽は無地の小旗と崩れた土塁のみ。`toden` の車は牛車でなく馬車として描かれたが内容上の支障なしとして採用。`pipeline/image_sync.py` で 1600x900 JPEG(119〜191KB、いずれも 300KB 以下)に圧縮配置。build_view.py 再生成後、docs/卷138/j138_y01.md の3リンク(../images/卷138/j138_y01_*.jpg)が実ファイルに解決することを確認。kb record は indent=1・末尾改行なし・既存キー順維持で illustrations を末尾に追加(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_codex_j138_y01/ のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <slug dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、prompt は stdin、フォアグラウンド実行。built-in `image_gen` を各1回呼び、`~/.codex/generated_images/<自セッションid>/*.png` を `out.png` へコピー(各セッション dir の PNG は1枚・md5 一致を確認)。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: OpenAI Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-25
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷138/j138_y01.json` + `docs/images/卷138/j138_y01_{jubi,toden,rakuyo}.jpg` + `docs/卷138/j138_y01.md`
+参照: `docs/卷138/j138_y01.md`

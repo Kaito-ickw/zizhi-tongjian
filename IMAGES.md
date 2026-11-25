@@ -4217,3 +4217,13 @@
 *   **ライセンス**: CC BY-NC-SA 4.0
 *   **対象**: `data/kb/卷140/j140_y01.json` + `docs/images/卷140/j140_y01_{kasa,ikada,take}.jpg` + `docs/卷140/j140_y01.md`
 *   **備考**: 卷139 建武元年(j139_y01)は 14:00 の agy 回が登録・配置まで済ませたところで異常終了(API 529)しており、未コミット・IMAGES.md 未記録のまま作業ツリーに残っている。本コミットには含めていない(未検証のため)。
+
+## [x] I663 — 卷140 建武三年(j140_y02)挿絵3枚(agy/nano-banana)
+*   **結果**: 2026-11-25 実施。`python3 pipeline/image_task.py frontier` の先頭1年(j140_y02・496年・本文10829字)に挿絵3枚(すべてカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`rou`=⑤華林園の養老の宴で鳩杖と衣裳を賜る国老・庶老(anchor「それぞれに鳩杖と衣裳を賜う」)、`ame`=⑬日照りで三日食を絶ち崇虚楼にこもる孝文帝と、その夕の大雨(anchor「その夕、大雨が降った」)、`kita`=㉒穆泰の謀叛を鎮めに雁門から代へ急ぐ任城王澄の一行と先行する単騎の李煥(anchor「そこで道のりを倍にして急いだ」)。3枚とも初回生成で採用(再生成なし、429/503 なし、probe 1本先行→2本並行、全体≒4分)。全体図+四分割拡大を目視し、文字・落款・印章・額・旗の描き込みなしを確認(`kita` 右中景の尾根に約25px の草の点描あり=8倍拡大で確認し草の筆致と判断)。`pipeline/image_sync.py` で 1376x768・各約159〜215KB に圧縮配置、`build_view.py` 再生成後 `docs/卷140/j140_y02.md` の画像リンク3件の解決を確認。kb record は `json.dumps(ensure_ascii=False, indent=1)`・末尾改行なしで書き戻し(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変(md5 一致)。中間画像は /tmp/zzt_image_agy_j140_y02/ のみでリポジトリ内に残さず。
+*   **エンジン**: agy(`timeout 280 agy -p "…事前定義の image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼び、nano-banana で生成し /tmp/zzt_image_agy_j140_y02/<slug>.png に保存…" --dangerously-skip-permissions`、フォアグラウンド実行。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: Gemini nano-banana(agy ログ上の実体は gemini-3.1-flash-image、Google サブスク内)
+*   **来歴(§3.6)**: AI生成画像。agy(Gemini)の image-generator サブエージェントが nano-banana で生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-25
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷140/j140_y02.json` + `docs/images/卷140/j140_y02_{rou,ame,kita}.jpg` + `docs/卷140/j140_y02.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した。frontier は作業ツリーを見て j139_y01 を「登録済み」と数えるので、人手で検証して確定するか破棄しない限り cron は拾わない。
+参照: `docs/卷140/j140_y02.md`

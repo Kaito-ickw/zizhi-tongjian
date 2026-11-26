@@ -4258,3 +4258,14 @@
 *   **対象**: `data/kb/卷142/j142_y01.json` + `docs/images/卷142/j142_y01_{gayo,dankei,bajo}.jpg` + `docs/卷142/j142_y01.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I665 と同じ扱い)。
 参照: `docs/卷142/j142_y01.md`
+
+## [x] I667 — 卷143 永元二年(j143_y01)挿絵3枚(codex image_gen)
+*   **結果**: 2026-11-26 実施。`python3 pipeline/image_task.py frontier` の先頭1年(j143_y01・500年・本文22801字)に挿絵3枚(すべてカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`suigyu`=⑮淮口の守りを避け、船を陸に上げて水牛に牽かせ汝水南岸から淮水へ運ぶ傅永の寿陽救援(anchor「船を下ろすとすぐに渡った。」)、`renge`=⑯金の蓮の花を床に貼り潘妃に歩かせる東昏侯(anchor「これぞ歩くたびに蓮の花が生まれる、というやつだ」。」)、`zosen`=㉑襄陽で挙兵した蕭衍が檀溪の竹木を引き上げ茅で葺いて船団を仕立てる(anchor「何もかもたちどころに整った。」、前年 I666 `dankei` の続き)。各 anchor は `translation_full` 内に1回のみ出現を機械確認、`translation_full` は不変(md5 一致)、kb 差分は illustrations 分のみ(+24/-1、書き戻し前に再直列化が原文と一致することを確認)。`build_view.py` 再生成後、`docs/卷143/j143_y01.md` の画像リンク3件の解決を確認。
+*   **検証**: 全体図+四隅の拡大クロップを目視し、文字・落款・印章・額・旗・柱の短冊の描き込みなし、朱なし(`renge` の蓮のみ指定どおり淡い黄土)。3枚とも初回採用(各1回生成、3本並行で≒2分、429 なし)。圧縮後 1600x900・140〜229KB。中間 PNG は `/tmp/zzt_image_codex_j143_y01/` のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <slug dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、prompt は stdin、フォアグラウンド実行。built-in `image_gen` を各1回呼び、`~/.codex/generated_images/<自セッションid>/*.png` を `out.png` へコピー(md5 一致を確認)。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: OpenAI Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-26
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷143/j143_y01.json` + `docs/images/卷143/j143_y01_{suigyu,renge,zosen}.jpg` + `docs/卷143/j143_y01.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I666 と同じ扱い)。
+参照: `docs/卷143/j143_y01.md`

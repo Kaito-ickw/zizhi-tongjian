@@ -4269,3 +4269,13 @@
 *   **対象**: `data/kb/卷143/j143_y01.json` + `docs/images/卷143/j143_y01_{suigyu,renge,zosen}.jpg` + `docs/卷143/j143_y01.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I666 と同じ扱い)。
 参照: `docs/卷143/j143_y01.md`
+
+## [x] I668 — 卷144 中興元年(j144_y01)挿絵3枚(agy/nano-banana)
+*   **結果**: 2026-11-26 実施。`python3 pipeline/image_task.py frontier` の先頭1年(j144_y01・501年・本文31219字)に挿絵3枚(すべてカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`tou`=⑪北邙の狩りで供が四方に散り、仏塔の陰で眠る魏の宣武帝と手を下しかねる二人(anchor「魏孫はやめた。」)、`ichi`=⑮芳楽苑の中の市で潘貴妃を市令、みずから市録事となって遊ぶ東昏侯(anchor「ちょっとでも落ち度があると妃が杖で打った。」)、`kako`=⑯増水に乗じて舟師で加湖の塁へ押し寄せる王茂らの軍と遠景の郢城(anchor「鬨の声を上げて攻めさせた。」)。`tou`・`ichi` は初回生成で採用。`kako` は初版の先頭船の船尾板に文字様の模様があったため不採用とし、「船体・船尾板・欄干は無地の板のみ、彫り板・雷文・文字様の装飾なし」を scene に追記して1回再生成し採用(429/503 なし、probe 1本先行→2本並行→再生成1本、生成全体≒4分)。全体図に加え `tou` 遠景の城門(3倍)、`ichi` の幟・屋台(3倍)、`kako` の船体と手前の草(3倍)、`tou`・`ichi` の四隅を拡大目視し、文字・落款・印章・額の描き込みなしを確認(`ichi` の幟2本と屋台脇の布は無地)。`pipeline/image_sync.py` で 1376x768・各約140〜249KB に圧縮配置、`build_view.py` 再生成後 `docs/卷144/j144_y01.md` の画像リンク3件の解決を確認。kb record は `json.dumps(ensure_ascii=False, indent=1)`・末尾改行なしで書き戻し(書き戻し前に再直列化が原文と一致することを確認、numstat 24追加/1削除=末尾行のカンマ付与のみ)、anchor は translation_full 内に各1回のみ出現を機械確認、translation_full は不変。中間画像は /tmp/zzt_image_agy_j144_y01/ のみでリポジトリ内に残さず。
+*   **エンジン**: agy(`timeout 280 agy -p "…事前定義の image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼び、nano-banana で生成し /tmp/zzt_image_agy_j144_y01/<slug>.png に保存…" --dangerously-skip-permissions`、フォアグラウンド実行。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: Gemini nano-banana(agy ログ上の実体は gemini-3.1-flash-image、Google サブスク内)
+*   **来歴(§3.6)**: AI生成画像。agy(Gemini)の image-generator サブエージェントが nano-banana で生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-26
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷144/j144_y01.json` + `docs/images/卷144/j144_y01_{tou,ichi,kako}.jpg` + `docs/卷144/j144_y01.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I667 と同じ扱い)。
+参照: `docs/卷144/j144_y01.md`

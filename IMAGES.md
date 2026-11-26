@@ -4323,3 +4323,14 @@
 *   **対象**: `data/kb/卷146/j146_y01.json` + `docs/images/卷146/j146_y01_{kyu,kenkaku,shiba}.jpg` + `docs/卷146/j146_y01.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I671 と同じ扱い)。
 参照: `docs/卷146/j146_y01.md`
+
+## [x] I673 — 卷146 天監五年(j146_y02)挿絵3枚(codex image_gen)
+*   **結果**: 2026-11-27 実施。`python3 pipeline/image_task.py frontier` の先頭1年(j146_y02・506年・本文14365字)に挿絵3枚(すべてカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`enchi`=⑰甄琛の議で官の囲い込みが解かれ、民が自由に塩を採る河東の塩池(anchor「夏、四月、乙未、塩池の禁を廃止した〔注:塩の利を再び収めたことは前巻の二年に見える〕。」)、`teibo`=⑱合肥の堤の下に傘・扇・旗を立てさせ、板輿に座って動かない韋叡(anchor「傘・扇・麾・幢を取り寄せて堤の下に立てさせ、動く気のないことを示した。」)、`hakuseki`=洛口から逃げ帰り、夜の白石塁で入城を断られて食べ物だけを綱で吊り下ろされる臨川王蕭宏(anchor「そこで淵猷は城の上から食べ物を綱で吊り下ろして与えた。」)。anchor は3件とも `translation_full` 内にちょうど1回出現を機械確認、本文は無変更。kb record は indent=1・末尾改行なしを維持し差分は +24/−1 行(illustrations 分のみ)。`build_view.py` 再生成後、`docs/卷146/j146_y02.md` の画像リンク3件が実ファイルに解決。
+*   **検証**: 全体図+四隅の拡大クロップを目視し、文字・落款・印章・額・旗の描き込みなし、512px 縮小での強赤画素 0(`enchi` の塩の山、`teibo` の傘と扇・旗、`hakuseki` の松明の炎は淡い黄土)。3枚とも初回採用(各1回生成、3本並行で≒2分、429 なし)。`teibo` は交戦を描かず布陣の構図、`hakuseki` は門楼を描かず壁面だけの構図とした。`enchi` は当初 anchor を注の手前に置いたところ文の途中に画像が入ったため、注と句点まで含む anchor に直した。圧縮後 1600x900・118〜134KB。中間 PNG は `/tmp/zzt_image_codex_j146_y02/` のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <slug dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、prompt は stdin、フォアグラウンド実行。built-in `image_gen` を各1回呼び、`~/.codex/generated_images/<自セッションid>/*.png` を `out.png` へコピー(各セッション dir の PNG が1枚・md5 一致を確認)。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: OpenAI Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-27
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷146/j146_y02.json` + `docs/images/卷146/j146_y02_{enchi,teibo,hakuseki}.jpg` + `docs/卷146/j146_y02.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I672 と同じ扱い)。
+参照: `docs/卷146/j146_y02.md`

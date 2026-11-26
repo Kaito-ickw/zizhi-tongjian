@@ -4301,3 +4301,14 @@
 *   **対象**: `data/kb/卷145/j145_y02.json` + `docs/images/卷145/j145_y02_{ketsu,kaimon,shuen}.jpg` + `docs/卷145/j145_y02.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I669 と同じ扱い)。
 参照: `docs/卷145/j145_y02.md`
+
+## [x] I671 — 卷145 天監三年(j145_y03)挿絵3枚(codex image_gen)
+*   **結果**: 2026-11-26 実施。`python3 pipeline/image_task.py frontier` の先頭1年(j145_y03・504年・本文9623字)に挿絵3枚(すべてカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`taihi`=⑤任城王の留守を突かれた寿陽で、みずから城壁に登って兵を指図する任城王太妃の孟氏(anchor「太妃は自ら城の守りを見回り、矢石を避けなかった。」)、`yuhei`=⑥失脚して一台の車で華林園へ送られる北海王の元詳と、付き従う母・妻、囲みを固める兵(anchor「囲み守られること厳重で、内外の往来は絶たれた。」)、`rosho`=⑬義陽の戦いでただ一騎真っ先に駆ける七十余歳の傅永(anchor「このとき七十余歳で、軍中に彼を壮とせぬ者はなかった。」)。anchor は3件とも `translation_full` 内に1回だけ出現することを機械確認、`translation_full` は無変更(書き戻し前後の一致を assert)。kb の差分は +24/-1 行(illustrations 分のみ)。`build_view.py` 再生成後、`docs/卷145/j145_y03.md` の画像リンク3件の実ファイル解決を確認。
+*   **検証**: 全体図+四隅の拡大クロップを目視し、文字・落款・印章・額・旗の描き込みなし、512px 縮小での強赤画素 0(`taihi` の松明の炎、`yuhei` の車の幌、`rosho` の馬は指定どおり淡い黄土。`rosho` の夕日もごく淡い黄土だが朱ではないため許容)。3枚とも初回採用(各1回生成、3本並行で≒2分、429 なし)。`rosho` は交戦・負傷を描かず追撃の構図とした。圧縮後 1600x900・114〜185KB。中間 PNG は `/tmp/zzt_image_codex_j145_y03/` のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <slug dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、prompt は stdin、フォアグラウンド実行。built-in `image_gen` を各1回呼び、`~/.codex/generated_images/<自セッションid>/*.png` を `out.png` へコピー(各セッション dir の PNG が1枚・md5 一致を確認)。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定、門楼は描かせず壁線の切れ目で表現))
+*   **モデル**: OpenAI Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-26
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷145/j145_y03.json` + `docs/images/卷145/j145_y03_{taihi,yuhei,rosho}.jpg` + `docs/卷145/j145_y03.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I670 と同じ扱い)。
+参照: `docs/卷145/j145_y03.md`

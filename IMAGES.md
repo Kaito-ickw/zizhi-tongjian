@@ -4279,3 +4279,14 @@
 *   **対象**: `data/kb/卷144/j144_y01.json` + `docs/images/卷144/j144_y01_{tou,ichi,kako}.jpg` + `docs/卷144/j144_y01.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I667 と同じ扱い)。
 参照: `docs/卷144/j144_y01.md`
+
+## [x] I669 — 卷145 天監元年(j145_y01)挿絵3枚(codex image_gen)
+*   **結果**: 2026-11-26 実施。`python3 pipeline/image_task.py frontier` の先頭1年(j145_y01・502年・本文15649字)に挿絵3枚(すべてカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`jukou`=⑦禅譲工作で沈約に先を越され寿光閤の外で待つ范雲と、出て来て左を指す沈約(anchor「范雲は笑って「望んだとおりだ」と言った。」)、`tsuribito`=⑨壁の穴から脱出し釣人を装って小舟で長江を上り下りする十六歳の蕭宝寅と岸の追手(anchor「追手は怪しまなかった。」)、`gakki`=㉙雅楽を正すためみずから作った調律器「通」を鳴らし笛と合わせる梁の武帝、奥に鍾・磬の架と建鼓(anchor「どれも響きが調和した。」)。各 anchor は `translation_full` 内に1回のみ出現を機械確認、`translation_full` は不変。kb record は indent=1・末尾改行なし・キー順維持で書き戻し、`git diff --numstat` は +24/-1(illustrations 分のみ)。`build_view.py` 再生成後、`docs/卷145/j145_y01.md` の画像リンク3本の実在を確認。
+*   **検証**: 全体図+四隅の拡大クロップを目視し、文字・落款・印章・額・旗・柱の短冊の描き込みなし、朱なし(`gakki` の鍾は指定どおり淡い黄土。`jukou` の塀と `tsuribito` の葦にも淡い黄土が乗ったが朱・文字ではないため許容)。3枚とも初回採用(各1回生成、3本並行で≒2分、429 なし)。圧縮後 1600x900・128〜155KB。中間 PNG は `/tmp/zzt_image_codex_j145_y01/` のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <slug dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、prompt は stdin、フォアグラウンド実行。built-in `image_gen` を各1回呼び、`~/.codex/generated_images/<自セッションid>/*.png` を `out.png` へコピー(md5 一致を確認)。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: OpenAI Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-26
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷145/j145_y01.json` + `docs/images/卷145/j145_y01_{jukou,tsuribito,gakki}.jpg` + `docs/卷145/j145_y01.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I668 と同じ扱い)。
+参照: `docs/卷145/j145_y01.md`

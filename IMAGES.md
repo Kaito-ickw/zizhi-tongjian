@@ -4399,3 +4399,14 @@ kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、
 *   **対象**: `data/kb/卷147/j147_y05.json` + `docs/images/卷147/j147_y05_{mukae,uri,gorei}.jpg` + `docs/卷147/j147_y05.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I678 と同じ扱い)。`uri` は瓜のほか庭木の葉にも薄い黄土色が乗り、瓜は南瓜に近い形で描かれている(文字・赤なしのため採用)。
 参照: `docs/卷147/j147_y05.md`
+
+## [x] I680 — 卷147 天監十二年(j147_y06, 513 CE)挿絵3枚
+*   **結果**: 卷147 高祖武皇帝三・十二年(513年、`python3 pipeline/image_task.py frontier` の先頭、本文3,495字)にカテゴリーB(名場面)3枚を追加。(1) `shinyaku` = 張稷をかばったと疑われて武帝の怒りを買い、武帝が輦で去ったのにも気づかず座り続ける沈約、(2) `kouzui` = 大水で水没した寿陽の城壁上に留まり、退避の勧めを退ける李崇(女牆に寄せた船と筏)、(3) `haishi` = 東宮で太子少傅の崔光を拝する幼い太子と宮臣、答拝を憚る崔光。3枚とも1回目の生成で採用(再生成なし)。
+*   **検証**: 全体図+四隅拡大(ffmpeg で切り出し)を目視し、文字・落款・印章・額・短冊なし(柱・壁・傘・船も無地)。赤系の彩色なし。沈約の冠の正面に小さな飾りがあるが拡大確認で文字ではない。`image_sync.py` で 1376x768 JPEG(141KB / 125KB / 139KB)に圧縮配置。anchor 3件は `translation_full` にちょうど1回ずつ出現することを機械確認、`translation_full` は不変(書き戻し前に既存書式との完全一致を assert)。kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、`build_view.py` 再生成で `docs/卷147/j147_y06.md` の3リンクが実ファイルに解決することを確認。中間 PNG・検証用切り出しは `/tmp/zzt_image_agy_j147_y06/` のみでリポジトリ内に残さず。
+*   **エンジン**: agy(`timeout 280 agy -p "…事前定義の image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼び、nano-banana で生成し /tmp/zzt_image_agy_j147_y06/<slug>.png に保存…" --dangerously-skip-permissions`、フォアグラウンド同期実行。probe として `kouzui` を1本先行、成功後に残り2本を並行。run.sh と共通 style.txt は I678 のものを年だけ 513 に改めて流用、場面プロンプトは `scene_<slug>.txt`)
+*   **モデル**: Gemini nano-banana(Antigravity CLI `agy` 経由、サブスク枠)
+*   **来歴(§3.6)**: AI生成画像。Gemini nano-banana が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-28
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷147/j147_y06.json` + `docs/images/卷147/j147_y06_{shinyaku,kouzui,haishi}.jpg` + `docs/卷147/j147_y06.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I679 と同じ扱い)。`shinyaku` の武帝は四人担ぎの腰輿で去る後ろ姿として描いた。
+参照: `docs/卷147/j147_y06.md`

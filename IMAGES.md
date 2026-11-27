@@ -4367,3 +4367,13 @@
 *   **対象**: `data/kb/卷147/j147_y02.json` + `docs/images/卷147/j147_y02_{seki,yagura,tera}.jpg` + `docs/卷147/j147_y02.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I675 と同じ扱い)。
 参照: `docs/卷147/j147_y02.md`
+
+## [x] I677 — 卷147 天監九年(j147_y03)に挿絵3枚を追加
+結果: 水墨画3枚(B×3)を Codex built-in `image_gen` で生成し追加。天監九年(庚寅・西暦510年、本文2026字、胡注は本文内〔注〕のみ)は沈約の左光禄大夫転任・淮水沿いの新堤・魏の皇子元詡の誕生と胡充華の誓い・国子学行幸・五都令史への士人登用・呉承伯の乱と蔡撙の防戦・元英の死・『大明暦』施行・劉芳の楽器奏上の年。`tsutsumi` は建康を流れる淮水の両岸で土を担ぎ、突き固め、杭を打つ築堤の俯瞰(盛り土だけ薄い黄土色)、`chikai` は三日月の夜、魏の後宮の庭で灯火を脇に合掌し天を仰ぐ胡充華(堂の柱・扉・壁は無地、額なし)、`koyomi` は星空の下の観象台で渾儀をのぞく者・星を指す者・机上で算木を二組に並べて比べる太史たち(渾儀だけ薄い黄土色、目盛りなし)とした(沈約の人事・国子学の講義・呉承伯の乱・楽器は不採用。国子学と呉興の城門は文字混入リスクが高いため避けた)。anchor は「南岸は後渚の籬門から三橋までである。」「そうしてやがて元詡を生んだ。」「新暦は精密で旧暦は粗かった。」(いずれも `translation_full` 内に1回のみ出現することを機械確認、本文未編集=書き戻し前後で md5 同一 ef52e3b6…、既存ファイルが `indent=1`・末尾改行なしの round-trip と一致することを書き戻し前に assert)。検証: 各 last.txt の SESSION/SOURCE、SOURCE と out.png の md5 一致、各セッション dir の PNG が1枚のみを機械確認。1344px 縮小全体図3枚と原寸(1672x941)四隅 600x340 タイルを目視し、3枚とも文字・落款・朱印・額・柱の短冊・目盛りいずれも無し、512px 縮小の全画素走査で強い赤の画素は3枚とも 0。再生成なし(R1 17:00〜17:02 JST、3セッション並行、429 なし)。`image_sync.py` で 1600x900 JPEG(tsutsumi 151,063 / chikai 125,249 / koyomi 139,136 bytes)に圧縮配置、kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、`build_view.py` 再生成で `docs/卷147/j147_y03.md` の3リンクが実ファイルに解決することを機械確認。中間 PNG・検証用 JPEG は `/tmp/zzt_image_codex_j147_y03/` のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C /tmp/zzt_image_codex_j147_y03/<slug> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message … -`、prompt=stdin、フォアグラウンド同期実行。指示文 instr.txt と共通 style.txt は I675 のものを流用、場面プロンプトは各 slug の image_prompt.txt = scene.txt + style.txt。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用)
+*   **モデル**: Codex built-in `image_gen`(ChatGPT サブスク枠、gpt-image 系)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-27
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷147/j147_y03.json` + `docs/images/卷147/j147_y03_{tsutsumi,chikai,koyomi}.jpg` + `docs/卷147/j147_y03.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I676 と同じ扱い)。
+参照: `docs/卷147/j147_y03.md`

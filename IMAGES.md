@@ -4410,3 +4410,15 @@ kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、
 *   **対象**: `data/kb/卷147/j147_y06.json` + `docs/images/卷147/j147_y06_{shinyaku,kouzui,haishi}.jpg` + `docs/卷147/j147_y06.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I679 と同じ扱い)。`shinyaku` の武帝は四人担ぎの腰輿で去る後ろ姿として描いた。
 参照: `docs/卷147/j147_y06.md`
+
+## [x] I681 — 卷147 天監十三年(j147_y07, 514 CE)挿絵3枚
+*   **結果**: カテゴリーB(水墨画調の挿絵)3枚を追加。①`sekiden` 二月の藉田でみずから犂を執る梁の武帝と、畔に並ぶ百官・遠景の先農の壇 ②`fuzan` 浮山と巉石の両岸から淮水へ土を築き出す浮山堰の工事(中流はまだ開いている) ③`chouken` 調絹を公の尺で測らせ、良い絹を納めた者に杯酒を与える華州刺史の楊津。3枚とも1回目の生成で採用(再生成なし)。
+*   **検証**: 各セッション dir の PNG が1枚・SOURCE と out.png の md5 一致を確認。全体図+四隅タイルを目視し、文字・落款・印章・額・旗なし(傘・天幕・尺・卓・酒甕・絹はすべて無地、役所は門楼なしの土塀の切れ目)。512px 縮小での強赤画素 0。`image_sync.py` で 1600x900 JPEG(166KB / 151KB / 171KB)に圧縮配置。anchor 3件は `translation_full` にちょうど1回ずつ出現することを機械確認、`translation_full` は不変(書き戻し前に既存書式との完全一致を assert)。
+kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、`build_view.py` 再生成で `docs/卷147/j147_y07.md` の3リンクが実ファイルに解決することを機械確認。中間 PNG・検証用 JPEG は `/tmp/zzt_image_codex_j147_y07/` のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、3場面を並行起動しフォアグラウンドで wait。instr.txt / style.txt は I679 のものを流用、場面プロンプトは `<slug>/scene.txt`)
+*   **モデル**: Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク枠。`OPENAI_API_KEY` 従量経路は不使用)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in `image_gen` が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-28
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷147/j147_y07.json` + `docs/images/卷147/j147_y07_{sekiden,fuzan,chouken}.jpg` + `docs/卷147/j147_y07.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I680 と同じ扱い)。`sekiden` は柳の芽に、`fuzan` は舟や籠の土にも薄い黄土色・淡緑が乗っている(文字・赤なしのため採用)。`fuzan` の季節は本文に明記がなく、冬枯れの木立は想像。
+参照: `docs/卷147/j147_y07.md`

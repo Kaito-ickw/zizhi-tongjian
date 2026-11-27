@@ -4377,3 +4377,13 @@
 *   **対象**: `data/kb/卷147/j147_y03.json` + `docs/images/卷147/j147_y03_{tsutsumi,chikai,koyomi}.jpg` + `docs/卷147/j147_y03.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I676 と同じ扱い)。
 参照: `docs/卷147/j147_y03.md`
+
+## [x] I678 — 卷147 天監十年(j147_y04)に挿絵3枚を追加
+*   **結果**: 卷147 高祖武皇帝三・十年(511年、`python3 pipeline/image_task.py frontier` の先頭、本文3,568字)にカテゴリーB(名場面)3枚を追加。(1) `utage` = 楽寿殿の宴で武帝が張稷の鬚を撫で「張公は恐ろしい人だ」と言う場面、(2) `yuki` = 朐山陥落後、大雪の中で潰走する魏軍と単騎で逃げる盧昶、(3) `rojin` = 郊祀の車駕を遮って直言する秣陵の老人。anchor はそれぞれ「主上はその鬚を撫でて「張公は恐ろしい人だ」と言った。」「おりしも大雪となり、軍士で凍死した者や手足を落とした者が三分の二に及んだ。」「まことにこれを逆にできれば、天下は幸いこの上もありません」。」(いずれも `translation_full` 内に1回のみ出現することを機械確認、本文未編集=書き戻し前後で md5 同一 19e5913f…、既存ファイルが `indent=1`・末尾改行なしの round-trip と一致することを書き戻し前に assert)。検証: 1344px 縮小全体図3枚と原寸(1376x768)四隅 600x340 タイルを目視し、3枚とも文字・落款・朱印・額・柱の短冊いずれも無し(旗・屛風・柱・壁は無地)。再生成なし(probe 1本 `yuki` 20:00〜20:01 JST → `utage`/`rojin` 2本並行 〜20:03 JST、計3枚生成、429/503 なし)。細部の差異: `rojin` の車駕は四頭立て指定に対し三頭、`yuki` は遺骸を描かず棄てられた幕舎・荷車・倒れた旗で潰走を表現(凍死・屍の描写は caption/本文側に委ねた)。`image_sync.py` で 1376x768 JPEG(utage 152,171 / yuki 123,516 / rojin 126,512 bytes)に圧縮配置、kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、`build_view.py` 再生成で `docs/卷147/j147_y04.md` の3リンクが実ファイルに解決することを機械確認。中間 PNG・検証用 JPEG は `/tmp/zzt_image_agy_j147_y04/` のみでリポジトリ内に残さず。
+*   **エンジン**: agy(`timeout 280 agy -p "…事前定義の image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼び、nano-banana で生成し /tmp/zzt_image_agy_j147_y04/<slug>.png に保存…" --dangerously-skip-permissions`、フォアグラウンド同期実行。run.sh と共通 style.txt は I676 のものを年だけ 511 に改めて流用、場面プロンプトは scene_<slug>.txt)
+*   **モデル**: Gemini nano-banana(Antigravity CLI `agy` 経由、サブスク枠)
+*   **来歴(§3.6)**: AI生成画像。Gemini nano-banana が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-27
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷147/j147_y04.json` + `docs/images/卷147/j147_y04_{utage,yuki,rojin}.jpg` + `docs/卷147/j147_y04.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I677 と同じ扱い)。
+参照: `docs/卷147/j147_y04.md`

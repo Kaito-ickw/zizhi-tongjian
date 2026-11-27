@@ -4356,3 +4356,14 @@
 *   **対象**: `data/kb/卷147/j147_y01.json` + `docs/images/卷147/j147_y01_{hitsugi,ushi,josui}.jpg` + `docs/卷147/j147_y01.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I674 と同じ扱い)。
 参照: `docs/卷147/j147_y01.md`
+
+## [x] I676 — 卷147 天監八年(j147_y02)挿絵3枚(agy/nano-banana)
+*   **結果**: 卷147 天監八年(509年)にカテゴリーB(水墨の名場面)を3枚追加。`seki`=三関へ攻め上る魏の元英軍(anchor「自分は諸軍を督して東関へ向かった。」)、`yagura`=安陸で城壁を積み増し塹壕と高楼を築かせる韋叡(anchor「あらためて大きな塹壕を開き、高楼を建てた。」)、`tera`=嵩山の閒居寺(anchor「岩壑の眺めと土木の美を極めさせた。」)。anchor は3件とも `translation_full` 内にちょうど1回出現を機械確認、本文は無変更。kb record は indent=1・末尾改行なしを維持し差分は +24/−1 行(illustrations 分のみ)。`build_view.py` 再生成後、`docs/卷147/j147_y02.md` の画像リンク3件が実ファイルに解決。
+*   **検証**: 全体図+四隅の拡大クロップを目視し、文字・落款・印章・額・旗の描き込みなし(旗・帆は無地、関の壁は門楼なしの開口のみ、寺の堂塔に額なし)。3枚とも初回採用(probe 1本→2本並行、各≒1〜2分、429/503 なし)。`yagura` は随員が1名、城内に小舟と天幕が描かれたが本文と矛盾しないため採用。圧縮後 1376x768・152〜240KB。中間 PNG は `/tmp/zzt_image_agy_j147_y02/` のみでリポジトリ内に残さず。
+*   **エンジン**: agy(`timeout 280 agy -p "…image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼び、nano-banana で生成し /tmp/zzt_image_agy_j147_y02/<slug>.png に保存…" --dangerously-skip-permissions`、フォアグラウンド実行。プロンプトは場面別 scene+共通 style(水墨・俯瞰・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: Gemini nano-banana(Antigravity CLI 1.3.3 の image-generator サブエージェント経由、gemini-3.1-flash-image)
+*   **来歴(§3.6)**: AI生成画像。agy/nano-banana が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-27
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷147/j147_y02.json` + `docs/images/卷147/j147_y02_{seki,yagura,tera}.jpg` + `docs/卷147/j147_y02.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I675 と同じ扱い)。
+参照: `docs/卷147/j147_y02.md`

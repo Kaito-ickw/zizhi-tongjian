@@ -4422,3 +4422,14 @@ kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、
 *   **対象**: `data/kb/卷147/j147_y07.json` + `docs/images/卷147/j147_y07_{sekiden,fuzan,chouken}.jpg` + `docs/卷147/j147_y07.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I680 と同じ扱い)。`sekiden` は柳の芽に、`fuzan` は舟や籠の土にも薄い黄土色・淡緑が乗っている(文字・赤なしのため採用)。`fuzan` の季節は本文に明記がなく、冬枯れの木立は想像。
 参照: `docs/卷147/j147_y07.md`
+
+## [x] I682 — 卷148 天監十四年(j148_y01, 515 CE)挿絵3枚
+*   **結果**: 卷148 高祖武皇帝四・十四年(515年、`python3 pipeline/image_task.py frontier` の先頭、本文9,793字)にカテゴリーB(名場面)3枚を追加。(1) `tsue` = 殿に上って先帝を哭し新帝に拝謁したいと迫る広平王・元懐を、喪服をからげ杖を振り上げて諫める崔光、(2) `seibu` = 哭礼を終えて西の廡から舎人省へ導かれる高肇と、ささやきながら目で追う諸王、(3) `igeta` = 潰れた浮山堰の修復(鉄器を沈め、井桁に組んだ木に巨石を詰めて土をかぶせる。両岸は切り株だけ)。3枚とも1回目の生成で採用(再生成なし)。
+*   **検証**: 全体図+四隅拡大(ffmpeg で切り出し)を目視し、文字・落款・印章・額・短冊なし(殿・廡の柱と壁、扉、舟、鉄鍋はすべて無地、扉上に額なし)。赤系の彩色なし。`image_sync.py` で 1376x768 JPEG(133KB / 99KB / 180KB)に圧縮配置。anchor 3件は `translation_full` にちょうど1回ずつ出現することを機械確認、`translation_full` は不変(書き戻し前に既存書式との完全一致を assert)。kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、`build_view.py` 再生成で `docs/卷148/j148_y01.md` の3リンクが実ファイルに解決することを確認。中間 PNG・検証用切り出しは `/tmp/zzt_image_agy_j148_y01/` のみでリポジトリ内に残さず。
+*   **エンジン**: agy(`timeout 280 agy -p "…事前定義の image-generator サブエージェントを invoke_subagent で同期的に1回だけ呼び、nano-banana で生成し /tmp/zzt_image_agy_j148_y01/<slug>.png に保存…" --dangerously-skip-permissions`、フォアグラウンド同期実行。probe として `igeta` を1本先行、成功後に残り2本を並行。run.sh と共通 style.txt は I680 のものを年だけ 515 に改めて流用、場面プロンプトは `scene_<slug>.txt`)
+*   **モデル**: Gemini nano-banana(Antigravity CLI `agy` 経由、サブスク枠)
+*   **来歴(§3.6)**: AI生成画像。Gemini nano-banana が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-28
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷148/j148_y01.json` + `docs/images/卷148/j148_y01_{tsue,seibu,igeta}.jpg` + `docs/卷148/j148_y01.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I681 と同じ扱い)。`tsue` の元懐は「病をおして」の描写までは出ていない(袖で顔を覆って立ち止まる姿)。`seibu` の高肇が向かう戸口は舎人省の入口としての想像。`igeta` の鉄器は鍋・鋤先として描いた。
+参照: `docs/卷148/j148_y01.md`

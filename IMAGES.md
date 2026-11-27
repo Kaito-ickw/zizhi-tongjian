@@ -4387,3 +4387,15 @@
 *   **対象**: `data/kb/卷147/j147_y04.json` + `docs/images/卷147/j147_y04_{utage,yuki,rojin}.jpg` + `docs/卷147/j147_y04.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I677 と同じ扱い)。
 参照: `docs/卷147/j147_y04.md`
+
+## [x] I679 — 卷147 天監十一年(j147_y05, 512 CE)挿絵3枚
+*   **結果**: カテゴリーB(水墨画調の挿絵)3枚を追加。①`mukae` 司徒となった高肇を送り迎えする列から、封軌の不在に気づいて引き返す高綽 ②`uri` 東宮で幼い太子元詡に懐の黄㼐を奉る郭祚(「黄㼐少師」) ③`gorei` 完成した五礼(八千十九条)を奉る梁の学士たち。3枚とも1回目の生成で採用(再生成なし)。
+*   **検証**: 各セッション dir の PNG が1枚・SOURCE と out.png の md5 一致を確認。全体図+四隅タイルを目視し、文字・落款・印章・額・短冊なし(巻物はすべて閉じて無地、柱・壁・車蓋も無地)。512px 縮小での強赤画素 0。`image_sync.py` で 1600x900 JPEG(145KB / 145KB / 171KB)に圧縮配置。anchor 3件は `translation_full` にちょうど1回ずつ出現することを機械確認、`translation_full` は不変(書き戻し前に既存書式との完全一致を assert)。
+kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、`build_view.py` 再生成で `docs/卷147/j147_y05.md` の3リンクが実ファイルに解決することを機械確認。中間 PNG・検証用 JPEG は `/tmp/zzt_image_codex_j147_y05/` のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、3場面を並行起動しフォアグラウンドで wait。instr.txt / style.txt は I677 のものを流用、場面プロンプトは `<slug>/scene.txt`)
+*   **モデル**: Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク枠。`OPENAI_API_KEY` 従量経路は不使用)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in `image_gen` が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-27
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷147/j147_y05.json` + `docs/images/卷147/j147_y05_{mukae,uri,gorei}.jpg` + `docs/卷147/j147_y05.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I678 と同じ扱い)。`uri` は瓜のほか庭木の葉にも薄い黄土色が乗り、瓜は南瓜に近い形で描かれている(文字・赤なしのため採用)。
+参照: `docs/卷147/j147_y05.md`

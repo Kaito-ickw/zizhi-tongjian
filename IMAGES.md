@@ -4345,3 +4345,14 @@
 *   **対象**: `data/kb/卷146/j146_y03.json` + `docs/images/卷146/j146_y03_{taku,koshi,hashi}.jpg` + `docs/卷146/j146_y03.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I673 と同じ扱い)。
 参照: `docs/卷146/j146_y03.md`
+
+## [x] I675 — 卷147 天監七年(j147_y01)挿絵3枚(codex image_gen)
+*   **結果**: 2026-11-27 実施。`python3 pipeline/image_task.py frontier` の先頭1年(j147_y01・508年・本文7664字)に挿絵3枚(すべてカテゴリーB・水墨挿絵・16:9・画像内テキストなし)を `illustrations[]` に登録。`hitsugi`=⑩高肇を命がけで弾劾しようと、自分の棺を車に載せて宮城へ向かう元匡(anchor「元匡はあらかじめ自分の棺を作らせて役所に置き、棺を車に載せて宮闕へ赴き高肇の罪悪を論じ、自殺して命がけで諫めようとした。」)、`ushi`=⑯宴に召された彭城王元勰の牛が小橋の手前で進まず、催促の使者が駆けてくる場面(anchor「そこへさらに使者が来て元勰の遅参を責めたので、牛をはずし、人が挽いて進んだ。」)、`josui`=⑳急行軍の邢巒の騎兵が汝水を渡って懸瓠を囲みにかかる場面(anchor「白早生が城を出て迎え撃つと、これもまた破り、そのまま汝水を渡ってその城を囲んだ。」)。anchor は3件とも `translation_full` 内にちょうど1回出現を機械確認、本文は無変更。kb record は indent=1・末尾改行なしを維持し差分は +24/−1 行(illustrations 分のみ)。`build_view.py` 再生成後、`docs/卷147/j147_y01.md` の画像リンク3件が実ファイルに解決。
+*   **検証**: 全体図+四隅の拡大クロップを目視し、文字・落款・印章・額・旗の描き込みなし、512px 縮小での強赤画素 0(`hitsugi` の棺、`ushi` の牛、`josui` の浅瀬は淡い黄土)。3枚とも初回採用(各1回生成、3本並行で≒2分、429 なし)。`hitsugi` は門楼を描かず壁線の切れ目で宮城を示し、`josui` は交戦を描かず渡河の行軍の構図とした(旗は無地)。圧縮後 1600x900・131〜148KB。中間 PNG は `/tmp/zzt_image_codex_j147_y01/` のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <slug dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、prompt は stdin、フォアグラウンド実行。built-in `image_gen` を各1回呼び、`~/.codex/generated_images/<自セッションid>/*.png` を `out.png` へコピー(各セッション dir の PNG が1枚・md5 一致を確認)。`OPENAI_API_KEY`/`scripts/image_gen.py` の従量経路は不使用。プロンプトは場面別 scene+共通 style(水墨・中程度の描き込み・朱なし・無文字の厳格指定))
+*   **モデル**: OpenAI Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク内)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in image_gen が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-27
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷147/j147_y01.json` + `docs/images/卷147/j147_y01_{hitsugi,ushi,josui}.jpg` + `docs/卷147/j147_y01.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸(11-25 14:00 の agy 回が登録・配置後に異常終了、IMAGES.md 未記録)は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I674 と同じ扱い)。
+参照: `docs/卷147/j147_y01.md`

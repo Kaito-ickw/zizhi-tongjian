@@ -4433,3 +4433,15 @@ kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、
 *   **対象**: `data/kb/卷148/j148_y01.json` + `docs/images/卷148/j148_y01_{tsue,seibu,igeta}.jpg` + `docs/卷148/j148_y01.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I681 と同じ扱い)。`tsue` の元懐は「病をおして」の描写までは出ていない(袖で顔を覆って立ち止まる姿)。`seibu` の高肇が向かう戸口は舎人省の入口としての想像。`igeta` の鉄器は鍋・鋤先として描いた。
 参照: `docs/卷148/j148_y01.md`
+
+## [x] I683 — 卷148 天監十五年(j148_y02, 516 CE)挿絵3枚
+*   **結果**: カテゴリーB(水墨画調の挿絵)3枚を追加。①`suitei` 浮山堰で水没した淮のほとり、岡に逃れた住民が澄んだ水底の家々と塚墓を見下ろす ②`nunomizu` 関城で劉氏が大雨に布・衣を懸けさせ、絞った水を甕や鉢に貯えさせる ③`eineiji` 洛陽・永寧寺の九層の浮図。`suitei`・`nunomizu` は1回目で採用。`eineiji` は1回目が八層だったため、層数を強調した文面で1回だけ再生成し九層の版を採用(1回目は不採用・リポジトリ外)。
+*   **検証**: 採用3枚とも、セッション dir の PNG が1枚・SOURCE と out.png の md5 一致を確認。全体図+四隅タイル(`eineiji` は塔全体と境内下半の拡大も)を目視し、文字・落款・印章・額・旗なし(布・衣・甕・土壁・塔の各層・堂・塀はすべて無地、関城と寺の塀は門楼なしの切れ目)。512px 縮小での強赤画素 0。`image_sync.py` で 1600x900 JPEG(143KB / 176KB / 125KB)に圧縮配置。anchor 3件は `translation_full` にちょうど1回ずつ出現することを機械確認、`translation_full` は不変(書き戻し前に既存書式との完全一致を assert)。
+kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、`build_view.py` 再生成で `docs/卷148/j148_y02.md` の3リンクが実ファイルに解決することを確認。中間 PNG・検証用 JPEG は `/tmp/zzt_image_codex_j148_y02/` のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、3場面を並行起動しフォアグラウンドで wait、再生成は単独起動。instr.txt / style.txt は I681 のものを流用、場面プロンプトは `<slug>/scene.txt`)
+*   **モデル**: Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク枠。`OPENAI_API_KEY` 従量経路は不使用)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in `image_gen` が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-28
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷148/j148_y02.json` + `docs/images/卷148/j148_y02_{suitei,nunomizu,eineiji}.jpg` + `docs/卷148/j148_y02.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I682 と同じ扱い)。`suitei` は手前の岡の草に薄い黄土色、`eineiji` は塔の屋根のほか夕空の地平にも淡い黄土色が乗っている(文字・赤なしのため採用)。`eineiji` の塔は九十丈という伝承の高さほどには誇張しておらず、伽藍配置は想像。`nunomizu` の雨は疎らな斜線で示し、敵兵・武器は描いていない。
+参照: `docs/卷148/j148_y02.md`

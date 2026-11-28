@@ -4456,3 +4456,15 @@ kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、
 *   **対象**: `data/kb/卷148/j148_y03.json` + `docs/images/卷148/j148_y03_{kaji,nuno,sosai}.jpg` + `docs/卷148/j148_y03.md`
 *   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I683 と同じ扱い)。`sosai` の卓と座は本文の「七廟の座」に対し5組しか描かれていない(caption では数に触れていない)。餅の表面に十字の筋があるが文字ではない。`kaji` の炎は淡い黄土〜橙で、人物の袖にも小さく橙の火が乗っている(赤ではないため採用)。賊・武器は描いていない。`nuno` の市は場所を特定しない想像図で、遠景に炊煙が1筋ある。
 参照: `docs/卷148/j148_y03.md`
+
+## [x] I685 — 卷148 天監十七年(j148_y04, 518 CE)挿絵3枚
+*   **結果**: カテゴリーB(水墨画調の挿絵)3枚を追加。①`kura` 蕭宏の邸の奥に並ぶ庫を武帝が丘佗卿と指を折って検分する、庫には札を立てた銭の山 ②`ukihashi` 夜、武帝の一行が驃騎航を避け朱雀航(舟を連ねた浮橋)で秦淮を渡る ③`shioike` 近隣の民が柵で囲い込んだ魏の塩池と、柵の外で追い返される遠来の貧民。3枚とも1回目で採用(再生成なし)。
+*   **検証**: 3枚とも SOURCE がそれぞれ別セッション dir の PNG であること・out.png の md5 が互いに異なることを確認。全体図+四隅タイル(`kura` は銭の山の拡大も)を目視し、文字・落款・印章・額・旗なし(`kura` の札は無地の板、銭は方孔のみで銭文なし、庫の柱・戸・壁は無地)。赤・朱なし。`image_sync.py` で 1600x900 JPEG(208KB / 146KB / 195KB)に圧縮配置。anchor 3件は `translation_full` にちょうど1回ずつ出現することを機械確認、`translation_full` は不変(書き戻し前に既存書式との完全一致を assert)。
+kb record は末尾に `illustrations` を追加(`git diff --numstat` +24/-1)、`build_view.py` 再生成で `docs/卷148/j148_y04.md` の3リンクが実ファイルに解決することを確認。中間 PNG・検証用 JPEG は `/tmp/zzt_image_codex_j148_y04/` のみでリポジトリ内に残さず。
+*   **エンジン**: codex(`timeout 540 codex exec --skip-git-repo-check -C <dir> -s workspace-write -c approval_policy=never -c sandbox_workspace_write.network_access=true --output-last-message last_msg.txt - < instr.txt`、3場面を並行起動しフォアグラウンドで wait。instr.txt / style.txt は I683 のものを流用、場面プロンプトは `<slug>/scene.txt`)
+*   **モデル**: Codex built-in `image_gen`(gpt-image 系、ChatGPT サブスク枠。`OPENAI_API_KEY` 従量経路は不使用)
+*   **来歴(§3.6)**: AI生成画像。Codex built-in `image_gen` が生成、Claude(Fable 5.2)が場面選定・プロンプト作成・検証・登録をオーケストレート、生成日 2026-11-28
+*   **ライセンス**: CC BY-NC-SA 4.0
+*   **対象**: `data/kb/卷148/j148_y04.json` + `docs/images/卷148/j148_y04_{kura,ukihashi,shioike}.jpg` + `docs/卷148/j148_y04.md`
+*   **備考**: 卷139 建武元年(j139_y01)の未コミット残骸は今回も作業ツリーに残したまま。未検証の他年を混ぜないため `git add -A` ではなく本年のファイルだけを個別に add した(I662〜I684 と同じ扱い)。`kura` の札は本文の黄・紫の色分けを再現しておらず淡い黄土一色、庫は「内堂の後ろ」ではなく開けた中庭に面した想像の配置で、輿は置かれているだけで担ぎ手はいない。`ukihashi` は遠景の霧の中に無人の浮橋と邸の屋根(驃騎航と蕭宏の府の想定)を置いたが、両橋の位置関係は想像。賊・武器は描いていない。`shioike` の遠景の丘に淡い黄土色。塩池の場所は特定しない想像図。
+参照: `docs/卷148/j148_y04.md`
